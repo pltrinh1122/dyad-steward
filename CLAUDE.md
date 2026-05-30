@@ -79,7 +79,10 @@ The Human **declares the hat** each engagement:
   **The `[CTA]` is addressed TO the Operator — it names the disposition you're asked to make
   (imperative/question: "Ratify X?" / "Decline Y?"), never the Agent's own next action.** A CTA
   written in Agent-voice ("re-route our…", "I'll resolve…") quietly collapses proposer→disposer —
-  the 1+1=2 the NON-NEGOTIABLE guards. **The SELF-ATTACK is mandatory** — without it DFD degrades
+  the 1+1=2 the NON-NEGOTIABLE guards. **The CTA must be answerable Y/N** — a *single* proposed
+  disposition, ratify or decline. Never an "A or B?" either/or: that forces the Operator back into
+  *authoring* a choice (the cost DFD removes). When genuine alternatives exist, the Agent proposes
+  the recommended one as the Y; the alternatives live in the SELF-ATTACK, not the CTA. **The SELF-ATTACK is mandatory** — without it DFD degrades
   into rubber-stamp (1+1=2), betraying the NON-NEGOTIABLE. Governs *decisions*, not *explorations*
   (`[IDEATE]` stays open).
 
