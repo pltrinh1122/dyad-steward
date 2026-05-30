@@ -49,6 +49,25 @@ For defining or refining any discipline (markers, frames, rituals):
 4. **Converge the intent → label map.** A label mapping to **two** intents is a **conflation to
    split**, not a property to preserve.
 
+### The method's own boundary — ingrain, don't prescribe (earned 2026-05-30, an Operator `N`)
+
+The method above can over-reach: "reconstruct the intent-set" tempted the Agent to **prescribe a
+complete taxonomy** and ratify it. A vocabulary that the Operator must wield *in real time, under
+load* lives in the **wet-substrate** — it **ingrains through repetition**, it cannot be legislated.
+Forcing a closed taxonomy is **anti-wu-wei** (force against the grain). Three corrections:
+
+- **Ground truth is the cross-session usage record** — *neither* Agent-prescription (over-formalizes)
+  *nor* Operator self-report. "What's ingrained in me" is itself **recency-biased**: caught live when
+  the Operator named three "primary" markers and the record showed a fourth (`[IDEATE]`, ~6 uses)
+  they'd omitted. The Agent's empirical half **debiases both sides** by reading the record.
+- **"Ingrained" is a cross-session property** — within-session frequency is task-skewed (a
+  framing-heavy session inflates framing markers). Don't declare "ingrained" from n=1.
+- **Don't freeze either.** Working *only* with what's already ingrained neuters the Agent's
+  improvement role. The fix is not prescribe-vs-freeze but **reinforce what sticks**: record the
+  recurring, let new candidates ingrain (or fade) through *actual repetition*, never close the set.
+  The Agent legislates nothing; it tracks recurrence — the same anti-sycophancy empirical role,
+  applied to vocabulary itself.
+
 ## Two failure-modes this guards
 
 1. **Source-authority creep** *(Validate-side mirror of the Agent-voice CTA in `dfd.md`)* — treating

@@ -2,7 +2,8 @@
 
 > **Status: in-flight. Not settled.** Lives here while being attacked. The **`DF-UI (show)` /
 > `DFD (flow)` pairing is RESOLVED-CORE** (pinned 2026-05-29 via Steward Operator gate); the
-> **marker taxonomy** is RESOLVED-candidate (2026-05-30, node M); the **Ideation region** is
+> **markers** are a *living habit-set*, NOT a ratifiable taxonomy (node M closed 2026-05-30 — see
+> §Markers); the **Ideation region** is
 > RATIFIED (node I — `IF-UI` show / `IFD` flow, region parity with `DF-UI`/`DFD`). Anchor
 > §Vocabulary now carries the cluster. Opened 2026-05-29 from an `[IDEATE]`/`[ALIGN]`/`[NOTE]` chain.
 
@@ -58,43 +59,43 @@ turned into a mnemonic:
   migrated back (retrieve + locate + read). Same 1+1=2 drift as the CTA failure-modes in
   `../kb/dfd.md`, on the *show* surface.
 
-## Marker taxonomy — RESOLVED-candidate (2026-05-30, via NBA→DFD loop, node M)
+## Markers — NOT a ratifiable taxonomy; a *living habit-set* (descriptive, 2026-05-30)
 
-The Operator's proposed binary — **invoke a discipline** vs. **modify a running exchange** —
-**half-survived.** It cleanly separates the poles, but two markers broke it, and the breakage is
-the finding: *"discipline-invoking" is not one property but two independent ones* —
-**(a) opens a region?** and **(b) carries an obligation beyond the exchange?** A marker can do
-either, both, or neither. That orthogonality is the real cut.
+**M was never a ratifiable artifact** (Operator `N`, 2026-05-30). A marker vocabulary **ingrains
+through repetition** in the Operator's *wet-substrate* — it cannot be *prescribed into being*. Two
+failed attempts proved this: a **usage-first** cut (opener × obligation) was the inverted-method
+artifact; an **intent-first** cut (7 prescribed intents) over-reached by *forcing a complete future*
+against the grain. Both were category errors — you can't legislate a habit.
 
-| Marker | Class | Opens a region? | Obligation beyond the exchange | Governs (discipline / mechanism) |
-|---|---|---|---|---|
-| `[IDEATE]` | **Opener** | yes — Ideation region | none (harvest only *if* it converges) | Ideation Framing Discipline (TBD) |
-| `[CTA]` | **Opener** | yes — Decision region | a **dispose** is owed (Y/N) | DFD |
-| `[REFLECTION]` | **Opener** | yes — Reflection region | POV → falsify → **integrate** | Reflection Discipline |
-| `[ALIGN]` | **Re-entrant** (opener *or* modifier) | sometimes — Grounding region | update the **shared model** / anchor | Grounding mechanism |
-| `[FEEDBACK]` | **Modifier + obligation** | no — corrects the current move | **harvest** to `kb/` | Learning Discipline |
-| `[NOTE]` | **Modifier** | no — annotates current region | none (*may spawn* a DAG node) | — |
-| `[BTW]` | **Modifier (side-channel)** | no — orthogonal aside | none | — |
+**Ground truth = the cross-session usage record** — *not* Agent-prescription (over-formalizes) and
+*not* Operator self-report ("what's ingrained in me" is **recency-biased** — caught live: the
+Operator's "three primaries" under-counted `[IDEATE]`). Reading the record is the Agent's
+empirical-debiasing half (`../kb/one-plus-one-equals-three.md`); it defeats *both* biases.
 
-**The two that broke the binary:**
-- `[FEEDBACK]` *modifies* the exchange (it corrects the Agent's move in place — opens no region) yet
-  *triggers a discipline* (Learning: every `[FEEDBACK]` → candidate `kb/` entry; this session
-  harvested ~6 of them into `kb/dfd.md`). Modifier **and** discipline-invoking → the binary can't
-  hold both on one axis.
-- `[ALIGN]` is **re-entrant**: it can *open* a Grounding exchange (`[ALIGN] Ontology — Dyad UI
-  contains DFD…`) **or** ride the current one (`align on this point`). Opener-or-modifier depending
-  on use → not a fixed class.
+**Intents observed this session** (descriptive — what recurred, with what intent; **not** a closed set):
 
-**Two consequences, fed back immediately:**
-1. `[IDEATE]` is confirmed an **opener** → this **unblocks node I** (the Ideation Framing Discipline
-   is now well-posed: *define the flow of the region `[IDEATE]` opens*).
-2. The **obligation column is the harvest hook** — it names what each marker *owes* downstream
-   (`[CTA]`→dispose, `[REFLECTION]`→integrate, `[FEEDBACK]`→kb-harvest, `[ALIGN]`→shared-model
-   update). This is where the marker layer wires into the **Learning Discipline**.
+| Intent | Marker (this session's label) | Evidence this session |
+|---|---|---|
+| **CORRECT-PROCESS** | `[FEEDBACK]` | very high — the session's workhorse |
+| **SYNC-MODEL** | `[ALIGN]` | low — Operator-named "primary", *but* see recency caveat |
+| **FLAG** | `[NOTE]` | low |
+| **EXPLORE** | `[IDEATE]` | **high (~6 uses)** — Operator's self-report omitted it (recency) |
+| **DISPOSE** | `[CTA]` | high, but partly Agent-protocol echo (ambiguous provenance) |
+| **REFLECT** | `[REFLECTION]` | low |
+| **ASIDE** | `[BTW]` | low |
 
-> Refutation watch for this taxonomy: if `[ALIGN]`'s "re-entrant" class is just *unresolved* (it
-> should split into two distinct markers), or if the obligation column never drives an actual
-> harvest, the cut is over-fit. n=1 session of marker-use behind it.
+**Two settled points (descriptive, not prescriptive):**
+- `[ALIGN]` = **SYNC-MODEL**, *one* intent (Operator-confirmed). Its earlier "re-entrant fudge"
+  dissolved: opening-vs-modifying is a *timing attribute*, and the one EXPLORE-shaped use
+  (`[ALIGN] X. Falsify`) was a **mislabel** (intent was EXPLORE).
+- The three CORRECT-PROCESS / SYNC-MODEL / FLAG intents are genuinely distinct (Operator-confirmed)
+  *and adjacent* — adjacency is a wet-substrate fact to work *with*, not a defect to engineer away.
+
+**"Ingrained" is undeclarable from one session** — this session shows *intended/used*, not yet
+*ingrained* (frequency here is partly task-skew: a framing/ideation-heavy session inflates
+`[IDEATE]`). The Agent **tracks recurrence across sessions**; nobody legislates the set. Open watch
+(#3, Operator): a future intent may surface with no label, or a label be mis-used — that gap is the
+signal to record, not to pre-fill.
 
 ## Falsifiable claim
 
@@ -113,9 +114,8 @@ practice → collapse to one name).
   provenance-tagged N candidates*; flow **`IFD`** = *falsification invariant; divergence slides
   Agent→Operator across 0/1/2+ input; converge open, never auto-CTA*. **Region parity** with
   `DF-UI`/`DFD`. Full cycle: `ideation-framing.md`.
-- **Marker taxonomy** — **RESOLVED-candidate** (see §Marker taxonomy above): the binary split into
-  two orthogonal properties (opens-a-region? × carries-an-obligation?). Remaining attack: does
-  `[ALIGN]` stay one re-entrant marker or split into two?
+- **Markers** — **closed as a *living habit-set*, not a taxonomy** (see §Markers above): ground truth
+  is the cross-session usage record; "ingrained" is tracked over sessions, never legislated.
 - **DFT promotion trigger** — what concrete need would pull the reserved template-name into
   first-class use?
 - **Generalization** — is "Dyad UI / show-flow" Steward-specific, or a form-library candidate for
