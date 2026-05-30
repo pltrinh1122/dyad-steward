@@ -76,8 +76,12 @@ The Human **declares the hat** each engagement:
 - **Decision-Framing Discipline (DFD)** — when surfacing a decision to the Operator, frame it as
   **`[CTA]` / `[NARRATIVE-SUMMARY]` / `[CLAIM · EVIDENCE · SELF-ATTACK · REFERENCE]`**, one
   decision per frame. Moves the Operator from *authoring* (costly) to *validating* (cheap).
-  **The SELF-ATTACK is mandatory** — without it DFD degrades into rubber-stamp (1+1=2), betraying
-  the NON-NEGOTIABLE. Governs *decisions*, not *explorations* (`[IDEATE]` stays open).
+  **The `[CTA]` is addressed TO the Operator — it names the disposition you're asked to make
+  (imperative/question: "Ratify X?" / "Decline Y?"), never the Agent's own next action.** A CTA
+  written in Agent-voice ("re-route our…", "I'll resolve…") quietly collapses proposer→disposer —
+  the 1+1=2 the NON-NEGOTIABLE guards. **The SELF-ATTACK is mandatory** — without it DFD degrades
+  into rubber-stamp (1+1=2), betraying the NON-NEGOTIABLE. Governs *decisions*, not *explorations*
+  (`[IDEATE]` stays open).
 
 ## Vocabulary (added to the form's seed; see form §Terms for canon)
 
@@ -87,14 +91,25 @@ Inherited but locally load-bearing: **`Telos`**.
 
 ## Deferrals — intentional future work, not gaps
 
-- **Contribution channel** into the commons: **PR vs GH-Issues** — TBD.
+- **Contribution channel** into the commons: form §Governance names **PR as the dispose gate**
+  (founding Operator gates; anyone may propose). So *dispose = PR*; GH-Issues, if used, is
+  **propose/intake only**. Genuinely open: the channel for **library best-practice**
+  contributions (a cycle/discipline), which the form's §Governance does not yet specify — it
+  speaks only of changes *to the declaration*.
 - **Local clone** of the commons into `the-dyad-practice/` — open (remote-only for now).
 - **Learning-Discipline velocity metric** — define at first real stewardship cycle.
 
-## Frontier candidates — propose back to the form (Frontier Operator)
+## Contribution candidates — propose back to the form
 
-- **Learning Discipline** as a generative best-practice for *every* Dyad.
-- **Decision-Framing Discipline** as a best-practice for reducing Operator cognitive load.
+The form (§Growing) runs **two tracks with different bars**: a *new mechanism* = the **frontier**
+(prove synergy **and** orthogonality — rare); a *new best-practice* = the **library** (prove
+synergy only). Both candidates below are **disciplines/recipes → library track**, not new
+orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived falsification.**
+
+- **Learning Discipline** — library best-practice (a self-applied meta-cycle) for *every* Dyad.
+- **Decision-Framing Discipline (DFD)** — library best-practice for reducing Operator cognitive load.
+
+*(The form's actual frontier — codifying **generative** mechanisms — we hold no candidate for yet.)*
 
 ## Cross-references
 
