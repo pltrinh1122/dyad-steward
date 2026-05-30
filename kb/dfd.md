@@ -39,16 +39,24 @@ transfer directly.)*
    They are orthogonal, and the CTA is exactly what keeps a synthesis a *proposal*, not a verdict —
    so a synthesis no longer threatens the gate the way the first reasoning feared.
 
+4. **Multiple asks per surfacing** — presenting two CTAs at once (or a CTA bundled with an open
+   elicitation), as in the *"Two things for you: (a) your POV (b) the decision…"* surface caught
+   2026-05-29. Even when each ask is individually well-formed, stacking them forces the Operator to
+   first author a *prioritization/sequencing* — the same cost DFD removes, one level up.
+   **Fix:** **at most one CTA per surfacing.** Queue the rest *by name* (not framed) and surface
+   them one at a time as each clears. A non-CTA ask bundled with a CTA dilutes the CTA — keep the
+   surface single-ask.
+
 ## Why they're the same failure
 
-Modes 1–2 are one drift wearing two masks: **cost silently flowing from Agent back to Operator**
-(Agent-voice steals the *dispose*; either/or steals the *authoring-avoidance*). Mode 3 is the
-mirror drift on the Generate side: the Agent under-supplies its own half. Both directions are
-caught by asking, of every frame before surfacing:
+Modes 1–2 and 4 are one drift wearing three masks: **cost silently flowing from Agent back to
+Operator** (Agent-voice steals the *dispose*; either/or steals the *authoring-avoidance*; multiple
+asks steal the *prioritization*). Mode 3 is the mirror drift on the Generate side: the Agent
+under-supplies its own half. All are caught by asking, of every surface before sending:
 
-> **Can the Operator dispose of this with a single "Y" or "N", is the disposition theirs (not
-> mine) to make, and have I supplied my full generate half (a SYNTHESIS, not just the contest)?**
-> If no on any count, the frame is malformed — reframe before surfacing.
+> **Is there exactly ONE ask here; can the Operator dispose of it with a single "Y" or "N"; is the
+> disposition theirs (not mine) to make; and have I supplied my full generate half (a SYNTHESIS,
+> not just the contest)?** If no on any count, the surface is malformed — reframe before sending.
 
 ## Falsification status
 

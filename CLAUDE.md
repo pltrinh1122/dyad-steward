@@ -75,7 +75,10 @@ The Human **declares the hat** each engagement:
   rising.* **(metric: DEFERRED to first real stewardship cycle.)**
 - **Decision-Framing Discipline (DFD)** — when surfacing a decision to the Operator, frame it as
   **`[CTA·Y/N]` / `[THESIS]` / `[ANTI-THESIS]` / `[SYNTHESIS]` → ref**, one decision per frame.
-  Moves the Operator from *authoring* (costly) to *validating* (cheap). The four slots, native to
+  Moves the Operator from *authoring* (costly) to *validating* (cheap). **At most ONE CTA per
+  surfacing** — even with several decisions pending, present a single CTA per message; the rest are
+  *queued by name* (not framed), surfaced one at a time as each clears. Multiple live CTAs force
+  the Operator to author a prioritization — the very cost DFD removes. The four slots, native to
   our 1+1=3 vocabulary:
   - **`[CTA·Y/N]`** — the dispose-request, addressed TO the Operator: a *single* disposition,
     answerable **Y/N** ("Ratify X?" / "Decline Y?"). **Never Agent-voice** ("re-route our…",
