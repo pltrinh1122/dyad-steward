@@ -1,7 +1,7 @@
 # dyad-steward — Practice Reflection — 2026-05-30 — NBA→DFD + the empirical-debiasing turn
 
-> **Status: INTEGRATED, awaiting ratification** (four-step: draft → Operator POV → Steward falsifies
-> POV → integrate + ratify). Triggered by **Intermission** (non-terminal). Form: **Continue / Start /
+> **Status: RATIFIED 2026-05-30** (Steward Operator gate; four-step closed: draft → Operator POV →
+> Steward falsifies POV → integrate + ratify). Triggered by **Intermission** (non-terminal). Form: **Continue / Start /
 > Stop**.
 >
 > **Form refinement earned here (Operator `[FEEDBACK]`):** the Operator gives POV on **CONTINUE
