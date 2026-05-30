@@ -25,7 +25,7 @@ Dyad UI  (framing/signaling layer — NOT the payload)
 │     context: {HEALER OPERATOR} and other {HAT} declarations
 └─ Framing regions — one per kind of exchange; each region is a (show, flow) pair:
       Decision-framing region →  DF-UI (show)  governed by  DFD (flow)
-      Ideation-framing region →  (show TBD)    governed by  Ideation Framing Discipline (TBD)
+      Ideation-framing region →  DFD-spine −CTA ×N (show)  governed by  Ideation Framing Discipline
       Reflection region       →  CSS form (show) governed by Reflection Discipline (flow)
 ```
 
@@ -101,8 +101,9 @@ practice → collapse to one name).
 
 ## Open questions (attack surface)
 
-- **Ideation Framing Discipline** — undefined. What is the `[IDEATE]` region's *flow* (and its
-  *show*)? Counterpart to DFD for explorations.
+- **Ideation Framing Discipline** — **defined** (node I, 2026-05-30): show = *DFD-spine − CTA × N
+  candidates*; flow = *diverge ≥2 → falsify each (mandatory) → converge open (spawn, never
+  auto-CTA)*. Full cycle: `ideation-framing.md`.
 - **Marker taxonomy** — **RESOLVED-candidate** (see §Marker taxonomy above): the binary split into
   two orthogonal properties (opens-a-region? × carries-an-obligation?). Remaining attack: does
   `[ALIGN]` stay one re-entrant marker or split into two?
