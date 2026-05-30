@@ -16,13 +16,25 @@ Cut by **scope + trigger + terminality**. Each casts onto a SPAOR phase at a bou
 |---|---|---|---|---|---|---|
 | **Stand Up** | session | session start | orient / ground: read anchor + `kb/` + `dialectic/`, confirm in-flight state, confirm hat/channel | once | no | Sense |
 | **Time-Out** | **thread** | a **context switch** in a Dyadic Cycle thread | informally park & preserve the current context so it resumes cleanly (CPU-context-switch analogy); **bilateral** (either half may invoke), **informal** marker not ceremony; purpose = **resumability** | frequent | no | (state-save) |
-| **Intermission** | session-segment | a structural **seam** + rest | **Reflect**-bearing pause; the *same* production resumes | occasional | no | Reflect |
+| **Intermission** | session-segment | a structural **seam** + rest | **Reflect**-bearing pause **+ durability** (commit the segment's durable record); the *same* production resumes | occasional | no | Reflect |
 | **Stand Down** | session | session end | Reflect + harvest surviving lessons to `kb/` + verify clean tree & committed durable record + confirm `dialectic/` holds in-flight state, **then terminate** | once | **yes** | Reflect |
 
 **Reflection rides Intermission and Stand Down** — but is a **separate, orthogonal discipline**
 (ratified separate by Steward Operator, 2026-05-29 N; Operator-attested to fire outside Stand
 Down). Defined in its own live cycle: **`reflection-discipline.md`**. Time-Out carries at most a
 minimal "where was I" save, **not** a CSS reflection.
+
+**Durability ⊥ ratification ⊥ Stand-Down** (Operator feedback, 2026-05-30). Persisting the durable
+record (commit) is a *separate need* from the Operator's **ratification** (which disposes the
+*content*, not its *persistence*) and from **Stand Down** (which *terminates*). It must not wait for
+session-end. **Intermission carries durability:** at a segment seam, commit the durable record so a
+cold future-session (or another Dyad ingesting this repo) inherits it. This is **standing
+pre-authorization** — durability is *mechanical, not a dispose*, so it fires without a CTA. Stand Down
+then only *verifies* the tree is already clean + persisted, instead of being the first time it
+happens. *Safe because `dialectic/` artifacts are explicitly DRAFT/live — committing in-flight state
+is the design, not premature.* *Lived (2026-05-30): a full session of ratified work (GFD, the GOAL
+run, the N2 retraction) sat uncommitted because the Agent bound durability to Stand Down; the Operator
+caught the conflation.*
 
 **Stand Down persists; it does not decide** (Operator feedback, 2026-05-29). At close, surface a
 **`[CTA]` only for work too fragile to survive the `/exit`+restart cycle** — i.e. unpersisted state
