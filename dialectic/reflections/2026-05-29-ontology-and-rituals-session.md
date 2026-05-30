@@ -1,14 +1,14 @@
 # dyad-steward — Practice Reflection — 2026-05-29 — rituals + Dyad-UI ontology
 
-> **Status: DRAFT (Steward-side).** Awaiting Operator POV → Steward falsification → integration →
-> ratification (four-step form). Form: **Continue / Start / Stop**, two-substrate-paired. Second
+> **Status: INTEGRATED — awaiting Operator final ratification.** Operator POV: "No POV" on all
+> three sections (valid per the form; Steward-side details stand) — no POV to falsify. Form: **Continue / Start / Stop**, two-substrate-paired. Second
 > reflection of the day; the first (`…-grounding-and-dfd-session.md`) covered the grounding + DFD-
 > frame arc. This one covers the Reflection-Discipline triangulation, the boundary-ritual taxonomy,
 > the Dyad-UI ontology, and the repo gaining a remote. Triggered by **Stand Down**.
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** No POV (Steward-side details stand).
 
 **Details (Steward):**
 - **Grounding outward before defining.** Triangulating the Reflection Discipline from two siblings
@@ -23,7 +23,7 @@
 
 ## 2. START — what to do better
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** No POV (Steward-side details stand).
 
 **Details (Steward):**
 - **Define the Ideation Framing Discipline.** We now have a *named gap*: `[IDEATE]` has no codified
@@ -37,7 +37,7 @@
 
 ## 3. STOP — what hurt (or almost did)
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** No POV (Steward-side details stand).
 
 **Details (Steward):**
 - **Over-naming temptation.** I nearly carried three first-class names (DFT / DF-UI / DFD); the
