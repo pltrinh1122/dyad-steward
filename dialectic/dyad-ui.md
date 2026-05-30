@@ -2,10 +2,9 @@
 
 > **Status: in-flight. Not settled.** Lives here while being attacked. The **`DF-UI (show)` /
 > `DFD (flow)` pairing is RESOLVED-CORE** (pinned 2026-05-29 via Steward Operator gate); the
-> **marker taxonomy** is RESOLVED-candidate (2026-05-30, node M); the Ideation region's flow (node
-> I) remains open attack-surface. Anchor §Vocabulary canonicalization **deferred**
-> until the surrounding structure settles. Opened 2026-05-29 from an `[IDEATE]`/`[ALIGN]`/`[NOTE]`
-> chain.
+> **marker taxonomy** is RESOLVED-candidate (2026-05-30, node M); the **Ideation region** is
+> RATIFIED (node I — `IF-UI` show / `IFD` flow, region parity with `DF-UI`/`DFD`). Anchor
+> §Vocabulary now carries the cluster. Opened 2026-05-29 from an `[IDEATE]`/`[ALIGN]`/`[NOTE]` chain.
 
 ## The candidate — what "Dyad UI" is
 
@@ -25,7 +24,7 @@ Dyad UI  (framing/signaling layer — NOT the payload)
 │     context: {HEALER OPERATOR} and other {HAT} declarations
 └─ Framing regions — one per kind of exchange; each region is a (show, flow) pair:
       Decision-framing region →  DF-UI (show)  governed by  DFD (flow)
-      Ideation-framing region →  DFD-spine −CTA ×N (show)  governed by  Ideation Framing Discipline
+      Ideation-framing region →  IF-UI (show)  governed by  IFD (flow)
       Reflection region       →  CSS form (show) governed by Reflection Discipline (flow)
 ```
 
@@ -110,9 +109,10 @@ practice → collapse to one name).
 
 ## Open questions (attack surface)
 
-- **Ideation Framing Discipline** — **defined** (node I, 2026-05-30): show = *DFD-spine − CTA × N
-  candidates*; flow = *diverge ≥2 → falsify each (mandatory) → converge open (spawn, never
-  auto-CTA)*. Full cycle: `ideation-framing.md`.
+- **Ideation region** — **RATIFIED** (node I, 2026-05-30): show **`IF-UI`** = *`DF-UI` − CTA +
+  provenance-tagged N candidates*; flow **`IFD`** = *falsification invariant; divergence slides
+  Agent→Operator across 0/1/2+ input; converge open, never auto-CTA*. **Region parity** with
+  `DF-UI`/`DFD`. Full cycle: `ideation-framing.md`.
 - **Marker taxonomy** — **RESOLVED-candidate** (see §Marker taxonomy above): the binary split into
   two orthogonal properties (opens-a-region? × carries-an-obligation?). Remaining attack: does
   `[ALIGN]` stay one re-entrant marker or split into two?

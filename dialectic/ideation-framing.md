@@ -1,9 +1,11 @@
-# Ideation Framing Discipline — the `[IDEATE]` region's show/flow — LIVE CYCLE
+# Ideation Framing Discipline (IFD) — show `IF-UI` / flow `IFD` — LIVE CYCLE
 
-> **Status: in-flight. Not settled.** The Generate-family counterpart to **DFD** (the Validate-family
-> decision discipline). Opened 2026-05-30 as **node I** of the NBA→DFD loop (`nba-dag.md`), unblocked
-> when node M classed `[IDEATE]` as an *opener*. Distilled from this session's ~7 lived `[IDEATE]`s,
-> not invented. Sibling to `../kb/dfd.md`; resolves the open question in `dyad-ui.md` §Ideation region.
+> **Status: RATIFIED 2026-05-30** (Steward Operator gate). The Generate-family counterpart to **DFD**
+> (the Validate-family decision discipline): **`IF-UI` (show) / `IFD` (flow)** mirrors **`DF-UI` /
+> `DFD`**. Opened same day as **node I** of the NBA→DFD loop (`nba-dag.md`), unblocked when node M
+> classed `[IDEATE]` as an *opener*; ratified across three folded refinements (divergence amendment →
+> 0/1/2+ cardinality axis → `IF-UI` naming). Distilled from ~7 lived `[IDEATE]`s, not invented. Stays
+> a **live cycle** (ratified ≠ settled-to-`kb/`): n=1 session of evidence, still under attack.
 
 ## The candidate — what governs an exploration
 
@@ -12,33 +14,43 @@ decisions, not explorations; `[IDEATE]` stays open*). Where DFD moves the Operat
 **validating** (cheap Y/N), Ideation Framing moves an exploration from a diffuse prompt to a
 **survivor candidate** — under genuine falsification — that then *spawns* into another region.
 
-## The show — *economical*: DFD's spine, minus the CTA, times N candidates
+## The show — `IF-UI`: DFD's spine, minus the CTA, times N candidates
 
-The decisive result: **the Ideation region needs almost no new vocabulary.** It reuses DFD's
-dialectical spine and differs on exactly two axes:
+`IF-UI` (Ideation-Framing UI) is the ideation region's **show**, the counterpart to `DF-UI`. The
+decisive result: **it needs almost no new vocabulary** — it reuses DFD's dialectical spine and
+differs on exactly two axes:
 
-| | **DFD (decision region)** | **Ideation (exploration region)** |
+| | **DF-UI** (decision show) | **IF-UI** (ideation show) |
 |---|---|---|
 | spine | `[THESIS]` · `[ANTI-THESIS]` · `[SYNTHESIS]` | *same* |
-| **cardinality** | **one** proposed disposition | **many** candidate theses (diverge — the "X vs Y" shape) |
+| **cardinality** | **one** proposed disposition | **N** candidate theses, **provenance-tagged** (Operator-given vs Agent-generated) |
 | **terminus** | **`[CTA·Y/N]`** — a dispose | **no CTA** — ends *open*, naming its **spawn** |
 
-So: **Ideation show = DFD show − `[CTA]` + multiplicity.** This deliberately adds **no** new
-first-class bracketed markers (honoring the session's STOP lesson on over-naming). The two regions
-share the dialectic; they differ only in *how many candidates* and *how they terminate*.
+So: **`IF-UI` = `DF-UI` − `[CTA]` + provenance-tagged multiplicity.** No new bracketed markers
+(honoring the STOP lesson on over-naming); `IF-UI` names an *already-structural* show-slot, not a new
+layer. **Self-sufficient** (decidable-in-flow), the same property `DF-UI` earned. The provenance tag
+is what lets the show render the **0 / 1 / 2+** input cases (see flow) visibly.
 
-## The flow — three moves, falsification mandatory
+## The flow — falsification is the invariant; divergence slides by input cardinality
 
-1. **Diverge** — generate **≥2** candidates (don't author one and defend it; the lived shape was
-   always "A vs B vs C": Time-Out vs Intermission; Dyad-UI vs Dyadic-Cycle-UI vs DUI; DFT vs DF-UI).
-2. **Falsify each — mandatory, even unbidden.** Un-falsified generation is **1+1=2** (the Agent just
-   agreeing/expanding = brainstorming, not dialectic). This is the discipline's load-bearing guard,
-   the mirror of DFD's "never rubber-stamp." *(The Operator often said "Falsify" explicitly — the
-   discipline bakes it in so it fires without the prompt.)*
-3. **Converge open** — surface the survivor as a proposal **that stays open**, and name its **spawn**:
-   → becomes a `[CTA]`/DFD · → pinned via `[ALIGN]` · → opens a live cycle · → stays `[IDEATE]` ·
-   → dropped. **Never auto-migrate to a `[CTA]`** — only convergence (or the Operator's signal) moves
-   an exploration into a decision. Forcing the Y/N early is the collapse this discipline guards.
+The discipline must work whatever grounding the Operator brings. **Falsification is mandatory at
+every cardinality; only *who supplies the divergence* moves** — monotonically Agent→Operator as
+grounding rises:
+
+| Operator input | Agent's move | Divergence source | Falsify? |
+|---|---|---|---|
+| **0 — grounding-free** (a topic / open question) | **generate ≥2** candidates, then falsify each | **Agent** — no anchor given, so the Agent owes the whole contest | **mandatory** |
+| **1 — one choice** (`[IDEATE] X. Falsify.`) | falsify X; *optionally* add a foil to contest it | optional | **mandatory** |
+| **2+ — choices given** (`X vs Y vs Z`) | falsify across the set, converge | **Operator** | **mandatory** |
+
+Then, always: **converge open** — surface the survivor as a proposal **that stays open**, naming its
+**spawn**: → a `[CTA]`/DFD · → `[ALIGN]` pin · → a live cycle · → stays `[IDEATE]` · → dropped.
+**Never auto-migrate to a `[CTA]`** — only convergence (or the Operator's signal) moves an exploration
+into a decision. Forcing the Y/N early is the collapse this discipline guards.
+
+> **The invariant is falsification, not divergence.** My first draft made "diverge ≥2" mandatory —
+> that was the *0-grounding row* over-generalized to all three. At 2+ the Operator already diverged;
+> at 1 a single survived candidate is legitimate. What never relaxes is the genuine attack.
 
 ## Falsifiable claim
 
@@ -74,10 +86,14 @@ cycle opened) more often than they evaporate.
 
 ## Open questions (attack surface)
 
-- **Is the reused spine truly enough**, or will the Ideation show eventually need one native name
-  (e.g. for the candidate-set itself)? Hold in reserve like DFT; promote only on demonstrated need.
-- **Diverge minimum** — always ≥2 candidates, or can a single-candidate falsification count as
-  ideation (e.g. the Operator's "X. Falsify" with one X)?
+- ~~**Diverge minimum**~~ **RESOLVED** (cardinality axis): falsification is the invariant; divergence
+  is supplied by whichever half has it (Agent at 0, optional at 1, Operator at 2+). A single survived
+  candidate is legitimate ideation.
+- **Provenance-tag mechanics** — how does `IF-UI` *visibly* mark Operator-given vs Agent-generated
+  candidates without bloating the show? (The decidable-in-flow constraint bounds it.)
+- **Over-naming watch** — `IF-UI` is the second `-UI`; the `dyad-ui.md` refutation fires if a *third*
+  region wants a show-name and the split stops earning its keep. (So far confirming: the Operator
+  reached for `IF-UI` unprompted = the positive test.)
 - **Generalization** — Steward-specific, or a form-library candidate for every Dyad (with DFD)?
 
 ## Forward

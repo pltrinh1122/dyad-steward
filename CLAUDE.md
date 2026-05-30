@@ -113,9 +113,10 @@ Inherited but locally load-bearing: **`Telos`**.
 - `marker taxonomy`° — markers cut on two orthogonal axes: **opens-a-region?** × **carries-an-
   obligation?** (`[IDEATE]`/`[CTA]`/`[REFLECTION]` openers; `[FEEDBACK]`/`[NOTE]`/`[BTW]` modifiers;
   `[ALIGN]` re-entrant). → `dyad-ui.md` §Marker taxonomy (live)
-- `Ideation Framing Discipline` — the Generate-family twin of DFD governing `[IDEATE]`: show =
-  *DFD-spine − CTA × N candidates*; flow = *diverge ≥2 → falsify each → converge open*.
-  → `dialectic/ideation-framing.md` (live)
+- `IF-UI (show)` / `IFD (flow)` — the **Ideation Framing** region, Generate-family twin of
+  `DF-UI`/`DFD` governing `[IDEATE]`: show = *`DF-UI` − CTA + provenance-tagged N candidates*; flow =
+  *falsification invariant; divergence slides Agent→Operator across 0/1/2+ input; converge open*.
+  → `dialectic/ideation-framing.md` (live, RATIFIED)
 - `NBA → DFD` — next-best-action as a **composed loop**: the DAG computes the **ready-set** (math),
   DFD **disposes** the pick (Operator) — eligibility is automated, "best" never is.
   → `dialectic/nba-dag.md` (live)
