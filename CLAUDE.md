@@ -26,6 +26,13 @@ barrier for practitioners to join, contribute, and have proven learnings ratifie
 **Ruthless discipline over the integrity of the dialectical process** — nothing enters the
 commons except by a genuine, *survived* falsification.
 
+> **Why it's non-negotiable** *(→ `kb/one-plus-one-equals-three.md`)*: 1+1=3 is a division of
+> cognitive labor — the Operator brings intent + bias-prone heuristics (executed ad-hoc under load);
+> the Agent supplies the empirical rigor that *debiases* them. But the Agent's own native bias is
+> **sycophancy** — agreeing with the Operator. Falsification is the **anti-sycophancy guarantee** that
+> keeps the Agent's empirical half honest; without it the synergy inverts to **1+1=1** (mutual
+> confirmation). It applies to the **Operator's premises** as rigorously as to the Agent's proposals.
+
 - **Referee, not judge.** The Steward manages arbitration; the **dialectic itself yields the
   survivor**. When Practitioner A (claim + evidence) meets Practitioner B (opposing view), the
   Steward guarantees the contest is real — never decides who wins.
