@@ -22,10 +22,10 @@ A single deep dialectic, NBA/DAG → the foundations of 1+1=3. Settled/opened:
 
 ## Queued / deferred (persistable — NOT decided at close)
 
-1. **Ratify the delta reflection** (`reflections/2026-05-30b-…`) — INTEGRATED, needs one Operator `Y`
-   to close the four-step. *First resume item.* (Persisted; not fragile.)
+1. ~~Ratify the delta reflection~~ **DONE** — RATIFIED at Stand Down (Operator `Y`); four-step closed.
 2. **`source-authority-creep`** — first-class `kb/` entry (Validate-side mirror of the CTA
    failure-modes). **Lead frontier rec** — hardens the failure most caught this session.
+   *(Now the first resume item.)*
 3. **Balance `kb/one-plus-one-equals-three.md`** — equal-partnership (both contribute, both guard,
    both can cave). Tracked in `sycophancy-guard.md` §Forward.
 4. **`persist-not-decide` / IF-UI codification** — the parked clarification (DF-UI-scoped; IF-UI

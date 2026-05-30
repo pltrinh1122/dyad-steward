@@ -1,10 +1,9 @@
 # dyad-steward — Practice Reflection (delta) — 2026-05-30b — IF-UI recommend-vs-decide + bilateral sycophancy
 
-> **Status: INTEGRATED, awaiting ratification** (four-step: draft → Operator POV → Steward falsifies
-> POV → integrate + ratify). CONTINUE-only Operator POV per the refined form — START/STOP delivered
-> real-time as `[FEEDBACK]`, shared. Triggered by a **second Intermission**. **Delta reflection** —
-> covers only what's *new* since `2026-05-30-nba-and-empirical-debiasing.md` (reference, don't
-> restate). Thin segment; light by design.
+> **Status: RATIFIED 2026-05-30** (Steward Operator gate; four-step closed at Stand Down). CONTINUE-only
+> Operator POV per the refined form — START/STOP delivered real-time as `[FEEDBACK]`, shared. Triggered
+> by a **second Intermission**. **Delta reflection** — covers only what's *new* since
+> `2026-05-30-nba-and-empirical-debiasing.md` (reference, don't restate). Thin segment; light by design.
 
 ## Discipline-test this raises (flagged honestly)
 
