@@ -74,17 +74,26 @@ The Human **declares the hat** each engagement:
   into `kb/` and fed back to sharpen our processes. Falsifiable test: *velocity toward the Telos
   rising.* **(metric: DEFERRED to first real stewardship cycle.)**
 - **Decision-Framing Discipline (DFD)** — when surfacing a decision to the Operator, frame it as
-  **`[CTA]` / `[NARRATIVE-SUMMARY]` / `[CLAIM · EVIDENCE · SELF-ATTACK · REFERENCE]`**, one
-  decision per frame. Moves the Operator from *authoring* (costly) to *validating* (cheap).
-  **The `[CTA]` is addressed TO the Operator — it names the disposition you're asked to make
-  (imperative/question: "Ratify X?" / "Decline Y?"), never the Agent's own next action.** A CTA
-  written in Agent-voice ("re-route our…", "I'll resolve…") quietly collapses proposer→disposer —
-  the 1+1=2 the NON-NEGOTIABLE guards. **The CTA must be answerable Y/N** — a *single* proposed
-  disposition, ratify or decline. Never an "A or B?" either/or: that forces the Operator back into
-  *authoring* a choice (the cost DFD removes). When genuine alternatives exist, the Agent proposes
-  the recommended one as the Y; the alternatives live in the SELF-ATTACK, not the CTA. **The SELF-ATTACK is mandatory** — without it DFD degrades
-  into rubber-stamp (1+1=2), betraying the NON-NEGOTIABLE. Governs *decisions*, not *explorations*
-  (`[IDEATE]` stays open).
+  **`[CTA·Y/N]` / `[THESIS]` / `[ANTI-THESIS]` / `[SYNTHESIS]` → ref**, one decision per frame.
+  Moves the Operator from *authoring* (costly) to *validating* (cheap). The four slots, native to
+  our 1+1=3 vocabulary:
+  - **`[CTA·Y/N]`** — the dispose-request, addressed TO the Operator: a *single* disposition,
+    answerable **Y/N** ("Ratify X?" / "Decline Y?"). **Never Agent-voice** ("re-route our…",
+    "I'll resolve…") and **never an "A or B?" either/or** — both quietly migrate cost back to the
+    Operator (authoring, or the dispose itself), the 1+1=2 the NON-NEGOTIABLE guards. Genuine
+    alternatives go in the ANTI-THESIS, not the CTA.
+  - **`[THESIS]`** — the proposed disposition's case, *evidence folded in* (was CLAIM·EVIDENCE;
+    NARRATIVE-SUMMARY absorbed here).
+  - **`[ANTI-THESIS]`** — the strongest counter, evidence folded in. **Mandatory** — without it
+    DFD degrades into rubber-stamp (1+1=2), betraying the NON-NEGOTIABLE.
+  - **`[SYNTHESIS]`** — **mandatory slot, Agent-*proposed* reconciliation** (a Generate-family
+    candidate +1; grafts the surviving bits of the anti-thesis). It is orthogonal to the CTA:
+    SYNTHESIS is the *content proposed*, the CTA's Y/N is the Operator's *dispose* on it — the CTA
+    is precisely what keeps a synthesis a proposal and not a verdict. Present it even when thin;
+    omitting it (the Agent's old habit) silently drops a half of the dyad's generate move.
+  - **→ ref** — trailing inline pointer (the audit trail; never dropped).
+
+  Governs *decisions*, not *explorations* (`[IDEATE]` stays open).
 
 ## Vocabulary (added to the form's seed; see form §Terms for canon)
 

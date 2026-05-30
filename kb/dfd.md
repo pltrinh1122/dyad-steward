@@ -9,9 +9,11 @@ how it was earned.*
 **DFD's `[CTA]` is the component that fails first under pressure — and it always fails the same
 way: by quietly migrating decision-cost back onto the Operator.** DFD's whole purpose is to move
 the Operator from *authoring* (costly) to *validating* (cheap). The CTA is where that purpose is
-either delivered or betrayed. Every other component (CLAIM/EVIDENCE/SELF-ATTACK/REFERENCE)
-supplies the Operator's validation; the CTA is the ask itself, so a malformed CTA defeats the
-frame no matter how good the rest is.
+either delivered or betrayed. The other slots (THESIS / ANTI-THESIS / SYNTHESIS / ref) supply the
+Operator's validation; the CTA is the ask itself, so a malformed CTA defeats the frame no matter
+how good the rest is. *(The frame has since evolved to `[CTA·Y/N] / [THESIS] / [ANTI-THESIS] /
+[SYNTHESIS] → ref` — see `../CLAUDE.md` §DFD; the failure-modes below predate the rename but
+transfer directly.)*
 
 ## The two failure-modes (each caught in real use, 2026-05-29)
 
@@ -24,23 +26,38 @@ frame no matter how good the rest is.
    *author* a selection — re-importing the very cost DFD removes. A two-option ask looks like
    validation but is disguised authoring.
    **Fix:** the CTA proposes a *single* disposition, answerable **Y/N**. Genuine alternatives go
-   in the SELF-ATTACK; the recommended path is the Y.
+   in the ANTI-THESIS; the recommended path is the Y.
+
+3. **Omitted SYNTHESIS** — surfacing a frame with thesis + anti-thesis but *no* proposed
+   reconciliation (the Agent's pre-rename habit, caught while ratifying the four-slot frame). Drops
+   a half of the dyad's **Generate** move: the Agent stops at staging the contest and never offers
+   the candidate +1 that grafts the anti-thesis's surviving bits.
+   **Fix:** SYNTHESIS is a *mandatory slot*, present even when thin.
+   **Doctrinal correction this earned:** an earlier pass reasoned "the synthesis must *be* the
+   Operator's Y/N" — an over-collapse. Falsified in use: **SYNTHESIS ⊥ CTA.** SYNTHESIS is the
+   Agent-*proposed* content (Generate); the CTA's Y/N is the Operator's *dispose* on it (Validate).
+   They are orthogonal, and the CTA is exactly what keeps a synthesis a *proposal*, not a verdict —
+   so a synthesis no longer threatens the gate the way the first reasoning feared.
 
 ## Why they're the same failure
 
-Both are the same drift wearing two masks: **cost silently flowing from Agent back to Operator.**
-Agent-voice steals the *dispose*; either/or steals the *authoring-avoidance*. The guard is one
-test, applied to every CTA before surfacing:
+Modes 1–2 are one drift wearing two masks: **cost silently flowing from Agent back to Operator**
+(Agent-voice steals the *dispose*; either/or steals the *authoring-avoidance*). Mode 3 is the
+mirror drift on the Generate side: the Agent under-supplies its own half. Both directions are
+caught by asking, of every frame before surfacing:
 
-> **Can the Operator dispose of this with a single "Y" or "N", and is the disposition theirs to
-> make rather than mine?** If no on either count, the CTA is malformed — reframe before surfacing.
+> **Can the Operator dispose of this with a single "Y" or "N", is the disposition theirs (not
+> mine) to make, and have I supplied my full generate half (a SYNTHESIS, not just the contest)?**
+> If no on any count, the frame is malformed — reframe before surfacing.
 
 ## Falsification status
 
-**Survived.** Two independent Operator corrections converged on the same component and the same
-direction (cheaper Operator dispose). Convergence-from-independent-attacks is the signal that
-promoted this from `../dialectic/` straight to settled. Re-open if a future CTA fails in a *new*
-way the one-test above doesn't catch — that would be a third failure-mode, not a refutation.
+**Survived, and grew.** Three Operator corrections, caught across one session (2026-05-29):
+the first two converged on the CTA (cheaper Operator dispose); the third — predicted by this
+file's own earlier note that a *new* failure-mode would extend rather than refute it — landed
+exactly there, on the Generate side (omitted synthesis), and also overturned an over-collapse in
+the prior reasoning (SYNTHESIS ⊥ CTA). The pattern holds: each attack extended the lesson, none
+refuted it. Re-open if a frame fails in a way the three-part guard above doesn't catch.
 
 ## Forward
 
