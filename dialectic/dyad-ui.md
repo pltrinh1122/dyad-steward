@@ -49,6 +49,15 @@ turned into a mnemonic:
 - Falsification survived: *does show/flow leave anything homeless?* No — the **markers** are a
   separate Dyad-UI sub-layer (Operator invocation), so show/flow precisely names **a framing
   region**, not the whole Dyad UI. Nothing homeless, no overlap.
+- **DF-UI self-sufficiency** *(ratified 2026-05-30)*: the show must be **decidable in-flow** — its
+  `[THESIS]` *renders* the disposed content's **decidable core**, and every `→ ref` is
+  **path-correct and supplementary** (audit/verification, never the sole home of what's disposed).
+  When the dispose is *on a document*, render that document's decidable core in-flow, **not** a
+  pointer to it — but render the *core*, not the whole artifact (full-inline re-bloats the show).
+  *Earned:* a CTA referenced `ideation-framing.md` (wrong path — it's `dialectic/…` — and the
+  content lived only in-file) → the Operator was blocked from reviewing in-flow → decision-cost
+  migrated back (retrieve + locate + read). Same 1+1=2 drift as the CTA failure-modes in
+  `../kb/dfd.md`, on the *show* surface.
 
 ## Marker taxonomy — RESOLVED-candidate (2026-05-30, via NBA→DFD loop, node M)
 

@@ -47,25 +47,41 @@ transfer directly.)*
    them one at a time as each clears. A non-CTA ask bundled with a CTA dilutes the CTA — keep the
    surface single-ask.
 
+5. **Decidable-out-of-flow surface** (DF-UI self-sufficiency; caught 2026-05-30) — surfacing a CTA
+   whose disposed content lives only in a referenced artifact, not *rendered in the show* — worse
+   when the `→ ref` is path-wrong. The Operator is forced out-of-band to retrieve, locate, and read
+   before they can dispose. *Lived:* a CTA pointed to `ideation-framing.md` (wrong path; full
+   content in-file only) → the Operator was **blocked from reviewing in-flow**.
+   **Fix:** the show must be **decidable in-flow** — the `[THESIS]` renders the disposed content's
+   *decidable core*; every `→ ref` is **path-correct and supplementary**, never the sole home of
+   what's disposed. When the dispose is *on a document*, render its decidable core in-flow — the
+   *core*, not the whole artifact (full-inline re-bloats the show; see mode-adjacent "too busy").
+
 ## Why they're the same failure
 
-Modes 1–2 and 4 are one drift wearing three masks: **cost silently flowing from Agent back to
+Modes 1–2, 4, and 5 are one drift wearing four masks: **cost silently flowing from Agent back to
 Operator** (Agent-voice steals the *dispose*; either/or steals the *authoring-avoidance*; multiple
-asks steal the *prioritization*). Mode 3 is the mirror drift on the Generate side: the Agent
-under-supplies its own half. All are caught by asking, of every surface before sending:
+asks steal the *prioritization*; decidable-out-of-flow steals the *retrieval*). Mode 3 is the mirror
+drift on the Generate side: the Agent under-supplies its own half. All are caught by asking, of every
+surface before sending:
 
-> **Is there exactly ONE ask here; can the Operator dispose of it with a single "Y" or "N"; is the
-> disposition theirs (not mine) to make; and have I supplied my full generate half (a SYNTHESIS,
-> not just the contest)?** If no on any count, the surface is malformed — reframe before sending.
+> **Is there exactly ONE ask here; can the Operator dispose of it with a single "Y" or "N"
+> *without leaving the flow* (THESIS renders the decidable core; refs are correct + supplementary);
+> is the disposition theirs (not mine) to make; and have I supplied my full generate half (a
+> SYNTHESIS, not just the contest)?** If no on any count, the surface is malformed — reframe before
+> sending.
 
 ## Falsification status
 
-**Survived, and grew.** Three Operator corrections, caught across one session (2026-05-29):
-the first two converged on the CTA (cheaper Operator dispose); the third — predicted by this
-file's own earlier note that a *new* failure-mode would extend rather than refute it — landed
-exactly there, on the Generate side (omitted synthesis), and also overturned an over-collapse in
-the prior reasoning (SYNTHESIS ⊥ CTA). The pattern holds: each attack extended the lesson, none
-refuted it. Re-open if a frame fails in a way the three-part guard above doesn't catch.
+**Survived, and grew — twice.** Five corrections across two sessions. *2026-05-29:* the first two
+converged on the CTA (cheaper Operator dispose); the third — predicted by this file's own earlier
+note that a *new* failure-mode would extend rather than refute it — landed on the Generate side
+(omitted synthesis) and overturned an over-collapse (SYNTHESIS ⊥ CTA); the fourth (multiple asks)
+extended the cost-migration drift to *prioritization*. *2026-05-30:* the fifth (decidable-out-of-flow)
+extended the **same drift to a new surface** — not the CTA but the **show** (DF-UI self-sufficiency):
+cost migrating back as *retrieval*. The pattern holds: each attack extended the lesson, none refuted
+it — and it has now jumped from the CTA slot to the show, confirming the drift is a property of the
+*whole surface*, not one slot. Re-open if a frame fails in a way the guard above doesn't catch.
 
 ## Forward
 
