@@ -44,7 +44,7 @@ A Reflection makes validated *positive* patterns (not just corrections) survive 
 and feeds them back to sharpen our processes (the Learning Discipline's harvest). *Test:* lessons
 surfaced in a Reflection later appear codified in `kb/` or the anchor.
 
-**Refuted if** (borrowed from dz-cil's *framework-is-falsifiable* idea):
+**Refuted if** (borrowed from `dyad-wu-wei`'s — *was `dz-cil`* — *framework-is-falsifiable* idea):
 - **Drift from form** — Operator-narrative consistently missing (loop not closing two-substrate).
 - **Frequency mismatch** — Reflections become frequent (per-cycle) or vanish for months (trigger
   mis-tuned).
@@ -63,7 +63,7 @@ First instance practiced end-to-end through all four steps and **RATIFIED**:
 - **dyad-healer** (`kb/practice-reflection.md`): CSS form, two-substrate pairing, four-step
   integration, Reflection-before-Stand-Down sequencing, natural-vs-explicit triggers. **Primary
   source** — closest fit to our human-dialectic cadence.
-- **dz-cil** (SHAR / Epistemic Retrospective, `artifacts/`): telemetric, per-execution-path,
+- **dyad-wu-wei** *(was `dz-cil`)* (SHAR / Epistemic Retrospective, `artifacts/`): telemetric, per-execution-path,
   4-tier anomaly taxonomy + RCA + framework-self-falsification. **Borrowed:** the
   *framework-is-falsifiable* self-test (the refutation list above). Rest is a poor fit (built for
   autonomous-loop execution we don't run).

@@ -153,5 +153,7 @@ orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived fa
 ## Cross-references
 
 - **Parent form (G0):** <https://github.com/pltrinh1122/the-dyad-practice>
-- **Sibling dyads (our first constituents):** `dyad-healer`, `dz-cil`, `dz-ta` (local siblings)
+- **Sibling dyads (our first constituents):** `dyad-healer`, `dyad-wu-wei` *(was `dz-cil` — GitHub
+  rename-redirect confirms; not the assumed `dyad-cil`)*. *(Prior `dz-ta` resolves to no current repo —
+  name/status TBC with Operator; not invented.)*
 - **Form-PR-gate:** the founding Operator handles form-level contributions (form §Governance).
