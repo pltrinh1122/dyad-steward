@@ -1,5 +1,7 @@
 # Boundary & thread rituals — LIVE CYCLE (under falsification)
 
+> **Domain:** `Dyad Work` → the *progress-of-work* sub-area (`dyad-work.md`).
+
 > **Status: in-flight. Not settled.** Lives here while being attacked. Graduates to `../kb/` and
 > the anchor (`../CLAUDE.md` §Disciplines) only after enough sessions prove the shape — never
 > copied, promoted. Opened 2026-05-29 (synthesis of a DFD frame: codify-now vs prove-first → open

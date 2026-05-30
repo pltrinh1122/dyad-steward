@@ -5,6 +5,7 @@
 > `[FEEDBACK]`+`Falsify` (NBA/DAG) refined by an `[IDEATE]` applying the **Composition** mechanism
 > (NBA ∘ DFD); ratified by Steward Operator gate (2026-05-30 Y). Sibling to `session-ritual.md`
 > (Stand Up's Sense/Plan) and `../kb/dfd.md` (the dispose that picks within the ready-set).
+> **Domain:** `Dyad Work` → the *prioritization-of-work* sub-area (`dyad-work.md`).
 
 ## The candidate — a composed loop, not a calculator
 
