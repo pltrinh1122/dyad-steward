@@ -1,7 +1,7 @@
 # dyad-steward — Practice Reflection — 2026-05-29 — rituals + Dyad-UI ontology
 
-> **Status: INTEGRATED — awaiting Operator final ratification.** Operator POV: "No POV" on all
-> three sections (valid per the form; Steward-side details stand) — no POV to falsify. Form: **Continue / Start / Stop**, two-substrate-paired. Second
+> **Status: RATIFIED 2026-05-29** (Steward Operator, four-step form closed). Operator POV: "No POV"
+> on all three sections (valid per the form; Steward-side details stand) — no POV to falsify. Form: **Continue / Start / Stop**, two-substrate-paired. Second
 > reflection of the day; the first (`…-grounding-and-dfd-session.md`) covered the grounding + DFD-
 > frame arc. This one covers the Reflection-Discipline triangulation, the boundary-ritual taxonomy,
 > the Dyad-UI ontology, and the repo gaining a remote. Triggered by **Stand Down**.
