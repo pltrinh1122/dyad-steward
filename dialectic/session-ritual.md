@@ -22,6 +22,14 @@ Cut by **scope + trigger + terminality**. Each casts onto a SPAOR phase at a bou
 Down). Defined in its own live cycle: **`reflection-discipline.md`**. Time-Out carries at most a
 minimal "where was I" save, **not** a CSS reflection.
 
+**Stand Down persists; it does not decide** (Operator feedback, 2026-05-29). At close, surface a
+**`[CTA]` only for work too fragile to survive the `/exit`+restart cycle** — i.e. unpersisted state
+that would be *lost*. Everything else (substantive decisions that can wait — vocab promotions,
+discipline definitions, open dialectics) is **written to the stand-down log as queued/deferred and
+picked up next session**, never forced as a closing CTA. *Lived: the vocab-promotion CTA raised at
+this session's close was persistable (already queued in `dyad-ui.md`) → withdrawn; it belonged in
+the log, not the gate.*
+
 ## Falsifiable claim
 
 **The rituals make the next unit of work cheaper / safer than their absence would.** Stand Up
