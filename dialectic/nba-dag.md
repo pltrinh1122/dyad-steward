@@ -57,6 +57,28 @@ already-pinned DF-UI/DFD pair, eligible-but-low-value = the honest runner-up).
 > **downstream**. **The loop overturned my own NBA on its first real application** — synergy shown
 > through a survived falsification, not asserted.
 
+## Loop mechanics — the two gates (sequencing ≠ content)
+
+**The NBA→DFD CTA authorizes *which node* to work — that is a *sequencing* dispose, not a *content*
+one.** A node whose output is a **settled artifact** (a discipline, a definition — DISPOSE-family
+terminus) then owes a **second, content** dispose before it is truly complete:
+
+| Node terminus | Gates owed |
+|---|---|
+| **DISPOSE-family** (produces a settled artifact) | **two** — sequencing-CTA (do it next?) **then** content-CTA (is the result right?) |
+| **EXPLORE-family** (an exploration) | one — converges *open*, no dispose (IFD) |
+| **mechanical** (action = content, e.g. "promote this vocab") | one — sequencing-Y *is* the content-Y |
+
+The two are **sequential gates, not simultaneous asks** (so the single-CTA discipline holds): the
+sequencing-CTA authorizes the work; the content-CTA fires *after* the artifact exists, rendered
+decidable-in-flow. The cost (a second dispose on generative nodes) is **necessary** — skipping it is
+exactly the bug below.
+
+> **Lived (2026-05-30):** nodes **M** (marker taxonomy) and **I** (IFD) were *committed on their
+> sequencing-Y's* — I treated "work on I next" as license to author **and** enshrine I. The Operator
+> caught it: *"Did I ratify the Ideation Framing Discipline?"* No — only the sequencing. The fix is
+> **naming the second gate so it can't be skipped**, not adding fewer disposes.
+
 ## Falsifiable claim
 
 The composed loop makes the next unit of a multi-activity job **cheaper and safer** than picking by
