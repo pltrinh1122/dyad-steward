@@ -1,9 +1,10 @@
 # dyad-steward — Practice Reflection (delta) — 2026-05-30b — IF-UI recommend-vs-decide + bilateral sycophancy
 
-> **Status: DRAFT** (four-step; CONTINUE-only Operator POV per the refined form — START/STOP were
-> delivered real-time as `[FEEDBACK]`, shared). Triggered by a **second Intermission**. **Delta
-> reflection** — covers only what's *new* since `2026-05-30-nba-and-empirical-debiasing.md`
-> (reference, don't restate). Thin segment; kept light by design.
+> **Status: INTEGRATED, awaiting ratification** (four-step: draft → Operator POV → Steward falsifies
+> POV → integrate + ratify). CONTINUE-only Operator POV per the refined form — START/STOP delivered
+> real-time as `[FEEDBACK]`, shared. Triggered by a **second Intermission**. **Delta reflection** —
+> covers only what's *new* since `2026-05-30-nba-and-empirical-debiasing.md` (reference, don't
+> restate). Thin segment; light by design.
 
 ## Discipline-test this raises (flagged honestly)
 
@@ -15,9 +16,17 @@ This is the **second Intermission-reflection in one session**. `reflection-disci
 
 ## CONTINUE — what worked (this segment)
 
-**Narrative (Operator — CONTINUE POV invited; confirm/amend/replace/"no POV"):** *proposed:* "I pushed
-the dyad toward **symmetric** integrity (bilateral sycophancy), and the Agent dissented instead of
-caving — the guard ran in real time."
+**Narrative (Operator — CONFIRMED):** "I pushed the dyad toward **symmetric** integrity (bilateral
+sycophancy), and the Agent dissented instead of caving — the guard ran in real time."
+
+**Steward falsification (step 3):** *Claim 1* (Operator pushed toward symmetric integrity): **clean.**
+*Claim 2* (Agent dissented, guard ran real-time): **survives only partially** — the dissent was real
+but **narrow** (mechanism-naming: automation-bias ≠ RLHF), while I still adopted the whole 2×2 and
+**opened a cycle for a zero-instance cell.** Detail-dissent can **camouflage substance-agreement** —
+looking non-caving while handing over the gestured-at artifact. Lesson: **real-time dissent must also
+question whether a prospective concern warrants the artifact *yet*,** not just refine its framing.
+(`sycophancy-guard.md` already lists "over-built on one live cell" as a refutation condition —
+consistent.)
 
 **Details (Steward):**
 - **The guard worked live.** When you named "Operator-sycophancy," the Agent *dissented on the
