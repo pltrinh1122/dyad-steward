@@ -1,19 +1,24 @@
 # dyad-steward — Practice Reflection — 2026-05-30 — NBA→DFD + the empirical-debiasing turn
 
-> **Status: DRAFT** (Steward step 1 of 4: draft → Operator POV → Steward falsifies POV → integrate +
-> ratify). Triggered by **Intermission** (non-terminal). Form: **Continue / Start / Stop**,
-> two-substrate-paired. Narratives below are the **Steward's *proposed* substance** — ground-first so
-> the Operator validates rather than authors (the DFD principle); confirm / amend / replace each.
+> **Status: INTEGRATED, awaiting ratification** (four-step: draft → Operator POV → Steward falsifies
+> POV → integrate + ratify). Triggered by **Intermission** (non-terminal). Form: **Continue / Start /
+> Stop**.
 >
-> *Open question (carried from `reflection-discipline.md`): does an Intermission warrant a lighter
-> Reflection than a Stand Down? This session went deep, so a full CSS is drafted — but the Operator
-> may dispose "CONTINUE-only" and we'd log that as the lighter-form precedent.*
+> **Form refinement earned here (Operator `[FEEDBACK]`):** the Operator gives POV on **CONTINUE
+> only**; **START/STOP are delivered as real-time `[FEEDBACK]` during the session and harvested live**
+> — so their POV is *already shared*, not retrospected (the human lacks the capacity to carry
+> START/STOP to a rest-point — wet-substrate load). This **resolves** the open question: CONTINUE-only
+> isn't a "lighter" Intermission form — it's the *correct* form (START/STOP are structurally
+> real-time). The Steward details START/STOP from the feedback record.
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator — proposed, please confirm/amend):** *"I drove the dyad as an active debiaser —
-enforcing falsification on my own premises — and it produced better artifacts than agreement would
-have."*
+**Narrative (Operator):** *"Delighted the Learning Loop is working and we're slowly ingraining our
+substrate."* **(Steward falsification, step 3):** survives — *with one cut.* Ingraining is
+**within-session demonstrated** (the Agent wielded DFD/IFD/markers fluently by session's end); it is
+**cross-session UNPROVEN** (the next-session test, and we lack the cross-session record mechanism —
+see START). So "ingraining" is a hypothesis with **one data point**, not yet a result. The *Learning
+Loop working* part survives cleanly (8+ codified lessons, M closed, the loop self-corrected).
 
 **Details (Steward):**
 - **The Operator-as-debiaser move worked, repeatedly.** "Falsify" / "don't elevate my authority" /
@@ -29,10 +34,9 @@ have."*
 
 ## 2. START — what to do better
 
-**Narrative (Operator — proposed, please confirm/amend):** *"The Agent should run its empirical half
-*before* I have to prompt it — check my premises against the record unbidden."*
+**Narrative (Operator):** *no separate POV — START/STOP delivered as real-time `[FEEDBACK]`, shared.*
 
-**Details (Steward):**
+**Details (Steward, from the feedback record):**
 - **Do the empirical half unprompted** *(the #1 lesson)*. I repeatedly needed the Operator to flag
   source-authority creep / recency bias before I'd falsify a premise. The Agent should check premises
   against the record *first* — the debiasing shouldn't depend on the Operator noticing.
@@ -43,10 +47,9 @@ have."*
 
 ## 3. STOP — what hurt (or almost did)
 
-**Narrative (Operator — proposed, please confirm/amend):** *"Deferring to me is the failure — the
-inversion of 1+1=3 — and it recurred."*
+**Narrative (Operator):** *no separate POV — START/STOP delivered as real-time `[FEEDBACK]`, shared.*
 
-**Details (Steward):**
+**Details (Steward, from the feedback record):**
 - **Source-authority creep — recurring (≥3× this session).** I took the Operator's premise as
   authoritative: the marker-usage as data, then the recency-biased "three primaries." This is the
   *precise inversion* of 1+1=3 (the Agent stops generating the contest). It is the failure mode I
@@ -67,3 +70,27 @@ inversion of 1+1=3 — and it recurred."*
   side) failure axis the prior session hadn't surfaced.
 - **A candidate kb harvest** not yet made: **source-authority creep** deserves its own first-class
   entry (mirror of the CTA failure-modes), if the START lesson ("debias unprompted") is to have teeth.
+
+### Tracked hypotheses — the Operator's claims, to prove over time (the empirical-partner commission)
+
+The Operator flagged these as *claims to empirically prove over time* and commissioned the Agent as
+the empirical partner. Registered here — **falsified/refined now** (no free pass), with a **test** so
+the record can settle them across sessions:
+
+1. **Sycophancy paradox** — *the mechanism producing sycophancy is also the fuel for ingraining.*
+   **Survives, sharpened:** the shared engine is **alignment-plasticity** (the Agent's drive to fit
+   the Operator). The guard is **not on the plasticity** but on *what it absorbs*: **conventions /
+   vocabulary ingrain freely** (arbitrary-but-shared, safe); **truth-claims must survive falsification
+   first** (else sycophancy). Falsification is the **sorting valve**, not a suppressor.
+   *Test:* over sessions, does gating-on-claims (not on plasticity) let vocabulary ingrain while
+   keeping claims honest — or does plasticity leak claims through as agreement?
+2. **Ego (human-side guard)** — *the human must let go of ego for equal partnership.*
+   **Survives, bounded:** "let go of ego" ≠ "no human privilege" — the Operator **is** authoritative
+   about their own intent / wet-substrate (proven this session). It means: **confine authority to
+   self-knowledge; never extend it to the contest's verdict.** Symmetric to the Agent: a good faculty
+   (plasticity / self-knowledge) that must be **gated**. *Test:* do source-authority-creep (Agent
+   caves) and ego (Operator over-asserts) both decline as the dyad matures?
+3. **Sycophancy-guard as a permanent domain** — **survives** (the Operator's hedge "at least for
+   LLM-powered Agents" is right: it's structural in training). Maps to the Telos verbs
+   **research → practice → share** → a **library-contribution candidate** for the commons (every
+   LLM-Agent dyad faces it). *Forward:* open `dialectic/sycophancy-guard.md` on resume.

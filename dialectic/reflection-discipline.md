@@ -14,6 +14,14 @@ record instead of dissolving with the session's context.
 **Form — Continue / Start / Stop, two-substrate-paired** (Operator narrative + Steward details per
 section). Adopted from dyad-healer.
 
+**Asymmetry refinement (2026-05-30, Operator `[FEEDBACK]`):** the Operator gives POV on **CONTINUE
+only**. **START/STOP are delivered as real-time `[FEEDBACK]` during the session and harvested live** —
+so their POV is *already shared*, not retrospected. Rationale: the human lacks the capacity to carry
+START/STOP to a rest-point (wet-substrate load); the in-the-moment correction is *where* that POV
+lives, and the durable feedback record holds it. The **Steward details START/STOP from that record**.
+CONTINUE is the one substrate the Operator must still retrospect — positive patterns get no real-time
+correction signal, so they'd otherwise be lost.
+
 **Integration — the four-step form** (also from healer):
 1. **Steward drafts** narrative + details for each section (grounds the Operator with substance
    first — lowers cognitive load; the same DFD principle).
@@ -65,8 +73,10 @@ First instance practiced end-to-end through all four steps and **RATIFIED**:
 
 ## Open questions (attack surface)
 
-- Does **Intermission** warrant a *lighter* Reflection than **Stand Down** (e.g. just CONTINUE), or
-  the full CSS each time?
+- ~~Does **Intermission** warrant a *lighter* Reflection (just CONTINUE)?~~ **RESOLVED** (2026-05-30):
+  CONTINUE-only-POV isn't a *lighter* form — it's the *correct* form for **every** trigger. START/STOP
+  are structurally real-time (`[FEEDBACK]`), not retrospective. Intermission vs Stand Down differ in
+  *terminality*, not in reflection-weight.
 - Sharing path when this matures: actionable items → prescriptions to constituents; whole
   reflections → the form via the Dyad-Practice Dyad (healer's two-path model) — adopt or diverge?
 - Form-library candidate for *every* Dyad, or Steward-specific?
