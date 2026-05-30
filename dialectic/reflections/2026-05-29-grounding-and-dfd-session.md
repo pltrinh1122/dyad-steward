@@ -1,13 +1,21 @@
 # dyad-steward — Practice Reflection — 2026-05-29 — grounding + DFD session
 
-> **Status: DRAFT (Steward-side).** Awaiting Operator POV → Steward falsification of POV →
-> integration → ratification (four-step form, borrowed from dyad-healer). Form: **Continue /
-> Start / Stop**, two-substrate-paired. This reflection is *also* seed evidence for the live
-> `session-ritual.md` cycle — the Reflection Discipline is being triangulated, not yet settled.
+> **Status: INTEGRATED — awaiting Operator final ratification.** Four-step form (borrowed from
+> dyad-healer): Steward draft → Operator POV → Steward falsification of POV → integration → [final
+> ratify]. Form: **Continue / Start / Stop**, two-substrate-paired. This reflection is *also* seed
+> evidence for the live `session-ritual.md` cycle — the Reflection Discipline is being
+> triangulated, not yet settled.
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** The Operator will keep refining the **Dyadic Cycle UI** — the DFD frame,
+the surface where a cycle is handed Agent→Operator — via **[FEEDBACK]**, to raise Agent–Operator
+*resonance* by promoting shared mental models. *(Steward falsification: **survives** — the session
+is three [FEEDBACK]-driven frame refinements, each measurably sharpening the shared model. Nuance
+integrated: the resonance was earned through **survived contest** (the SYNTHESIS ⊥ CTA round the
+Operator won against the Steward's position), not through agreement — 1+1=3, not 1+1=2. Reframe
+kept: [FEEDBACK]-on-the-UI is a **Generate**-family move that builds shared structure through
+friction, not mere correction.)*
 
 **Details (Steward):**
 - **Grounding-at-source before acting.** Reading the commons directly (not trusting the anchor's
@@ -21,7 +29,7 @@
 
 ## 2. START — what to do better
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** No POV (Steward-side details stand).
 
 **Details (Steward):**
 - **Run the three-part guard *before* surfacing any frame.** I omitted SYNTHESIS in my own CTA
@@ -36,7 +44,7 @@
 
 ## 3. STOP — what hurt (or almost did)
 
-**Narrative (Operator):** *[awaiting Operator POV]*
+**Narrative (Operator):** No POV (Steward-side details stand).
 
 **Details (Steward):**
 - **Author→disposer cost-drift, twice.** CTAs migrated cost back to the Operator (Agent-voice;
