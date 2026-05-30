@@ -104,6 +104,22 @@ The Human **declares the hat** each engagement:
 `Learning Discipline` · `Decision-Framing Discipline (DFD)`.
 Inherited but locally load-bearing: **`Telos`**.
 
+**Dyad-UI cluster** *(load-bearing; cycles still live — `°` = RESOLVED-candidate, not yet graduated to `kb/`)*:
+
+- `Dyad UI` — the framing/signaling layer of the dyad (*how* the two halves structure their
+  exchange — **not** the payload); bidirectional. → `dialectic/dyad-ui.md` (live)
+- `DF-UI (show)` / `DFD (flow)` — the decision region's **show** (surface disposed-into) vs **flow**
+  (the governing process); our `nouns-vs-verbs` cut as a mnemonic. → `dyad-ui.md` (live) · `kb/dfd.md` (settled)
+- `marker taxonomy`° — markers cut on two orthogonal axes: **opens-a-region?** × **carries-an-
+  obligation?** (`[IDEATE]`/`[CTA]`/`[REFLECTION]` openers; `[FEEDBACK]`/`[NOTE]`/`[BTW]` modifiers;
+  `[ALIGN]` re-entrant). → `dyad-ui.md` §Marker taxonomy (live)
+- `Ideation Framing Discipline` — the Generate-family twin of DFD governing `[IDEATE]`: show =
+  *DFD-spine − CTA × N candidates*; flow = *diverge ≥2 → falsify each → converge open*.
+  → `dialectic/ideation-framing.md` (live)
+- `NBA → DFD` — next-best-action as a **composed loop**: the DAG computes the **ready-set** (math),
+  DFD **disposes** the pick (Operator) — eligibility is automated, "best" never is.
+  → `dialectic/nba-dag.md` (live)
+
 ## Deferrals — intentional future work, not gaps
 
 - **Contribution channel** into the commons: form §Governance names **PR as the dispose gate**
