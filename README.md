@@ -24,13 +24,32 @@ arriving here, **start with this file**, then jump to the slice you need — don
 | The tenet (1+1=3) and *why falsification is non-negotiable* | `kb/one-plus-one-equals-three.md` · `CLAUDE.md` §NON-NEGOTIABLE |
 | Decision-framing (surface a decision: CTA/THESIS/ANTI/SYNTH) | `CLAUDE.md` §DFD · `kb/dfd.md` (failure-modes) |
 | Ideation-framing (run an `[IDEATE]`) | `dialectic/ideation-framing.md` |
-| Goal-framing (intake a laundry list → Telos-gated DAG) | `dialectic/goal-framing.md` |
+| Goal-framing (intake a laundry list → Telos-gated DAG) | `dialectic/goal-framing.md` (WHAT) · `dialectic/goal-framing-grounding.md` (audit/lineage) |
 | Prioritization (next action over a DAG) | `dialectic/nba-dag.md` |
 | Session rituals (Stand Up/Down, Time-Out, Intermission) | `dialectic/session-ritual.md` |
 | Reflection | `dialectic/reflection-discipline.md` |
 | The Dyad-UI / Dyad-Work ontology (how we name our verbs) | `dialectic/dyad-ui.md` · `dialectic/dyad-work.md` |
+| How the dyad *ingrains* learning (substrate, not Agent-recall) | `dialectic/ingraining.md` |
 | Cross-Dyad sharing (this discipline) | `dialectic/sharing-discipline.md` |
 | To instantiate your own dyad | the form's **DIP** — `AGENT.md` at <https://github.com/pltrinh1122/the-dyad-practice> |
+
+## Intent Understanding & Interaction — the cluster *(the summit a referencing Dyad extracts +1 from)*
+
+If you are a Dyad whose telos is to extract `+1` from the **summit of intent understanding and
+interaction**, this is your slice — the framing/signaling layer by which a dyad's two halves
+understand and structure intent:
+
+- **`dialectic/dyad-ui.md`** — the framing/signaling layer: the **marker taxonomy** (intent signals)
+  and the show/flow regions (`DF-UI`/`DFD`, `IF-UI`/`IFD`).
+- **`CLAUDE.md` §DFD · `kb/dfd.md`** — **Decision-Framing** (intent → dispose) + its failure-modes.
+- **`dialectic/ideation-framing.md`** — **Ideation-Framing** (`IFD`): intent → exploration.
+- **`dialectic/goal-framing.md`** (+ `-grounding.md`) — **Goal-Framing** (`GFD`): multi-intent intake
+  → Telos-gated execution DAG.
+- **`dialectic/nba-dag.md`** — **NBA→DFD**: next-best-action prioritization over a DAG.
+- **`dialectic/dyad-work.md`** — the **work layer** the framing sits on.
+
+These are **live cycles** (`dialectic/`), not settled `kb/` — cite them as the *current, provisional*
+state of the summit (under active falsification), not as fixed doctrine.
 
 ## Notes for an ingesting Dyad
 
