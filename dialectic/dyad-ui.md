@@ -26,11 +26,25 @@ Dyad UI  (framing/signaling layer — NOT the payload)
 └─ Framing regions — one per kind of exchange; each region is a (show, flow) pair:
       Decision-framing region →  DF-UI (show)  governed by  DFD (flow)
       Ideation-framing region →  IF-UI (show)  governed by  IFD (flow)
+      Review-framing region   →  RF-UI (show)  governed by  RFD (flow)
       Reflection region       →  CSS form (show) governed by Reflection Discipline (flow)
 ```
 
 A **marker invokes** the region whose discipline governs the exchange: `[CTA]`→DF region ·
-`[IDEATE]`→Ideation region · Intermission/Stand-Down→Reflection region.
+`[IDEATE]`→Ideation region · `[REVIEW]`→Review region · Intermission/Stand-Down→Reflection region.
+
+> **Review-framing region — `RF-UI` (show) / `RFD` (flow)** *(Operator `[FEEDBACK]` 2026-05-31).*
+> Governs surfacing a **completed/staged work-product for review** — the *read-side* complement to the
+> write-side disciplines. **Invariant: reviewable-in-flow** — render the artifact's *reviewable core
+> in the thread* so the Operator validates/corrects **without leaving the chat to open files**. It is
+> the **generalization of the decidable-in-flow principle** (`kb/dfd.md` mode-5 DF-UI self-sufficiency;
+> `IF-UI` self-sufficiency) lifted to its own region. **Cut vs siblings:** DF surfaces a *decision* to
+> dispose (Y/N); IF surfaces an *exploration* for generative input (no dispose); **RF surfaces a
+> *built artifact* to validate/correct** (output = `[FEEDBACK]`/approval, or *escalates* to a `[CTA]`
+> if a dispose is owed). **Show = the reviewable core inline** (diff / decidable content + `→ ref`
+> path, never the ref *alone*); full artifact stays one click away but the review happens in-flow.
+> *Status: live, n=1 (this session) — the 4th cluster region; Operator coined unprompted = the positive
+> region-name test.*
 
 ## RESOLVED-CORE — `show` / `flow` (pinned)
 
