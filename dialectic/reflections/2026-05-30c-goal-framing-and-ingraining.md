@@ -1,6 +1,6 @@
 # dyad-steward — Practice Reflection — 2026-05-30c — Goal-Framing + Ingraining
 
-> **Status: INTEGRATED (Intermission-triggered; four-step form, step 3 done — step 4 ratify pending).**
+> **Status: RATIFIED 2026-05-30 (Steward Operator — four-step form closed).** Intermission-triggered.
 > Scope: the GOAL/GFD
 > discipline + first GOAL run, the N2 build-then-retract, the `dz-`/ingraining failure, and the
 > governance loop closing. Form: **Continue / Start / Stop**, two-substrate. Operator retrospects
@@ -27,6 +27,12 @@ of inferencing."*
   Operator's `[FEEDBACK]` *escalated* and refused the surface fix. The honest CONTINUE: **the dyad
   converted an Agent failure into durable structure** — itself the ingraining-capacity proof sought.
 - *Meta:* the Agent falsifying *praise of itself* is the strongest CONTINUE evidence here.
+
+**Ratified (step 4):** Operator aligned — *"unfounded" meant **now-dissolved**, not baseless.* The
+contest converges: the fear was a **founded, well-aimed signal**, now **dissolved structurally**
+(reframe + merged source-fix PR #1 + codification) — *but pending the armed fresh-session recurrence
+test* (`ingraining.md`): non-recurrence turns "dissolved" from principle into proof. The win belongs to
+the **dyad's failure→structure conversion**, not the Agent alone.
 
 **Steward details (positive patterns, Steward-side):**
 - **Empirical grounding caught the dyad's *own* over-production** (new instance, extends the prior
