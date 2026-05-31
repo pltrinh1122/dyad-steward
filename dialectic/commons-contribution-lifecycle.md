@@ -63,6 +63,36 @@ The Steward owns **one knowledge-unit type-system**; everything in the Commons i
 ledger (specific lived examples)** is *admissible*. That is why "the ontology seam" and "the
 evidence-ledger seam" are one mechanism, not two.
 
+### Field ontology — orthogonal fields, two-pronged-atomic content *(in progress)*
+A knowledge-unit's content is structured into **orthogonal fields** (each answers a question no other
+does), and within each list-valued field the content is **atomic** — *so the Steward can mechanically
+discriminate **structure-divergence** (different fields present → maybe a fork) from
+**content-divergence** (same field, different atoms → a refinement to merge)*. This is what makes
+**Curate a diff, not a judgment** — referee-not-judge, operationalized; the field-level form of the
+emergence claim. *(Operator seam, 2026-05-31.)*
+
+**Two-pronged atomicity — `[ALIGNED]` 2026-05-31 (the criterion is pinned).** An atom must be both:
+1. **independent** — it diffs cleanly (varies without forcing other atoms to change); this is
+   orthogonality recursed from field-level down to atom-level. → serves *content-vs-structure
+   discrimination*.
+2. **wu-wei / load-bearing** — drop-tested: *removing it loses the +1*. → serves *subset
+   interpretability* (B's move ⊂ A's move is a **refinement** iff the dropped atoms were
+   non-load-bearing — B's ledger proves it — else a **fork** asserting a different claim).
+
+"wu-wei move" is **not a new field** — it is the atomicity *criterion* instantiated per list-valued
+field (move → drop loses +1; refutation → each condition alone can kill; ledger → one survived
+dyadic-cycle; mechanism → one catalog tag). It also **stops the atomization regress**: stop splitting
+when each unit is drop-test load-bearing.
+
+**Candidate field-set (PROPOSED — not yet ratified):** `name` · `trigger` (when it applies) · `move`
+(ordered load-bearing steps) · `mechanism` (form-catalog tag[s]) · `claim` (the falsifiable +1) ·
+`refutation` (atomic kill-conditions) · `ledger` (atomic testimonials = survived dyadic-cycles).
+DFD maps onto it with no leftover / no empty field (n=1 fit). **Open joints:** claim ⊥ refutation
+(adjacent — kept separate *iff* they diverge independently in practice) · move ⊥ mechanism
+(many-to-many → orthogonal) · whether **lineage/provenance** must become a knowledge-field for
+fork-tracking · whether each move-step must carry its **own ledger drop-test** to be admissible ·
+whether this same field-set holds for `term`/`ritual` sub-kinds (a `term` has no "move").
+
 ### The README is the ontology *projected*
 The consumer-facing sharing-map (`sharing-discipline.md` move-1) is **not a separate artifact** — it
 **is the context-units**: the navigation projection over the knowledge-units. One ontology, two
