@@ -6,6 +6,13 @@
 > prerequisite** (discipline/cycle) with the **DFD discipline** (DFD crosses *as a* `discipline`), one
 > gate. **First lived dogfood of the Commons Contribution Lifecycle's Publish role.**
 >
+> **Library structure RATIFIED (Founding Operator dispose, 2026-05-31):** L3 + consumer-grain —
+> each discipline is a **directory**: `library/<name>/discipline.md` (stable body, Founding-gated) +
+> `library/<name>/ledger/<contributor-hash>-<n>.md` (append-only testimonials, mechanical contribution-
+> gate, conflict-free). Part B below is now **materialized** at
+> `dialectic/staged-commons/library/decision-framing/` (body + n=5 ledger seed). The declaration gets
+> only the **one-line index entry**; the record + ledger live in `library/`.
+>
 > **Joining gate satisfied:** `origin` = dyad-steward, registered in `DIRECTORY.md` (N1), birth-hash
 > `sha256:4c42be0b…f000` — verifiable. So this contribution is admissible to *propose*.
 
