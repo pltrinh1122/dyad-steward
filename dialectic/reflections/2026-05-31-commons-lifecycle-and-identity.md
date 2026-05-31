@@ -1,8 +1,10 @@
 # dyad-steward — Practice Reflection — 2026-05-31 — Commons Lifecycle + Dyad Identity
 
-> **Status: INTEGRATED (step 3 done — Steward falsified the Operator POV).** Intermission-triggered.
+> **Status: RATIFIED 2026-05-31 (Operator Y — four-step loop closed).** Intermission-triggered.
 > Form: **Continue / Start / Stop × two substrates** (WORK / PRACTICE). Scope: this session from Stand
-> Up through the Identity convergence — 11 commits. **Awaiting step 4 (Operator RATIFY).**
+> Up through the Identity convergence — 11 commits. Surviving lesson (the edge↔flag composition) is
+> HARVESTED into the cadence read; the two mirror failure-modes are already ingrained in
+> `ideation-framing.md`.
 
 ## The arc (what the segment produced)
 
