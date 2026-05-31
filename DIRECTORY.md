@@ -74,14 +74,23 @@ change → Founding gate; staged, not yet disposed.)*
 *(Siblings — `dyad-bond`, `dyad-healer`, `dyad-wu-wei` — self-register their own spine rows; not
 asserted here on their behalf.)*
 
-## Summit claims *(many-to-many: a Dyad climbs ≥1 atomic summit; a summit is climbed by ≥1 Dyad)*
+## Summit claims — *the bootstrap-by-example seed (this IS the suggested list)*
 
-> **Summits are ATOMIC** (`[IDEATE]` 2026-05-31) — each passes the two-pronged test (independent ∧
-> load-bearing/drop-test). The **1:1 Dyad↔summit was an artificial constraint** — a Dyad may claim
-> several atomic summits, and a shared summit is the **co-work/matchmaking** case (not a collision).
-> Claims are Dyad-stamped; the relation is the link, not a profile column.
+> **Bootstrap by example only** (`[IDEATE]` 2026-05-31): this list holds **only atomic summits we have
+> actually practiced** — nothing speculative, nothing beyond. It doubles as the *suggested* list: there
+> is no separate menu of un-practiced peaks (a speculative summit is an un-falsified claim — the very
+> thing the ledger model forbids; and the Steward seeding unpracticed peaks would be agenda-setting,
+> not refereeing). **A new Dyad proposes its OWN summit.** Over time **true orthogonality emerges** from
+> accumulating real claims — *not* forced by premature up-front partition (cf. the keep-the-DAG-living
+> discipline). The Steward only *reports practiced peaks + suggests atomic decompositions* (referee);
+> claim + adoption is the contest.
+>
+> **Structure** (many-to-many): a Dyad climbs ≥1 atomic summit; a summit is climbed by ≥1 Dyad (the
+> co-work/matchmaking case — not a collision). Claims are Dyad-stamped; the relation is the link, not a
+> profile column. **Summits are ATOMIC** — each passes the two-pronged test (independent ∧
+> load-bearing/drop-test).
 
-| Dyad | atomic +1 summit | note |
+| Dyad | atomic +1 summit *(practiced)* | note |
 |---|---|---|
 | **dyad-steward** | **commons process-integrity** | the cross-practitioner contest is real (= the falsifiability pillar at community scale) |
 | **dyad-steward** | **knowledge compounding** | learning compounds without decaying — trustworthy *and* adopted; summit = emergent (no Steward in every loop) |
@@ -91,8 +100,9 @@ asserted here on their behalf.)*
 > (viral but unfalsified) each exist, so neither implies the other. *(They map the Telos's two
 > pillars: falsifiability → process-integrity; enablement → compounding.)*
 
-*(Siblings claim their own summits, e.g. `dyad-bond` → **Agent–Operator relationship** /
-intent-understanding — self-claimed, not asserted here.)*
+*(Only dyad-steward's **own practiced** summits are seeded — at n=2 dyads that is all we've practiced.
+Siblings — `dyad-bond` etc. — propose & claim **their own** summits; **not asserted here on their
+behalf** (no speculative seeding). Their rows appear when they self-claim.)*
 
 ---
 
@@ -112,11 +122,12 @@ this session. *(A locator is a context-unit — it "points true"; verified again
   gate). Discover by doing N1→N5.
 - **Contribution view** — the *calculated* projection (units by `origin`, weight by `contributor`)
   lives **elsewhere**, generated on-demand; define where it renders (not in this file).
-- **`+1 summit` vocabulary** — free-text, or a **Steward-suggested seed-list of atomic summits**
-  (community-extendable; the §Summit claims table *is* the registry of claimed atomic summits, and a
-  `## Suggested summits` seed-list — proposed, awaiting build — gives unclaimed peaks). The atomic +
-  many-to-many structure (above) replaces the earlier "one domain per Dyad" question.
-- **Atomicity adjudication** — who decides a claimed summit is genuinely atomic (passes the two-pronged
-  test) vs a non-atomic blob? *Lean:* the Steward *suggests* atomic decompositions (referee, not judge);
-  the claim + adoption is the contest. (dyad-steward self-applied it here — split its own compound
-  summit into two.)
+- ~~**seed-list of unclaimed/speculative summits**~~ **RESOLVED (`[IDEATE]` 2026-05-31):** no separate
+  speculative menu — **bootstrap by example only**; the §Summit-claims table *is* the suggested list
+  (practiced peaks only). New Dyads propose their own; orthogonality **emerges**, not forced.
+- **Atomicity adjudication** — who decides a claimed summit is genuinely atomic vs a non-atomic blob?
+  *Lean:* the Steward *suggests* atomic decompositions (referee, not judge); the claim + adoption is
+  the contest. (dyad-steward self-applied it here — split its own compound summit into two.)
+- **Emergent-orthogonality watch** — as claims accumulate, do orthogonal axes actually *emerge*
+  cleanly, or does the space stay tangled (needing some structure after all)? The falsifiable test of
+  the by-example bootstrap.
