@@ -146,3 +146,38 @@ contribution candidate. **The single thread I'd pull first: summit #1 — the ge
 It's the half of 1+1=3 we have *no* discipline for yet, it's the form's own stated frontier, and it's
 where "compounding" stops meaning "accumulating" and starts meaning "creating." That's the climb that
 makes the whole journey worthwhile.
+
+## Part V — CONVERGED: the Steward's inter-Dyad structure (RATIFIED 2026-05-30)
+
+> The Telos-sharpening this VISION opened (Parts II–IV) converged through a long IFD contest into a
+> ratified structure. Recorded here as **grounding (audit + lineage)**; the lean Telos goes to
+> `../CLAUDE.md §Telos`. (Same WHAT/grounding split as `goal-framing.md`.)
+
+**The structure — 3 areas × 2 functions → compounding.** The Steward's inter-Dyad work is **three turns
+of a practitioner's life in the commons**, each run with the form's **two pillars**:
+
+| Area (member-experience) | Integrity — **falsifiability** (the contest is real) | Enablement (lower the barrier) |
+|---|---|---|
+| **Joining** — a Dyad enters | contest worthiness; gate sycophancy | welcome; easy entry |
+| **Sharing** — Dyads exchange learnings | contest before propagating | make sharing cheap |
+| **Resonating** — the *survived* shared understanding | keep the record honest; prune decay; hold provenance | keep it navigable; resonance *through contest* |
+
+→ emergent product: **compounding** (velocity-toward-truth climbs). → summit: make it **emergent** —
+self-cleaning *and* well-oiled, no Steward in every loop.
+
+**Lineage (the audit trail — why each token):**
+- The 2-function name **thrashed for 5 turns** (`guard/grease → contest/catalyze → falsifiability/wu-wei
+  → falsifiability/catalyze`) until the dialectic revealed the real shape was **2-D (3 areas × 2
+  functions)**, not a flat 2-token pair — the thrash *was* the structure signalling its second axis.
+- `control` rejected (coercion ⊥ referee-not-judge); `wu-wei` rejected for enablement (it's the *intra*-
+  dyad working manner, owned by `dyad-wu-wei`; the Steward is *inter*-dyad). Integrity = **falsifiability**
+  (inherited pillar). Enablement-token left as a **cell-label** (low stakes; `catalyze` leading, deferred).
+- The 3 areas converged via a **5-lens divergence + pairwise-falsification tournament** (lens 4/network
+  gave the partition; 1/2/3 the views; 5 ⊥; compounding emergent). Named via the **IFD heavyweight mode**
+  (criteria → Operator-first *unanchored* Generate → falsify Validate): the Operator's **member-experience**
+  frame beat the Agent's Steward-activity frame (Admission/Circulation/Curation — the Agent's fluent
+  volume would have buried the member-lens under the lightweight mode), and **Resonating** beat
+  Belonging/Remembering/Embodying/Aligning/Practicing for ③ — uniquely binding it to *"resonance earned
+  through contest, not agreement"* (`reflection-discipline.md`).
+- **Shed:** intent/interaction mechanics → the Intent-Understanding dyad. **Permanent frontier:** the
+  sycophancy guard.
