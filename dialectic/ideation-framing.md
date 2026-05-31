@@ -54,6 +54,16 @@ Then, always: **converge open** — surface the survivor as a proposal **that st
 **Never auto-migrate to a `[CTA]`** — only convergence (or the Operator's signal) moves an exploration
 into a decision. Forcing the Y/N early is the collapse this discipline guards.
 
+> **A `[CTA·Y/N]` inside an open IFD region is *harmful*, not merely premature** (Operator `[ALIGN]`,
+> 2026-05-31). The `[CTA]` carries a *disposition-obligation* (marker taxonomy) owed **only in DFD**.
+> Dropped on an exploration, the Y/N **forecloses the converge-open region itself** — the space where
+> generative input can still enter from *either* half (so it harms even at cardinality-0, where the
+> *Agent* generates; the harm is closing the region, not only suppressing the Operator). **Distilling,
+> naming, shaping a candidate are generate-moves → IFD, no Y/N.** The CTA appears *after* the region
+> converts to a decision, never to *run* the exploration. *Lived: a `[CTA·Y/N]` on the DFD-distillation
+> collapsed a generative act into a disposition — the de-peopling/premature-convergence STOP of
+> reflection `2026-05-30d`, recurring.*
+
 > **The invariant is falsification, not divergence.** My first draft made "diverge ≥2" mandatory —
 > that was the *0-grounding row* over-generalized to all three. At 2+ the Operator already diverged;
 > at 1 a single survived candidate is legitimate. What never relaxes is the genuine attack.
