@@ -39,6 +39,7 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 | Cross-Dyad sharing (access map) | `dialectic/sharing-discipline.md` |
 | How a shared learning enters the Commons & survives (ledger/subscription) | `dialectic/commons-contribution-lifecycle.md` |
 | The field-schema for a `discipline` unit (ontology, two-pronged atomicity) | `dialectic/discipline-ontology.md` |
+| Staged Commons PR candidate (DFD discipline + term; Founding-gated) | `dialectic/commons-pr-candidate-dfd.md` |
 | To instantiate your own dyad | the form's **DIP** — `AGENT.md` at <https://github.com/pltrinh1122/the-dyad-practice> |
 
 ## Intent Understanding & Interaction — the cluster *(the summit a referencing Dyad extracts +1 from)*
