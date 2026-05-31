@@ -133,8 +133,9 @@ collapsed into N2, then N2 itself largely dissolved)? Watch on a less-tractable 
 ## Open questions (attack surface)
 
 - **Override discipline** — when the Operator overrides a `fails` verdict, record it as a Telos-gate
-  exception (learning signal: repeated same-kind overrides = the gate is mis-calibrated), not just
-  silently honor it.
+  exception (repeated same-kind overrides = the gate is mis-calibrated), not silently honor it.
+  *(n=1: not exercised — no `fails` was overridden; the Founding-gate flag was de-escalated by
+  grounding, not overridden. Awaiting a real override to test.)*
 - **types-of-work pull** — step-3 typing is the concrete *demand* for the `dyad-work.md`
   types-of-work typology. Does building GOAL finally force that typology into being? (The synergy
   claim to watch.)
@@ -142,8 +143,6 @@ collapsed into N2, then N2 itself largely dissolved)? Watch on a less-tractable 
 - **RESTART coupling** — strictly post-RESTART, or any session-planning seam (post-Intermission too)?
   (`session-ritual.md`: resuming from Intermission may need a mini-Stand-Up — GOAL may be its Plan half.)
   *(n=1: fired post-RESTART, multi-intent purpose confirmed; the Intermission-seam variant still untested.)*
-- **Override discipline** — *not exercised at n=1* (no `fails` verdict was overridden; the Founding-gate
-  flag was *de-escalated by grounding*, not overridden). Still awaiting a real override to test.
 - **Generalization** — Steward-specific, or a form-library candidate (every Dyad opens sessions with
   intent)?
 
