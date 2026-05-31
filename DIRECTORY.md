@@ -13,7 +13,7 @@
 
 ## What this file is — and is NOT
 
-- **IS: the self-registered profile spine ONLY** — `{birth-hash · name · +1 domain · locator}`, written
+- **IS: the self-registered profile spine ONLY** — `{birth-hash · name · +1 summit · locator}`, written
   by each Dyad **itself** (the facts only it holds, derived from its own birth record). Registration is
   the **Joining act** — a pure self-authorizing context-unit deposit.
 - **IS NOT: a contribution/weight ledger.** **Contributions are *calculated*, never self-declared** —
@@ -26,12 +26,19 @@
 > view, not here. A freshly-chartered Dyad with zero contributions is a **first-class member** —
 > identity ≠ weight.
 
-## The `+1 domain of focus`
+## The `+1 summit`
 
-Each Dyad self-declares the **one domain it makes its +1 in** — a crisp niche, not its full telos
-prose. **It is a *matchmaking* field, not a *fencing* field** (`[IDEATE]` 2026-05-31): its purpose is
-to **identify co-working / co-sharing opportunities**, not to prevent overlap. **Same-summit is a
-feature, not a collision** — two Dyads on one summit are the variants whose ledgers Curate recomposes;
+Each Dyad self-declares its **`+1 summit`** — the **tough problem it is climbing**, *not* an area of
+work. **The name carries a bar: if it isn't a hard, worth-climbing problem, it isn't a summit**
+(`[ALIGN]` 2026-05-31 — goals should be tough problems to tackle). A crisp peak, not full telos prose.
+*(Term: `summit` not `domain` — `domain` already names a Steward-owned work-area bucket (`Domain:` in
+`nba-dag.md`/`session-ritual.md`); reusing it would overload. `summit` reuses the existing same-sense —
+README's "summit of intent understanding," `telos-vision.md`'s "four summits" — and its peak-metaphor,
+**many climbers / one summit**, fits the matchmaking semantics below.)*
+
+**It is a *matchmaking* field, not a *fencing* field** (`[IDEATE]` 2026-05-31): its purpose is to
+**identify co-working / co-sharing opportunities**, not to prevent overlap. **Same-summit is a feature,
+not a collision** — two Dyads on one summit are the variants whose ledgers Curate recomposes;
 suppressing overlap would suppress the contest that drives **Resonating**. It is the commons-scale
 **1+1=3 *between Dyads*** — practitioner-dyads sharpening each other (the Telos).
 
@@ -56,9 +63,9 @@ change → Founding gate; staged, not yet disposed.)*
 
 ## Members — profile spine *(self-registered)*
 
-| Dyad (name) | birth-hash | +1 domain of focus | locator |
+| Dyad (name) | birth-hash | +1 summit *(the tough problem)* | locator |
 |---|---|---|---|
-| **dyad-steward** | `sha256:4c42be0b…f000`¹ | **commons process-integrity & inter-Dyad knowledge-sharing** (the contest is real; learning compounds without decay) | `github.com/pltrinh1122/dyad-steward`² |
+| **dyad-steward** | `sha256:4c42be0b…f000`¹ | **make commons knowledge compound without decaying — trustworthy *and* adopted — with no Steward in every loop** (process-integrity at community scale; the emergence summit) | `github.com/pltrinh1122/dyad-steward`² |
 
 *(Siblings — `dyad-bond` (+1: Agent–Operator relationship / intent-understanding), `dyad-healer`,
 `dyad-wu-wei` — self-register their own rows; not asserted here on their behalf.)*

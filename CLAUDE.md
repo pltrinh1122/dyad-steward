@@ -129,6 +129,11 @@ Inherited but locally load-bearing: **`Telos`**.
   (Steward Operator); supersedes the form's overloaded best-practice sense of "cycle" — retirement of
   that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
   → `dialectic/commons-contribution-lifecycle.md`
+- **`+1 summit`** — a Dyad's self-declared **tough problem worth climbing** (*not* an area of work; the
+  name carries the bar — if it isn't hard, it isn't a summit). A Dyad's `DIRECTORY.md` profile field; a
+  **matchmaking** signal (same-summit = co-work/contest → Resonating, *not* collision), **not** the
+  Steward-owned `Domain:` work-area bucket (distinct term — `domain` would overload). *Ratified
+  2026-05-31 (Steward Operator).* → `DIRECTORY.md` · `dialectic/commons-contribution-lifecycle.md`
 
 **Dyad-UI cluster** *(load-bearing; cycles still live — `°` = RESOLVED-candidate, not yet graduated to `kb/`)*:
 
