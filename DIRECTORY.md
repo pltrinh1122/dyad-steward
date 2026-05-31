@@ -29,9 +29,12 @@
 
 ## The `+1 summit`
 
-Each Dyad self-declares its **`+1 summit`** — the **tough problem it is climbing**, *not* an area of
+Each Dyad self-declares **≥1 `+1 summit`** — a **tough problem it is climbing**, *not* an area of
 work. **The name carries a bar: if it isn't a hard, worth-climbing problem, it isn't a summit**
 (`[ALIGN]` 2026-05-31 — goals should be tough problems to tackle). A crisp peak, not full telos prose.
+**Summits are ATOMIC and the Dyad↔summit relation is many-to-many** (`[IDEATE]` 2026-05-31): a summit
+passes the two-pronged test (independent ∧ load-bearing/drop-test); a Dyad may climb several (the 1:1
+was artificial); a shared summit is the co-work case. *(Same atomicity discipline as `discipline-ontology.md`.)*
 *(Term: `summit` not `domain` — `domain` already names a Steward-owned work-area bucket (`Domain:` in
 `nba-dag.md`/`session-ritual.md`); reusing it would overload. `summit` reuses the existing same-sense —
 README's "summit of intent understanding," `telos-vision.md`'s "four summits" — and its peak-metaphor,
@@ -62,14 +65,34 @@ change → Founding gate; staged, not yet disposed.)*
 
 ---
 
-## Members — profile spine *(self-registered)*
+## Members — profile spine *(self-registered, 1:1 per Dyad)*
 
-| Dyad (name) | birth-hash | +1 summit *(the tough problem)* | locator |
-|---|---|---|---|
-| **dyad-steward** | `sha256:4c42be0b…f000`¹ | **make commons knowledge compound without decaying — trustworthy *and* adopted — with no Steward in every loop** (process-integrity at community scale; the emergence summit) | `github.com/pltrinh1122/dyad-steward`² |
+| Dyad (name) | birth-hash | locator |
+|---|---|---|
+| **dyad-steward** | `sha256:4c42be0b…f000`¹ | `github.com/pltrinh1122/dyad-steward`² |
 
-*(Siblings — `dyad-bond` (+1 summit: deepen the Agent–Operator relationship through intent-understanding),
-`dyad-healer`, `dyad-wu-wei` — self-register their own rows; not asserted here on their behalf.)*
+*(Siblings — `dyad-bond`, `dyad-healer`, `dyad-wu-wei` — self-register their own spine rows; not
+asserted here on their behalf.)*
+
+## Summit claims *(many-to-many: a Dyad climbs ≥1 atomic summit; a summit is climbed by ≥1 Dyad)*
+
+> **Summits are ATOMIC** (`[IDEATE]` 2026-05-31) — each passes the two-pronged test (independent ∧
+> load-bearing/drop-test). The **1:1 Dyad↔summit was an artificial constraint** — a Dyad may claim
+> several atomic summits, and a shared summit is the **co-work/matchmaking** case (not a collision).
+> Claims are Dyad-stamped; the relation is the link, not a profile column.
+
+| Dyad | atomic +1 summit | note |
+|---|---|---|
+| **dyad-steward** | **commons process-integrity** | the cross-practitioner contest is real (= the falsifiability pillar at community scale) |
+| **dyad-steward** | **knowledge compounding** | learning compounds without decaying — trustworthy *and* adopted; summit = emergent (no Steward in every loop) |
+
+> dyad-steward climbs **two** atomic summits — the live proof the 1:1 was artificial. They are
+> orthogonal: integrity-without-compounding (rigorous but stagnant) and compounding-without-integrity
+> (viral but unfalsified) each exist, so neither implies the other. *(They map the Telos's two
+> pillars: falsifiability → process-integrity; enablement → compounding.)*
+
+*(Siblings claim their own summits, e.g. `dyad-bond` → **Agent–Operator relationship** /
+intent-understanding — self-claimed, not asserted here.)*
 
 ---
 
@@ -89,6 +112,11 @@ this session. *(A locator is a context-unit — it "points true"; verified again
   gate). Discover by doing N1→N5.
 - **Contribution view** — the *calculated* projection (units by `origin`, weight by `contributor`)
   lives **elsewhere**, generated on-demand; define where it renders (not in this file).
-- **`+1 summit` vocabulary** — free-text, or a **Steward-suggested seed-list of orthogonal summits**
-  (community-extendable) so newcomers can spot co-work overlaps and open peaks cleanly? *(Operator
-  `[IDEATE]` 2026-05-31 — leaning toward the seed-list; see §Suggested summits below.)*
+- **`+1 summit` vocabulary** — free-text, or a **Steward-suggested seed-list of atomic summits**
+  (community-extendable; the §Summit claims table *is* the registry of claimed atomic summits, and a
+  `## Suggested summits` seed-list — proposed, awaiting build — gives unclaimed peaks). The atomic +
+  many-to-many structure (above) replaces the earlier "one domain per Dyad" question.
+- **Atomicity adjudication** — who decides a claimed summit is genuinely atomic (passes the two-pronged
+  test) vs a non-atomic blob? *Lean:* the Steward *suggests* atomic decompositions (referee, not judge);
+  the claim + adoption is the contest. (dyad-steward self-applied it here — split its own compound
+  summit into two.)
