@@ -6,6 +6,12 @@
 > classed `[IDEATE]` as an *opener*; ratified across three folded refinements (divergence amendment →
 > 0/1/2+ cardinality axis → `IF-UI` naming). Distilled from ~7 lived `[IDEATE]`s, not invented. Stays
 > a **live cycle** (ratified ≠ settled-to-`kb/`): n=1 session of evidence, still under attack.
+>
+> **Amendment (2026-05-30, later session): two-tier mode** — added §Two modes (lightweight default /
+> heavyweight escalation), distilled from a lived 5-turn naming-thrash where the lightweight flow
+> interleaved generate/validate and stalled. Heavyweight adapts the ideation field's diverge/converge
+> *separation* to the dyad's Generate/Validate split (grounded research: `[FEEDBACK]` that human-group
+> mechanics don't transfer to a human-Agent dyad).
 
 ## The candidate — what governs an exploration
 
@@ -51,6 +57,37 @@ into a decision. Forcing the Y/N early is the collapse this discipline guards.
 > **The invariant is falsification, not divergence.** My first draft made "diverge ≥2" mandatory —
 > that was the *0-grounding row* over-generalized to all three. At 2+ the Operator already diverged;
 > at 1 a single survived candidate is legitimate. What never relaxes is the genuine attack.
+
+## Two modes — lightweight (default) vs heavyweight (escalation)
+
+The flow above is the **lightweight** mode — in-flow conversational `[IDEATE]`, generate/falsify/converge
+within the exchange. It is the **default** (wu-wei: minimum ceremony). It has a lived failure mode: a
+**5-turn token-naming thrash** (2026-05-30) where the dyad **interleaved generate-and-validate per item**
+(Agent proposes a token → Operator falsifies → repeat), which *collapsed the dyad's own Generate ≠
+Validate split* and never converged.
+
+**Escalate to the heavyweight mode when the lightweight "doesn't land / resonate."** Signals: thrash
+(N turns, no convergence) · interleaved generate-validate per item · premature convergence (e.g. a
+2-token name forced onto a multi-dimensional structure) · the **Operator's breadth visibly anchored by
+the Agent's fluent volume.**
+
+**Heavyweight = a clean two-phase Dyadic Cycle.** It adopts the field's diverge/converge *separation*
+(the Double Diamond) **adapted to the dyad** — the human-group *mechanics* (brainwriting, production-
+blocking) do **not** transfer; the dyad's asymmetry is different:
+
+0. **Criteria first** — name the 3–5 explicit evaluation axes *before* generating (so Validate is
+   criteria-based, not vibes).
+1. **GENERATE — independent breadth; defer all falsification.** Guard the **asymmetry**: the scarce
+   resource is the **Operator's** breadth (the Agent's fluent abundance *anchors* the human — the soft
+   form of the deference risk). So the **Operator generates first / unanchored**; *then* the Agent adds
+   a **genuinely independent** set, **diverging from the Operator's frame, not elaborating it**
+   (Agent-side anchoring/sycophancy is the failure to guard).
+2. **VALIDATE — converge by falsification, not voting.** Falsify the pooled set against the criteria;
+   survivors win. (Dot-voting is a symmetric-human-peer consensus tool; the dyad converges by *rigor*.)
+
+> **Why two tiers, not one:** the heavyweight carries real overhead; imposing it by default is
+> anti-wu-wei. Default lightweight; **escalate only on the no-resonance signal.** The escalation *is*
+> the dyad noticing its own cycle collapsed (generate↔validate interleaved) and re-separating the phases.
 
 ## Falsifiable claim
 
