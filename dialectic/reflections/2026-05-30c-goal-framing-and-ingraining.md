@@ -1,6 +1,7 @@
 # dyad-steward — Practice Reflection — 2026-05-30c — Goal-Framing + Ingraining
 
-> **Status: DRAFT (Intermission-triggered; four-step form, at step 1→2).** Scope: the GOAL/GFD
+> **Status: INTEGRATED (Intermission-triggered; four-step form, step 3 done — step 4 ratify pending).**
+> Scope: the GOAL/GFD
 > discipline + first GOAL run, the N2 build-then-retract, the `dz-`/ingraining failure, and the
 > governance loop closing. Form: **Continue / Start / Stop**, two-substrate. Operator retrospects
 > **CONTINUE**; START/STOP were delivered live as `[FEEDBACK]` and are harvested from the record.
@@ -9,9 +10,25 @@
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *PENDING — your CONTINUE POV (incl. "no POV", valid).*
+**Narrative (Operator POV, `[REFLECTION]`):** *"Agent demonstrated +1 in helping the Operator
+recognize the 'unfounded fear' of ingraining by clarifying / reminding the Operator of the mechanism
+of inferencing."*
 
-**Details (Steward):**
+**Steward falsification (step 3 — partial; resonance through contest, not agreement):**
+- *Survives:* the inference-mechanism clarification (no persistent memory → frequency-dominated →
+  ingraining must live in reloaded substrate) **was** a genuine +1 — it relocated the problem.
+- *Falsified — "unfounded":* the fear was **founded.** `ingraining.md` itself: *"the lost confidence
+  is partly justified — our ingraining practice was sloppy."* The +1 clarified **where the fear was
+  aimed** (capacity vs location/discipline), not that it was baseless. Accepting "unfounded" = a
+  false comfort that discards a legitimate warning — the sycophantic over-correction the
+  NON-NEGOTIABLE forbids.
+- *Refined — "Agent demonstrated +1":* **co-produced, and recovery from an Agent failure.** The Agent
+  re-emitted the deprecated name 3× (twice post-correction); the root-cause only happened because the
+  Operator's `[FEEDBACK]` *escalated* and refused the surface fix. The honest CONTINUE: **the dyad
+  converted an Agent failure into durable structure** — itself the ingraining-capacity proof sought.
+- *Meta:* the Agent falsifying *praise of itself* is the strongest CONTINUE evidence here.
+
+**Steward details (positive patterns, Steward-side):**
 - **Empirical grounding caught the dyad's *own* over-production** (new instance, extends the prior
   empirical-debiasing reflection). The `gh` fetch of the Common falsified the scaffold (it forked the
   DIP) *and* the false `dz-→dyad-` rule (it would have invented `dyad-cil`). Grounding now debiases not
