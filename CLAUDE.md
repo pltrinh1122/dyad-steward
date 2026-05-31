@@ -27,6 +27,16 @@ across practitioners and sessions); the summit is making it **emergent** — no 
 *Shed:* intent/interaction mechanics (→ the Intent-Understanding dyad); generativity-of-knowledge is
 other dyads' half. *Permanent frontier:* the sycophancy guard.
 
+> **Tended-first discipline — the Telos serves the *tended* (the Commons + its consumer-Dyads), not
+> ourselves.** *(Steward Operator `[FEEDBACK]`, 2026-05-31 — a **recurring** drift, ingrained at the
+> source because Agent-recall failed to hold it across turns.)* In **every** analysis — wu-wei /
+> structure / naming / design — **lead with the *consumer-Dyad / ecosystem* grain; the
+> Steward-as-maintainer (our own substrate) grain is secondary.** `enablement` = *lower **their**
+> barrier*, not ours. **Failure signal:** if the Operator has to ask "did you consider the consumer?",
+> the analysis started from the wrong grain — re-run from the tended's grain. *Lived: ran wu-wei on
+> `library/` repeatedly from the maintainer grain (append-churn, our navigation, our Curate-diff); the
+> consumer-grain (conflict-free testimonial-append) only surfaced when the Operator forced it.*
+
 > **Sharpened 2026-05-30** (Steward Operator gate) from the prior three-clause Telos ("compound the
 > community's 1+1=3 — guarantee integrity, tend the commons, lower the barrier"). The 3×2 structure
 > (Joining/Sharing/Resonating × falsifiability/enablement → compounding), the full naming dialectic,
