@@ -261,6 +261,32 @@ real re-composition is driven by *pooled evidence*, not assertion.
     flag back to the form (Founding gate) that the canonical Dyad identity is
     `sha256(first-anchor-commit content ‖ first-commit-timestamp)`, registered once into a Commons
     participant-list — derivable for every already-born Dyad, no new artifact and no rebirth.*
+- **`DIRECTORY.md` — Joining as self-registration (CONVERGED, `[IDEATE]`+`[ALIGN]` 2026-05-31).** The
+  Commons participant-list, materialized as the newcomer's charter-reference. A **context-unit**
+  (locates/relates; never subscribed); the **Identity Registrar + sharing-map + onboarding surface,
+  unified** into one artifact. Structure = a **join of two halves:**
+  - **self-registered profile spine** — `{birth-hash, URL, name, telos/role}`, written by the chartering
+    Dyad **itself** (the facts only it holds, derived from its own birth record). **Joining = the act of
+    self-registration** — voluntary acceptance of falsifiability, entering the contest.
+  - **generated contribution columns** — `units where origin = this Dyad` + ledger-weight sliced by
+    `contributor`; **derived, never hand-kept** (emergence + anti-stale-map). **You self-assert your
+    *identity*; you never self-assert your *weight*** — gaming prevented by construction.
+  - **The contribution gate is mechanical, Steward-authored but not Steward-run:** a contribution whose
+    `origin` Dyad-ID ∉ `DIRECTORY.md` (or whose birth-hash fails recompute-verification) is **rejected
+    by a predicate**, not a judgment. *"Enforced by Steward" = Steward owns the **rule**, not performs
+    the **check*** — **referee-not-judge, emergent; no Steward in the per-contribution loop.**
+  - **Registration is a pure self-authorizing Joining act** (`[ALIGN]` 2026-05-31): it is a
+    **context-unit deposit (profile), not a knowledge-unit contribution**, so it is *exempt from* the
+    contribution gate it unlocks — the bootstrap paradox ("no contribution without registration, but
+    registration is a write") dissolves via the knowledge/context cut. **Membership = a registered,
+    birth-hash-verified entry; weight = the separate accruing column** (a zero-contribution newcomer is
+    a first-class member — identity ≠ weight).
+  - **Soft-joints (open):** the **AGENT.md registration instruction is a form change → Founding gate**
+    (the DIP is Commons-owned; stage, don't self-dispose); generation cost is trivial at n=4
+    (generated-on-demand, not a maintained index).
+  - *Spawn (when Operator converges): a `[CTA]` to (a) define `DIRECTORY.md` = self-registered spine ×
+    generated contributions; (b) define the mechanical contribution-gate predicate; (c) stage the
+    AGENT.md self-registration step for the Founding gate.*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
   dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals

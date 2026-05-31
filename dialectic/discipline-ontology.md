@@ -41,7 +41,8 @@ when each unit is drop-test load-bearing.
 ## The fields, under two-pronged falsification (casualties surfaced — the test *improved* the schema)
 
 - **survive both prongs (clean):** `trigger` (when it applies) · `move` (ordered load-bearing steps) ·
-  `ledger` (atomic testimonials = survived dyadic-cycles).
+  `ledger` (atomic testimonials = survived dyadic-cycles — **each Dyad-stamped:** a ledger entry is the
+  triple `{contributor Dyad-ID, timestamp, testimonial}`; see §Provenance).
 - **`claim` & `refutation` — PINNED SEPARATE, collapse-flag armed** (`[ALIGN]` 2026-05-31). May be
   adjacent (refutation ≈ operational negation of claim), but independence is **unproven from n=1**, so
   *let evidence decide*: a second variant that **tightens refutation while keeping claim** proves
@@ -52,7 +53,39 @@ when each unit is drop-test load-bearing.
   prong-1 as a field. Kept as a derived tag for Curate's family-diff, **not** an authored field.
   *(Open: drop entirely vs keep-as-derived.)*
 - **`name` — a context-unit identifier**, not a knowledge-field: drop-fatal but carries no falsifiable
-  content (you cannot *refute* a name). Rides inside the unit as a handle.
+  content (you cannot *refute* a name). Rides inside the unit as a handle. *(Earns its keep in the
+  consumer-facing `DIRECTORY.md` projection — a hash is unreadable to a newcomer.)*
+
+## Provenance — the Proposal envelope (a context-unit, not a knowledge-unit)
+
+*Resolves the Operator `[ALIGN]` gap: what binds a **Dyad-ID** to a proposed unit.* A **Proposal carries
+no falsifiable content of its own** (the *discipline* is what's falsifiable; the testimonial's
+*sufficiency* is what's contested) → it is a **context-unit**: a provenance envelope that "points true."
+**Analogy:** a Proposal is to a Discipline as a **git commit is to a tree** — the discipline is the
+content (content-hashed); the proposal is the *header* (proposer, parent, target) pointing at it.
+
+**It is not a separate persistent record** — it **dissolves into fields**, deposited by the
+proposal *transaction* (the PR; ephemeral, deposits on merge):
+
+- **unit-level** (set once at creation): `origin` = **proposer Dyad-ID** *(← the association asked for)* ·
+  `unit-hash` (sha256 of the discipline content) · `unit-kind` (discipline|term|ritual|mechanism) ·
+  `schema-version` (which ontology version it conformed to — so Curate diffs against the right schema) ·
+  `lineage` (parent `unit-hash` if a variant = hash-ancestry).
+- **entry-level** (accrues, per ledger entry): `{contributor Dyad-ID, timestamp, testimonial}`.
+
+So **the proposal *is* the first Dyad-stamped ledger entry** (`origin` = `ledger[0].contributor`);
+Participation appends more stamped entries; a fork is a new unit whose `lineage` → parent and whose
+`ledger[0]` is the forker. Everything composes from fields we already have:
+
+- **association proposer ↔ discipline** = `origin` + `ledger[0].contributor`
+- **per-Dyad weight** = `ledger` length sliced by `contributor` *(weight is earned/derived — never
+  self-asserted)*
+- **lineage** = parent-`unit-hash` + origin Dyad-ID
+
+**Soft-joints (open):** (1) `schema-version` requires the **ontology itself to be versioned** as
+recorded content (this record needs a version handle). (2) `origin` vs `ledger[0].contributor`
+redundancy — *lean: derive* origin = ledger[0].contributor (minimum force), unless origin must survive
+recomposition of ledger entries.
 
 **Candidate field-set (PROPOSED):** **{`trigger`, `move`, `claim`, `refutation`, `ledger`}** + `name`
 (identifier) + `mechanism` (derived). Tighter than the original 7-field version.
