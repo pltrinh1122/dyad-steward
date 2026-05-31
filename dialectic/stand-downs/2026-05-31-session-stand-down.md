@@ -50,6 +50,8 @@ The whole **Commons machinery** was built, dogfooded end-to-end, and **landed li
   CI-checkable; `DIRECTORY.md` = generated index); CI checks **structure/form, never content**;
   registration = CI-only auto-merge (self-authorizing), contribution = CI(form)+Founding(content).
   Soft-joints settled: Staged the format (`.yaml`) + reproducible predicate (`validate_registry.py`) manually first. Full GitHub Action automation deferred until `n=2` to avoid premature optimization and Steward-not-in-loop violation during n=1. Pure `.yaml` adopted to structurally prevent prose drift. **→ [FOUNDING OPERATOR] disposed and pushed to `the-dyad-practice`.**
+- **RATIFIED + IMPLEMENTED (FOUNDING-GATED):** the **Submodule DIP Architecture & One-Liner Join**.
+  Ratified-and-live: The Commons acts as a Git submodule (`commons/`) in every Dyad repo. **Disposed via `[ALIGN]`:** built `scripts/init_dyad.py` (idempotent substrate scaffolder) and `scripts/auto_join.py` (mechanical birth-hash & YAML generator). The onboarding funnel is now `README.md` → `CONTRIBUTING.md` → `auto_join.py`. This perfectly divides labor: deterministic scripts handle the brittle form, while the Agent/Operator handle the semantic summits. **→ Pushed PR to `the-dyad-practice`.**
 - **dyad-healer JOIN** — armed test, mid-setup. The first friction (the write-mechanism) was surfaced
   *by* this Join and closed. PR/CI disposed and merged. Revised prompt ready: Join via `join/dyad-healer`
   branch → PR adding only `directory/dyad-healer.yaml` → CI(form) → merge. **This is the live
