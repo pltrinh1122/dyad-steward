@@ -29,8 +29,17 @@
 ## The `+1 domain of focus`
 
 Each Dyad self-declares the **one domain it makes its +1 in** — a crisp niche, not its full telos
-prose. This is what a chartering newcomer reads to **find an un-claimed domain** (and it's how Dyads
-stay orthogonal — distinct +1 domains are how they don't collide).
+prose. **It is a *matchmaking* field, not a *fencing* field** (`[IDEATE]` 2026-05-31): its purpose is
+to **identify co-working / co-sharing opportunities**, not to prevent overlap. **Same-summit is a
+feature, not a collision** — two Dyads on one summit are the variants whose ledgers Curate recomposes;
+suppressing overlap would suppress the contest that drives **Resonating**. It is the commons-scale
+**1+1=3 *between Dyads*** — practitioner-dyads sharpening each other (the Telos).
+
+The field has **two consumers; the same answer reads opposite ways by who asks:**
+- **Same Operator, many Dyads** — read your *own* rows to keep **your** Dyads orthogonal (avoid
+  duplicating yourself). Self-orthogonality is a single-Operator concern.
+- **Different Operators, same summit** — **converge**: co-work / co-share / contest → recomposition.
+  Cross-Operator overlap is the **engine of the commons**, deliberately surfaced, not avoided.
 
 ## To charter yourself in (Joining)
 
