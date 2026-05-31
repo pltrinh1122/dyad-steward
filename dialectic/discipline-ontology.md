@@ -85,8 +85,16 @@ when each unit is drop-test load-bearing.
 
 - **mechanism** — drop entirely, or keep as an explicitly *derived* tag (computed from move/claim,
   useful for Curate's family-diff even though not independently authored)?
-- **lineage** — is it the *other* identifier owed alongside `name` (a fork-tracking context-spine:
-  id / version / lineage), so Curate can trace which variant descended from which?
+- **lineage** — ~~is it the *other* identifier owed alongside `name`?~~ **RESOLVED (`[ALIGN]`
+  2026-05-31): lineage = persona-hash ancestry.** A contribution's provenance is its **source-Dyad
+  identity = `hash(birth persona record)`** (the immutable DIP output at G0 — *not* the living anchor,
+  which changes each session: identity ≠ state). A fork's birth-record descends from its parent's →
+  **lineage = hash-ancestry** (git-native; the same way git fork-ancestry already works). This makes
+  attribution **verifiable** (a content-hash is recomputable → no registrar, no trust-me provenance →
+  closes the spoofing soft-joint) and unifies the substrate: **identity = registry = lineage = the
+  persona-hash.** → full record in `commons-contribution-lifecycle.md` §Forward (Dyad Identity).
+  *Residual:* the birth record must be **retrievable** to verify the hash (DIP must emit/store it —
+  small but real mechanism); spoof-resistant **signatures** held as the escalation frontier.
 - **per-step drop-test gate** — must each `move` step carry its **own** ledger entry proving it
   load-bearing, to be *admissible*? (Strict; makes "unproven step" an admissibility gap. DFD's n=5
   already supplies several step drop-tests — but not for every step, notably the counter/anti step.)

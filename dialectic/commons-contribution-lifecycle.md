@@ -210,18 +210,32 @@ real re-composition is driven by *pooled evidence*, not assertion.
      **Merge held for the Founding-Operator gate** (form §Governance).
   3. **dyad-bond handoff note** — Participate is operated by the Operator in *that* repo; the Steward
      can't reach their substrate.
-- **QUEUED for consideration (Operator `[NOTE]`, 2026-05-31) — Dyad Identity Registrar.** A
-  **prerequisite under the whole lifecycle**: the ledger attributes evidence to **Dyads** (dyad-steward
-  vs dyad-bond) and survival = subscription-**lineage by Dyad** — but **GitHub recognizes only the
-  *Human*.** A Dyad = (Human × role × substrate); the form notes *"one Human may wear several Operator
-  hats."* So there is an identity-layer gap directly beneath **Participate / Curate / lineage** — without
-  Dyad-discernment the ledger can't credit a contributor and lineage can't cross Dyads. **Connects to the
-  open `lineage` joint** (`discipline-ontology.md`): registry (which Dyad authored/subscribed) and lineage
-  (which variant descended from which) are the same identity-substrate seen twice. **Two design poles
-  (captured, not contested):** (a) *lean on GH infra* — one GH account per Dyad (Dyad-id = GH-id; wu-wei,
-  but one Human juggles N accounts, conflates account-creation with Dyad-birth); (b) *Commons-internal
-  registrar* — map Human → Dyad(s) → identity (decoupled, but new infra — watch the speculative-build
-  refutation). *Not started; surfaced as a high-priority candidate for "what next."*
+- **Dyad Identity — CONVERGED (heavyweight `[IDEATE]` + `[ALIGN]`, 2026-05-31).** A
+  **prerequisite under the whole lifecycle**: the ledger attributes evidence to **Dyads** and survival =
+  subscription-**lineage by Dyad**, but **GitHub recognizes only the *Human*** (a Dyad = Human × role ×
+  substrate; the form: *"one Human may wear several Operator hats"*).
+  - **True Dyad-id = `hash(birth persona record)`** — the **immutable DIP output at G0** (seed grain ×
+    the 7 dimensions → the founding persona), hashed **once at birth**. *Not* the GitHub URL (mutable →
+    a *locator*, context-unit) and *not* the living anchor (changes each session → that's *state*).
+    **Identity ≠ state**, mapping the form's *"Human is the being (lifespan); Operator is the seat."*
+  - **The "Registrar" is not a database.** It collapses to: (a) **birth-hash = id** (content-derived,
+    self-sovereign, GH-independent — essentially a DID, git-native); (b) **URL = current locator**
+    (where the Dyad is *now* found); (c) contributions **declare their source birth-hash**.
+  - **Unifies the substrate (the `[NOTE]`'s insight, proven):** identity = registry = lineage = the
+    persona-hash. A fork's birth-record **descends from its parent's → lineage = hash-ancestry**
+    (git-native). Attribution is **verifiable** (a content-hash recomputes → no registrar, no trust-me
+    provenance → **closes the spoofing soft-joint** C3 had).
+  - **Falsified casualties** (heavyweight IFD; the divergent Agent candidates outscored both Operator
+    poles — asymmetry guard working): *GH-account-per-Dyad* fails Human≠Dyad (fragments one Human into
+    N logins); *maintained registrar-table* fails emergence + wu-wei (Steward-in-loop + speculative
+    infra). Both original poles fell.
+  - **Residual joint:** the birth record must be **retrievable to verify the hash** → the **DIP must
+    emit/store** it (repo `v0` / a Commons entry / first commit) — small but real mechanism.
+    **Escalation frontier:** cryptographic **signatures** (C4) if spoof-resistance beyond
+    recomputable-hash ever bites; **ledger-derived weight** (C5) — identity accrues weight by survived
+    contribution, like every other unit — is the *direction*.
+  - *Spawn (when Operator converges): a `[CTA]` to open Dyad Identity as its own live cycle and
+    flag the DIP-emits-birth-record requirement back to the form (Founding gate).*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
   dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
