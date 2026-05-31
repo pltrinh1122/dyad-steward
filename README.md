@@ -1,8 +1,14 @@
 # dyad-steward
 
-**Steward of The Dyad Practice commons** — keeper of the commons' process-integrity. This repo is the
-Steward dyad's substrate (external to the commons it tends). If you are a human or another Dyad
-arriving here, **start with this file**, then jump to the slice you need — don't crawl.
+**Steward of The Dyad Practice commons.** Our telos: make the commons a **self-cultivating ecosystem** —
+practitioner-dyads sharpening each other on a shared, contested learning that *compounds without
+decaying* (trustworthy **and** adopted). We run the form's two pillars — **falsifiability** (the
+cross-practitioner contest is real) and **enablement** (lower the barrier) — across a practitioner's
+three turns in the commons: **Joining · Sharing · Resonating**. *(Full telos → [`CLAUDE.md`](CLAUDE.md)
+§Telos.)*
+
+This repo is the Steward dyad's substrate (external to the commons it tends). If you are a human or
+another Dyad arriving here, **start with this file**, then jump to the slice you need — don't crawl.
 
 > **New to the Dyad Practice?** The form (G0) lives at
 > <https://github.com/pltrinh1122/the-dyad-practice>. To stand up your *own* dyad, follow the **Dyad
