@@ -1,6 +1,7 @@
 # dyad-steward — Practice Reflection — 2026-05-30d — Telos Sharpening + IFD Heavyweight
 
-> **Status: DRAFT (Stand-Down-triggered; four-step form, step 1→2).** Scope: the segment *after* the
+> **Status: INTEGRATED 2026-05-30 (Stand-Down; four-step at step 3 done — step 4 ratify pending).**
+> Scope: the segment *after* the
 > Intermission (`2026-05-30c`) — the WHAT/grounding split, the field-research detour, and the
 > multi-turn Telos-sharpening arc that landed `self-cultivating ecosystem` / `Joining·Sharing·Resonating`
 > into `CLAUDE.md §Telos`. Form: **Continue / Start / Stop**, two-substrate. Operator retrospects
@@ -8,9 +9,29 @@
 
 ## 1. CONTINUE — what worked
 
-**Narrative (Operator):** *PENDING — your CONTINUE POV (or "no POV", valid).*
+**Narrative (Operator POV, `[REFLECTION]`):** *"this deeper ideation experience reaffirmed the need to
+spin off [intent-understanding/interaction] and own it by a separate Dyad whose sole focus is to improve
+the relationship between the Agent and Operator through intent understanding and interactions."*
 
-**Details (Steward):**
+**Steward falsification (step 3 — survives + sharpens; two qualifications):**
+- *Survives:* one session produced a whole new discipline (the IFD heavyweight mode) + two interaction
+  patterns (anchoring, de-peopling) — the domain has its own gravity, distinct from the Steward's
+  commons-integrity Telos. Deep enough to be a Dyad's sole focus.
+- *Sharpened (the real CONTINUE):* the experience **sharpened the new Dyad's telos** — "intent-
+  understanding mechanics (UI/NBA)" → "**improve the Agent–Operator *relationship***." That is the
+  *same re-peopling move* (relationship > mechanism) that defined this whole session, applied one level
+  out. The deep ideation taught the new Dyad's telos to be people-centered. **1+1=3.**
+- *Qualification 1 (recency-watch):* an atypically ideation-heavy session (Telos-sharpening is one-time)
+  — but the counter holds: intent-mechanics' **recurring intrusion** into Steward work *is* the spin-off
+  signal, so the reaffirmation outweighs recency-bias.
+- *Qualification 2 (scope):* "spin off" = shed *advancement/ownership* of these disciplines, **not** the
+  Steward's own *practice* of them (every dyad needs intent-understanding — we just ran IFD on ourselves).
+
+**Integrated (step 4):** *pending Operator ratification* (Y → RATIFIED; or carries to next session). The
+sharpened new-Dyad telos ("improve the Agent–Operator relationship through intent understanding and
+interactions") is **N3's seed** — authored in *its* anchor via the DIP (single-home; not our `kb/`).
+
+**Details (Steward, additional positive patterns):**
 - **The IFD heavyweight mode delivered on first use.** Operator-first *unanchored* Generate surfaced
   the **member-experience frame** (Joining/Sharing/Resonating) that the Agent's fluent volume would
   have buried under Steward-activity names (Admission/Circulation/Curation). The asymmetry-guard worked
