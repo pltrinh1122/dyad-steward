@@ -7,7 +7,8 @@
 > - **HOW = audit** — the falsifiable test + evidence by which we judge whether GFD earns its keep.
 >
 > Split from the WHAT 2026-05-30 (Operator `[FEEDBACK]`: keep execution lean; grounding separate for
-> audit/lineage). Same cut as README-vs-deep-files and `kb/dfd.md` mode-5 (render the core, ref the rest).
+> audit/lineage); **2-file split ratified by Steward Operator Y, 2026-05-30.** Same cut as
+> README-vs-deep-files and `kb/dfd.md` mode-5 (render the core, ref the rest).
 
 ---
 
