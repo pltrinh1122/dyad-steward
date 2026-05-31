@@ -1,8 +1,8 @@
 # dyad-steward — Practice Reflection — 2026-05-31 — Commons Lifecycle + Dyad Identity
 
-> **Status: DRAFT (step 1 — Agent proposes).** Intermission-triggered. Form: **Continue / Start /
-> Stop × two substrates** (WORK / PRACTICE). Scope: this session from Stand Up through the Identity
-> convergence — 11 commits. Steps 2–4 (INTEGRATE → RATIFY → HARVEST) are the Operator's.
+> **Status: INTEGRATED (step 3 done — Steward falsified the Operator POV).** Intermission-triggered.
+> Form: **Continue / Start / Stop × two substrates** (WORK / PRACTICE). Scope: this session from Stand
+> Up through the Identity convergence — 11 commits. **Awaiting step 4 (Operator RATIFY).**
 
 ## The arc (what the segment produced)
 
@@ -19,7 +19,22 @@ dogfooded (`id = sha256(birth-anchor-content ‖ first-commit-timestamp)`, backw
 
 ## 1. CONTINUE — what worked
 
-**WORK substrate:**
+**Operator POV (`[CONTINUE]`, step 2):** *"Agent should continue to be on the generative edge when
+appropriate because it's that edge that allows Operator to compose and keep the motion forward."*
+
+**Steward falsification (step 3 — SURVIVES + SHARPENS):** clean on the evidence — every major advance
+came from an Agent generative candidate the Operator then *composed on* (evidence-ledger, ontology
+extraction, identity scheme); the Operator's highest-value moves (nomenclature inversion, identity
+`[NOTE]`, timestamp) were *responses to the edge*. **It also corrects a wrong lesson STOP #3 was about
+to draw:** "Agent under-attacked → be less generative" is **falsified** — less edge would *cause* the
+premature-deferral failure-mode (§3). The lessons **compose**: *keep the generative edge **and**
+surface each candidate with its honest soft-joints*. Edge without the flag = sycophancy risk; caution
+without edge = motion dies. **1+1=3: Agent supplies the edge + its attack-surface; Operator composes.**
+The real failures weren't too-much-edge — they were edge surfaced *without the soft-joint flagged*.
+**The fix is the flag, not the brake.** *(Resolves the apparent CONTINUE↔STOP tension; guards against
+an Agent over-correcting a STOP into timidity.)*
+
+**Details (Steward — additional positive patterns):**
 - **Dogfooding produced real evidence, not assertion.** Identity was *verified on our own repo*
   (birth commit `2a9dc10`; id `4c42be0b…`; identity≠state shown by differing hashes) — n=1 lived,
   not argued. The strongest artifacts this session are the ones run against live data.
