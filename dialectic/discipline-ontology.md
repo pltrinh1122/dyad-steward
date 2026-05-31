@@ -82,8 +82,10 @@ Participation appends more stamped entries; a fork is a new unit whose `lineage`
   self-asserted)*
 - **lineage** = parent-`unit-hash` + origin Dyad-ID
 
-**Soft-joints (open):** (1) `schema-version` requires the **ontology itself to be versioned** as
-recorded content (this record needs a version handle). (2) `origin` vs `ledger[0].contributor`
+**Soft-joints:** (1) ~~`schema-version` requires the ontology itself to be versioned~~ **RESOLVED
+2026-05-31:** version handle = **`@ 2026-05-31`**; the schema is **published to the Commons** as its own
+knowledge-unit at `the-dyad-practice/ontology/discipline.md` (+ `ontology/ledger/` — dogfoods its own
+dir+ledger shape), so `library/*/discipline.md`'s `schema-version` resolves there. (2) `origin` vs `ledger[0].contributor`
 redundancy — *lean: derive* origin = ledger[0].contributor (minimum force), unless origin must survive
 recomposition of ledger entries.
 
