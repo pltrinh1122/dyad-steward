@@ -151,7 +151,7 @@ makes the whole journey worthwhile.
 
 > The Telos-sharpening this VISION opened (Parts II–IV) converged through a long IFD contest into a
 > ratified structure. Recorded here as **grounding (audit + lineage)**; the lean Telos goes to
-> `../CLAUDE.md §Telos`. (Same WHAT/grounding split as `goal-framing.md`.)
+> `../AGENT.md §Telos`. (Same WHAT/grounding split as `goal-framing.md`.)
 
 **The structure — 3 areas × 2 functions → compounding.** The Steward's inter-Dyad work is **three turns
 of a practitioner's life in the commons**, each run with the form's **two pillars**:
@@ -187,7 +187,7 @@ self-cleaning *and* well-oiled, no Steward in every loop.
   *self-cultivating* = practitioners cultivate each other, no central gardener → Steward stays
   referee-not-judge; *ecosystem* = self-organizing/emergent (the summit), symbiosis (compounding),
   honestly admits decay (justifying the Steward). Watch: ecosystem-selection is *blind*; "self-
-  cultivating" supplies the *deliberate* contest). **Ratified into `../CLAUDE.md §Telos` 2026-05-30.**
+  cultivating" supplies the *deliberate* contest). **Ratified into `../AGENT.md §Telos` 2026-05-30.**
 - **Recurring Agent-bias surfaced (STOP-item):** the Agent repeatedly *de-peoples / mechanizes*
   (knowledge-*engine*, *guard*-not-grease, Steward-*activity* names); the Operator repeatedly
   *re-centers the practitioners*. Re-peopling is the Practice's whole point ("the human is *more

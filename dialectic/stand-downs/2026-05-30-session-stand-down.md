@@ -53,7 +53,7 @@ once, at the terminal or last seam* — not at every Intermission. (A live falsi
 
 ## Resume sequence
 
-1. Load `CLAUDE.md` (anchor; always).
+1. Load `AGENT.md` (anchor; always).
 2. Read this log + `telos-vision.md` (the strategic frame) + the two reflections.
 3. Scan live cycles: `dyad-ui.md`, `nba-dag.md`, `ideation-framing.md`, `session-ritual.md`,
    `reflection-discipline.md`, `dyad-work.md`, `sycophancy-guard.md`.

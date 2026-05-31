@@ -34,24 +34,22 @@ The whole **Commons machinery** was built, dogfooded end-to-end, and **landed li
 
 ## Ingrained this session (at the source, because Agent-recall failed each)
 
-- **Tended-first discipline** (`CLAUDE.md` §Telos + memory `tended-first-grain`) — lead every analysis
+- **Tended-first discipline** (`AGENT.md` §Telos + memory `tended-first-grain`) — lead every analysis
   from the consumer-Dyad/Commons grain, not our maintainer grain.
 - **Push-to-own-origin = durability, not a dispose** (`session-ritual.md`) — no CTA; Commons push is
   the gated one.
-- **Verify outward work against an independent fetch** (`CLAUDE.md` §NON-NEGOTIABLE) — never the
+- **Verify outward work against an independent fetch** (`AGENT.md` §NON-NEGOTIABLE) — never the
   actor's own report. The gate-phase signature lesson (5+ Operator catches).
 - **RF-UI / RFD** review-framing region (`dyad-ui.md`); **`+1 summit`** + **`discipline`** vocab.
 
 ## OPEN — picked up next session (by name; not forced as CTAs)
 
-- **IN-FLIGHT, FOUNDING-GATED (the live frontier):** the **registration write-mechanism is mid-upgrade**.
-  Ratified-and-live: per-Dyad file. **Proposed via `[IDEATE]`, NOT yet disposed:** dyad-branch → **PR →
+- **RATIFIED + IMPLEMENTED (FOUNDING-GATED):** the **registration write-mechanism is pure `.yaml` + manual predicate**.
+  Ratified-and-live: per-Dyad file. **Disposed via `[ALIGN]`, implemented and pushed:** dyad-branch → **PR →
   CI(form-only) → merge**; registry entry → **`directory/<dyad>.yaml`** (context-unit = structured data;
   CI-checkable; `DIRECTORY.md` = generated index); CI checks **structure/form, never content**;
   registration = CI-only auto-merge (self-authorizing), contribution = CI(form)+Founding(content).
-  Soft-joints open: build the GitHub Action now vs stage the format only (lean: set `.yaml` format +
-  reproducible predicate now, automate when volume bites — watch Steward-not-in-loop); pure `.yaml` vs
-  `.md`+frontmatter (lean: pure `.yaml` — no prose body to drift). **→ needs [FOUNDING OPERATOR] dispose.**
+  Soft-joints settled: Staged the format (`.yaml`) + reproducible predicate (`validate_registry.py`) manually first. Full GitHub Action automation deferred until `n=2` to avoid premature optimization and Steward-not-in-loop violation during n=1. Pure `.yaml` adopted to structurally prevent prose drift. **→ [FOUNDING OPERATOR] disposed and pushed to `the-dyad-practice`.**
 - **dyad-healer JOIN** — armed test, mid-setup. The first friction (the write-mechanism) was surfaced
   *by* this Join and closed. Revised prompt pending the PR/CI dispose: Join via `join/dyad-healer`
   branch → PR adding only `directory/dyad-healer.yaml` → CI(form) → merge. **This is the live

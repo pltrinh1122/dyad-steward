@@ -4,7 +4,7 @@
 > Scope: the segment *after* the
 > Intermission (`2026-05-30c`) — the WHAT/grounding split, the field-research detour, and the
 > multi-turn Telos-sharpening arc that landed `self-cultivating ecosystem` / `Joining·Sharing·Resonating`
-> into `CLAUDE.md §Telos`. Form: **Continue / Start / Stop**, two-substrate. Operator retrospects
+> into `AGENT.md §Telos`. Form: **Continue / Start / Stop**, two-substrate. Operator retrospects
 > **CONTINUE**; START/STOP harvested from live `[FEEDBACK]`.
 
 ## 1. CONTINUE — what worked
@@ -73,7 +73,7 @@ seed** — authored in *its* anchor via the DIP (single-home; not our `kb/`).
 
 ## Forward
 
-- **Telos RATIFIED** into `CLAUDE.md §Telos` (`self-cultivating ecosystem`; `Joining·Sharing·Resonating`
+- **Telos RATIFIED** into `AGENT.md §Telos` (`self-cultivating ecosystem`; `Joining·Sharing·Resonating`
   × `falsifiability·enablement` → `compounding`; summit = emergent). Grounding: `telos-vision.md` Part V.
 - **IFD heavyweight mode** added (`ideation-framing.md` §Two modes) — n=1 (derived + first-used this session).
 - **Open / queued** (non-blocking): `enablement`-token (`catalyze` leading) · emergence-proof (VISION

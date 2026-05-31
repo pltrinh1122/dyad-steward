@@ -7,7 +7,7 @@ examples of community artifacts.
 **Single-home discipline:** each piece of knowledge lives here once. Live, still-contested work
 belongs in `../dialectic/`, not here.
 
-## Owned disciplines (also frontier candidates — see ../CLAUDE.md)
+## Owned disciplines (also frontier candidates — see ../AGENT.md)
 
 - **Learning Discipline** — run the Practice on ourselves; harvest surviving lessons here; test =
   velocity toward Telos rising (metric deferred to first real cycle).

@@ -2,7 +2,7 @@
 
 > **Status: RATIFIED 2026-05-31 (Operator Y — four-step loop closed).** CONTINUE = "no POV" (valid);
 > START/STOP harvested live; the headline STOP (maintainer-grain default) already ingrained at the
-> source (`CLAUDE.md` §Telos Tended-first discipline + auto-memory). Intermission-triggered (2nd of the
+> source (`AGENT.md` §Telos Tended-first discipline + auto-memory). Intermission-triggered (2nd of the
 > session). Form:
 > **Continue / Start / Stop × two substrates** (WORK / PRACTICE). Scope: the segment *after* the
 > `2026-05-31` Commons-lifecycle reflection — DAG execution (N1 DIRECTORY/self-register, N4 DFD publish
@@ -54,7 +54,7 @@ Steward-observed positive patterns below stand as recorded.
 - **Maintainer-grain default (the segment's signature anti-pattern, Operator-caught).** Ran wu-wei /
   structure analyses repeatedly from **our-own-substrate** grain (append-churn, our navigation, our
   Curate-diff); the **tended ecosystem (Commons + consumer-Dyads)** arrived second, only when the
-  Operator forced it. **Recurring** → ingrained at the source (`CLAUDE.md` §Telos **Tended-first
+  Operator forced it. **Recurring** → ingrained at the source (`AGENT.md` §Telos **Tended-first
   discipline** + auto-memory `tended-first-grain`), since Agent-recall demonstrably failed to hold it.
   *This is a cousin of the sycophancy guard: defaulting to own-convenience is a self-serving bias; the
   Telos points the work at the **tended**.* **Failure signal codified:** if the Operator must ask "did

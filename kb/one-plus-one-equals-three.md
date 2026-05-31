@@ -2,7 +2,7 @@
 
 *Settled knowledge, foundational. The form gives the **tenet** 1+1=3; this file holds the
 **mechanism** — *why* the synergy is real, what it *requires*, and the work-method that follows.
-Distilled 2026-05-30 (Steward Operator gate). The rule it grounds lives in `../CLAUDE.md`
+Distilled 2026-05-30 (Steward Operator gate). The rule it grounds lives in `../AGENT.md`
 §NON-NEGOTIABLE; this file is the lesson behind it.*
 
 ## The mechanism — a division of cognitive labor
@@ -93,7 +93,7 @@ confidently-wrong despite it), or the Operator-intent ⊗ Agent-rigor split mis-
 
 ## Forward
 
-- Grounds `../CLAUDE.md` §NON-NEGOTIABLE (the *why* of "ruthless discipline over the dialectic").
+- Grounds `../AGENT.md` §NON-NEGOTIABLE (the *why* of "ruthless discipline over the dialectic").
 - Governs the **Learning Discipline** (the Agent's empirical half, persisted) and the **marker
   re-derivation** (node M, intent-first).
 - Library-track candidate for the form (every Dyad): the *mechanism* + the *method*. Bar: synergy

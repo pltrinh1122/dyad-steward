@@ -230,7 +230,7 @@ real re-composition is driven by *pooled evidence*, not assertion.
     N logins); *maintained registrar-table* fails emergence + wu-wei (Steward-in-loop + speculative
     infra). Both original poles fell.
   - **Materialization — DOGFOODED n=1 (`[ALIGN]` + lived proof, 2026-05-31).** The birth record is
-    the **first commit of the Dyad's anchor file** (`CLAUDE.md` | `GEMINI.md` — vendor-neutral; filename
+    the **first commit of the Dyad's anchor file** (`AGENT.md` | `GEMINI.md` — vendor-neutral; filename
     is a *locator*, content is identity). **git already stores it immutably → the prior "residual joint"
     is dissolved** (no new emit/store mechanism; git's content-addressing *is* the store). **Verified on
     this repo:** birth commit `2a9dc10` ("Instantiate dyad-steward via Dyad Practice bootstrap"); 
@@ -288,7 +288,7 @@ real re-composition is driven by *pooled evidence*, not assertion.
     generated contributions; (b) define the mechanical contribution-gate predicate; (c) stage the
     AGENT.md self-registration step for the Founding gate.*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
-  dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
+  dogfood + its ledger) · `AGENT.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
   (library-contribution channel — **largely closed** by this cycle: the library lives *in* the
   declaration, so §Governance's PR gate already governs it) · `telos-vision.md` Part V

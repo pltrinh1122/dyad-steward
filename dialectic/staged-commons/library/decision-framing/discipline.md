@@ -32,7 +32,7 @@
 ## Local delta (NOT part of the Commons record — lives in each dyad's own anchor)
 
 dyad-steward specializes this discipline with its slot-vocabulary
-`[CTA·Y/N]/[THESIS]/[ANTI-THESIS]/[SYNTHESIS] → ref` (`CLAUDE.md` §DFD). The Commons owns the general
+`[CTA·Y/N]/[THESIS]/[ANTI-THESIS]/[SYNTHESIS] → ref` (`AGENT.md` §DFD). The Commons owns the general
 recipe; each dyad owns its specialization. *(Orthogonality cut.)*
 
 ## Ledger

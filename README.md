@@ -4,7 +4,7 @@
 practitioner-dyads sharpening each other on a shared, contested learning that *compounds without
 decaying* (trustworthy **and** adopted). We run the form's two pillars — **falsifiability** (the
 cross-practitioner contest is real) and **enablement** (lower the barrier) — across a practitioner's
-three turns in the commons: **Joining · Sharing · Resonating**. *(Full telos → [`CLAUDE.md`](CLAUDE.md)
+three turns in the commons: **Joining · Sharing · Resonating**. *(Full telos → [`AGENT.md`](AGENT.md)
 §Telos.)*
 
 This repo is the Steward dyad's substrate (external to the commons it tends). If you are a human or
@@ -18,7 +18,7 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 
 ## How this repo is organized
 
-- **`CLAUDE.md`** — the **anchor**: the Steward's identity, Telos, the NON-NEGOTIABLE (falsification),
+- **`AGENT.md`** — the **anchor**: the Steward's identity, Telos, the NON-NEGOTIABLE (falsification),
   channel/hat discipline, the DFD rule, ontology. *The dyad's own Agent loads this at session start.*
 - **`kb/`** — **settled** knowledge (survived falsification; safe to cite).
 - **`dialectic/`** — **live cycles** (in-flight, under attack; cite as **provisional** — may change).
@@ -27,8 +27,8 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 
 | You want… | Go to |
 |---|---|
-| The tenet (1+1=3) and *why falsification is non-negotiable* | `kb/one-plus-one-equals-three.md` · `CLAUDE.md` §NON-NEGOTIABLE |
-| Decision-framing (surface a decision: CTA/THESIS/ANTI/SYNTH) | `CLAUDE.md` §DFD · `kb/dfd.md` (failure-modes) |
+| The tenet (1+1=3) and *why falsification is non-negotiable* | `kb/one-plus-one-equals-three.md` · `AGENT.md` §NON-NEGOTIABLE |
+| Decision-framing (surface a decision: CTA/THESIS/ANTI/SYNTH) | `AGENT.md` §DFD · `kb/dfd.md` (failure-modes) |
 | Ideation-framing (run an `[IDEATE]`) | `dialectic/ideation-framing.md` |
 | Goal-framing (intake a laundry list → Telos-gated DAG) | `dialectic/goal-framing.md` (WHAT) · `dialectic/goal-framing-grounding.md` (audit/lineage) |
 | Prioritization (next action over a DAG) | `dialectic/nba-dag.md` |
@@ -50,7 +50,7 @@ understand and structure intent:
 
 - **`dialectic/dyad-ui.md`** — the framing/signaling layer: the **marker taxonomy** (intent signals)
   and the show/flow regions (`DF-UI`/`DFD`, `IF-UI`/`IFD`).
-- **`CLAUDE.md` §DFD · `kb/dfd.md`** — **Decision-Framing** (intent → dispose) + its failure-modes.
+- **`AGENT.md` §DFD · `kb/dfd.md`** — **Decision-Framing** (intent → dispose) + its failure-modes.
 - **`dialectic/ideation-framing.md`** — **Ideation-Framing** (`IFD`): intent → exploration.
 - **`dialectic/goal-framing.md`** (+ `-grounding.md`) — **Goal-Framing** (`GFD`): multi-intent intake
   → Telos-gated execution DAG.

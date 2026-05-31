@@ -89,5 +89,5 @@ honest?
 - **Telos path:** *research* (this cycle) → *practice* (on ourselves, every session) → *share* (a
   library candidate into the commons). The first concrete share-artifact would be the 2×2 + the
   shared-guard rule.
-- Cross-link: `one-plus-one-equals-three.md` (the mechanism), `../CLAUDE.md` §NON-NEGOTIABLE (which
+- Cross-link: `one-plus-one-equals-three.md` (the mechanism), `../AGENT.md` §NON-NEGOTIABLE (which
   this domain protects), `kb/dfd.md` (the strong-ANTI-THESIS rule, now dual-purpose).

@@ -20,7 +20,7 @@
 
 ## Queued / deferred for next session (persistable — NOT decided at close)
 
-1. **Anchor §Vocabulary promotion** — `Dyad UI`, `DF-UI (show)`, `DFD (flow)` into `CLAUDE.md`
+1. **Anchor §Vocabulary promotion** — `Dyad UI`, `DF-UI (show)`, `DFD (flow)` into `AGENT.md`
    §Vocabulary with a `→ dialectic/dyad-ui.md (live)` pointer. (Withdrawn as a closing CTA per the
    new persist-not-decide rule; persisted here + in `dyad-ui.md` §Forward.)
 2. **Define the Ideation Framing Discipline** — the `[IDEATE]` region's show/flow; counterpart to
@@ -30,7 +30,7 @@
 4. **Add infra-scan to Stand Up** — scan substrate gaps (no remote, unpushed history), not just
    in-flight cycles. (From the rituals+ontology reflection START.)
 
-## Standing deferrals (unchanged, from `CLAUDE.md` §Deferrals)
+## Standing deferrals (unchanged, from `AGENT.md` §Deferrals)
 
 - Local clone of the commons into `the-dyad-practice/` — still remote-only.
 - Library-contribution channel (how a cycle/discipline reaches the form) — form §Governance silent.
@@ -39,7 +39,7 @@
 
 ## Resume sequence for next session
 
-1. Load `CLAUDE.md` (anchor; always).
+1. Load `AGENT.md` (anchor; always).
 2. Read this stand-down log + the two reflections (`dialectic/reflections/2026-05-29-*`) to recover
    live state.
 3. Scan the 3 live cycles in `dialectic/` (`dyad-ui.md`, `session-ritual.md`,

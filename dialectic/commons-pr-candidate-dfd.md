@@ -55,7 +55,7 @@ survival*. The term and the survival-mechanism are one object.
 
 **The orthogonality cut (what crosses vs stays home):** the **general recipe** crosses (above); the
 dyad-steward **slot-vocabulary** (`[CTA·Y/N]/[THESIS]/[ANTI-THESIS]/[SYNTHESIS] → ref`) stays a
-**local delta** in our `CLAUDE.md` §DFD. Commons owns the general recipe; each dyad owns its
+**local delta** in our `AGENT.md` §DFD. Commons owns the general recipe; each dyad owns its
 specialization.
 
 **Travelling testimonial (the >N=1 admission bar) — n=5 survived corrections, none refuting** (`kb/dfd.md`):
@@ -95,5 +95,5 @@ n=1-dyad; Participate compounds.** Not a weakness to hide — the mechanism's de
 
 ---
 *Cross-link: `commons-contribution-lifecycle.md` (the mechanism this dogfoods) · `discipline-ontology.md`
-(the field-set) · `kb/dfd.md` (the n=5 ledger) · `DIRECTORY.md` (the Joining gate) · `CLAUDE.md` §DFD
+(the field-set) · `kb/dfd.md` (the n=5 ledger) · `DIRECTORY.md` (the Joining gate) · `AGENT.md` §DFD
 (the local-delta slot-vocabulary).*
