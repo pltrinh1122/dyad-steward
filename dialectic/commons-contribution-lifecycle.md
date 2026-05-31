@@ -63,49 +63,14 @@ The Steward owns **one knowledge-unit type-system**; everything in the Commons i
 ledger (specific lived examples)** is *admissible*. That is why "the ontology seam" and "the
 evidence-ledger seam" are one mechanism, not two.
 
-### Field ontology — orthogonal fields, two-pronged-atomic content *(in progress)*
-A knowledge-unit's content is structured into **orthogonal fields** (each answers a question no other
-does), and within each list-valued field the content is **atomic** — *so the Steward can mechanically
-discriminate **structure-divergence** (different fields present → maybe a fork) from
-**content-divergence** (same field, different atoms → a refinement to merge)*. This is what makes
-**Curate a diff, not a judgment** — referee-not-judge, operationalized; the field-level form of the
-emergence claim. *(Operator seam, 2026-05-31.)*
-
-**Two-pronged atomicity — `[ALIGNED]` 2026-05-31 (the criterion is pinned).** An atom must be both:
-1. **independent** — it diffs cleanly (varies without forcing other atoms to change); this is
-   orthogonality recursed from field-level down to atom-level. → serves *content-vs-structure
-   discrimination*.
-2. **wu-wei / load-bearing** — drop-tested: *removing it loses the +1*. → serves *subset
-   interpretability* (B's move ⊂ A's move is a **refinement** iff the dropped atoms were
-   non-load-bearing — B's ledger proves it — else a **fork** asserting a different claim).
-
-"wu-wei move" is **not a new field** — it is the atomicity *criterion* instantiated per list-valued
-field (move → drop loses +1; refutation → each condition alone can kill; ledger → one survived
-dyadic-cycle; mechanism → one catalog tag). It also **stops the atomization regress**: stop splitting
-when each unit is drop-test load-bearing.
-
-**Field-set under two-pronged falsification (2026-05-31).** Each field run through *independent* ∧
-*load-bearing*; casualties surfaced (the falsification *improved* the entry — DFD got tighter):
-
-- **knowledge-fields that survive both prongs:** `trigger` · `move` · `ledger` (cleanest).
-- **`claim` & `refutation` — PINNED SEPARATE, collapse-flag armed** (`[ALIGN]` 2026-05-31). They may
-  be adjacent (refutation ≈ operational negation of claim), but independence is **unproven from n=1**,
-  so we *let evidence decide*: a second variant that **tightens refutation while keeping claim** proves
-  independence → keep; if refutation is always re-derivable → **merge**. Forcing the merge now would be
-  premature-convergence. (Participate produces the deciding variant.)
-- **`mechanism` — demoted to a *derived tag*** (open): if every move-step is wu-wei-atomic, each step
-  implies its mechanism, so the set is *computable from move*, not independently authored → fails
-  prong-1 as a field. Kept as a derived tag for Curate's family-diff, **not** an authored field.
-  *(Open: drop entirely vs keep-as-derived.)*
-- **`name` — reclassified to a context-unit identifier**, not a knowledge-field: drop-fatal but carries
-  no falsifiable content (you can't *refute* a name). Rides inside the unit as a handle.
-
-**Candidate knowledge-field-set (PROPOSED):** **{`trigger`, `move`, `claim`, `refutation`, `ledger`}**
-+ `name` as identifier + `mechanism` as derived tag. DFD re-maps with no leftover / no empty field
-(n=1 fit), tighter than the 7-field version. **Still-open joints:** mechanism drop-vs-derive · whether
-**lineage** is the *other* identifier owed (fork-tracking context-spine: id/version/lineage) · whether
-each move-step must carry its **own ledger drop-test** to be admissible · whether this field-set holds
-for `term`/`ritual` sub-kinds (a `term` has no "move").
+### Field ontology — homed separately, falsified independently
+The **field-schema for a `discipline` unit** (which fields it carries; two-pronged atomicity) lives in
+its **own record → `discipline-ontology.md`**, so the *schema* is falsified **independently** of any
+*instance* (DFD) and of *this lifecycle mechanism*. They carry different evidence streams: the
+ontology's ledger accrues every discipline that maps cleanly (tests the **schema**); an instance's
+ledger accrues lived corrections (tests the **instance**). *Extracted 2026-05-31 (`[ALIGN]`) — the
+structure-vs-content discrimination applied one level up; the ontology is not sacred, it is a
+knowledge-unit falsifiable like any other.*
 
 ### The README is the ontology *projected*
 The consumer-facing sharing-map (`sharing-discipline.md` move-1) is **not a separate artifact** — it

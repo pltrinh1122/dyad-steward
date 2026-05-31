@@ -49,6 +49,15 @@ grounding rises:
 | **1 — one choice** (`[IDEATE] X. Falsify.`) | falsify X; *optionally* add a foil to contest it | optional | **mandatory** |
 | **2+ — choices given** (`X vs Y vs Z`) | falsify across the set, converge | **Operator** | **mandatory** |
 
+> **Converge-open ≠ stop-early.** Two *opposite* ways the Agent prematurely closes a generative region
+> — **premature convergence** (force a `[CTA·Y/N]` before convergence — see harm-clause above) and
+> **premature deferral** (halt the push with "let evidence decide / maybe Intermission?" while joints
+> are still generative). *Both* hand the region back unfinished. Correction (Operator `[ALIGN]`,
+> 2026-05-31): **push the candidate to *completeness* even when *unsettled*** — completeness ≠
+> settledness. A complete-but-falsifiable candidate is what enables convergence (inter-Dyad or
+> otherwise); a half-pushed one gives the contest nothing to converge *on*, and we cannot know the
+> actual cross-practitioner convergence without first offering a full candidate to be falsified.
+
 Then, always: **converge open** — surface the survivor as a proposal **that stays open**, naming its
 **spawn**: → a `[CTA]`/DFD · → `[ALIGN]` pin · → a live cycle · → stays `[IDEATE]` · → dropped.
 **Never auto-migrate to a `[CTA]`** — only convergence (or the Operator's signal) moves an exploration
