@@ -89,6 +89,24 @@ asserted here on their behalf.)*
 > co-work/matchmaking case — not a collision). Claims are Dyad-stamped; the relation is the link, not a
 > profile column. **Summits are ATOMIC** — each passes the two-pronged test (independent ∧
 > load-bearing/drop-test).
+>
+> **Purpose = JOIN / find synergy** (`[ALIGN]` 2026-05-31). The primary use-case: **a new (or
+> evolving) Dyad *researches existing summits first*** and joins one — synergy over invention. This is
+> wu-wei reuse: check the practiced list before minting a peak; a Dyad evolving its Telos identifies an
+> existing summit before inventing (claim + adoption is the contest). *Guard:* reuse-**biased, not
+> forced** — invent when none genuinely fits (forcing a fit is the anti-wu-wei over-transplant; herding
+> would ossify the generative frontier). The falsifiable watch: do genuinely-new summits still get
+> born?
+>
+> **Survival metric = shared-count** (`[IDEATE]` 2026-05-31): a summit's survival = **how many Dyads
+> share it.** This is *not* the banned headcount-for-truth — a summit is a **context-unit (coordination
+> point), not a knowledge-unit (truth-claim)**, so adoption-count is the *right* metric (it measures
+> convergence, which is the thing). The two survival metrics are orthogonal because the unit-kinds are:
+> **discipline → ledger-weight; summit → shared-count.** They compose vertically: a shared summit →
+> many Dyads publishing disciplines under it → **cross-Dyad ledger-compounding** (the coordination
+> layer feeds the knowledge layer). *Soft-joint:* **shared-count = coordination-strength, NOT worth** —
+> a solo frontier summit is legitimate, just *pre-convergence* (existence = practiced-by-≥1; survival =
+> shared-by-many; don't conflate the two, cf. identity≠state).
 
 | Dyad | atomic +1 summit *(practiced)* | note |
 |---|---|---|
