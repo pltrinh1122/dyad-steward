@@ -1,20 +1,21 @@
 # Goal Framing — Dyad Work process `GFD` / Dyad UI surface `GF-UI` — LIVE CYCLE (RATIFIED-DRAFT)
 
-> **Status: RATIFIED-DRAFT 2026-05-30 (Steward Operator gate, content-Y).** The *shape* below is
-> ratified; **seed evidence is still n=0** — no GOAL has been *run*, so it stays a live cycle under
-> attack (ratified ≠ settled-to-`kb/`). Opened 2026-05-30 from a Steward Operator `[GOAL]` meta-request
-> ("wu-wei a GFD/GF-UI; falsify and implement survivor"). This file is the survivor of the **design**
-> falsification, awaiting the survivor of **practice**.
+> **Status: RATIFIED-DRAFT 2026-05-30 (Steward Operator gate, content-Y); n=1 — first GOAL run below.**
+> The *shape* is ratified and has survived its **first real run**, but **stays a live cycle** (ratified
+> ≠ settled-to-`kb/`) until it proves across **n≥2** GOAL-run sessions. Opened 2026-05-30 from a Steward
+> Operator `[GOAL]` meta-request ("wu-wei a GFD/GF-UI; falsify and implement survivor") — the survivor
+> of the **design** falsification, now carrying the survivor of its **first practice**.
 >
 > **Why GOAL exists (Operator, 2026-05-30):** to **prime the Agent for multiple intents in a single
 > prompt** — GOAL declares "parse this message as a *conjunctive list* of outcomes to type + sequence,"
-> not as one exchange. The marker pre-empts the Agent's default of treating a prompt as a single intent. It **reclassifies** the Operator's
-> proposal: GOAL is *not* a third single-exchange framing twin of `DF`/`IF`; it is a **Dyad Work
-> planning front-end** (filling the "types of work / planning frontier" GAP named in `dyad-work.md`)
-> **paired** with a Dyad UI surface — the **second** instance of the (Work-act, UI-surface) pairing,
-> after reflection's (Reflection Discipline, CSS show). **Domain:** `Dyad Work` → new *goal-intake /
-> planning* sub-area. Sibling to `nba-dag.md` (the DAG it feeds) and `session-ritual.md` (Stand Up,
-> whose Plan phase it may inhabit).
+> not as one exchange, pre-empting the Agent's default of treating a prompt as a single intent.
+>
+> **What the design falsification reclassified:** GOAL is *not* a third single-exchange framing twin of
+> `DF`/`IF`; it is a **Dyad Work planning front-end** (filling the "types-of-work / planning frontier"
+> GAP in `dyad-work.md`) **paired** with a Dyad UI surface — the **2nd** instance of the (Work-act,
+> UI-surface) pairing, after reflection's (Reflection Discipline, CSS show). **Domain:** `Dyad Work` →
+> new *goal-intake / planning* sub-area. Sibling to `nba-dag.md` (the DAG it feeds) and
+> `session-ritual.md` (Stand Up, whose Plan phase it may inhabit).
 
 ## The candidate — what `[GOAL]` opens
 
@@ -140,16 +141,23 @@ collapsed into N2, then N2 itself largely dissolved)? Watch on a less-tractable 
 - **Granularity** — how fine does a list-item decompose before it is a DAG node?
 - **RESTART coupling** — strictly post-RESTART, or any session-planning seam (post-Intermission too)?
   (`session-ritual.md`: resuming from Intermission may need a mini-Stand-Up — GOAL may be its Plan half.)
+  *(n=1: fired post-RESTART, multi-intent purpose confirmed; the Intermission-seam variant still untested.)*
+- **Override discipline** — *not exercised at n=1* (no `fails` verdict was overridden; the Founding-gate
+  flag was *de-escalated by grounding*, not overridden). Still awaiting a real override to test.
 - **Generalization** — Steward-specific, or a form-library candidate (every Dyad opens sessions with
   intent)?
 
 ## Forward
 
-- **Run the first real GOAL** this session → seed evidence → first distillation.
-- `dyad-work.md`: the **goal-intake / planning** sub-area now has an inhabitant (this file); the
-  **types-of-work** GAP gains a concrete puller (step-3).
-- Anchor §Vocabulary / §Ontology promotion **DEFERRED** (per discipline) until the shape settles
-  across ≥2 GOAL-run sessions.
+- ✓ **First real GOAL run** (n=1, 2026-05-30) — seed evidence above; both claim-halves fired.
+- **n=2 watch** — a laundry list with *no* shared-upstream synergy (n=1 collapsed into one node, which
+  then largely dissolved): does the gate/DAG still earn its keep? Also: a real Telos-gate **override**,
+  and the **Intermission-seam** trigger variant.
+- **Promotion gate** — graduation to `kb/` + anchor §Vocabulary/§Ontology promotion **HELD until n≥2**
+  (per discipline; reinforced by this session's over-production lesson). *Operator may override the gate.*
+- `dyad-work.md`: the **goal-intake / planning** sub-area is inhabited (this file); the
+  **types-of-work** GAP gains its step-3 puller — *still unbuilt* (n=1 didn't force it; carried to n=2).
 - Cross-link: `dyad-work.md` (home domain) · `nba-dag.md` (the DAG/dispose GOAL feeds) ·
   `ideation-framing.md` (`IF-UI`, the N-listing borrowed) · `kb/dfd.md` (terminal CTA) ·
-  `kb/one-plus-one-equals-three.md` (the Telos-gate = anti-sycophancy at intake).
+  `kb/one-plus-one-equals-three.md` (the Telos-gate = anti-sycophancy at intake) · `ingraining.md`
+  (durability/learning sibling).
