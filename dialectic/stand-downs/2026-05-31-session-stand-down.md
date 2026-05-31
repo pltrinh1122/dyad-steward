@@ -51,9 +51,9 @@ The whole **Commons machinery** was built, dogfooded end-to-end, and **landed li
   registration = CI-only auto-merge (self-authorizing), contribution = CI(form)+Founding(content).
   Soft-joints settled: Staged the format (`.yaml`) + reproducible predicate (`validate_registry.py`) manually first. Full GitHub Action automation deferred until `n=2` to avoid premature optimization and Steward-not-in-loop violation during n=1. Pure `.yaml` adopted to structurally prevent prose drift. **→ [FOUNDING OPERATOR] disposed and pushed to `the-dyad-practice`.**
 - **dyad-healer JOIN** — armed test, mid-setup. The first friction (the write-mechanism) was surfaced
-  *by* this Join and closed. Revised prompt pending the PR/CI dispose: Join via `join/dyad-healer`
+  *by* this Join and closed. PR/CI disposed and merged. Revised prompt ready: Join via `join/dyad-healer`
   branch → PR adding only `directory/dyad-healer.yaml` → CI(form) → merge. **This is the live
-  Participate n=0→n=1.**
+  Participate n=0→n=1.** **(UNBLOCKED: execute via dyad-healer session).**
 - **N6 dyad-bond Participate** — needs the real second dyad.
 - **Off-path ontology joints:** mechanism drop-vs-derive · `claim`/`refutation` merge (awaiting 2nd
   variant) · per-step drop-test gate · term/ritual sub-kind generalization · signatures (C4).
