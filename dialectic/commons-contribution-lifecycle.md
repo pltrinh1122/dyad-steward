@@ -229,13 +229,24 @@ real re-composition is driven by *pooled evidence*, not assertion.
     poles — asymmetry guard working): *GH-account-per-Dyad* fails Human≠Dyad (fragments one Human into
     N logins); *maintained registrar-table* fails emergence + wu-wei (Steward-in-loop + speculative
     infra). Both original poles fell.
-  - **Residual joint:** the birth record must be **retrievable to verify the hash** → the **DIP must
-    emit/store** it (repo `v0` / a Commons entry / first commit) — small but real mechanism.
-    **Escalation frontier:** cryptographic **signatures** (C4) if spoof-resistance beyond
+  - **Materialization — DOGFOODED n=1 (`[ALIGN]` + lived proof, 2026-05-31).** The birth record is
+    the **first commit of the Dyad's anchor file** (`CLAUDE.md` | `GEMINI.md` — vendor-neutral; filename
+    is a *locator*, content is identity). **git already stores it immutably → the prior "residual joint"
+    is dissolved** (no new emit/store mechanism; git's content-addressing *is* the store). **Verified on
+    this repo:** birth commit `2a9dc10` ("Instantiate dyad-steward via Dyad Practice bootstrap"); 
+    `dyad-steward` birth-persona-hash = **`sha256:256b1852…fe5a`** (recompute:
+    `git show <first-commit>:CLAUDE.md | sha256sum`). Current anchor hashes *differently*
+    (`04ec204b…`) → **identity ≠ state proven empirically** (same Dyad across a session of anchor edits).
+  - **Hash the *content bytes*, not the git commit SHA** (the dogfood forced this): the commit SHA
+    carries metadata + **mutates** under `filter-branch`/re-init/repo-migration — the very thing
+    identity must survive. So: **git's first commit = witness/store; `sha256(birth-record bytes)` =
+    the recomputable, vendor-neutral identifier.**
+  - **Escalation frontier:** cryptographic **signatures** (C4) if spoof-resistance beyond
     recomputable-hash ever bites; **ledger-derived weight** (C5) — identity accrues weight by survived
     contribution, like every other unit — is the *direction*.
   - *Spawn (when Operator converges): a `[CTA]` to open Dyad Identity as its own live cycle and
-    flag the DIP-emits-birth-record requirement back to the form (Founding gate).*
+    flag back to the form (Founding gate) that the DIP's first anchor-commit is the canonical birth
+    record (no new artifact needed — name the existing convention).*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
   dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
