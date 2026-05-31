@@ -210,6 +210,18 @@ real re-composition is driven by *pooled evidence*, not assertion.
      **Merge held for the Founding-Operator gate** (form §Governance).
   3. **dyad-bond handoff note** — Participate is operated by the Operator in *that* repo; the Steward
      can't reach their substrate.
+- **QUEUED for consideration (Operator `[NOTE]`, 2026-05-31) — Dyad Identity Registrar.** A
+  **prerequisite under the whole lifecycle**: the ledger attributes evidence to **Dyads** (dyad-steward
+  vs dyad-bond) and survival = subscription-**lineage by Dyad** — but **GitHub recognizes only the
+  *Human*.** A Dyad = (Human × role × substrate); the form notes *"one Human may wear several Operator
+  hats."* So there is an identity-layer gap directly beneath **Participate / Curate / lineage** — without
+  Dyad-discernment the ledger can't credit a contributor and lineage can't cross Dyads. **Connects to the
+  open `lineage` joint** (`discipline-ontology.md`): registry (which Dyad authored/subscribed) and lineage
+  (which variant descended from which) are the same identity-substrate seen twice. **Two design poles
+  (captured, not contested):** (a) *lean on GH infra* — one GH account per Dyad (Dyad-id = GH-id; wu-wei,
+  but one Human juggles N accounts, conflates account-creation with Dyad-birth); (b) *Commons-internal
+  registrar* — map Human → Dyad(s) → identity (decoupled, but new infra — watch the speculative-build
+  refutation). *Not started; surfaced as a high-priority candidate for "what next."*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
   dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
