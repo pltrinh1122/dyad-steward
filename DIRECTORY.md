@@ -2,8 +2,9 @@
 
 > **Status: STAGED in dyad-steward's substrate — a Commons-candidate, NOT yet in the Commons.**
 > Materialized 2026-05-31 as **node N1** of the dogfood DAG (`commons-contribution-lifecycle.md`);
-> revised same day (`[IDEATE]`: contributions are *calculated*, not declared → removed; telos → a
-> **+1 domain of focus**). True home = the **Commons** (`the-dyad-practice`); stages here while we
+> revised same day (`[IDEATE]`: contributions are *calculated*, not declared → removed; telos → the
+> **`+1 summit`** — the tough problem a Dyad climbs). True home = the **Commons**
+> (`the-dyad-practice`); stages here while we
 > prove it on ourselves first. Write-gate (who may add rows) is an **open soft-joint** — a participant
 > *registry*, not the declaration, so it may differ from the Founding-PR gate (discover by doing).
 >
@@ -67,8 +68,8 @@ change → Founding gate; staged, not yet disposed.)*
 |---|---|---|---|
 | **dyad-steward** | `sha256:4c42be0b…f000`¹ | **make commons knowledge compound without decaying — trustworthy *and* adopted — with no Steward in every loop** (process-integrity at community scale; the emergence summit) | `github.com/pltrinh1122/dyad-steward`² |
 
-*(Siblings — `dyad-bond` (+1: Agent–Operator relationship / intent-understanding), `dyad-healer`,
-`dyad-wu-wei` — self-register their own rows; not asserted here on their behalf.)*
+*(Siblings — `dyad-bond` (+1 summit: deepen the Agent–Operator relationship through intent-understanding),
+`dyad-healer`, `dyad-wu-wei` — self-register their own rows; not asserted here on their behalf.)*
 
 ---
 
@@ -88,5 +89,6 @@ this session. *(A locator is a context-unit — it "points true"; verified again
   gate). Discover by doing N1→N5.
 - **Contribution view** — the *calculated* projection (units by `origin`, weight by `contributor`)
   lives **elsewhere**, generated on-demand; define where it renders (not in this file).
-- **+1 domain wording** — is a free-text domain enough, or does it need a controlled vocabulary so
-  newcomers can spot gaps/overlaps cleanly?
+- **`+1 summit` vocabulary** — free-text, or a **Steward-suggested seed-list of orthogonal summits**
+  (community-extendable) so newcomers can spot co-work overlaps and open peaks cleanly? *(Operator
+  `[IDEATE]` 2026-05-31 — leaning toward the seed-list; see §Suggested summits below.)*
