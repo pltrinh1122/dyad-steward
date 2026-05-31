@@ -1,0 +1,194 @@
+# Commons Contribution Lifecycle (working name) — LIVE CYCLE (DRAFT)
+
+> **Status: DRAFT — opened 2026-05-31 (Steward Operator gate, Y).** Distilled from a 5-turn
+> heavyweight `[IDEATE]` arc (this session) that reconstructed the Telos's three turns —
+> **Joining · Sharing · Resonating** — from the mechanism up. **Evidence-state is mixed and tagged
+> per role** (below): only **Publish** carries n=1 lived evidence; **Participate / Curate** are
+> `awaiting-evidence` until a second dyad (`dyad-bond`) actually responds. The doc records the full
+> model as the *design*; the falsification stays armed. **Home:** Steward-owned **verb** (a
+> commons-tending process), sibling to `sharing-discipline.md`. Promotion to `kb/` held until the
+> running loop earns it.
+>
+> **Relationship to `sharing-discipline.md`:** that cycle is the **access/navigation** plumbing
+> (move-1: a consumer-shaped README map so a foreign dyad reads cheaply). This cycle is the
+> **lifecycle + ontology** (move-2, un-deferred by this session's N=1): how a shared learning
+> *enters the Commons and survives*. The two compose — see §The README is the ontology projected.
+
+---
+
+## What it is
+
+The mechanism by which a **shared discipline** (one *every* dyad practices — DFD, IFD, Dyad-UI,
+rituals) enters the Commons and **survives** — without the Steward sitting in the survival loop. It
+answers the question the N=1 (`dyad-steward` + `dyad-bond` holding verbatim copies of the same
+disciplines) forced: *a shared discipline isn't contested ownership to be partitioned between dyads;
+it homes above both, in the Commons, and is **subscribed** to.*
+
+The core reframe (the arc's load-bearing move): **survival is not a subscriber headcount — it is an
+accumulating evidence-ledger.** "Subscribe" does not mean "I point at this"; it means **"I practice
+this and report my lived falsification back."** A common version wins by accumulating
+survived-falsification testimonials, not by counting heads; a variant displaces it only when *its*
+ledger out-weighs.
+
+## The data-model — knowledge-units vs context-units (Steward owns this ontology)
+
+The Steward owns **one knowledge-unit type-system**; everything in the Commons is one of two kinds:
+
+- **Knowledge-unit** — *carries* falsifiable content; **accrues an evidence-ledger**; **subscribable.**
+  Sub-kinds (the form's existing nouns, extended): `mechanism` · `cycle` (a matured cycle = what we
+  locally call a **Discipline**) · `term` (vocabulary) · `ritual`.
+- **Context-unit** — *locates / relates* knowledge-units; **not falsifiable in itself** — its
+  correctness is only *"does it point true."* **Never subscribed** (a pointer has no evidence to
+  accrue — it is true-or-stale). E.g. the README's "if you want X → Y" rows, cross-refs,
+  provenance/lineage, cluster pointers.
+
+**A "Discipline" is not a new Commons type.** It is a **`cycle`** (the form's best-practice noun)
+matured to carry three things a raw cycle doesn't: a **codified flow**, explicit **refutation
+conditions**, and an **evidence-ledger**. The Commons-facing type stays `cycle`; "Discipline" is
+dyad-steward's *local word* for a cycle at that maturity. Minting a parallel "Discipline" type would
+**fork the form's ontology** — the precise sin this mechanism exists to prevent.
+
+**The ontology and the admission-bar are the same object.** The load-bearing field is the
+**evidence-ledger**: a cycle with one testimonial is a *proposal*; a cycle with a **>N=1 ledger
+(specific lived examples)** is *admissible*. That is why "the ontology seam" and "the evidence-ledger
+seam" are one mechanism, not two.
+
+### The README is the ontology *projected*
+The consumer-facing sharing-map (`sharing-discipline.md` move-1) is **not a separate artifact** — it
+**is the context-units**: the navigation projection over the knowledge-units. One ontology, two
+faces (content vs access). This dissolves the *anchor-duplication* refutation structurally: the
+README can't drift from the content because it *is* the content's projection.
+
+## The lifecycle — three roles (the Telos's three turns)
+
+```
+JOINING        accept falsifiability        = price of admission (voluntary; not contested-from-within)
+   │
+SHARING    →   PUBLISH                       open a Commons entry SEEDED with a >N=1 testimonial.
+   │                                         the PR review IS the admission contest (§Growing bar).
+   │
+RESONATING →   PARTICIPATE                   practice + report. two valid moves:
+   │             · subscribe-verbatim  → your survived runs APPEND to the common ledger (compound it)
+   │             · hit a refutation    → that falsification FORKS a variant, seeded with its evidence
+   │           (proposer eats its cooking: survive → immediately subscribe to your own published unit)
+   │
+           →   CURATE  (Steward's primary verb)
+                 watch the ledgers; when variants' evidence has CONVERGED, recompose a stronger
+                 common version JUSTIFIED BY THE POOLED EVIDENCE, subscribe to it as a
+                 proposal-by-example, and let the lineage migrate. Retire the now-redundant; keep
+                 genuinely-individual parts as a thin LOCAL DELTA on the common subscription.
+```
+
+**Survival = subscription-lineage, weighed by ledger.** A merged proposal nobody subscribes to is
+dead (the "adopted" half of *trustworthy **and** adopted*). What lives is decided by decentralized
+lineage + accumulated evidence — **not by a Steward decree.**
+
+## Joining — falsifiability is the membership boundary, not a taboo tier
+
+**ALL knowledge survives through this one model — the tenet (1+1=3), the NON-NEGOTIABLE, this
+ontology, and this lifecycle itself included.** There is **no taboo tier.** What *looks* foundational
+is not protected; it is the unit carrying the **heaviest evidence-ledger** — survived by the most
+practitioners across the most cycles. **"Axiomatic" = "maximally subscribed."** Hardest to dislodge;
+still, in principle, falsifiable. (Faithful to the form: README already holds 1+1=3 *"falsifiably,
+never as dogma — it earns it each cycle."* The ledger is *how* it's continuously earned.)
+
+The one structural self-reference is **not** a protected remainder — it is the **Joining condition**:
+
+- **Taboo** = "you may not question this."
+- **Membership condition** = "you may question it freely; reject it and you are simply practicing a
+  *different thing* — not this community." (Reject the rules of chess → you haven't broken a rule,
+  you've left the game.)
+
+You can question falsifiability all you want *inside* the practice (encouraged). What you can't do is
+reject it *and still be doing the Dyad Practice.* The bootstrap floor (falsification can't be
+falsified *by* falsification without circularity) is therefore **open to replacement from a rival
+epistemics, never protected from question** — the opposite of taboo. **Not accepting falsifiability
+means the Dyad Practice is not your community — don't join.**
+
+## Governance — referee-not-judge, at the meta level
+
+- **Steward** *curates* the ontology + *referees* admission (checks the proposal **follows the form**
+  and carries a **>N=1 testimonial with specific examples**). The Steward offers *candidate*
+  recompositions — **never decrees the survivor.** The evidence-ledger is the decentralized selector.
+- **Founding Operator** *gates the schema*: the type-system lives **in the declaration** (like the
+  `cycle` format does), so changing it is a **declaration change → form §Governance PR gate.**
+  Steward proposes the ontology; Founding disposes. Otherwise the commons approves its own schema —
+  the **1+1=2 collapse** the NON-NEGOTIABLE guards.
+
+## Emergence (summit candidate — flagged, not banked)
+
+Once survival = accumulated contributed evidence, **no Steward sits in the survival loop.** The model
+is **self-hosting**: the subscription model is itself a knowledge-unit that survives only while
+practitioners' ledgers say it produces the +1 — **the system selects even its own selector.** That is
+the deferred **emergence-proof** (VISION #2/#4: community integrity scaling without a Steward in every
+loop) made literal. *Held as a candidate — needs the real multi-dyad loop to run before it is proven.*
+
+## Falsifiable claim
+
+A shared discipline homed once in the Commons and selected by an **accumulating evidence-ledger**
+(not headcount, not Steward taste) **compounds without decaying** and stays **single-home** — ending
+the verbatim-copy fork — while keeping admission inside the NON-NEGOTIABLE (survived contest only).
+*Test:* the DFD dogfood lands a Commons entry by survived contest; `dyad-steward` immediately
+subscribes; `dyad-bond` either subscribes-verbatim or forks-a-variant-with-evidence; and at least one
+real re-composition is driven by *pooled evidence*, not assertion.
+
+**Refuted if:**
+- **Headcount creep** — survival decides by subscriber-count, not ledger-weight → it's a popularity
+  vote, not a contest (the NON-NEGOTIABLE breach).
+- **Steward-as-judge** — the Steward's recomposition *decrees* the survivor instead of proposing it →
+  referee→judge collapse; emergence claim is fiction.
+- **Premature structure** — Participate/Curate get codified-as-settled before a second dyad actually
+  runs them (they are `awaiting-evidence` precisely to avoid this; cf. `dyad-work.md`/`nba-dag.md`
+  over-ontology refutations).
+- **Ledger-as-infra** — the evidence-append convention bloats into a separate registry/submodule
+  before size bites → the speculative-build / wu-wei breach `sharing-discipline.md` was reshaped to
+  avoid. Mitigation: testimonials append **in the Commons entry itself**, minimum force.
+- **Exempt tier smuggled back** — any unit gets protected-from-evidence by fiat (not by ledger mass)
+  → the taboo this model forbids.
+
+## Evidence-state (lived vs reasoned — the honest tag)
+
+| Role | State | Evidence |
+|---|---|---|
+| **Publish** | **n=1 (this doc)** | DFD ready: `kb/dfd.md` carries an **n=2 ledger** — *Agent-voice CTA* + *Either/or CTA* (2026-05-29, each a real catch). Meets the >N=1 testimonial bar. |
+| **Participate** | `awaiting-evidence` | no second dyad has yet subscribed-verbatim or forked-a-variant. `dyad-bond` is the pending first. |
+| **Curate** | `awaiting-evidence` | no real re-composition has occurred (needs ≥2 variants with convergent ledgers). |
+| **Joining-boundary** | reasoned + ratified | converged this session; faithful extension of form README "held falsifiably." |
+| **Emergence** | candidate | self-hosting argument sound; unproven until the multi-dyad loop runs. |
+
+> **This doc is the lifecycle's own first dogfood:** the cycle that defines Publish is itself a
+> knowledge-unit at Publish/n=1, with this table as its opening **ledger entry.**
+
+## Open questions (attack surface)
+
+- **Evidence-append convention** — *where* exactly does a subscriber's lived testimonial get recorded
+  so it accumulates without bloating into infra? (Leading: inline in the Commons entry.) — the soft
+  joint flagged at convergence.
+- **Lineage's kind** — provenance/lineage was filed under **context-units** ("points true"), but it
+  sits close to the evidence-ledger (knowledge-side, carries weight). If lineage turns out to carry
+  *falsifiable* weight, the binary knowledge/context cut leaks → may need a third kind.
+- **Orphan edge** — `term` and `ritual` are placed as knowledge-unit sub-kinds; if the lattice can't
+  cleanly bar/curate them like a `cycle`, that forces a genuine **frontier-track** (harder-gated)
+  contribution, not a library one.
+- **Placement** — does this stay a standalone cycle, or eventually merge with `sharing-discipline.md`
+  as one "Commons-sharing" cycle with two faces (access + lifecycle)? (Deferred until both settle.)
+- **Generalization** — Steward-specific, or a form-library candidate for every Dyad?
+
+## Forward / spawn
+
+- **Next (queued by name, not stacked — single-CTA):**
+  1. **Distill DFD** to the mechanism-level recipe (general move + mechanism name) *with its n=2
+     testimonial* — keeping `[CTA·Y/N]/THESIS/ANTI/SYNTH` as dyad-steward's **local delta**, not the
+     Commons entry (the orthogonality cut: Commons owns the general recipe; each dyad owns its
+     specialization).
+  2. **Draft the Commons-README §cycles PR branch** (one-line cycle entry + linked testimonial).
+     **Merge held for the Founding-Operator gate** (form §Governance).
+  3. **dyad-bond handoff note** — Participate is operated by the Operator in *that* repo; the Steward
+     can't reach their substrate.
+- **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
+  dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
+  community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
+  (library-contribution channel — **largely closed** by this cycle: the library lives *in* the
+  declaration, so §Governance's PR gate already governs it) · `telos-vision.md` Part V
+  (Joining/Sharing/Resonating; emergence-proof) · `ideation-framing.md` (the heavyweight `[IDEATE]`
+  that produced this).
