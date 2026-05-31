@@ -84,8 +84,13 @@ Participation appends more stamped entries; a fork is a new unit whose `lineage`
 
 **Soft-joints:** (1) ~~`schema-version` requires the ontology itself to be versioned~~ **RESOLVED
 2026-05-31:** version handle = **`@ 2026-05-31`**; the schema is **published to the Commons** as its own
-knowledge-unit at `the-dyad-practice/ontology/discipline.md` (+ `ontology/ledger/` — dogfoods its own
-dir+ledger shape), so `library/*/discipline.md`'s `schema-version` resolves there. (2) `origin` vs `ledger[0].contributor`
+knowledge-unit at `the-dyad-practice/ontology/discipline/schema.md` (+ `ontology/discipline/ledger/`),
+so `library/*/discipline.md`'s `schema-version` resolves there. **Universal record-shape invariant
+(Founding-gated 2026-05-31, n=2 pressure-test):** *every* Commons knowledge-unit collection (`library/`,
+`ontology/`, any future) uses the identical shape **`<collection>/<name>/` = body + append-only
+`ledger/`** — no flat-file shortcut even at n=1 (a flat body + shared `ledger/` collides on the 2nd
+record). Collections differ only in *what they collect* (instances vs schemas), never in *shape*.
+(2) `origin` vs `ledger[0].contributor`
 redundancy — *lean: derive* origin = ledger[0].contributor (minimum force), unless origin must survive
 recomposition of ledger entries.
 
