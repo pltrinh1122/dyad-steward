@@ -130,13 +130,6 @@ Inherited but locally load-bearing: **`Telos`**.
   that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
   → `dialectic/commons-contribution-lifecycle.md`
 
-- **`discipline`** — a **series of dyadic-cycles**: a proven, *repeated* practice. The Commons-bound
-  type for a best-practice; its weight = *series-length × survival* (= its evidence-ledger). **Not** a
-  synonym of `dyadic cycle` (the *unit* — one generate→validate turn, kept). *Ratified 2026-05-31
-  (Steward Operator); supersedes the form's overloaded best-practice sense of "cycle" — retirement of
-  that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
-  → `dialectic/commons-contribution-lifecycle.md`
-
 **Dyad-UI cluster** *(load-bearing; cycles still live — `°` = RESOLVED-candidate, not yet graduated to `kb/`)*:
 
 - `Dyad UI` — the framing/signaling layer of the dyad (*how* the two halves structure their
