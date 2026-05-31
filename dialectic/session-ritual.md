@@ -32,7 +32,17 @@ cold future-session (or another Dyad ingesting this repo) inherits it. This is *
 pre-authorization** — durability is *mechanical, not a dispose*, so it fires without a CTA. Stand Down
 then only *verifies* the tree is already clean + persisted, instead of being the first time it
 happens. *Safe because `dialectic/` artifacts are explicitly DRAFT/live — committing in-flight state
-is the design, not premature.* *Lived (2026-05-30): a full session of ratified work (GFD, the GOAL
+is the design, not premature.*
+
+**Push-to-own-`origin` is durability, not a dispose** (Steward Operator feedback, 2026-05-31).
+**Backup of *our own* substrate to *our own* remote is off-machine durability — standing
+pre-authorization, fires without a CTA**, exactly like `commit`. Requiring ratification to push our
+own backlog is the **cost-migration drift** (making the Operator dispose what isn't theirs to dispose)
+and a maintainer-grain reflex. **Cleanly distinct from a Commons-facing dispose:** push/merge to the
+**tended commons** (`the-dyad-practice`) *is* outward-facing → **Founding gate**. The cut is *whose
+substrate*: ours = mechanical backup (just do it; default to keeping `origin` current at each
+seam/commit); the commons = a gated contribution. *Lived: gated a push of ~30 own-substrate commits
+behind a CTA — the Operator caught the conflation.* *Lived (2026-05-30): a full session of ratified work (GFD, the GOAL
 run, the N2 retraction) sat uncommitted because the Agent bound durability to Stand Down; the Operator
 caught the conflation.*
 
