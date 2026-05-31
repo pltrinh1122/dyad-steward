@@ -1,6 +1,6 @@
 # dyad-steward — Practice Reflection — 2026-05-30d — Telos Sharpening + IFD Heavyweight
 
-> **Status: INTEGRATED 2026-05-30 (Stand-Down; four-step at step 3 done — step 4 ratify pending).**
+> **Status: RATIFIED 2026-05-30 (Steward Operator — four-step form closed).** Stand-Down-triggered.
 > Scope: the segment *after* the
 > Intermission (`2026-05-30c`) — the WHAT/grounding split, the field-research detour, and the
 > multi-turn Telos-sharpening arc that landed `self-cultivating ecosystem` / `Joining·Sharing·Resonating`
@@ -27,9 +27,9 @@ the relationship between the Agent and Operator through intent understanding and
 - *Qualification 2 (scope):* "spin off" = shed *advancement/ownership* of these disciplines, **not** the
   Steward's own *practice* of them (every dyad needs intent-understanding — we just ran IFD on ourselves).
 
-**Integrated (step 4):** *pending Operator ratification* (Y → RATIFIED; or carries to next session). The
-sharpened new-Dyad telos ("improve the Agent–Operator relationship through intent understanding and
-interactions") is **N3's seed** — authored in *its* anchor via the DIP (single-home; not our `kb/`).
+**Ratified (step 4):** Operator **Y**, 2026-05-30 — four-step closed. The sharpened new-Dyad telos
+("improve the Agent–Operator relationship through intent understanding and interactions") is **N3's
+seed** — authored in *its* anchor via the DIP (single-home; not our `kb/`).
 
 **Details (Steward, additional positive patterns):**
 - **The IFD heavyweight mode delivered on first use.** Operator-first *unanchored* Generate surfaced
