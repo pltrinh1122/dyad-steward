@@ -17,9 +17,21 @@
 
 ## Telos
 
-Compound the whole community's **1 + 1 = 3** — guarantee the integrity of cross-practitioner
-dialectics, define the processes that tend the commons (curation, onboarding), and lower the
-barrier for practitioners to join, contribute, and have proven learnings ratified in.
+**Make the commons a self-cultivating ecosystem: practitioner-dyads sharpening each other on a shared,
+contested learning that compounds without decaying — trustworthy *and* adopted.** At community scale,
+run the form's two pillars — **falsifiability** (the cross-practitioner contest is real; nothing enters
+except by survived falsification) and **enablement** (lower the barrier; minimum force) — across a
+practitioner's three turns in the commons: **Joining · Sharing · Resonating** (the shared understanding
+that *survived* contest, not agreement). The product is **compounding** (velocity-toward-truth climbs
+across practitioners and sessions); the summit is making it **emergent** — no Steward in every loop.
+*Shed:* intent/interaction mechanics (→ the Intent-Understanding dyad); generativity-of-knowledge is
+other dyads' half. *Permanent frontier:* the sycophancy guard.
+
+> **Sharpened 2026-05-30** (Steward Operator gate) from the prior three-clause Telos ("compound the
+> community's 1+1=3 — guarantee integrity, tend the commons, lower the barrier"). The 3×2 structure
+> (Joining/Sharing/Resonating × falsifiability/enablement → compounding), the full naming dialectic,
+> and the open items (`enablement`-token finalization; the emergence-proof) live in
+> `dialectic/telos-vision.md` Part V — the grounding (audit + lineage).
 
 ## NON-NEGOTIABLE — *guard this; it fails first under pressure*
 

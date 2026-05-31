@@ -181,3 +181,14 @@ self-cleaning *and* well-oiled, no Steward in every loop.
   through contest, not agreement"* (`reflection-discipline.md`).
 - **Shed:** intent/interaction mechanics → the Intent-Understanding dyad. **Permanent frontier:** the
   sycophancy guard.
+- **Opening framing** converged separately: `knowledge engine` (Operator falsified — *de-peoples* the
+  commons; knowledge without practitioners is a dead archive, not a commons) → `community where each
+  dyad is sharpened by every other` → **`self-cultivating ecosystem`** (grafts agency + emergence:
+  *self-cultivating* = practitioners cultivate each other, no central gardener → Steward stays
+  referee-not-judge; *ecosystem* = self-organizing/emergent (the summit), symbiosis (compounding),
+  honestly admits decay (justifying the Steward). Watch: ecosystem-selection is *blind*; "self-
+  cultivating" supplies the *deliberate* contest). **Ratified into `../CLAUDE.md §Telos` 2026-05-30.**
+- **Recurring Agent-bias surfaced (STOP-item):** the Agent repeatedly *de-peoples / mechanizes*
+  (knowledge-*engine*, *guard*-not-grease, Steward-*activity* names); the Operator repeatedly
+  *re-centers the practitioners*. Re-peopling is the Practice's whole point ("the human is *more
+  themselves*").
