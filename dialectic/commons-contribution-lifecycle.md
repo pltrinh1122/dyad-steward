@@ -35,23 +35,33 @@ ledger out-weighs.
 The Steward owns **one knowledge-unit type-system**; everything in the Commons is one of two kinds:
 
 - **Knowledge-unit** — *carries* falsifiable content; **accrues an evidence-ledger**; **subscribable.**
-  Sub-kinds (the form's existing nouns, extended): `mechanism` · `cycle` (a matured cycle = what we
-  locally call a **Discipline**) · `term` (vocabulary) · `ritual`.
+  Sub-kinds: `mechanism` (form term, kept) · **`discipline`** · `term` (vocabulary) · `ritual`.
 - **Context-unit** — *locates / relates* knowledge-units; **not falsifiable in itself** — its
   correctness is only *"does it point true."* **Never subscribed** (a pointer has no evidence to
   accrue — it is true-or-stale). E.g. the README's "if you want X → Y" rows, cross-refs,
   provenance/lineage, cluster pointers.
 
-**A "Discipline" is not a new Commons type.** It is a **`cycle`** (the form's best-practice noun)
-matured to carry three things a raw cycle doesn't: a **codified flow**, explicit **refutation
-conditions**, and an **evidence-ledger**. The Commons-facing type stays `cycle`; "Discipline" is
-dyad-steward's *local word* for a cycle at that maturity. Minting a parallel "Discipline" type would
-**fork the form's ontology** — the precise sin this mechanism exists to prevent.
+**`discipline` is the Commons term for a proven repeated practice — a *series of dyadic-cycles*.**
+*(Ratified 2026-05-31, Steward Operator, replacing the prior "Discipline = local alias for the form's
+`cycle`" reading — inverted by an `[ALIGN]`.)* Two grounded reasons it beats the form's "cycle":
+1. **It de-overloads the form.** The form README double-uses "cycle" — *"the unit is the **dyadic
+   cycle**"* (the atom) **and** *"a **cycle** is a proven recipe"* (the practice). `discipline` names
+   the practice; **`dyadic cycle`** (kept, orthogonal) stays the atom. The collision is removed, not
+   aliased over.
+2. **It composes with the ledger (1+1=3).** A discipline = *a series of dyadic-cycles*; the
+   **evidence-ledger = the accumulated survived dyadic-cycles of that series.** Term and
+   survival-mechanism are one object: **weight = series-length × survival.** A single dyadic cycle
+   carries no weight; a discipline does *because* it is a survived series.
+
+> **Form-retirement of best-practice "cycle" is a declaration change → Founding-Operator gate** (form
+> §Governance). Adopted **locally** now; the form proposal is *staged*, not disposed (§Forward). This
+> nomenclature change is itself a **`term` knowledge-unit** traveling this lifecycle — the second
+> dogfood (after DFD), and a **prerequisite** to the DFD publish (DFD crosses *as a `discipline`*).
 
 **The ontology and the admission-bar are the same object.** The load-bearing field is the
-**evidence-ledger**: a cycle with one testimonial is a *proposal*; a cycle with a **>N=1 ledger
-(specific lived examples)** is *admissible*. That is why "the ontology seam" and "the evidence-ledger
-seam" are one mechanism, not two.
+**evidence-ledger**: a discipline with one testimonial is a *proposal*; a discipline with a **>N=1
+ledger (specific lived examples)** is *admissible*. That is why "the ontology seam" and "the
+evidence-ledger seam" are one mechanism, not two.
 
 ### The README is the ontology *projected*
 The consumer-facing sharing-map (`sharing-discipline.md` move-1) is **not a separate artifact** — it
@@ -150,11 +160,12 @@ real re-composition is driven by *pooled evidence*, not assertion.
 
 | Role | State | Evidence |
 |---|---|---|
-| **Publish** | **n=1 (this doc)** | DFD ready: `kb/dfd.md` carries an **n=2 ledger** — *Agent-voice CTA* + *Either/or CTA* (2026-05-29, each a real catch). Meets the >N=1 testimonial bar. |
+| **Publish** | **n=1 (this doc)** | DFD ready: `kb/dfd.md` carries an **n=5 ledger** — five corrections across two sessions (Agent-voice · either/or · omitted-synthesis · multiple-asks · decidable-out-of-flow), each a real catch, none refuting. Far exceeds the >N=1 testimonial bar. |
 | **Participate** | `awaiting-evidence` | no second dyad has yet subscribed-verbatim or forked-a-variant. `dyad-bond` is the pending first. |
 | **Curate** | `awaiting-evidence` | no real re-composition has occurred (needs ≥2 variants with convergent ledgers). |
 | **Joining-boundary** | reasoned + ratified | converged this session; faithful extension of form README "held falsifiably." |
 | **Emergence** | candidate | self-hosting argument sound; unproven until the multi-dyad loop runs. |
+| **`term`: discipline/cycle** | **n=1, staged for Founding gate** | resolves the form's own cycle/dyadic-cycle overload + composes with the ledger (series ≡ ledger). Local-adopted; form-retirement of "cycle" staged as a Founding-gated PR, bundled as prerequisite to the DFD publish. |
 
 > **This doc is the lifecycle's own first dogfood:** the cycle that defines Publish is itself a
 > knowledge-unit at Publish/n=1, with this table as its opening **ledger entry.**
@@ -168,8 +179,9 @@ real re-composition is driven by *pooled evidence*, not assertion.
   sits close to the evidence-ledger (knowledge-side, carries weight). If lineage turns out to carry
   *falsifiable* weight, the binary knowledge/context cut leaks → may need a third kind.
 - **Orphan edge** — `term` and `ritual` are placed as knowledge-unit sub-kinds; if the lattice can't
-  cleanly bar/curate them like a `cycle`, that forces a genuine **frontier-track** (harder-gated)
-  contribution, not a library one.
+  cleanly bar/curate them like a `discipline`, that forces a genuine **frontier-track** (harder-gated)
+  contribution, not a library one. *(The `term` case is now live: the "discipline"/"cycle"
+  nomenclature change is itself a `term` unit being run through this lifecycle.)*
 - **Placement** — does this stay a standalone cycle, or eventually merge with `sharing-discipline.md`
   as one "Commons-sharing" cycle with two faces (access + lifecycle)? (Deferred until both settle.)
 - **Generalization** — Steward-specific, or a form-library candidate for every Dyad?
@@ -177,11 +189,15 @@ real re-composition is driven by *pooled evidence*, not assertion.
 ## Forward / spawn
 
 - **Next (queued by name, not stacked — single-CTA):**
-  1. **Distill DFD** to the mechanism-level recipe (general move + mechanism name) *with its n=2
-     testimonial* — keeping `[CTA·Y/N]/THESIS/ANTI/SYNTH` as dyad-steward's **local delta**, not the
-     Commons entry (the orthogonality cut: Commons owns the general recipe; each dyad owns its
-     specialization).
-  2. **Draft the Commons-README §cycles PR branch** (one-line cycle entry + linked testimonial).
+  0. **`term` prerequisite — "discipline"/"cycle":** stage the form-level proposal (adopt
+     `discipline` = a series of dyadic-cycles; retire best-practice "cycle"; keep `dyadic cycle`) as a
+     **Founding-gated PR candidate**. DFD cannot cross until "discipline" is the agreed Commons term —
+     bundle the two for one gate.
+  1. **Distill DFD** to the mechanism-level recipe (general move + mechanism name) *with its n=5
+     testimonial* — crossing **as a `discipline`** — keeping `[CTA·Y/N]/THESIS/ANTI/SYNTH` as
+     dyad-steward's **local delta**, not the Commons entry (the orthogonality cut: Commons owns the
+     general recipe; each dyad owns its specialization).
+  2. **Draft the Commons PR branch** (the `discipline` entry + linked testimonial + the term change).
      **Merge held for the Founding-Operator gate** (form §Governance).
   3. **dyad-bond handoff note** — Participate is operated by the Operator in *that* repo; the Steward
      can't reach their substrate.

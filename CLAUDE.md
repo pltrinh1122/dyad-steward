@@ -123,6 +123,20 @@ The Human **declares the hat** each engagement:
 `Learning Discipline` · `Decision-Framing Discipline (DFD)`.
 Inherited but locally load-bearing: **`Telos`**.
 
+- **`discipline`** — a **series of dyadic-cycles**: a proven, *repeated* practice. The Commons-bound
+  type for a best-practice; its weight = *series-length × survival* (= its evidence-ledger). **Not** a
+  synonym of `dyadic cycle` (the *unit* — one generate→validate turn, kept). *Ratified 2026-05-31
+  (Steward Operator); supersedes the form's overloaded best-practice sense of "cycle" — retirement of
+  that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
+  → `dialectic/commons-contribution-lifecycle.md`
+
+- **`discipline`** — a **series of dyadic-cycles**: a proven, *repeated* practice. The Commons-bound
+  type for a best-practice; its weight = *series-length × survival* (= its evidence-ledger). **Not** a
+  synonym of `dyadic cycle` (the *unit* — one generate→validate turn, kept). *Ratified 2026-05-31
+  (Steward Operator); supersedes the form's overloaded best-practice sense of "cycle" — retirement of
+  that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
+  → `dialectic/commons-contribution-lifecycle.md`
+
 **Dyad-UI cluster** *(load-bearing; cycles still live — `°` = RESOLVED-candidate, not yet graduated to `kb/`)*:
 
 - `Dyad UI` — the framing/signaling layer of the dyad (*how* the two halves structure their
@@ -159,6 +173,14 @@ orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived fa
 
 - **Learning Discipline** — library best-practice (a self-applied meta-cycle) for *every* Dyad.
 - **Decision-Framing Discipline (DFD)** — library best-practice for reducing Operator cognitive load.
+  **Staged (2026-05-31)** as the first lived dogfood of the **Commons Contribution Lifecycle**
+  (`dialectic/commons-contribution-lifecycle.md`): crosses **as a `discipline`** with its n=5 ledger;
+  the slot-vocabulary (`[CTA·Y/N]/THESIS/ANTI/SYNTH`) stays a dyad-steward **local delta**.
+- **Nomenclature: adopt `discipline` / retire best-practice "cycle"** *(declaration change → Founding
+  gate, not library track)*. A **`term`** contribution: `discipline` = a series of dyadic-cycles;
+  `dyadic cycle` kept as the unit; the form's double-use of "cycle" (atom + recipe) removed.
+  **Prerequisite to the DFD publish** — bundle for one gate. *Staged, not disposed (Steward proposes;
+  Founding gates).*
 
 *(The form's actual frontier — codifying **generative** mechanisms — we hold no candidate for yet.)*
 
