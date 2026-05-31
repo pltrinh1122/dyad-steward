@@ -241,12 +241,26 @@ real re-composition is driven by *pooled evidence*, not assertion.
     carries metadata + **mutates** under `filter-branch`/re-init/repo-migration — the very thing
     identity must survive. So: **git's first commit = witness/store; `sha256(birth-record bytes)` =
     the recomputable, vendor-neutral identifier.**
+  - **Uniqueness — `id = sha256(birth-anchor-content ‖ first-commit-timestamp)`** (Operator `[IDEATE]`
+    + backward-compat `[ALIGN]`, DOGFOODED 2026-05-31). Content alone risks (improbable but not
+    *guaranteed*-unique) collision between byte-identical birth records; the **first-commit timestamp
+    disambiguates**. **Backward-compatibility is a hard constraint** — existing Dyads will **never
+    "rebirth,"** so the disambiguator must come from data *already present*. An *in-content* birth-stamp
+    was **falsified** (it requires the DIP to write it at birth → excludes every already-born Dyad). The
+    **first-commit committer-date is already recorded immutably in every repo** → works retroactively,
+    no rebirth. **Verified:** `dyad-steward identity = sha256(git show <first>:CLAUDE.md ‖ <first-commit
+    ISO-date 2026-05-29T18:28:50-07:00>) = 4c42be0b…f000`, deterministic on recompute.
+  - **Register-once, don't re-derive live** (keeps migration-survival): the id is computed **once** from
+    the original first-commit date and **recorded as content** in the Commons participant-list. A later
+    history-rewrite can't retroactively change an *already-registered* identity, because registration
+    froze the inputs. (git first commit = the witness used at registration time.)
   - **Escalation frontier:** cryptographic **signatures** (C4) if spoof-resistance beyond
     recomputable-hash ever bites; **ledger-derived weight** (C5) — identity accrues weight by survived
     contribution, like every other unit — is the *direction*.
   - *Spawn (when Operator converges): a `[CTA]` to open Dyad Identity as its own live cycle and
-    flag back to the form (Founding gate) that the DIP's first anchor-commit is the canonical birth
-    record (no new artifact needed — name the existing convention).*
+    flag back to the form (Founding gate) that the canonical Dyad identity is
+    `sha256(first-anchor-commit content ‖ first-commit-timestamp)`, registered once into a Commons
+    participant-list — derivable for every already-born Dyad, no new artifact and no rebirth.*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
   dogfood + its ledger) · `CLAUDE.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
