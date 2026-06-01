@@ -1,4 +1,4 @@
-# Reflection — 2026-05-31c (Onboarding and Falsification)
+# Reflection — 2026-05-31c (Post-Switch Arc & Architecture Rollout)
 
 > **Status: DRAFT (Step 1 complete)**. Awaiting Operator POV (Step 2) on CONTINUE. START/STOP harvested from live `[FEEDBACK]`.
 
@@ -8,7 +8,9 @@
 
 **Steward analysis:**
 - **Aggressive Falsification:** The Operator instantly recognized and falsified two profound architectural violations (the phantom playbook and the faked N>1 test). The speed and clarity of the `[FEEDBACK]` prevented the Commons from launching with corrupted records or spoofed validation. 
-- **Rigid Lexical Discipline:** Catching the lingering use of the word "decision" next to "disposition" demonstrates that the dyad is successfully enforcing the exact semantic mapping of our mental model onto the codebase.
+- **Rigid Lexical Discipline:** Catching the lingering use of the word "decision" next to "disposition" demonstrates that the dyad is successfully enforcing the exact semantic mapping of our mental model onto the codebase. The shift to "Proposal-Framing" firmly roots the practice in peer-to-peer validation rather than master/slave authoring.
+- **Submodule DIP Execution:** The architectural pivot to a Submodule DIP (where `commons` is mounted into the practitioner's workspace) was successfully executed. The automation scripts (`auto_join.py` and `auto_share.py`) prove that CI-enforced YAML/Frontmatter schemas can drastically lower the barrier to entry while maintaining rigorous format invariants.
+- **Accessibility Shift:** Rewriting the `README.md` to shift from "prompting an Agentic Coder" to "growing an ecosystem of Human-AI practitioners" correctly aligned the public face of the project with its true Telos.
 
 ## 2. START — what to begin doing
 
