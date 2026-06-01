@@ -68,13 +68,20 @@ specialization.
 | 4 | multiple asks per surfacing | forced Operator to author prioritization |
 | 5 | decidable-out-of-flow | drift jumped from the CTA to the *show* (retrieval cost) |
 
-Mapped to the discipline-ontology field-set:
-- **trigger:** surfacing a decision to your partner
-- **move:** [propose one disposition · fold in its strongest counter · propose a reconciliation · ask one Y/N] *(4 wu-wei-atomic steps; several drop-tested by the failures above)*
-- **claim:** framing-as-validate (not author) makes the partner's dispose cheap while keeping the contest real
-- **refutation:** [cost migrates back to Operator · becomes rubber-stamp · markers don't earn keep]
-- **ledger:** the n=5 above
-- *(mechanism, derived: falsify + minimum-force)*
+Mapped to the discipline-ontology field-set (via **YAML Frontmatter**):
+```yaml
+---
+origin: "sha256:4c42be0b…f000"
+unit-kind: "playbook"
+schema-version: "discipline-ontology@2026-05-31"
+lineage: "none"
+trigger: "surfacing a decision to your partner"
+claim: "framing-as-validate (not author) makes the partner's dispose cheap while keeping the contest real"
+refutation: "cost migrates back to the disposer (author-not-validate) · becomes a rubber-stamp (no real counter) · sprouts markers that don't earn their keep"
+mechanism: "falsify + minimum-force"
+---
+```
+*(The pedagogical move and ledger remain in rich Markdown below the frontmatter).*
 
 **HONESTY FLAG (stated in the PR, not hidden):** the n=5 ledger is **all one dyad**. §Growing's bar is
 *"synergy demonstrated"* and `kb/dfd.md` itself names the higher bar *"across more dyads than just us."*
