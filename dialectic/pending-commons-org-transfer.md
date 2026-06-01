@@ -1,9 +1,13 @@
-# Pending: Commons org-transfer locator remediation — HELD
+# Commons org-transfer locator remediation — EXECUTED (PRs await Founding merge)
 
-> **Status: HELD, awaiting trigger.** Founding Operator is transferring the Commons depot
-> (`the-dyad-practice`) to a new **"The Dyad Practice Commons"** org (`[NOTE]` 2026-06-01). Agreed
-> sequence (`[ALIGN]`): **Operator finishes the move → then we remediate the fixes to match new state.**
-> Do **not** act until the Operator confirms the move is done **and** provides the new org slug/URL.
+> **Status: EXECUTED 2026-06-01.** Move confirmed done (new org `The-Dyad-Practice-Commons`, old path
+> redirects, PR #9 moved with the repo). New locator: `The-Dyad-Practice-Commons/the-dyad-practice`.
+> - **Unit 1 (our substrate):** AGENT.md + README.md swept → committed direct (`8df6af1`).
+> - **Unit 2:** PR #9 clone URL updated; `commons/` remote re-pointed to new org.
+> - **Unit 3:** Commons **PR #10** (AGENT.md ×2 + init_dyad.py) opened.
+> - **Awaiting:** Founding Operator merges **PR #9** and **PR #10** (Agent never merges).
+> - **Still deferred/queued:** org branch-protection/enforcement (gated-write thread); `auto_join.py`
+>   `pltrinh1122/{dyad_name}` namespace; init_dyad clone-vs-submodule + join idempotency bugs.
 
 ## Not urgent (why)
 GitHub **auto-redirects** transferred repos (web + git); PRs/issues **move with the repo**. So clones,
