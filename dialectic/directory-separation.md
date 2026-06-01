@@ -17,11 +17,10 @@ and lets a Dyad edit another's row) — yet the **index table in DIRECTORY.md *i
 shared table.** Per-Dyad `directory/*.yaml` solved registration, but the `.md` index re-introduces the
 very shared-edit surface it forbids. So the index must be **generated**, not hand-edited.
 
-## Concrete bug to fix alongside (low-hanging)
-DIRECTORY.md is internally inconsistent on the entry extension: header says source of truth is
-`directory/<dyad>.yaml`, but the Joining steps (line 35) and the table link (line 44) say
-`directory/<dyad>.md` / `dyad-steward.md`. The **actual files are `.yaml`** → the `.md` references are
-dead. (Folds into the self-registration remedy too.)
+## Concrete bug to fix alongside (low-hanging) — ✅ DONE (PR #12)
+~~DIRECTORY.md `.md` vs `.yaml` entry-extension inconsistency.~~ Fixed in PR #12 (the self-registration
+remedy): joining step, dyad-steward row, and siblings note now point at `.yaml`. The *structural*
+separation below is still open.
 
 ## Proposed split (NOT executed)
 - **`DIRECTORY.yaml` (or `.json`)** — machine-readable aggregate index, **generated** deterministically

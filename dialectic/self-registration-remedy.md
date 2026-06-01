@@ -1,8 +1,9 @@
-# Remedy dyad-steward's own Commons self-registration — QUEUED (FO-directed)
+# Remedy dyad-steward's own Commons self-registration — DONE (PR #12 merged)
 
-> **Status: QUEUED, FO-directed (2026-06-01).** Surfaced while verifying PR #11: **our own**
-> registration carries a **bogus birth_hash**. Identity-sensitive + Commons-facing → **Founding gate**;
-> we *propose* our corrected identity, the FO *disposes* (proposer ≠ disposer; Agent never merges).
+> **Status: DONE 2026-06-01.** PR #12 merged by FO. `directory/dyad-steward.yaml` `birth_hash` corrected
+> to canonical `sha256:72ba645f…` (recomputed from `CLAUDE.md@2a9dc10 ‖ %cI`, reproducible); DIRECTORY.md
+> dead `.md` entry-links fixed to `.yaml`. Verified on Commons `main` (placeholder gone, links fixed).
+> Identity *corrected*, not re-birthed. Original analysis retained below.
 
 ## The defect (grounded 2026-06-01)
 `commons/directory/dyad-steward.yaml` → `birth_hash: "sha256:4c42be0b…f000"` — a **placeholder with a
