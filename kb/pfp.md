@@ -1,18 +1,18 @@
-# DFD — the CTA failure-mode
+# PFP — the CTA failure-mode
 
 *Settled knowledge. First harvest of the Learning Discipline. The rule lives in
-`../AGENT.md` §DFD; this file holds the **lesson behind the rule** — why the rule exists and
+`../AGENT.md` §PFP; this file holds the **lesson behind the rule** — why the rule exists and
 how it was earned.*
 
 ## The lesson
 
-**DFD's `[CTA]` is the component that fails first under pressure — and it always fails the same
-way: by quietly migrating decision-cost back onto the Operator.** DFD's whole purpose is to move
+**PFP's `[CTA]` is the component that fails first under pressure — and it always fails the same
+way: by quietly migrating decision-cost back onto the Operator.** PFP's whole purpose is to move
 the Operator from *authoring* (costly) to *validating* (cheap). The CTA is where that purpose is
 either delivered or betrayed. The other slots (THESIS / ANTI-THESIS / SYNTHESIS / ref) supply the
 Operator's validation; the CTA is the ask itself, so a malformed CTA defeats the frame no matter
 how good the rest is. *(The frame has since evolved to `[CTA·Y/N] / [THESIS] / [ANTI-THESIS] /
-[SYNTHESIS] → ref` — see `../AGENT.md` §DFD; the failure-modes below predate the rename but
+[SYNTHESIS] → ref` — see `../AGENT.md` §PFP; the failure-modes below predate the rename but
 transfer directly.)*
 
 ## The two failure-modes (each caught in real use, 2026-05-29)
@@ -23,7 +23,7 @@ transfer directly.)*
    **Fix:** the CTA is addressed *TO* the Operator and names the disposition *they* make.
 
 2. **Either/or CTA** — *"Commit now or hold?"*. Offers alternatives, forcing the Operator to
-   *author* a selection — re-importing the very cost DFD removes. A two-option ask looks like
+   *author* a selection — re-importing the very cost PFP removes. A two-option ask looks like
    validation but is disguised authoring.
    **Fix:** the CTA proposes a *single* disposition, answerable **Y/N**. Genuine alternatives go
    in the ANTI-THESIS; the recommended path is the Y.
@@ -42,7 +42,7 @@ transfer directly.)*
 4. **Multiple asks per surfacing** — presenting two CTAs at once (or a CTA bundled with an open
    elicitation), as in the *"Two things for you: (a) your POV (b) the decision…"* surface caught
    2026-05-29. Even when each ask is individually well-formed, stacking them forces the Operator to
-   first author a *prioritization/sequencing* — the same cost DFD removes, one level up.
+   first author a *prioritization/sequencing* — the same cost PFP removes, one level up.
    **Fix:** **at most one CTA per surfacing.** Queue the rest *by name* (not framed) and surface
    them one at a time as each clears. A non-CTA ask bundled with a CTA dilutes the CTA — keep the
    surface single-ask.

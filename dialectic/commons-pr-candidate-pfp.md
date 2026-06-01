@@ -1,16 +1,16 @@
-# STAGED Commons PR candidate — DFD discipline + `discipline`/"cycle" term
+# STAGED Commons PR candidate — PFP playbook + `discipline`/"cycle" term
 
 > **Status: STAGED in dyad-steward's substrate — NOT submitted.** Node **N4** of the dogfood DAG
 > (`commons-contribution-lifecycle.md`). This is the *proposal artifact* the Steward (proposer) drafts;
 > the **merge is the Founding-Operator gate** (N5) — not ours to dispose. It bundles the **`term`
-> prerequisite** (discipline/cycle) with the **DFD discipline** (DFD crosses *as a* `discipline`), one
+> prerequisite** (discipline/cycle) with the **PFP playbook** (PFP crosses *as a* `playbook`), one
 > gate. **First lived dogfood of the Commons Contribution Lifecycle's Publish role.**
 >
 > **Library structure RATIFIED (Founding Operator dispose, 2026-05-31):** L3 + consumer-grain —
 > each discipline is a **directory**: `library/<name>/playbook.md` (stable body, Founding-gated) +
 > `library/<name>/ledger/<contributor-hash>-<n>.md` (append-only testimonials, mechanical contribution-
 > gate, conflict-free). Part B below is now **materialized** at
-> `dialectic/staged-commons/library/decision-framing/` (body + n=5 ledger seed). The declaration gets
+> `dialectic/staged-commons/library/proposal-framing/` (body + n=5 ledger seed). The declaration gets
 > only the **one-line index entry**; the record + ledger live in `library/`.
 >
 > **Joining gate satisfied:** `origin` = dyad-steward, registered in `DIRECTORY.md` (N1), birth-hash
@@ -45,20 +45,18 @@ survival*. The term and the survival-mechanism are one object.
 
 ---
 
-## Part B — `discipline`: Decision-Framing (the DFD entry)
+## Part B — `playbook`: Proposal-Framing (the PFP entry)
 
 **Proposed §The disciplines entry (form voice, one line):**
 
-> - You're surfacing a decision to your partner — render it as **one** proposition they can answer
->   **Y/N**, with its strongest counter and a proposed reconciliation, so they **validate** instead of
->   **author**. *(decision-framing — falsify + minimum-force)*
+> - **Proposal-Framing:** When surfacing a decision to your partner (whether you are the Human or the Agent), do not ask open-ended questions. Instead: propose one disposition, fold in its strongest counter, propose a reconciliation, and ask a single Y/N. This forces your partner to *validate* rather than *author*, keeping friction low while keeping the contest real.
 
 **The orthogonality cut (what crosses vs stays home):** the **general recipe** crosses (above); the
 dyad-steward **slot-vocabulary** (`[CTA·Y/N]/[THESIS]/[ANTI-THESIS]/[SYNTHESIS] → ref`) stays a
-**local delta** in our `AGENT.md` §DFD. Commons owns the general recipe; each dyad owns its
+**local delta** in our `AGENT.md` §PFP. Commons owns the general recipe; each dyad owns its
 specialization.
 
-**Travelling testimonial (the >N=1 admission bar) — n=5 survived corrections, none refuting** (`kb/dfd.md`):
+**Travelling testimonial (the >N=1 admission bar) — n=5 survived corrections, none refuting** (`kb/pfp.md`):
 
 | # | correction | what it caught |
 |---|---|---|
@@ -84,7 +82,7 @@ mechanism: "falsify + minimum-force"
 *(The pedagogical move and ledger remain in rich Markdown below the frontmatter).*
 
 **HONESTY FLAG (stated in the PR, not hidden):** the n=5 ledger is **all one dyad**. §Growing's bar is
-*"synergy demonstrated"* and `kb/dfd.md` itself names the higher bar *"across more dyads than just us."*
+*"synergy demonstrated"* and `kb/pfp.md` itself names the higher bar *"across more dyads than just us."*
 So this is **strong on depth, single-dyad on breadth** — its survival depends on other dyads
 subscribing-and-reporting (Participate). That is exactly what the lifecycle predicts: **Publish seeds
 n=1-dyad; Participate compounds.** Not a weakness to hide — the mechanism's design.
@@ -102,5 +100,5 @@ n=1-dyad; Participate compounds.** Not a weakness to hide — the mechanism's de
 
 ---
 *Cross-link: `commons-contribution-lifecycle.md` (the mechanism this dogfoods) · `discipline-ontology.md`
-(the field-set) · `kb/dfd.md` (the n=5 ledger) · `DIRECTORY.md` (the Joining gate) · `AGENT.md` §DFD
+(the field-set) · `kb/pfp.md` (the n=5 ledger) · `DIRECTORY.md` (the Joining gate) · `AGENT.md` §PFP
 (the local-delta slot-vocabulary).*

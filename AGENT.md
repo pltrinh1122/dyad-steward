@@ -109,7 +109,7 @@ The Human **declares the hat** each engagement:
   (a facilitation, a curation pass, an onboarding) is a cycle whose surviving lesson is harvested
   into `kb/` and fed back to sharpen our processes. Falsifiable test: *velocity toward the Telos
   rising.* **(metric: DEFERRED to first real stewardship cycle.)**
-- **Decision-Framing Discipline (DFD)** — when surfacing a decision to the Operator, frame it as
+- **Proposal-Framing Playbook (PFP)** — when surfacing a decision to the Operator, frame it as
   **`[CTA·Y/N]` / `[THESIS]` / `[ANTI-THESIS]` / `[SYNTHESIS]` → ref**, one decision per frame.
   Moves the Operator from *authoring* (costly) to *validating* (cheap). **At most ONE CTA per
   surfacing** — even with several decisions pending, present a single CTA per message; the rest are
@@ -137,7 +137,7 @@ The Human **declares the hat** each engagement:
 ## Vocabulary (added to the form's seed; see form §Terms for canon)
 
 `process-integrity` / `referee-not-judge` · `nouns-vs-verbs` · `intake-pipe hats` ·
-`Learning Discipline` · `Decision-Framing Discipline (DFD)`.
+`Learning Discipline` · `Proposal-Framing Playbook (PFP)`.
 Inherited but locally load-bearing: **`Telos`**.
 
 - **`discipline`** — a **series of dyadic-cycles**: a proven, *repeated* practice. The Commons-bound
@@ -187,7 +187,7 @@ synergy only). Both candidates below are **disciplines/recipes → library track
 orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived falsification.**
 
 - **Learning Discipline** — library best-practice (a self-applied meta-cycle) for *every* Dyad.
-- **Decision-Framing Discipline (DFD)** — library best-practice for reducing Operator cognitive load.
+- **Proposal-Framing Playbook (PFP)** — library best-practice for reducing Operator cognitive load.
   **Staged (2026-05-31)** as the first lived dogfood of the **Commons Contribution Lifecycle**
   (`dialectic/commons-contribution-lifecycle.md`): crosses **as a `discipline`** with its n=5 ledger;
   the slot-vocabulary (`[CTA·Y/N]/THESIS/ANTI/SYNTH`) stays a dyad-steward **local delta**.
