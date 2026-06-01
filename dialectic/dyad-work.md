@@ -18,7 +18,7 @@ Dyad UI — interaction / framing layer  ("how the two halves signal")
 Dyad Work — the work layer  ("what the work is, how it moves")   [name provisional]
    · goal intake / planning → goal-framing.md (WHAT) + goal-framing-grounding.md (audit/lineage)  ◐ RATIFIED-DRAFT (n=1)
    · prioritization of work → nba-dag.md (NBA→DFD)               ✓ built
-   · progress of work       → session-ritual.md (Stand Up/Down/Intermission/Time-Out)  ✓ built
+   · progress of work       → session-ritual.md (Stand Up/Down/Intermission/Time-Out; PR-as-audit-bundle)  ✓ built
    · types of work          → GAP (unbuilt — the planning frontier; GOAL step-3 is its first puller)
 
 (foundational, under BOTH — not inside either)
