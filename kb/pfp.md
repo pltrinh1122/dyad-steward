@@ -7,7 +7,7 @@ how it was earned.*
 ## The lesson
 
 **PFP's `[CTA]` is the component that fails first under pressure — and it always fails the same
-way: by quietly migrating decision-cost back onto the Operator.** PFP's whole purpose is to move
+way: by quietly migrating validation-cost back onto the Operator.** PFP's whole purpose is to move
 the Operator from *authoring* (costly) to *validating* (cheap). The CTA is where that purpose is
 either delivered or betrayed. The other slots (THESIS / ANTI-THESIS / SYNTHESIS / ref) supply the
 Operator's validation; the CTA is the ask itself, so a malformed CTA defeats the frame no matter
@@ -20,7 +20,7 @@ transfer directly.)*
 1. **Agent-voice CTA** — *"Re-route our candidates…", "I'll resolve…"*. Phrases the path forward
    as the Agent's own next action. Collapses proposer→validator: the Agent both proposes and
    (implicitly) validates. That is 1+1=2 — the exact collapse the NON-NEGOTIABLE guards.
-   **Fix:** the CTA is addressed *TO* the Operator and names the decision *they* make.
+   **Fix:** the CTA is addressed *TO* the Operator and names the validation *they* make.
 
 2. **Either/or CTA** — *"Commit now or hold?"*. Offers alternatives, forcing the Operator to
    *author* a selection — re-importing the very cost PFP removes. A two-option ask looks like
@@ -40,7 +40,7 @@ transfer directly.)*
    so a synthesis no longer threatens the gate the way the first reasoning feared.
 
 4. **Multiple asks per surfacing** — presenting two CTAs at once (or a CTA bundled with an open
-   elicitation), as in the *"Two things for you: (a) your POV (b) the decision…"* surface caught
+   elicitation), as in the *"Two things for you: (a) your POV (b) the validation…"* surface caught
    2026-05-29. Even when each ask is individually well-formed, stacking them forces the Operator to
    first author a *prioritization/sequencing* — the same cost PFP removes, one level up.
    **Fix:** **at most one CTA per surfacing.** Queue the rest *by name* (not framed) and surface
@@ -67,7 +67,7 @@ surface before sending:
 
 > **Is there exactly ONE ask here; can the Operator validate it with a single "Y" or "N"
 > *without leaving the flow* (THESIS renders the decidable core; refs are correct + supplementary);
-> is the decision theirs (not mine) to make; and have I supplied my full generate half (a
+> is the validation theirs (not mine) to make; and have I supplied my full generate half (a
 > SYNTHESIS, not just the contest)?** If no on any count, the surface is malformed — reframe before
 > sending.
 

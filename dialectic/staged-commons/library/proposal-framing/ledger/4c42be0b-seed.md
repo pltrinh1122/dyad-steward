@@ -7,7 +7,7 @@
 Each entry = a survived dyadic-cycle (a real correction that the discipline survived, none refuting):
 
 1. **Agent-voice CTA** — phrasing the path forward as the Agent's own next action → proposer→validator
-   collapse (1+1=2). Fix: address the CTA *to* the validator; name *their* decision.
+   collapse (1+1=2). Fix: address the CTA *to* the validator; name *their* validation.
 2. **Either/or CTA** — offering alternatives forces the validator to *author* a selection (disguised
    authoring). Fix: one path forward, answerable Y/N; alternatives go in the counter.
 3. **Omitted reconciliation** — staging the contest without proposing the synthesis drops the
