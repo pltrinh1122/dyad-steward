@@ -46,6 +46,23 @@ behind a CTA — the Operator caught the conflation.* *Lived (2026-05-30): a ful
 run, the N2 retraction) sat uncommitted because the Agent bound durability to Stand Down; the Operator
 caught the conflation.*
 
+**PR-as-audit-bundle: the Agent never merges** (Steward Operator gate, 2026-06-01; `[IDEATE]`→ratified).
+A PR bundles the atomic *resilient commits* (each an atomic unit of verified work) of an **intended
+job/task** into one **auditable unit** — the Operator's consumption grain (curiosity + audit at
+**PR-merge granularity**, not per-commit). The flow: **Agent works on a job/task branch, pushes
+(standing-authorized durability), and opens the PR — propose-only; the *Operator* merges**, as their
+audit/consumption checkpoint. **The Agent never runs `merge` — on any substrate.** This is what makes
+it safe: on **our own** substrate a merge *means* **packaging/durability** (not a dialectical dispose —
+we have no Founding gate over ourselves; we already self-dispose by direct-push); on the **Commons** the
+*identical* "human merges" rule *means* the **Founding dispose**. Same gesture, different meaning — so
+"Agent never merges" is a clean **universal** that *strengthens* `proposer≠disposer` instead of eroding
+it, and needs **no `gh pr merge` auto-allow** for the Agent (zero new permission surface). *Scope:*
+PR-flow for **intended jobs/tasks** (multi-commit units worth auditing as one); **direct-push to `main`
+retained for trivial single durability commits** (a lone doc tweak needn't be a PR). *Relationship to
+the push discipline:* `push` (to a branch or `main`) stays mechanical/standing-authorized; what changes
+is that *job-sized* work lands via **branch → PR → Operator-merge** rather than direct-to-`main`. *Lived:
+this very adoption was the first PR-as-audit-bundle (2026-06-01).*
+
 **Stand Down persists; it does not decide** (Operator feedback, 2026-05-29). At close, surface a
 **`[CTA]` only for work too fragile to survive the `/exit`+restart cycle** — i.e. unpersisted state
 that would be *lost*. Everything else (substantive decisions that can wait — vocab promotions,
