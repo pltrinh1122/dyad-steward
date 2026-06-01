@@ -1,9 +1,11 @@
-# Commons onboarding follow-ups — QUEUED (Founding-gated)
+# Commons onboarding follow-ups — SUBSUMED by PR #14 (awaiting FO merge)
 
-> **Status: QUEUED.** Concrete Commons onboarding/script defects surfaced 2026-05-31..06-01 while
-> fixing the Join/Init order (PR #9) and the org-transfer locator. Each is a **Commons change →
-> Founding gate**; the Steward proposes, the Founding Operator disposes. Not urgent (redirects + the
-> README fix make onboarding workable), but they undermine the **idempotency** existing Dyads expect.
+> **Status: SUBSUMED by the wu-wei onboarding rebuild (PR #14, `onboard.py`).** All three items below
+> dissolve in the single idempotent tool rather than getting patched piecemeal: (1) namespace → the
+> tool scaffolds a `<your-namespace>` placeholder, not a hardcoded account; (2) clone-vs-submodule →
+> the tool's `ensure_commons` does submodule-add with a clone fallback; (3) join idempotency → the
+> tool is re-runnable and joining is self-authorizing direct-deposit (no fragile `checkout -b join`).
+> Pending FO merge of PR #14. Original analysis retained below for the reviewer.
 
 ## Open items
 
