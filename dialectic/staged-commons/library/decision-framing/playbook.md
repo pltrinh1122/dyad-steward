@@ -1,7 +1,7 @@
-# Decision-Framing — a `discipline` *(STAGED Commons record)*
+# Decision-Framing — a `playbook` *(STAGED Commons record)*
 
 > **STAGED in dyad-steward's substrate — NOT the live Commons.** This is the **body** of a library
-> record under the ratified structure (Founding Operator dispose, 2026-05-31): `discipline.md` =
+> record under the ratified structure (Founding Operator dispose, 2026-05-31): `playbook.md` =
 > stable body (Founding-gated; rarely edited); `ledger/` = append-only testimonials (mechanical
 > contribution-gate, conflict-free). True home = `the-dyad-practice/library/decision-framing/`.
 
@@ -9,11 +9,9 @@
 - **schema-version:** discipline-ontology @ 2026-05-31
 - **lineage:** none (origin record)
 
-## Index line (for the declaration §The disciplines — the *context-unit* projection)
+## Index line (for the declaration §How can you use this? — the *context-unit* projection)
 
-> - You're surfacing a decision to your partner — render it as **one** proposition they can answer
->   **Y/N**, with its strongest counter and a proposed reconciliation, so they **validate** instead of
->   **author**. *(decision-framing — falsify + minimum-force)*
+> - **Decision-Framing:** When surfacing a decision to your partner (whether you are the Human or the Agent), do not ask open-ended questions. Instead: propose one disposition, fold in its strongest counter, propose a reconciliation, and ask a single Y/N. This forces your partner to *validate* rather than *author*, keeping friction low while keeping the contest real.
 
 ## Body — the field-set *(two-pronged-atomic)*
 
@@ -31,7 +29,7 @@
 
 ## Local delta (NOT part of the Commons record — lives in each dyad's own anchor)
 
-dyad-steward specializes this discipline with its slot-vocabulary
+dyad-steward specializes this playbook with its slot-vocabulary
 `[CTA·Y/N]/[THESIS]/[ANTI-THESIS]/[SYNTHESIS] → ref` (`AGENT.md` §DFD). The Commons owns the general
 recipe; each dyad owns its specialization. *(Orthogonality cut.)*
 
@@ -41,5 +39,5 @@ The accumulating evidence lives in `ledger/` — **one testimonial per file** (`
 append-only. Weight = file count. See `ledger/` for the n=5 seed (dyad-steward).
 
 > **Breadth honesty:** the seed ledger is **single-dyad** (dyad-steward, n=5 deep). Admission as a
-> Commons discipline is **provisional — seeking a second testimonial** until another dyad's ledger
+> Commons playbook is **provisional — seeking a second testimonial** until another dyad's ledger
 > entry lands (the Publish→Participate path). Depth ≠ breadth.

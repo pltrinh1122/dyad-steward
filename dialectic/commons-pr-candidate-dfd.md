@@ -7,7 +7,7 @@
 > gate. **First lived dogfood of the Commons Contribution Lifecycle's Publish role.**
 >
 > **Library structure RATIFIED (Founding Operator dispose, 2026-05-31):** L3 + consumer-grain —
-> each discipline is a **directory**: `library/<name>/discipline.md` (stable body, Founding-gated) +
+> each discipline is a **directory**: `library/<name>/playbook.md` (stable body, Founding-gated) +
 > `library/<name>/ledger/<contributor-hash>-<n>.md` (append-only testimonials, mechanical contribution-
 > gate, conflict-free). Part B below is now **materialized** at
 > `dialectic/staged-commons/library/decision-framing/` (body + n=5 ledger seed). The declaration gets
