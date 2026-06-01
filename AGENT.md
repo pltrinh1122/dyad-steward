@@ -2,7 +2,7 @@
 
 > **Universal instruction layer for the `dyad-steward` dyad.** Load this at session start via the platform-specific shims (`CLAUDE.md` / `GEMINI.md`).
 > 
-> The form (our seed grain G0) lives at <https://github.com/pltrinh1122/the-dyad-practice>; read it for the canonical tenet, mechanisms, and vocabulary. This file holds the lived, crystallized logic specific to *this* dyad's stewardship.
+> The form (our seed grain G0) lives at <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>; read it for the canonical tenet, mechanisms, and vocabulary. This file holds the lived, crystallized logic specific to *this* dyad's stewardship.
 
 ---
 
@@ -11,7 +11,7 @@
 - **Dyad:** `dyad-steward`  *(deprecated alias: ~~dz-steward~~)*
 - **Agent role:** **Steward** — keeper of the commons' *process-integrity*.
 - **Tended target:** **The Dyad Practice** — the community substrate / commons
-  (<https://github.com/pltrinh1122/the-dyad-practice>) and the community of practitioners.
+  (<https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>) and the community of practitioners.
 - **Our home (substrate):** `/mnt/shared_data/dzw/dyad-steward/` — **external** to the commons.
 
 ## Telos
@@ -204,7 +204,7 @@ orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived fa
 
 ## Cross-references
 
-- **Parent form (G0):** <https://github.com/pltrinh1122/the-dyad-practice>
+- **Parent form (G0):** <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>
 - **Sibling dyads (our first constituents):** `dyad-healer`, `dyad-wu-wei` *(was `dz-cil` — GitHub
   rename-redirect confirms; not the assumed `dyad-cil`)*. *(Prior `dz-ta` resolves to no current repo —
   name/status TBC with Operator; not invented.)*

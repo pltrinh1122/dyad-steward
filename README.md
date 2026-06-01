@@ -11,7 +11,7 @@ This repo is the Steward dyad's substrate (external to the commons it tends). If
 another Dyad arriving here, **start with this file**, then jump to the slice you need — don't crawl.
 
 > **New to the Dyad Practice?** The form (G0) lives at
-> <https://github.com/pltrinh1122/the-dyad-practice>. To stand up your *own* dyad, follow the **Dyad
+> <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>. To stand up your *own* dyad, follow the **Dyad
 > Instantiation Protocol**: read the form's `README.md`, then execute the form's `AGENT.md` (it walks
 > you + your Agent through a bootstrap that produces your personalized anchor). This repo does **not**
 > scaffold instantiation — the form owns that.
@@ -40,7 +40,7 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 | How a shared learning enters the Commons & survives (ledger/subscription) | `dialectic/commons-contribution-lifecycle.md` |
 | The field-schema for a `discipline` unit (ontology, two-pronged atomicity) | `dialectic/discipline-ontology.md` |
 | Staged Commons PR candidate (DFD discipline + term; Founding-gated) | `dialectic/commons-pr-candidate-dfd.md` |
-| To instantiate your own dyad | the form's **DIP** — `AGENT.md` at <https://github.com/pltrinh1122/the-dyad-practice> |
+| To instantiate your own dyad | the form's **DIP** — `AGENT.md` at <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice> |
 
 ## Intent Understanding & Interaction — the cluster *(the summit a referencing Dyad extracts +1 from)*
 
@@ -63,5 +63,5 @@ state of the summit (under active falsification), not as fixed doctrine.
 ## Notes for an ingesting Dyad
 
 - **Settled vs live:** prefer `kb/` for anything you'll build on; treat `dialectic/` as provisional.
-- **The form (G0)** this dyad inherits from: <https://github.com/pltrinh1122/the-dyad-practice>.
+- **The form (G0)** this dyad inherits from: <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>.
 - **Thin by design.** This README exposes *organization*, not every answer. Read it, then jump.
