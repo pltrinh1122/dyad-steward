@@ -5,7 +5,9 @@
 > - **Unit 1 (our substrate):** AGENT.md + README.md swept → committed direct (`8df6af1`).
 > - **Unit 2:** PR #9 clone URL updated; `commons/` remote re-pointed to new org.
 > - **Unit 3:** Commons **PR #10** (AGENT.md ×2 + init_dyad.py) opened.
-> - **Awaiting:** Founding Operator merges **PR #9** and **PR #10** (Agent never merges).
+> - **DONE:** PR #10 folded into **PR #9** (FO collapse-to-one); **PR #9 MERGED by FO** 2026-06-01.
+>   Independently verified: Commons `main` has 0 stale locator refs + the Join/Init fix. Clone synced,
+>   submodule bumped.
 > - **Still deferred/queued:** org branch-protection/enforcement (gated-write thread); `auto_join.py`
 >   `pltrinh1122/{dyad_name}` namespace; init_dyad clone-vs-submodule + join idempotency bugs.
 
