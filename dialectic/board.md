@@ -1,8 +1,15 @@
-# Board — living backlog (ready-set + blocked-by) — dyad-steward
+# Board — living backlog of trails (ready-set + blocked-by) — dyad-steward
+
+> **Vocabulary** *(ratified 2026-06-02; `AGENT.md` §Vocabulary)*: each item is a **`trail`** — a line of
+> work ascending toward a **`+1 summit`**; a **dependency** is an edge between trails; **`path`** is
+> reserved for the graph sense (a chain of trails). The board is **summit-rooted** — every trail traces
+> up to a summit (S1 `commons process-integrity` · S2 `knowledge compounding`), except
+> enabling-infrastructure trails that trace one hop to the *capacity-to-climb* (b1). *Per-trail
+> summit-rooting is the deferred build step (sequenced after); terminology adopted now.*
 
 > **Status: LIVE.** Stand-Up reads it; Intermission / Stand-Down update it. Opened 2026-06-02,
 > resolving `board-as-dag.md` (FO-directed) — **falsified toward the lightweight form:** flat
-> ready-set + blocked-by tags, **not** a formal DAG (~4 real precedence edges among ~15 items; the
+> ready-set + blocked-by tags, **not** a formal DAG (~4 real precedence edges among ~15 trails; the
 > rest are thematic — "relation ≠ edge"). Escalate to a formal DAG *only if* a real tangle ever makes
 > tags too coarse (board-as-dag's escalation clause, not its default).
 >

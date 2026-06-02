@@ -162,6 +162,24 @@ Inherited but locally load-bearing: **`Telos`**.
   **matchmaking** signal (same-summit = co-work/contest → Resonating, *not* collision), **not** the
   Steward-owned `Domain:` work-area bucket (distinct term — `domain` would overload). *Ratified
   2026-05-31 (Steward Operator).* → `DIRECTORY.md` · `dialectic/commons-contribution-lifecycle.md`
+- **`trail` / summit-rooted board** — the **unit-of-work** vocabulary, metaphor-grounded on `summit`
+  (1+1=3 with the form's frame, not a parallel metaphor), one job per term:
+  - **`trail`** — a *line of work* ascending toward a `+1 summit`; the **node** on our backlog board
+    (`dialectic/board.md`). Complement of `summit` (you *trail* toward one), orthogonal to `domain`
+    (the work-*area*). **Chosen over `track`** (collides 3×: the verb *track* = the board's own
+    activity; the existing frontier/library **contribution-`track`**; the rail/corporate sense) **and
+    over `path`** (reserved → below).
+  - **`path`** — **reserved for the graph sense only**: a chain of dependent trails through the board.
+    *Not* the unit.
+  - **summit-rooted structure** — the board's dependency graph roots at the `+1 summit`s (summit = root,
+    trail = node, dependency = edge, path = chain), yielding **Telos-traceability**. *Two honesty
+    bounds:* **(b1)** traceability is *direct* only for summit-routed trails — **enabling-infrastructure**
+    trails (the board itself, lifecycle) trace one hop to the *capacity-to-climb*, not a specific summit;
+    **(b2)** the "a trail is worn in by walking, not imposed" wu-wei reading is **aspirational** — our
+    board trails are pre-declared top-down today, not emergent.
+  *Local coinage 2026-06-02 (healer + steward; metaphor-grounded on the Commons' `summit`). Ratified
+  Steward Operator; provenance check vs Commons-canon rides the wu-wei #3 vocab-alignment thread.*
+  → `dialectic/board.md` · `nba-dag.md` · `board-as-dag.md`
 
 **Dyad-UI cluster** *(load-bearing; cycles still live — `°` = RESOLVED-candidate, not yet graduated to `kb/`)*:
 
