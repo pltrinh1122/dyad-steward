@@ -45,6 +45,34 @@ The benefit is *bought* by mechanisms that force independence:
   correlation caveat is wrong (N-version evidence argues against this).
 - The common-cause residual **dominates** such that decorrelation doesn't move the rate → wrong lever.
 
+## Evidence — software-engineering practice (FO `[NOTE]` 2026-06-02)
+*Added per FO; with the theory's own discipline — include the nuancing/cutting evidence, not only the
+confirming (cherry-picking would be the mutual-confirmation failure this theory warns against).*
+
+**Supports the refined (decorrelation) theory — crucially, NOT the naive product:**
+- **TDD / test-first effectiveness.** Nagappan, Maximilien, Bhat & Williams (2008, *Empirical SE*):
+  test-driven teams at Microsoft/IBM cut defect density **40–90%** (for ~15–35% more dev time). The
+  benefit attaches to writing the test **from the spec/intent *before* the code** — i.e. it *is* a
+  decorrelation mechanism. Strong support for the **lever**, not the bare product.
+- **Independent V&V / code inspection.** NASA IV&V and Fagan inspections (1976): an **independent**
+  party catches defects the author's own checking misses. Direct support for the **"different generator
+  catches common-cause"** corollary → the rigorous case for **Tier 3 (dyad-bond)**.
+
+**Nuances / cuts (the honest other half):**
+- **Coverage ≠ effectiveness.** Inozemtseva & Holmes (2014, ICSE): test-suite coverage is **not**
+  strongly correlated with fault-detection once size is controlled. Tests that **mirror the
+  implementation** (high coverage, low independence) underperform — i.e. **correlated tests are weak**,
+  exactly the failure mode. Supports the theory *by cutting against naive "just add tests."*
+- **Author-written-after-code tests** encode the author's blind spots (confirmation-oriented) — the
+  **weak/correlated** form; effectiveness comes from independence, not test-count.
+
+**The load-bearing caveat (don't over-claim):** this evidence is **human-written** tests in industrial
+settings. An LLM generating *both* code and test from one context/weights is plausibly **more
+correlated** than two human developers — so the SE evidence transfers **by analogy, not directly**, and
+the likely implication is that **decorrelation matters *more* for Agent self-generation, not less**.
+That is itself a refutation-condition to watch (if Agent self-tests catch at human-independent rates,
+the higher-correlation conjecture is wrong).
+
 ## Ledger (continuously tested — append each code+test generation)
 *Record: did the independent test catch a real bug? if one escaped, was it common-cause (correlated) or
 genuinely independent? did a decorrelation mechanism move the catch?*
