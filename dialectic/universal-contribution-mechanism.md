@@ -114,6 +114,30 @@ Prove-then-expand, minimum force — **not** a big-bang declaration restructure.
 - **Design forks surfaced *in* the PR for the gate** (not pre-decided unilaterally): the home/collection
   (`declaration/` proposed) and how far to slim the README's front-door prose.
 
+### Status (2026-06-01/02)
+- **Slice 1 — MERGED** (Commons PR #17): `1+1=3` tenet homed, README composes over it.
+- **Slice 2 — MERGED** (Commons PR #18): failure-boundaries unit homed; two-pronged test made it ONE
+  unit (rest is framing/pointers/Telos — folded). Register pattern set (FO): first link keeps the
+  "falsifiable knowledge-unit" preamble, subsequent are plain "learn more →".
+- **Slice 3a (rename) — MERGED** (Commons PR #19): all five bodies → ALL-CAPS; every ref + the script
+  consumer (`auto_share.py`) updated; verified zero lowercase refs / no broken links.
+- **Slice 3b (`schema.json`) — QUEUED, blocked by new-found context (FO pivot 2026-06-02).**
+  > **BLOCKER (verified, cold-path):** a front-matter contract can't ship — **only 1 of 5 unit bodies
+  > has YAML front-matter** (`PLAYBOOK.md`, the `auto_share.py`-generated one). The others carry
+  > metadata three inconsistent ways: markdown bullets (`DISCIPLINE.md`), prose blockquote (`MECHANISM.md`
+  > / `BOUNDARIES.md`), inline prose (`SCHEMA.md`). **How unit metadata is machine-represented is
+  > unsettled — which IS the open metadata-rep fork of `contributing-discipline.md`.** Shipping a
+  > `schema.json` now would silently decide it.
+  > **Paths for the gate (un-disposed):** **(A)** normalize YAML front-matter `{origin, unit-kind,
+  > schema-version}` onto all five units first (one PR — *decides* "front-matter is the metadata rep"),
+  > then ship `schema.json` + a `validate_unit.py` (mirroring `validate_registry.py`; note: **no CI
+  > workflow exists** — validators run manually today). **(B)** hold `schema.json` with the IDEATE until
+  > the metadata-rep is settled deliberately. *Agent lean: A if FO is content to pin front-matter as the
+  > rep; else B.* → resolve under `contributing-discipline.md`.
+- **Also queued:** the totality README review (deferred until extraction+rename landed — now ready);
+  the `PLAYBOOK.md`/`DISCIPLINE.md` naming-unify observation (PR #19); `validate_unit.py` + CI wiring
+  (the contributing-discipline IDEATE).
+
 ## The emergence tie (summit candidate — flagged, not banked)
 If every artifact (including its own governing declaration's *living* parts) survives by the same
 ledger-mechanism, the substrate is **fully self-hosting** — "the system selects even its own selector"
