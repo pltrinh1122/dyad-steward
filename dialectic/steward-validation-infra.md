@@ -4,7 +4,15 @@
 > this" + `[IDEATE]`). Context: dyad-bond is on the frontier of an **independent validator for
 > generative work**; dyad-wu-wei has mature `test/` infra *because it generates a lot of code*. Question:
 > **the most wu-wei level of validation infra for Steward-generated work.** Complements the (behavioral)
-> verify triad in `AGENT.md`; subsumes the queued `validate_registry`/`validate_unit`/`schema.json`.
+> verify triad in `AGENT.md`.
+>
+> **HOME = Steward's repo (FO `[ALIGN]` 2026-06-02).** This is a **Steward *verb*** — validation of *our
+> own generation* — so per `nouns-vs-verbs` / single-home it lives **here** (`dyad-steward/`), NOT the
+> Commons. It does **NOT** own or subsume the Commons-side validators (`validate_registry`/`validate_unit`/
+> `schema.json` are Commons *nouns*, home there, Founding-gated). Our infra **invokes** them as one input
+> to our pre-PR preflight and **adds** checks the Commons doesn't (our-repo reference integrity, our
+> dialectic/kb structure, Commons-bound artifacts *before* we PR them). *Earlier drift corrected: I had
+> it subsuming the Commons validators — wrong home.*
 
 ## `[ALIGN]` — the prevention gap (why now)
 This session's defects were all caught **reactively**: summit-YAML corruption (Healer cold-path),
@@ -26,7 +34,9 @@ checker** (artifact-shaped), with code-tests a *secondary* tier only for the scr
 - **Tier 1 — repo-invariants checker (the wu-wei sweet spot).** ONE plain-Python script (mirroring
   `validate_registry.py`'s no-framework style), run **pre-PR**, asserting the structural invariants we
   actually depend on. Catches the artifact defect-classes we've *lived*. **This is the answer to "the
-  most wu-wei level."** It also **subsumes** `validate_registry` + the queued `validate_unit`/schema.json.
+  most wu-wei level."** Homes in **our** repo; **invokes** `commons/scripts/validate_registry.py` (reuse,
+  don't reimplement — single-source the Commons rule) and **adds** our-side checks. The Commons-side
+  `validate_unit`/`schema.json` (3b) stay a **separate, Commons-owned, Founding-gated** track.
 - **Tier 2 — script behavioral tests.** As our *code* surface grows (`onboard.py` is already non-trivial),
   a light test for cold-path behaviors (plain-clone-vs-submodule, idempotent re-run, the YAML-corruption
   case). *Here* dyad-wu-wei's `test/` pattern fits — scoped to our small script surface, not their large
@@ -66,4 +76,6 @@ dovetails with dyad-bond's independent-validator frontier (Tier 3). Flagged, not
 
 > Cross-link: `AGENT.md` §NON-NEGOTIABLE verify triad (the behavioral half) · `contributing-discipline.md`
 > (CI=form/FO=substance; `validate_*` ; schema.json) · `universal-contribution-mechanism.md` (3b
-> metadata-rep — Tier 1 subsumes it) · `healer-init-join-feedback.md` (the lived defect ledger).
+> metadata-rep — a *Commons-side*, Founding-gated track, distinct from this Steward-repo infra) ·
+> `healer-init-join-feedback.md` (the lived defect ledger) · `AGENT.md` §Ontology (nouns-vs-verbs —
+> *why* this homes here).
