@@ -45,13 +45,15 @@
 - Line-wrap mis-path + orphaned `.git/modules/commons` → environmental / prior agy-session leftover.
 - Signature/birth-hash mechanics → **strengths, not friction** (commits signed; identity anchored).
 
-## Suture sequencing (proposed — lean, by kind)
-- **#1** — shipped (PR #20).
-- **#2-sync, #3, #4** — clean sutures, author-on-go (small, no forks); could be one "Init+Join
-  hardening" PR or split.
-- **#2-access** — the one **design fork**: the Joining model assumes org write. Needs FO dispose
-  (fork-and-PR fallback vs onboard-does-the-deposit vs accept insiders-only + name it). Highest
-  conceptual weight; lowest mechanical clarity.
+## Suture status (by kind)
+- **#1** — **MERGED, Commons PR #20** (summit-YAML integrity).
+- **#2-sync, #3, #4** — **MERGED, Commons PR #21** ("Init+Join hardening": deposit rebase · summit
+  criterion · sandbox expectations). *(Caught + reverted a fork-and-PR fallback I'd slipped in — that's
+  #2-access, held for dispose.)*
+- **#2-access — OPEN, queued for FO dispose.** The one **design fork**: the Joining model assumes org
+  write, but external newcomers (who the Commons recruits) lack it. Directions: fork-and-PR fallback ·
+  `onboard.py` does an authenticated deposit · accept insiders-only + name it. Reshapes
+  `commons-contribution-lifecycle.md` §Joining. Highest conceptual weight; lowest mechanical clarity.
 
 > Cross-link: `commons-contribution-lifecycle.md` (§Joining = self-registration; the access fork lands
 > here) · `AGENT.md` `+1 summit` vocab (the #3 criterion) · `commons-onboarding-followups.md` (prior
