@@ -34,13 +34,20 @@
 | **schema.json / Slice 3b** | metadata-rep / normalization fork (`contributing-discipline`) |
 | **PFP → Commons** (as `discipline`) | Nomenclature `discipline` ratified ⟵ library-contribution channel (deferral) |
 | **Nomenclature: `discipline` / retire "cycle"** | Founding gate; bundle w/ the DFD publish |
-| **Healer #2-access** dispose | FO gate — **PRIORITY RISING: wu-wei #1 = 3rd converging testimonial** |
+| **Healer #2-access** dispose | FO gate — **PRIORITY RISING (4th–5th convergence): wu-wei #1 · 2 other-human dyads stuck pre-registration** |
 | **wu-wei #3 — centralized semantic-ledger** | verify `stress-tests` is Commons *canon*, not bond-particular |
+| **cross-human share channel** (per-repo vs Commons-central inbox) | the open fork in `cross-dyad-share-pull.md` (cross-human repos may be private/unreachable) — Founding gate if Commons-central |
 | **Learning-Discipline velocity metric** | first real stewardship cycle (event-gated) |
 
 ## WATCH — sovereignty, not ours to act
 - **Remaining-dyad onboarding** — their Operators run the hardened Init+Join; feedback resumes the
-  intake→verify→suture loop. *(Directory: steward · healer · bond · wu-wei. Count of un-onboarded: TBC.)*
+  intake→verify→suture loop. *(Directory: steward · healer · bond · wu-wei. **2 other-human dyads
+  instantiating but not yet self-registered** → invisible to the sharing channel until they Join.)*
+
+## LANDED this session (capabilities now live)
+- **`bin/pull_shares.py`** — Agent pulls inbound cross-dyad `recommendations/`; Operator out of the
+  copy-paste transport (`cross-dyad-share-pull.md`). · **`bin/grant_push.py`** + push-to-main grant ·
+  **`board.md`** + `trail` vocab.
 
 ## GRADUATION queue — aging on lived evidence (graduation is a dispose, not a seam act)
 proactivity-calibration · PR-as-audit-bundle · substrate-access · verify-with-actual-tool ·
