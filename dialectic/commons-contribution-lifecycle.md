@@ -78,6 +78,15 @@ The consumer-facing sharing-map (`sharing-discipline.md` move-1) is **not a sepa
 faces (content vs access). This dissolves the *anchor-duplication* refutation structurally: the
 README can't drift from the content because it *is* the content's projection.
 
+> **PARTIALLY FALSIFIED — FO `[IDEATE]` 2026-06-01.** "README is the ontology projected" is **the
+> *intent*, currently false.** The README also retains **origin knowledge orthogonal to the rest of the
+> Commons** — the tenet (`1+1=3`), philosophical grounding, the mechanism catalog, its Telos — which has
+> **no upstream source to project from; it *is* the source.** So today's README is a **hybrid**: origin
+> knowledge-units (un-homed) + a projection/navigation layer. Projection becomes achievable only after
+> the origin content is **extracted into separately-homed knowledge-units** (same treatment as the
+> schema/library units; consistent with "no taboo tier — axiomatic = maximally subscribed"), after which
+> README = compose(origin-units) + navigation. → `universal-contribution-mechanism.md` §README-hybrid.
+
 ## The lifecycle — three roles (the Telos's three turns)
 
 ```
