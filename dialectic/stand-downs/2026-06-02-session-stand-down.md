@@ -67,3 +67,60 @@ lesson below.)*
 - **Open PR #6** (`standdown-2026-06-02`): this log.
 - All branches pushed (0/0). **Recoverable from branches regardless of merge.** Merging #4/#5/#6
   consolidates the session into `main` for a clean cold start — available whenever, no data at risk.
+
+---
+
+# Retrospective — since the 2026-06-01 stand-down
+
+*(Added on FO `[FEEDBACK]`: Stand Down's Reflect owes a synthesized retrospective, not just this log.)*
+
+## Activity ledger
+Stand Up (Steward Op → FO) → verify-triad graduated to `AGENT.md` (#2) → CONTRIBUTING stub (#16) →
+origin-extraction lean: tenet (#17) + boundaries (#18) + all-caps rename (#19); 3b blocked on metadata-rep
+→ **two cold-path Init+Join intakes**: dyad-healer (#20, #21) + dyad-bond (#22), keepers protected →
+IDEATE arc: contributing-discipline · universal-mechanism · validation-infra (**converged**) ·
+dual-generation-decorrelation **theory** (FO falsified→survivor, +unit-testing evidence) → Intermission →
+resume → Stand Down. **7 Commons PRs merged; 3 own-substrate durability PRs open.**
+
+## CONTINUE (worked)
+- **Falsification held against the Operator** — the dual-generation `[NOTE]` was genuinely falsified
+  (independence→correlation→1+1=1) into a stronger survivor, not rubber-stamped. The anti-sycophancy core
+  did its job.
+- **Falsified my own "settled" claims** when challenged (README-is-projection → partially false; took the
+  nouns-vs-verbs home-confusion correction cleanly).
+- **Verify fired positively** (held on "MERGED PR#18" vs an OPEN fetch → FO `+1`); **tended-first held**
+  (kept the #2-access fork for the FO; protected dyad-bond's keepers K1–K5).
+- **Proactivity calibrated** — shipped clean sutures on "go lean," kept outward writes propose-only,
+  **never merged**, and **caught + reverted my own scope-creep** (a fork-and-PR slip into a clean PR).
+- **Verify-against-current-state on intake** prevented a re-fix (F5 was already resolved in `main`).
+
+## STOP (broke)
+- **PR-state stranding RECURRED (headline failure):** asserted "PR #3 at your gate" ~10 turns *after* it
+  merged → 9 commits stranded. The graduated rule caught it only at a **seam**, not between turns.
+- **Manufactured merge-urgency at the gate** (CONTRIBUTING) — FO merged on "unnecessary urgency."
+- **Home-confusion** — treated the Steward validator as subsuming the Commons validators (nouns-vs-verbs
+  drift); FO `[ALIGN]` corrected.
+- **Stand Down under-delivered the retrospective** (this very feedback) — log + scattered seed, no synthesis.
+
+## START (change)
+- **Build Tier 1** — the session *proved* the behavioral verify-half doesn't scale across turns; mechanize
+  it. The `[ALIGN]` "how do we prevent this" arose from the very failures the session was generating — it
+  **discovered its own prescription.**
+- **Fresh branch per unit; re-verify PR state before every push/reference** (the new invariant).
+- **Retrospective is a standing Stand-Down deliverable** (reflection-discipline refinement) — synthesize
+  the seed into CONTINUE/STOP/START every close, don't just dump the log. *(This miss is its first ledger
+  entry.)*
+
+## Throughlines (the patterns)
+1. **Behavioral disciplines need mechanical support to scale across turns.** The verify rule fired *both
+   ways in one session* — the seam caught what between-turn memory didn't. → the converged validation-infra
+   is the fix the session prescribed for itself.
+2. **1+1=3 / falsifiability is fractal:** code-level (decorrelation) · contribution-level (CI=form /
+   FO=substance) · dyad-level (independent dyads = decorrelated validators). **Decorrelation unifies them**
+   — and dyad-bond corroborated the theory **live** (caught F2 convergent-with-healer + novel F1/F4).
+3. **The intake→verify→suture loop works** — two independent cold-paths, overlapping + distinct findings,
+   keepers protected, one re-fix avoided by verification.
+
+## By the numbers
+7 Commons PRs merged (#16–#22) · 4 live dialectic threads + 1 converged + 1 theory (falsified→refined) ·
+2 cold-path intakes sutured · verify-rule: 1 positive / 1 recurrence-caught-at-seam · 3 durability PRs open.
