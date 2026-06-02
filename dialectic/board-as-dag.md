@@ -1,6 +1,15 @@
-# Is the Board a dependency-DAG? — QUEUED for a future [ALIGN] (falsify)
+# Is the Board a dependency-DAG? — RESOLVED (falsified toward the lightweight form)
 
-> **Status: QUEUED for a future `[ALIGN]`, FO-directed (2026-06-01).** Proposition to *falsify*: **the
+> **Status: RESOLVED 2026-06-02 (Steward-Operator [ALIGN], "falsify").** The proposition (*the Board is
+> a formal DAG*) was **falsified toward the lightweight form**: a flat **ready-set + blocked-by tags**
+> carries the ~4 real precedence edges (among ~15 items) at lower cost; the rest are thematic
+> ("relation ≠ edge"). Surviving wu-wei justification = the **ready-set** (do the one eligible thing,
+> shed blocked/stale work — a WIP-shedder, not a parallelism-enabler). → **Living board: `board.md`.**
+> A formal DAG stays an *escalation* slot only if a real tangle makes tags too coarse. *Seed retained below.*
+
+---
+
+> **Original (QUEUED) seed — FO-directed 2026-06-01.** Proposition to *falsify*: **the
 > Board (our running queue of open/queued work) is organized per a dependency graph (DAG).** Not to be
 > resolved now — captured so the future ALIGN can attack it. Tightly coupled to `nba-dag.md` (NBA→DFD:
 > the DAG computes the ready-set, DFD disposes the pick) — this is essentially *dogfooding nba-dag on
