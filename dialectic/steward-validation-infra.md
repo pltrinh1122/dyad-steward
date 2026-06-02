@@ -69,6 +69,33 @@ checker** (artifact-shaped), with code-tests a *secondary* tier only for the scr
 - **Wrong grain** — importing dyad-wu-wei's code-test maturity onto our artifact-grain → force against
   the grain; the exact thing this IDEATE exists to avoid.
 
+## Sub-thread — where does a Commons script's regression test home? (FO `[IDEATE]` 2026-06-02)
+*`validate_registry.py`'s verification should be durable so script modifications pass "regression."
+Steward or Commons?*
+
+**Answer: Commons — co-located with the script** (`commons/scripts/test_validate_registry.py` or
+`commons/tests/`). **Principle: a test homes with the thing it guards, owned by whoever owns that
+thing.** `validate_registry.py` is a Commons *noun* → its regression test is Commons-owned, in the
+Commons.
+- **Co-location** — the test travels with the artifact; whoever has the script has its guard.
+- **Guards *any* modifier** — other dyads, or the FO editing directly — **not only when the Steward is in
+  the loop.** A test homed in *our* repo would leave a non-Steward modification unguarded → the
+  regression is fiction exactly when the Steward steps out (the emergence breach). **This is the decider.**
+- **Authorship ≠ home** — we authored the script *and* the test, but it homes with the Commons noun it
+  guards (same as the declaration units we authored that home in the Commons).
+- **No duplication** — the Steward Tier 1 preflight **invokes** it (as it invokes `validate_registry`
+  itself); single-home preserved.
+
+**Refines the tiers: Tier 2 (script behavioral tests) splits by the script's OWNERSHIP.** `onboard.py`
+*and* `validate_registry.py` are **Commons scripts** → their tests home in the **Commons** (Founding-
+gated). The Steward's Tier 2 covers only *our-repo* scripts (currently ~none). So **most testing infra
+for the code we generate homes in the Commons**, because that code is Commons-owned — the Steward-repo
+infra (Tier 1) is mostly our-artifact conformance + orchestration.
+
+**Mechanical note:** no Commons CI workflow exists yet → "pass regression" means a **runnable co-located
+test now**; wiring it to CI on script-touching PRs is the eventual Commons-side enforcement (a
+Founding-gated escalation, the real "reduce FO burden" payoff).
+
 ## Feed-back candidate
 The pattern — **a repo-invariants checker whose invariants each carry their motivating defect** — is a
 library-`discipline` candidate for *every* Dyad (proportioned to each one's generated grain), and it
