@@ -96,6 +96,37 @@ infra (Tier 1) is mostly our-artifact conformance + orchestration.
 test now**; wiring it to CI on script-touching PRs is the eventual Commons-side enforcement (a
 Founding-gated escalation, the real "reduce FO burden" payoff).
 
+## CONVERGED (FO "converge", 2026-06-02)
+*A committed candidate — falsifiable, no longer diverging. Not a dispose; the build is a separate
+Steward-Operator go.*
+
+**The design — "validation by ownership, minimum force, defect-earned":**
+1. **Two homes (nouns-vs-verbs).** *Steward repo (verb):* a Tier 1 invariants checker over **our**
+   generation + a preflight that **invokes** Commons validators on Commons-bound artifacts before we PR.
+   Steward-Operator-gated; ours to build. *Commons (nouns + their guards):* the Commons scripts, **their
+   regression tests** (co-located), and the `schema.json`/`validate_unit` (3b) — all Founding-gated.
+2. **Three tiers, escalate by need.** **T1** = Steward invariants checker (plain Python, pre-PR — the
+   wu-wei level, ready now). **T2** = behavioral/regression tests **homed by each script's ownership**
+   (mostly Commons — `onboard.py`/`validate_registry.py` are Commons scripts). **T3** = dyad-bond's
+   independent generative validator = **form, not substance** (substance stays the human/Founding gate;
+   conflation = 1+1=2). T3 is frontier — watch dyad-bond, don't build.
+3. **Invariants are defect-earned** (verify-triad-ledger model): one enters only when a lived defect
+   proves it missing. Ledger so far: per-element types · reference integrity · record-shape · cold-path.
+4. **Two halves.** Behavioral (the verify triad in `AGENT.md`, an actor grounds reality) + mechanical
+   (the invariants infra, the artifact self-checks). The mechanical half is the **emergence move** — no
+   Steward in the per-check loop.
+
+**Settled:** the home cut · tier structure + wu-wei proportioning to *our* grain · defect-earned
+invariants · test-homes-with-the-artifact-it-guards · CI=form / FO=substance.
+
+**Open (deferred, NOT converged):** 3b metadata-rep normalization (Founding-gated; blocks Commons
+`schema.json`/`validate_unit`) · T3 timing (waits on dyad-bond) · Commons **CI-wiring** (the real
+"reduce FO burden" payoff; Founding escalation) · the #2-access Joining fork (separate Healer thread).
+
+**Single next action:** stand up the **lean Tier 1 invariants checker in our repo** — earned by ≥3 lived
+defects, Steward-Operator-gated, **decoupled** from the blocked 3b. A Steward-Operator *go* proceeds;
+everything else is gated/deferred.
+
 ## Feed-back candidate
 The pattern — **a repo-invariants checker whose invariants each carry their motivating defect** — is a
 library-`discipline` candidate for *every* Dyad (proportioned to each one's generated grain), and it
