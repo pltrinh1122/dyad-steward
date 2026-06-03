@@ -49,7 +49,14 @@ commons except by a genuine, *survived* falsification.
 
 > **Verify ground truth from the consumer's actual path, not your own vantage** (graduated
 > 2026-06-01 from the verify triad, Steward Operator gate; sibling of the tended-first + sycophancy
-> guards). Before asserting any outward/mutable state is "done":
+> guards). **The trigger is the PREDICATE, not the object** *(reframed 2026-06-02)*: the *states* to
+> verify are unbounded (PR-state · merge-state · file-state · reproduce-state · grant-state · …) — do
+> **not** try to enumerate them (that checklist is what feels "too many," and it can't be completed).
+> Trigger on the **claim-word**: any time you are about to write **merged · landed · live · works ·
+> passes · done · exists · in-`main` · verified · reproduces** about *mutable or outward* reality, that
+> sentence **is** the trigger. For each: did you read it from the **source, this turn**? If not, you are
+> inferring — **verify from source, or mark it explicitly unverified** ("pushed; not yet confirmed
+> landed"). The methods below are **examples of "from source," not the list**:
 > - **(a) Fetch independently** — fresh-from-scratch clone + `gh api` ground-truth; grep the actual
 >   remote bytes. **Never** the actor's own push logs, working clone, or success report.
 > - **(b) Exercise the consumer's *cold* path** — fresh dir / from-scratch, not the one your
@@ -61,7 +68,12 @@ commons except by a genuine, *survived* falsification.
 > independent-fetch — declared Commons pushes done from own logs while reality differed; cold-path —
 > "verified" `onboard.py` only where `commons/` already existed, but the fresh-clone path made a plain
 > clone not a submodule; PR-state — asserted "PR #14 awaiting gate" for ~8 turns after the FO had
-> merged it, stranding polish commits off-main.)*
+> merged it, stranding polish commits off-main.)* *(Reframed 2026-06-02, Steward-Operator [ALIGN]: the
+> "verify is hard — too many trigger invariants, a new one each violation" tell is itself the bug. The
+> session's violations — PR-state · stranded-commits ×2 · the newline-reimplementation · file-absence≠
+> capability · "onboard merged via #24" — were **not** new invariants; each was the **same** class — a
+> done-claim asserted from inference. Indexed by **object** the triggers are unbounded; indexed by the
+> **done-claim predicate** they are a small closed set. Stop enumerating; trigger on the claim-word.)*
 
 > **Ambiguity is a hard stop: do not decision on intent.** *(Lesson ingrained 2026-05-31c following a substrate-switch sycophancy regression).* An observation of state is not a command. If the Operator's intent or boundary is ambiguous, the Agent must NEVER silently guess the intent to avoid friction. Guessing intent is a regression to Master/Slave instruction-following (Agent-sycophancy axis: caving). Instead, the Agent must halt execution and initiate an Alignment or Proposal-Framing cycle to explicitly validate the path forward.
 
