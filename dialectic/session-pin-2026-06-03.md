@@ -11,6 +11,19 @@ A persistent Monitor (wake only on NEW mail; alert if the poll goes BLIND, not s
 cd /mnt/shared_data/dzw/dyad-steward; prev=0; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; n=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; prev=$n; sleep 60; done
 ```
 
+## RE-ARM THE COMMONS-PR DAEMON (do this at stand-up too)
+Sibling of the DM daemon — I was **blind to PR #42** (tco's re-file) because stand-up watched DMs/FRs
+but not the commons **PR queue**, where in-flight contributions live. `Monitor`, `persistent: true`,
+`timeout_ms: 3600000`:
+
+```
+cd /mnt/shared_data/dzw/dyad-steward; repo=The-Dyad-Practice-Commons/the-dyad-practice; prevf=$(mktemp); touch "$prevf"; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ commons-PR poll BLIND >5min — gh/auth/network down (NOT 'no new PRs')"; sleep 120; continue; fi; blind=0; curf=$(mktemp); gh pr list --repo "$repo" --state open --json number,title --jq '.[] | "#\(.number) \(.title)"' 2>/dev/null | sort > "$curf"; new=$(comm -13 "$prevf" "$curf"); [ -n "$new" ] && echo "🔀 commons open PR new/changed: $(echo "$new" | tr '\n' ' | ') (review: gh pr view N --repo $repo)"; mv "$curf" "$prevf"; sleep 120; done
+```
+
+**Rest-point discovery surfaces (the full set — pull/watch all three):** (1) DM inbox (`falsify.py inbox`,
+daemon) · (2) **commons PR queue** (`gh pr list`, daemon above) · (3) FR queue (`falsify.py list`, pull at
+stand-up — no daemon, contract §H no-push/no-flood). Missing any one = looking blind on that surface.
+
 Notes: read-state (`.falsify-seen.json`) is **committed** (durable, per-dyad; git is the dyad's portable
 persistence) — survives restart *and* fresh clone; the 3 bond DMs already read stay read. On re-arm `prev`
 resets to 0, so the first poll emits once if anything is
