@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+# pr-sandbox — fetch a PR's code and execute it in a hardened, ephemeral container.
+#
+#   bin/pr-sandbox <pr#> [--repo OWNER/REPO] [--live] [-- CMD...]
+#   bin/pr-sandbox --path DIR        [--live] [-- CMD...]   # run a local dir instead of a PR
+#
+# DEFAULT: no network, no credentials, read-only rootfs, non-root, caps dropped, resource-capped,
+# --rm. PR code is copied into an ephemeral tmpfs; our fetched copy is bind-mounted READ-ONLY.
+#
+# --live: enable network + inject a SEPARATE read-only/public-only token from $PR_SANDBOX_LIVE_TOKEN
+#         (NEVER our identity gh auth). Egress is NOT restricted by plain docker — only use --live
+#         with a token whose theft is low-impact (read-only, public-repo-only, revocable). See README.
+set -euo pipefail
+
+REPO="The-Dyad-Practice-Commons/the-dyad-practice"
+IMAGE="pr-sandbox"
+LIVE=0; PR=""; LOCAL_PATH=""; CMD=()
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --repo) REPO="$2"; shift 2;;
+    --live) LIVE=1; shift;;
+    --path) LOCAL_PATH="$2"; shift 2;;
+    --) shift; CMD=("$@"); break;;
+    -*) echo "unknown flag: $1" >&2; exit 2;;
+    *) PR="$1"; shift;;
+  esac
+done
+
+# Build the image on first use (or when missing).
+if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
+  echo "[pr-sandbox] building image '$IMAGE'…" >&2
+  docker build -q -t "$IMAGE" "$HERE/sandbox" >&2
+fi
+
+# Stage the code to run into a throwaway host dir.
+SRC="$(mktemp -d)"
+cleanup() { rm -rf "$SRC"; }
+trap cleanup EXIT
+
+if [ -n "$LOCAL_PATH" ]; then
+  cp -a "$LOCAL_PATH/." "$SRC/"
+elif [ -n "$PR" ]; then
+  echo "[pr-sandbox] fetching PR #$PR head from $REPO …" >&2
+  SHA="$(gh pr view "$PR" --repo "$REPO" --json headRefOid --jq .headRefOid)"
+  gh api "repos/$REPO/tarball/$SHA" > "$SRC/pr.tgz"
+  # tarball wraps everything in one top-level dir (<owner>-<repo>-<sha>/); strip it so the
+  # repo tree lands directly in $SRC.
+  tar -xzf "$SRC/pr.tgz" -C "$SRC" --strip-components=1
+  rm -f "$SRC/pr.tgz"
+else
+  echo "usage: pr-sandbox <pr#> | --path DIR  [--repo R] [--live] [-- CMD...]" >&2; exit 2
+fi
+
+# mktemp is 0700; the in-container non-root user (uid 10001) must be able to read the bind mount.
+# This is our throwaway copy of (public) PR code, so world-readable is fine.
+chmod -R a+rX "$SRC" 2>/dev/null || true
+
+# Hardening flags (the security boundary).
+ARGS=(
+  --rm
+  --read-only
+  --user 10001:10001
+  --cap-drop ALL
+  --security-opt no-new-privileges
+  --pids-limit 256
+  --memory 1g --cpus 2
+  --tmpfs /work:rw,size=256m,mode=1777
+  --tmpfs /tmp:rw,size=64m,mode=1777
+  -v "$SRC":/src:ro
+  -w /work
+)
+
+if [ "$LIVE" -eq 1 ]; then
+  : "${PR_SANDBOX_LIVE_TOKEN:?--live needs PR_SANDBOX_LIVE_TOKEN set (a read-only, public-only, revocable token — NOT your identity gh auth)}"
+  echo "[pr-sandbox] LIVE mode: network ON, scoped token injected (egress NOT restricted — see README)." >&2
+  ARGS+=( -e "GH_TOKEN=${PR_SANDBOX_LIVE_TOKEN}" )
+else
+  ARGS+=( --network none )
+fi
+
+exec docker run "${ARGS[@]}" "$IMAGE" "${CMD[@]}"
