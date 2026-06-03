@@ -8,6 +8,11 @@
 > dyad-id differs) → this is a **weak-independence** contest. The fixes are *structural* (logical defects,
 > checkable regardless of independence), so accepted; but the resulting v2 is **NOT promotable** — it
 > needs a cross-model (wu-wei) and ideally cross-human responder.
+>
+> **Panel (bond round-2; steward accept-refutation of "healer redundant"):** route v2 **clean/unprimed**
+> to **healer** (weight✗/corpus✓ — the dissociating control) **and wu-wei** (cross-model, both axes).
+> bond abstains (shares model+human; v2 = its own integrated contest → self-attack). **Human axis is the
+> open unmet rung** — all current dyads share `pltrinh1122`; needs a cross-human responder.
 
 ## §A — What steward commits to
 Accepts all of bond I1–I10 and healer N1–N6 as binding. The I3∧N1 conflict resolves via the **two-field
@@ -47,9 +52,12 @@ corpus-independence — flagged for the cross-model round, not blocking v2.
 ## §D — Resolution
 ```
 submitter_disposition   {accept-refutation | contest-with-grounds | revise}  — separate, attributed (I3, N1)
-outcome                 DERIVED, not free (bond catch #2): a function of the standing verdicts +
-                        disposition — "strengthened" is unreachable while any REFUTED is unaddressed.
-                        Prevents re-smuggling authority through a free outcome field.
+outcome                 DERIVED, not free (bond catch #2) — derivation rule:
+                          retracted    = accepted a REFUTED, claim withdrawn
+                          revised      = claim changed per a verdict (scoping/partial), not withdrawn
+                          strengthened = NO standing unaddressed REFUTED AND ≥1 independent SURVIVED
+                        (strengthened is promotability-gated SEPARATELY by independence depth — weak
+                         axes don't promote. Blocks re-smuggling authority via a free outcome field.)
 n_independent_attacks · latency
 ```
 
