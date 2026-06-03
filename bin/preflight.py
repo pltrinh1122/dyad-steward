@@ -50,6 +50,12 @@ FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
 INLINE_CODE_RE = re.compile(r"`[^`]*`")
 
 
+def extract_links(text):
+    """Markdown link targets, code (fenced + inline) stripped FIRST — a link quoted as code is not
+    navigable and must not be flagged. (Testable seam guarding the quoted-link false-positive fix.)"""
+    return LINK_RE.findall(INLINE_CODE_RE.sub("", FENCE_RE.sub("", text)))
+
+
 def fail(check, msg):
     print(f"  FAIL [{check}] {msg}")
 
@@ -117,9 +123,8 @@ def check_refs():
     for md in list_md():
         with open(md, encoding="utf-8") as fh:
             text = fh.read()
-        text = INLINE_CODE_RE.sub("", FENCE_RE.sub("", text))
         base = os.path.dirname(md)
-        for target in LINK_RE.findall(text):
+        for target in extract_links(text):
             if target.startswith(("http://", "https://", "mailto:", "#")):
                 continue
             path = target.split("#", 1)[0]  # drop in-page anchor
