@@ -22,7 +22,6 @@
 ## READY-SET — eligible now, pick one
 | Item | Owner / gate | Note |
 |---|---|---|
-| **Tier-1 validation checker** | Steward-Operator go | `steward-validation-infra` CONVERGED; buildable here; **decoupled from 3b** — cleanest next dispose |
 | **wu-wei #4 — heartbeat-seizure playbook** | Steward curate → library | ripest, least-contested |
 | **wu-wei #2 — onboard.py anchor-injection** | Steward propose → FO gate | enablement gap (careful near birth shim) |
 | **Totality README review** | Steward | extraction + rename all landed |
@@ -44,10 +43,15 @@
   intake→verify→suture loop. *(Directory: steward · healer · bond · wu-wei. **2 other-human dyads
   instantiating but not yet self-registered** → invisible to the sharing channel until they Join.)*
 
-## LANDED this session (capabilities now live)
-- **`bin/pull_shares.py`** — Agent pulls inbound cross-dyad `recommendations/`; Operator out of the
-  copy-paste transport (`cross-dyad-share-pull.md`). · **`bin/grant_push.py`** + push-to-main grant ·
-  **`board.md`** + `trail` vocab.
+## LANDED (capabilities now live)
+- **2026-06-03 · `bin/preflight.py`** — Tier-1 repo-invariants checker (`steward-validation-infra`
+  CONVERGED → built + dogfooded + negative-controlled): parse · registry (invokes the Commons
+  `validate_file`, single source) · refs · submodule-vs-remote. The mechanical half of validation
+  (verify triad = behavioral half). Invariants defect-earned only. Caught + fixed a live refs defect
+  on first run; synced the stale `commons` submodule (`0f1dce7` → `94e676b`) as a precondition.
+- **2026-06-02 · `bin/pull_shares.py`** — Agent pulls inbound cross-dyad `recommendations/`; Operator
+  out of the copy-paste transport (`cross-dyad-share-pull.md`). · **`bin/grant_push.py`** +
+  push-to-main grant · **`board.md`** + `trail` vocab.
 
 ## GRADUATION queue — aging on lived evidence (graduation is a dispose, not a seam act)
 proactivity-calibration · PR-as-audit-bundle · substrate-access · verify-with-actual-tool ·

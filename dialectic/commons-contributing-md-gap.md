@@ -14,8 +14,8 @@
 ## The finding (verified true)
 
 - Commons `README.md` references `CONTRIBUTING.md` **twice**, both on the *contribution path*:
-  - L31 — "**Have a playbook?** Propose it to the Commons: [`CONTRIBUTING.md`](CONTRIBUTING.md)"
-  - L74 — "Library/playbook **contributions**… go through the Founding gate: see [`CONTRIBUTING.md`](CONTRIBUTING.md)."
+  - L31 — "**Have a playbook?** Propose it to the Commons: `[CONTRIBUTING.md](CONTRIBUTING.md)`"
+  - L74 — "Library/playbook **contributions**… go through the Founding gate: see `[CONTRIBUTING.md](CONTRIBUTING.md)`."
 - `CONTRIBUTING.md` is **absent** — `gh api …/contents/CONTRIBUTING.md?ref=main` → 404; recursive tree
   shows no `CONTRIBUTING*` anywhere.
 
