@@ -68,11 +68,13 @@ jobs:
             echo "::notice::not exactly one entry — left for human review"; exit 0
           fi
 
-          # Materialize the new entry (DATA only) and validate with the BASE validator.
+          # Materialize the new entry (DATA only) and validate ONLY THIS entry with the BASE validator.
+          # Per-entry (not whole-directory) so a stale/non-conforming legacy row can't wedge new
+          # registrations — a single bad row blocks only itself, never everyone else.
           f=$(echo "$files_json" | jq -r '.[0].filename')
           mkdir -p "$(dirname "$f")"
           gh api "repos/$REPO/contents/$f?ref=$HEAD_SHA" --jq '.content' | base64 -d > "$f"
-          if ! python3 scripts/validate_registry.py; then
+          if ! python3 -c "import sys; sys.path.insert(0,'scripts'); from validate_registry import validate_file; sys.exit(0 if validate_file('$f') else 1)"; then
             gh pr comment "$PR" --body "🤖 **Registry validation failed** — fix \`$f\` and push again; it re-checks and auto-merges." || true
             echo "::notice::validation failed — left for author to fix"; exit 0
           fi
