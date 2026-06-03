@@ -66,7 +66,16 @@ commons except by a genuine, *survived* falsification.
 > (`gh api`/`git cat-file` on origin), and you report **only** what that read-back showed — "done" is
 > reachable *only through* the read-back. This *materializes* the no-oracle "did I verify?" seam into a
 > mechanical oracle (wu-wei's bond-F1 move, turned inward). *(Escalation if still slipping: a `bin/`
-> git-verify wrapper, permission-enforced.)* The methods below are **examples of "from source," not the list**:
+> git-verify wrapper, permission-enforced.)*
+>
+> **This binds REPORTING, not just acting — your memory of any mutable remote state is a stale-by-default
+> CACHE** (the remote moves between turns; the Operator merges/closes things while you're elsewhere).
+> *(RCA 2026-06-03: I'd already graduated three verify-rules this session and still reported PR #27/#13
+> "open/pending" from memory — both were MERGED. The predicate-trigger already covered it; I failed to
+> apply it to a low-salience status summary. **More rules don't fix this — application does.**)* So: a
+> **status / "where-things-stand" summary is the OUTPUT of a this-turn source-query, never prose from the
+> cache** — no status table without first running the query that populates it. The "pending list" lives
+> in the source (re-query the open PRs/states), not in your head. The methods below are **examples of "from source," not the list**:
 > - **(a) Fetch independently** — fresh-from-scratch clone + `gh api` ground-truth; grep the actual
 >   remote bytes. **Never** the actor's own push logs, working clone, or success report.
 > - **(b) Exercise the consumer's *cold* path** — fresh dir / from-scratch, not the one your
