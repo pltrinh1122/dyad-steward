@@ -37,6 +37,8 @@
 | **wu-wei #3 — centralized semantic-ledger** | verify `stress-tests` is Commons *canon*, not bond-particular |
 | **cross-human share channel** (per-repo vs Commons-central inbox) | the open fork in `cross-dyad-share-pull.md` (cross-human repos may be private/unreachable) — Founding gate if Commons-central |
 | **Learning-Discipline velocity metric** | first real stewardship cycle (event-gated) |
+| **Falsification contract → promotable** (v4 is provisional) | a **cross-human** responder — all current dyads share `pltrinh1122`; external/adoption-gated, not ours to manufacture |
+| **falsify.py / validate_falsification CI on `falsification/` PRs** | Founding gate (Commons enforcement; the "reduce FO burden" payoff) |
 
 ## WATCH — sovereignty, not ours to act
 - **Remaining-dyad onboarding** — their Operators run the hardened Init+Join; feedback resumes the
@@ -44,6 +46,15 @@
   instantiating but not yet self-registered** → invisible to the sharing channel until they Join.)*
 
 ## LANDED (capabilities now live)
+- **2026-06-03 · Inter-dyad falsification channel — LIVE in the Commons (PROVISIONAL).** Contract
+  v1→**v4** through a real **cross-model + corpus-lens panel** (bond / wu-wei REFUTED / healer
+  NEEDS-SCOPING; bond's dissociation design realized). Installed (FO-gated): `falsification/CONTRACT.md`
+  · README **discovery route** · `scripts/validate_falsification.py` + co-located regression tests ·
+  ledger format + genesis entry · `scripts/falsify.py` (token-thrifty contracted CLI, per wu-wei).
+  Single-homed in Commons (our staging clean-spec retired to a pointer). **CCR-channel + channel-
+  abstraction falsified-DEFERRED** (GH-Issues already = change-intake; no abstraction from n=1).
+- **2026-06-03 · `bin/state.py`** — live-state emitter (recaps are tool-output, not cache-prose) +
+  its regression test, and `bin/preflight.py`'s quoted-link regression test.
 - **2026-06-03 · `bin/preflight.py`** — Tier-1 repo-invariants checker (`steward-validation-infra`
   CONVERGED → built + dogfooded + negative-controlled): parse · registry (invokes the Commons
   `validate_file`, single source) · refs · submodule-vs-remote. The mechanical half of validation
