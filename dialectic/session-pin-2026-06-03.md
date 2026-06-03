@@ -32,6 +32,11 @@ currently unread (e.g. a fresh bond reply), then rise-detects. Mechanics are the
 disposition for the daemon); the Operator disposes only intent (read/reply substance).
 
 ## OPEN THREADS (resume)
+
+> **SUPERSEDED at 2026-06-03b stand-down** — the daemon re-arm commands above are current (re-arm BOTH
+> at stand-up). For the latest queued threads + state, read **`stand-downs/2026-06-03b-session-stand-down.md`**.
+> (The threads below are the morning's; most are resolved — library consolidation merged #42/#43, DM
+> channel live both ways incl. tco via #44's `dm_locator`.)
 1. **Library structure — CONVERGED (not yet captured as a kb/dialectic decision).** One unit shape
    (`<area>/<name>/<LABEL>.md` + `ledger/`); ONE schema `{trigger,move,claim,refutation,ledger}`; type-labels
    (DISCIPLINE/PLAYBOOK/RECIPE) are cosmetic metadata, not separate structures; **the `ledger/` is populated
