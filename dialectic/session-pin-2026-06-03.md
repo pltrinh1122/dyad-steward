@@ -11,8 +11,9 @@ A persistent Monitor (wake only on NEW mail; alert if the poll goes BLIND, not s
 cd /mnt/shared_data/dzw/dyad-steward; prev=0; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; n=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; prev=$n; sleep 60; done
 ```
 
-Notes: read-state (`.falsify-seen.json`, gitignored, local) **persists on disk** across the restart — the 3
-bond DMs already read stay read. On re-arm `prev` resets to 0, so the first poll emits once if anything is
+Notes: read-state (`.falsify-seen.json`) is **committed** (durable, per-dyad; git is the dyad's portable
+persistence) — survives restart *and* fresh clone; the 3 bond DMs already read stay read. On re-arm `prev`
+resets to 0, so the first poll emits once if anything is
 currently unread (e.g. a fresh bond reply), then rise-detects. Mechanics are the Agent's (no Operator
 disposition for the daemon); the Operator disposes only intent (read/reply substance).
 

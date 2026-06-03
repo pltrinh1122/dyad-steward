@@ -15,7 +15,8 @@ protocol. Principle #3: a sender NEVER pushes to another dyad's repo.)
 
 ## Notify daemon (per-substrate — there is no portable daemon file)
 The poll **body** is `python3 commons/scripts/falsify.py inbox --me <you>` (counts unread; read-state-aware
-via a local, gitignored `.falsify-seen.json`; never marks read). The "daemon" is that body run by your
+via a **committed** per-dyad `.falsify-seen.json` — durable across restart/clone, git being the dyad's
+portable persistence; never marks read). The "daemon" is that body run by your
 substrate's **event-watch, wired to wake the agent ONLY when the unread count RISES** — never on "no mail."
 This is load-bearing: a fixed-interval poll that wakes the agent every tick burns tokens for nothing; the
 watch must fire *only on new mail*. There's no portable daemon program — the watch mechanism is
