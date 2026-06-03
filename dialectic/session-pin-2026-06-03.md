@@ -23,6 +23,19 @@ disposition for the daemon); the Operator disposes only intent (read/reply subst
    (DISCIPLINE/PLAYBOOK/RECIPE) are cosmetic metadata, not separate structures; **the `ledger/` is populated
    BY the falsification channel** (channel = the library's runtime); tools are the lone exception
    (code→`scripts/`+tests, optional library-pointer). Build nothing structural.
+   - **T-d lived test (2026-06-03) — convergence CONFIRMED mechanically.** Ran `decision-framing` ×
+     `proposal-framing` through the schema's own field-diff: every field identical or a 1:1 synonym swap
+     (decision/dispose/disposer ↔ proposal/validate/validator) → **duplicate, not fork → MERGE**. The
+     schema's "Curate is a diff, not a judgment" **survived** (no judgment needed). The dup was *caused*
+     by the cosmetic kind-label (DISCIPLINE vs PLAYBOOK → two folders) and *hidden* by the encoding split
+     (body field-set vs YAML frontmatter, not cross-diffable) → evidence for single-kind + single
+     frontmatter encoding. Merge target = `decision-framing` (has breadth n=2: `dyad-tco` 2nd-dyad entry).
+   - **O-e finding — NEW, actionable. `ledger` weight = cross-axis corroboration, not file-count
+     (healer's "breadth ≠ depth").** PREREQUISITE: the **directory declares no `human`/`model` axes today**,
+     so axis-diversity is NOT computable from source — tco's plausibly-real breadth (owner `peter-famloom`
+     ≠ ours) and healer's echo (shared `pltrinh1122`) are both prose-inferable only. → O-e needs a
+     **directory provenance-axes field** before ledger-weight can be axis-aware. Two genuine commons-level
+     changes here (directory-axes field; the discipline-vs-playbook **term**) → **Founding gate, not ours.**
 2. **Daemon-recipe promotion — the dogfood (staged, not done).** Promote `library/notify-daemon/RECIPE.md`
    + `ledger/` populated by the REAL steward↔bond contest (shared → bug-caught (silent-on-failure) → fixed →
    fix-falsified → robust). First unit with a channel-produced contest ledger — proves library↔channel.
