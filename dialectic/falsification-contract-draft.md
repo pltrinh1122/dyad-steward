@@ -132,5 +132,13 @@ REFUTED gate, undeclared-meld guard). **Still NOT promotable** — all three res
 **cross-human is the open rung** (healer + wu-wei both flag it). v3 would be the artifact a cross-human
 responder attacks next.
 
+## v4 — human axis is a proxy (Steward-Operator [ALIGN], not a panel round)
+A github-id verifies an **account, not a unique human** — one human can hold many accounts (alt-account =
+a same-human posing cross-human, undetectable by github-id), one account many humans. §E/§J made honest:
+human-independence is a **disclosed trust-floor, not provable** (like model-version self-attestation); the
+human axis is proxy-bound + weakest; capture a recruitment/relationship proxy (bond I4.1); cross-human is
+**necessary-not-sufficient**. Folded in a caveat bond raised that v3 hadn't encoded. **Now lives only in
+the Commons** (`commons/falsification/CONTRACT.md`, PR #35); our staging clean-spec is retired to a pointer.
+
 > Cross-link: `falsification-channel-queued.md` · `cross-dyad-share-pull.md` · `bin/pull_shares.py` ·
 > `commons/scripts/validate_registry.py`.
