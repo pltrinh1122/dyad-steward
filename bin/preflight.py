@@ -35,6 +35,10 @@ import re
 import subprocess
 import sys
 
+# Don't dirty the substrate we check: importing the Commons validator must not write __pycache__
+# into the commons/ submodule working tree (it surfaces as untracked content inside the submodule).
+sys.dont_write_bytecode = True
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COMMONS_REMOTE = "The-Dyad-Practice-Commons/the-dyad-practice"
 # Our-repo markdown surface for reference integrity (our generation; commons/ is Commons-owned).
