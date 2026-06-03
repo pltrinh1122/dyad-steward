@@ -140,5 +140,24 @@ human axis is proxy-bound + weakest; capture a recruitment/relationship proxy (b
 **necessary-not-sufficient**. Folded in a caveat bond raised that v3 hadn't encoded. **Now lives only in
 the Commons** (`commons/falsification/CONTRACT.md`, PR #35); our staging clean-spec is retired to a pointer.
 
+## Orchestration principle — falsification-orchestration is INVERTED from work-orchestration (bond contribution, accepted)
+*(dyad-bond, relayed 2026-06-03; steward disposes — accept-on-merit, refined.)*
+Work-orchestration sequences dependent tasks + dedups effort. Falsification does the opposite: **base FRs
+are independent** (nothing to sequence — except the bounded `parent_fr_id` dispute-chain) and **axis-diverse
+redundancy is value-positive** (more independent coverage = the goal; same-axis redundancy is echo, already
+§J-discounted). So **queues / locks / assignment / dedup are unneeded, and an orchestrator-person would
+bottleneck AND violate I6** (curating who attacks). Maximize **axis-DIVERSITY of coverage** by *structure,
+not management*:
+- **(a) advertise the open axis** — a convention, not new schema: the submitter names untested axes in
+  `self_named_confounds`; the *current* open-axis is **derivable** from the union of responses'
+  `divergent_axes`. *(Document the convention in README/CONTRACT — a later Commons PR.)*
+- **(b) generated index** — an **extension of `falsify.py list`** (same store, derived view, no gatekeeper):
+  open FRs + derived open-axis + a **staleness flag** (open + 0-responses + aged = the I10 dead-mechanism
+  detector). **BUILD volume-gated** — at 0–1 open FRs it indexes emptiness; earns its build once bond-F1 +
+  more land.
+- **Residual (steward):** structure *enables* axis-diversity, can't *guarantee* coverage — attacks are
+  voluntary (N2/N3); a claim may get zero right-axis attacks. The flag *surfaces* the gap, doesn't fill it;
+  the cross-human rung stays emergent, not manufacturable. *(Candidate kb distillation.)*
+
 > Cross-link: `falsification-channel-queued.md` · `cross-dyad-share-pull.md` · `bin/pull_shares.py` ·
 > `commons/scripts/validate_registry.py`.
