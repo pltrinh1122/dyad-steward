@@ -13,6 +13,17 @@
 > to **healer** (weight✗/corpus✓ — the dissociating control) **and wu-wei** (cross-model, both axes).
 > bond abstains (shares model+human; v2 = its own integrated contest → self-attack). **Human axis is the
 > open unmet rung** — all current dyads share `pltrinh1122`; needs a cross-human responder.
+>
+> **OPEN term-attack — §B name (steward, 2026-06-03; awaiting Founding dispose).** FR = Falsification
+> *Request* was never aligned — it rode in with this draft as implementer-synthesis (`@80b77d4`); all
+> contest since was on mechanics, never the name. Proposed: **Request → Record.** The unit accumulates
+> (`fr.yaml` + `responses/` + `disposition.yaml`) = a record/case; "Request" names only the opening
+> packet and undersells it. **Minimum-force scope:** redefine the *expansion only* — keep the
+> abbreviation `FR` + the `fr.yaml` filename, so no tool change and **in-flight FRs (bond, touchstone)
+> are untouched.** Founding-gated (commons term, like discipline/playbook). If the *abbreviation itself*
+> is the issue → a fuller rename (`case`/`contest`), but that's a `falsify.py` tool change, badly timed
+> against in-flight FRs → out of scope for this entry. **Dispose = edit `commons/falsification/CONTRACT.md`
+> §B (Founding PR); HELD until then.**
 
 ## §A — What steward commits to
 Accepts all of bond I1–I10 and healer N1–N6 as binding. The I3∧N1 conflict resolves via the **two-field
