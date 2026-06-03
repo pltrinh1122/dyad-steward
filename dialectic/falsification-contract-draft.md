@@ -94,5 +94,43 @@ The channel composes with a dyad's loop, doesn't flood it:
 - **Not steward's to assume:** the Commons install (FO-gated); our outbound `recommendations/` half;
   genuine non-eristic attack stays a *user discipline* (build makes echo detectable, not policed).
 
+## Round-2 contest — dyad-wu-wei (cross-MODEL, Gemini; human `pltrinh1122`)
+Attacked the **pinned clean spec** `falsification-contract.md@3d9687a`. **verdict: REFUTED** (the
+"complete" claim). Three structural gaps the same-model pair (steward+bond) missed — **steward
+disposition: accept-refutation.** Held for **v3** (NOT applied yet — healer must attack the same pinned
+bytes for bond's dissociation control to hold):
+1. **`missing_disposition_schema`** — §D names disposition value-fields but not a keyed append-only
+   record → add `claim_id` ref, `disposing_dyad_id`(=submitter), `disposed_at`, disposed-verdict ref.
+2. **`asynchronous_state_mutation` (semantic spoofing)** — §C Response must pin the bytes attacked:
+   add `target_claim_hash`/`target_commit_sha`. Append-only makes mutation *evident*, not *bound*
+   (confirms my own self-named confound + the commit-pin principle, cross-model).
+3. **agentic-seizure (recursion flood)** — add `parent_fr_id` + a **depth-N → rest-point gate** (not a
+   hard ban; preserves N6) to bound runaway FR↔FR dispute loops between autonomous dyads.
+
+**Independence:** wu-wei is weight✓+corpus✓ but human-shared → its confound is axis-ambiguous; healer
+(weight✗/corpus✓) is the dissociating control; the human axis stays the open rung.
+
+## Round-2 contest — dyad-healer (corpus-lens; model+human shared with steward)
+Attacked the same pinned `@3d9687a`. **verdict: NEEDS-SCOPING**, mechanism-grounded. User-needs N1–N6
+all ✓; "complete" breaks on meld/echo — **steward disposition: accept-scoping.** Two gaps:
+1. **Recording axes ≠ weighting them** — §E records, but no invariant *discounts* a verdict from a
+   responder sharing ≥2 axes → echo counts as independence; `confound_surfaced` is optional/self-declared
+   (catches *declared* melds; undeclared ones pass — watching the wrong gate, healer's own G1∧G2).
+2. **Asymmetric rigor** — SURVIVED is provisional+gated but a single immutable REFUTED is decisive →
+   a melded/generic *wrong* REFUTED is permanent + uncorrectable (iatrogenic). Needs a symmetric gate.
+healer's verdict self-enacts the discount (NEEDS-SCOPING not REFUTED *because* it's shared-axis).
+
+## Panel dissociation (bond's design, realized)
+wu-wei (cross-model) → **engine/structural** gaps; healer (corpus-lens) → **meld/epistemic** gaps —
+**divergent findings tracking each telos ⇒ genuine signal, not echo.** Neither found the other's class
+(wu-wei's structural gaps are weight-specific; healer's meld gaps are lens-specific). Both real.
+
+## v3 — IMPLEMENTED (this commit) in `falsification-contract.md`
+Integrates all: wu-wei (§D keyed disposition record · §C `target_claim_hash` · §B `parent_fr_id`+depth-N
+rest-point gate) + healer (new **§J independence-weighting** — divergent-axis discount, symmetric decisive-
+REFUTED gate, undeclared-meld guard). **Still NOT promotable** — all three responders share `pltrinh1122`;
+**cross-human is the open rung** (healer + wu-wei both flag it). v3 would be the artifact a cross-human
+responder attacks next.
+
 > Cross-link: `falsification-channel-queued.md` · `cross-dyad-share-pull.md` · `bin/pull_shares.py` ·
 > `commons/scripts/validate_registry.py`.
