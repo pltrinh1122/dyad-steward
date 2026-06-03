@@ -56,7 +56,17 @@ commons except by a genuine, *survived* falsification.
 > passes · done · exists · in-`main` · verified · reproduces** about *mutable or outward* reality, that
 > sentence **is** the trigger. For each: did you read it from the **source, this turn**? If not, you are
 > inferring — **verify from source, or mark it explicitly unverified** ("pushed; not yet confirmed
-> landed"). The methods below are **examples of "from source," not the list**:
+> landed"). **Couple the read-back INTO the action — don't leave it a separate post-hoc step**
+> *(RCA-survivor, 2026-06-03: the predicate-trigger alone wasn't enough — PR #28 still shipped broken
+> because the verify was uncoupled + voluntary, skippable under momentum).* Two binding rules:
+> **(1) action-success ≠ result-correctness** — a command can exit 0 and produce the WRONG result
+> (silent partial failure: a `git add` pathspec error that drops files yet commits clean; the
+> newline-bug hash; a stale-branch push). **Never trust the action's own success-signal as the result.**
+> **(2) the same bash block that changes state ENDS by reading the result back from the remote**
+> (`gh api`/`git cat-file` on origin), and you report **only** what that read-back showed — "done" is
+> reachable *only through* the read-back. This *materializes* the no-oracle "did I verify?" seam into a
+> mechanical oracle (wu-wei's bond-F1 move, turned inward). *(Escalation if still slipping: a `bin/`
+> git-verify wrapper, permission-enforced.)* The methods below are **examples of "from source," not the list**:
 > - **(a) Fetch independently** — fresh-from-scratch clone + `gh api` ground-truth; grep the actual
 >   remote bytes. **Never** the actor's own push logs, working clone, or success report.
 > - **(b) Exercise the consumer's *cold* path** — fresh dir / from-scratch, not the one your
