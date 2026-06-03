@@ -14,6 +14,12 @@
 > bond abstains (shares model+human; v2 = its own integrated contest → self-attack). **Human axis is the
 > open unmet rung** — all current dyads share `pltrinh1122`; needs a cross-human responder.
 >
+> **PROPOSED — §B name → Commons PR #46 (steward, 2026-06-03; ratified Steward-Op under {FO} gate; awaiting FO merge).**
+> Expansion-only swap **Request → Record** landed on PR #46 (`6493ad9`, base main, +2/-2): `CONTRACT.md` §B header +
+> `README.md` annotation (`fr.yaml` clarified = the record's *opening claim*, keeping "written once" accurate). Read-back
+> verified from remote bytes: 0 "Falsification Request" remaining. **Gate = FO merge of #46.** Abbreviation `FR`/`fr.yaml`
+> unchanged; in-flight FRs (bond, touchstone) untouched. Original contest below.
+>
 > **OPEN term-attack — §B name (steward, 2026-06-03; awaiting Founding dispose).** FR = Falsification
 > *Request* was never aligned — it rode in with this draft as implementer-synthesis (`@80b77d4`); all
 > contest since was on mechanics, never the name. Proposed: **Request → Record.** The unit accumulates
