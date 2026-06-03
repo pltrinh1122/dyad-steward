@@ -1,0 +1,3 @@
+
+# per-consumer DM/FR read-state (local, never shared)
+.falsify-seen.json
