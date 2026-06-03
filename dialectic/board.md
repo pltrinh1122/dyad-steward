@@ -19,6 +19,10 @@
 > sustain. Pairs: `nba-dag.md` (DAG yields the ready-set; the dispose picks the one) · [[minimum-force-default]].
 > **Maintenance bound:** stays small + updates only at seams; if it grows heavy or stales, it inverts — thin it.
 
+## ⟳ RE-ARM AT STAND-UP (session-only state)
+- **DM notify-daemon** — session-only Monitor, **dies on restart → re-arm every stand-up.** Exact command
+  + open threads: `dialectic/session-pin-2026-06-03.md`. (Read-state `.falsify-seen.json` persists on disk.)
+
 ## READY-SET — eligible now, pick one
 | Item | Owner / gate | Note |
 |---|---|---|
