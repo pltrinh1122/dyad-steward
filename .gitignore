@@ -1,0 +1,5 @@
+# Harness / runtime state — NOT the dyad's own durable state.
+# (Contrast: .falsify-seen.json read-state IS committed — it's the dyad's portable state.)
+.claude/
+__pycache__/
+*.pyc
