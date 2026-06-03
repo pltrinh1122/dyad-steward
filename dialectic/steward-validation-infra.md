@@ -127,6 +127,12 @@ invariants · test-homes-with-the-artifact-it-guards · CI=form / FO=substance.
 defects, Steward-Operator-gated, **decoupled** from the blocked 3b. A Steward-Operator *go* proceeds;
 everything else is gated/deferred.
 
+> **BUILT — 2026-06-03 (Steward-Operator GO-LEAN).** `bin/preflight.py`: parse · registry (invokes the
+> Commons `validate_file`, single source — not reimplemented) · refs · submodule-vs-remote. Dogfooded
+> (caught + fixed a live refs defect on first run), negative-controlled (registry + refs proven to
+> fail-on-defect, not no-op). Deferred-as-written: record-shape (blocked 3b) · birth-hash recompute
+> (needs canonical formula) · cold-path (Tier 2, Commons-homed). T2/T3 remain gated/frontier.
+
 ## Feed-back candidate
 The pattern — **a repo-invariants checker whose invariants each carry their motivating defect** — is a
 library-`discipline` candidate for *every* Dyad (proportioned to each one's generated grain), and it
