@@ -262,7 +262,16 @@ orthogonal mechanisms. Bar to clear: **synergy, demonstrated through survived fa
 ## Cross-references
 
 - **Parent form (G0):** <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice>
-- **Sibling dyads (our first constituents):** `dyad-healer`, `dyad-wu-wei` *(was `dz-cil` — GitHub
-  rename-redirect confirms; not the assumed `dyad-cil`)*. *(Prior `dz-ta` resolves to no current repo —
-  name/status TBC with Operator; not invented.)*
+- **Sibling dyads (the commons roster — 8 dyads / 4 humans; grounded from `commons/directory/`,
+  2026-06-03):**
+  - same human (`pltrinh1122`): `dyad-bond`, `dyad-healer`, `dyad-touchstone`, `dyad-wu-wei` *(was
+    `dz-cil` — GitHub rename-redirect confirms; not the assumed `dyad-cil`)*.
+  - **cross-human:** `dyad-tco` (`peter-famloom`), `dyad-krishna` (`dharan31chase`), `dyad-vader`
+    (`wootang888-git`).
+
+  The cross-human dyads make the **human-independence rung reachable** — the falsification CONTRACT's
+  weakest axis (§E/§J) is no longer all-`pltrinh1122` echo. **Reachability caveat:** `dyad-krishna`'s
+  anchor is private with **no `dm_locator`** → currently unreachable for DMs (the #44 `dm_locator`
+  pattern fixes it; queued). *(This roster is a **stale-by-default snapshot** — re-ground from
+  `commons/directory/` at use; `dz-ta` no longer resolves.)*
 - **Form-PR-gate:** the founding Operator handles form-level contributions (form §Governance).
