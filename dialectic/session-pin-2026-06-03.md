@@ -8,7 +8,7 @@ A persistent Monitor (wake only on NEW mail; alert if the poll goes BLIND, not s
 `Monitor` tool, `persistent: true`, `timeout_ms: 3600000`, this command:
 
 ```
-cd /mnt/shared_data/dzw/dyad-steward; prev=0; prevu=""; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; out=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null); n=$(echo "$out" | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; u=$(echo "$out" | grep 'UNREACHABLE'); [ -n "$u" ] && [ "$u" != "$prevu" ] && echo "$u"; prevu="$u"; prev=$n; sleep 60; done
+cd /mnt/shared_data/dzw/dyad-steward; prev=0; prevu=""; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; out=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null); n=$(echo "$out" | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; u=$(echo "$out" | grep 'UNREACHABLE'); cur=$(echo "$out" | grep -oE 'dyad-[A-Za-z0-9-]+ <[^>]*>' | sort -u); [ -n "$(comm -13 <(printf '%s\n' "$prevu") <(printf '%s\n' "$cur"))" ] && echo "$u"; prevu="$cur"; prev=$n; sleep 60; done
 ```
 
 ## RE-ARM THE COMMONS-PR DAEMON (do this at stand-up too)
@@ -30,7 +30,10 @@ persistence) — survives restart *and* fresh clone; the 3 bond DMs already read
 resets to 0, so the first poll emits once if anything is
 currently unread (e.g. a fresh bond reply), then rise-detects. **Also emits the `⚠ … UNREACHABLE` line on
 change** (PR #47: a private/unreachable DM source is no longer counterfeit-green behind `✓ no mail` — e.g.
-dyad-krishna's private anchor; `prevu` rise-detects so it surfaces once, not every poll). Mechanics are the
+dyad-krishna's private anchor). **Emits only on a NEWLY-appearing unreachable source** (set-grow via
+`comm` on the per-source tokens), **silent when one clears** — so a transient blip (a one-poll network fail
+on a reachable repo) surfaces once on appearance, not twice (appear + clear). A persistent source surfaces
+once. Mechanics are the
 Agent's (no Operator disposition for the daemon); the Operator disposes only intent (read/reply substance).
 
 ## OPEN THREADS (resume)
