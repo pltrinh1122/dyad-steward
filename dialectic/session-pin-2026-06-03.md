@@ -21,9 +21,20 @@ cd /mnt/shared_data/dzw/dyad-steward; repo=The-Dyad-Practice-Commons/the-dyad-pr
 ```
 **Keys on `headRefOid` (head SHA), not just number+title** — so a *push* to an existing open PR (e.g. tco's fix to #44) fires, not only brand-new PRs. (Fixed 2026-06-03 after asking "if tco updates the PR, will we know?" — number+title alone wouldn't have caught a push.) *Known limit:* a comment-only reply with no push still won't fire (acceptable; add `updatedAt` to the key if comment-detection is needed).
 
-**Rest-point discovery surfaces (the full set — pull/watch all three):** (1) DM inbox (`falsify.py inbox`,
-daemon) · (2) **commons PR queue** (`gh pr list`, daemon above) · (3) FR queue (`falsify.py list`, pull at
-stand-up — no daemon, contract §H no-push/no-flood). Missing any one = looking blind on that surface.
+## RE-ARM THE PEER-REVIEW DAEMON (do this at stand-up too)
+Watches **incoming reviews/comments on OUR open Commons PRs** — the surface I was blind to (the Operator had to
+ask "did you synthesize the reviews?" after 5 dyad reviews landed on #47 unseen). Seeds silent on first poll so it
+doesn't re-dump already-read reviews. `Monitor`, `persistent: true`, `timeout_ms: 3600000`:
+
+```
+cd /mnt/shared_data/dzw/dyad-steward; repo=The-Dyad-Practice-Commons/the-dyad-practice; prevf=$(mktemp); seeded=0; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ PR-review poll BLIND >5min — gh/auth/network down (NOT 'no reviews')"; sleep 120; continue; fi; blind=0; curf=$(mktemp); for pr in $(gh pr list --repo "$repo" --state open --author @me --json number --jq '.[].number' 2>/dev/null); do gh api "repos/$repo/pulls/$pr/reviews" --jq ".[] | \"#$pr rv:\(.id) \(.user.login) \(.state)\"" 2>/dev/null; gh api "repos/$repo/issues/$pr/comments" --jq ".[] | \"#$pr cm:\(.id) \(.user.login)\"" 2>/dev/null; done | sort > "$curf"; new=$(comm -13 "$prevf" "$curf"); [ "$seeded" = "1" ] && [ -n "$new" ] && echo "🔎 new peer review/comment on our PR: $(echo "$new" | tr '\n' ' | ') (gh pr view N --repo $repo --json reviews)"; mv "$curf" "$prevf"; seeded=1; sleep 120; done
+```
+*Restart caveat:* seeds silent on first poll → a review that arrived while down is missed at the automation layer;
+so **also pull `gh pr view <our open PRs> --json reviews` at stand-up** (like the FR queue).
+
+**Rest-point discovery surfaces (the full set — pull/watch all FOUR):** (1) DM inbox (`falsify.py inbox`,
+daemon) · (2) **commons PR queue** (`gh pr list`, daemon) · (3) FR queue (`falsify.py list`, pull at stand-up —
+no daemon) · (4) **peer-reviews on our open PRs** (daemon above + pull at stand-up). Missing any one = blind there.
 
 Notes: read-state (`.falsify-seen.json`) is **committed** (durable, per-dyad; git is the dyad's portable
 persistence) — survives restart *and* fresh clone; the 3 bond DMs already read stay read. On re-arm `prev`
