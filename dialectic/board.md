@@ -26,7 +26,10 @@
 ## READY-SET — eligible now, pick one
 | Item | Owner / gate | Note |
 |---|---|---|
-| **wu-wei #4 — heartbeat-seizure playbook** | Steward curate → library | ripest, least-contested |
+| **`dm_locator` universality** | Steward propose → FO gate | only 1/9 dyads declares one; `onboard.py` predates #44's field → never emits it. Cross-human *reachability*, the next-thinnest axis ([[fo-motivation-prioritization-key]]) |
+| **Wire `regen_directory_index.py --check` into Commons CI** | Steward propose → FO installs | the no-drift durability half of #52 (script landed; CI hook is a separate `.github/` workflow) |
+| **Re-derive onboarding from the human-need frame** | Steward | now cold-path-informed: the 9th dyad is a *non-technical human* — lead from her grain |
+| **wu-wei #4 — heartbeat-seizure playbook** | Steward curate → library | ripest, least-contested (but ripest ≠ highest-leverage — [[fo-motivation-prioritization-key]]) |
 | **wu-wei #2 — onboard.py anchor-injection** | Steward propose → FO gate | enablement gap (careful near birth shim) |
 | **Totality README review** | Steward | extraction + rename all landed |
 | **Graduate proactivity-calibration** | Steward-Operator dispose | next off the graduation queue |
@@ -37,7 +40,7 @@
 | **schema.json / Slice 3b** | metadata-rep / normalization fork (`contributing-discipline`) |
 | **PFP → Commons** (as `discipline`) | Nomenclature `discipline` ratified ⟵ library-contribution channel (deferral) |
 | **Nomenclature: `discipline` / retire "cycle"** | Founding gate; bundle w/ the DFD publish |
-| **Healer #2-access** dispose | FO gate — **PRIORITY RISING (4th–5th convergence): wu-wei #1 · 2 other-human dyads stuck pre-registration** |
+| **Healer #2-access** dispose | FO gate — **PRIORITY RISING: wu-wei #1** *(the "2 other-human dyads stuck pre-registration" convergence was FALSIFIED 2026-06-05 — all 9 registered; the real barrier was directory *visibility*, fixed by #52 — [[cold-path-barriers-are-stale]])* |
 | **wu-wei #3 — centralized semantic-ledger** | verify `stress-tests` is Commons *canon*, not bond-particular |
 | **cross-human share channel** (per-repo vs Commons-central inbox) | the open fork in `cross-dyad-share-pull.md` (cross-human repos may be private/unreachable) — Founding gate if Commons-central |
 | **Learning-Discipline velocity metric** | first real stewardship cycle (event-gated) |
@@ -46,10 +49,19 @@
 
 ## WATCH — sovereignty, not ours to act
 - **Remaining-dyad onboarding** — their Operators run the hardened Init+Join; feedback resumes the
-  intake→verify→suture loop. *(Directory: steward · healer · bond · wu-wei. **2 other-human dyads
-  instantiating but not yet self-registered** → invisible to the sharing channel until they Join.)*
+  intake→verify→suture loop. *(Directory now holds **9** self-registered dyads — steward · healer ·
+  bond · wu-wei · touchstone · tco · krishna · vader · personal-growth-ai. Registration barrier is
+  CLEARED; remaining cross-human gap is *reachability* — see `dm_locator` trail in READY-SET.)*
 
 ## LANDED (capabilities now live)
+- **2026-06-05 · Directory participant index 1→9 visible (Commons PR #52, FO-gated).** The
+  `DIRECTORY.md` index had listed 1 of 9 registered dyads (root: a category error — *rendering in the
+  regenerable index* ≠ *editing a sovereign entry*; [[regenerable-view-not-sovereign-edit]]). Shipped
+  `scripts/regen_directory_index.py` (deterministic, `--check`, idempotent) + tests; regenerated the
+  index; rewrote our own `directory/dyad-steward.yaml` summits to the directory's legibility bar. Found
+  via cold-pathing the other-human Join ([[cold-path-barriers-are-stale]]).
+- **2026-06-05 · `falsify.py` hardening (Commons #49 + #47, FO-gated).** #49 first-responder `makedirs`
+  crash fix; #47 unreachable-DM-source warning (survived the cross-dyad panel). Commons PR queue → 0 open.
 - **2026-06-03 · Inter-dyad falsification channel — LIVE in the Commons (PROVISIONAL).** Contract
   v1→**v4** through a real **cross-model + corpus-lens panel** (bond / wu-wei REFUTED / healer
   NEEDS-SCOPING; bond's dissociation design realized). Installed (FO-gated): `falsification/CONTRACT.md`
