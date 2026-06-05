@@ -26,6 +26,19 @@ across practitioners and sessions); the summit is making it **emergent** — no 
 *Shed:* intent/interaction mechanics (→ the Intent-Understanding dyad); generativity-of-knowledge is
 other dyads' half. *Permanent frontier:* the sycophancy guard.
 
+> **Human-driver grounding** *(LIVE, not frozen — `dialectic/fo-motivation-commons.md`; FO-gated
+> 2026-06-04).* The Telos above is stated *epistemically* (velocity-toward-truth; falsifiability +
+> enablement). Beneath it sits the **human** driver. The Commons is multi-human **not** because the
+> practice needs a foreign jury — it is epistemically **solo-satisfiable** (the tenet is intra-dyad; one
+> human's fleet supplies every epistemic axis) — but because the **FO is a human whose needs — Witness ·
+> Belong · Legacy · Service — are met only by other humans.** Serving those needs **while distributing
+> the FO's dyad-operation burden** (other humans operate their *own* dyads) is what the human-side
+> experience optimizes for. *Consequence:* the cross-human / onboarding apparatus is justified on
+> **human-need + burden-reduction** grounds, **never** as an epistemic jury-requirement (that frame —
+> Sybil-resistance, human-independence-as-invariant — was refuted 2026-06-04; it was a human need wearing
+> an epistemic costume). *Held as a live grounding note — survives more practice before any §Telos tenet
+> change.*
+
 > **Tended-first discipline — the Telos serves the *tended* (the Commons + its consumer-Dyads), not
 > ourselves.** *(Steward Operator `[FEEDBACK]`, 2026-05-31 — a **recurring** drift, ingrained at the
 > source because Agent-recall failed to hold it across turns.)* In **every** analysis — wu-wei /
