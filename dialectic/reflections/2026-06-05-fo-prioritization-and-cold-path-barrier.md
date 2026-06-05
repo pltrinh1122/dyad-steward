@@ -1,9 +1,9 @@
 # Reflection — 2026-06-05 (FO-motivation as a prioritization key · cold-path dissolved a stale barrier)
 
-> **Status: DRAFT** — Steward details below; **Operator CONTINUE POV pending** (the one substrate the
-> human retrospects; START/STOP were harvested live). Progresses DRAFT → INTEGRATED → RATIFIED.
-> Scope: a single trail run end-to-end — *prioritize from the FO motivation → cold-path the Join →
-> ship the fix → FO gate*. Reflection-discipline: `reflection-discipline.md`.
+> **Status: RATIFIED** (2026-06-05) — Operator declined CONTINUE POV (*"no POV"*, valid per
+> `reflection-discipline.md`). With no POV claim to falsify, the CONTINUE patterns stand as
+> Steward-drafted, grounded in session evidence; START/STOP were harvested live. Scope: a single trail
+> run end-to-end — *prioritize from the FO motivation → cold-path the Join → ship the fix → FO gate*.
 
 ## CONTINUE — positive patterns (Operator POV pending)
 
