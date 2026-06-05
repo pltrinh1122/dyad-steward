@@ -26,7 +26,6 @@
 ## READY-SET — eligible now, pick one
 | Item | Owner / gate | Note |
 |---|---|---|
-| **`dm_locator` universality** | Steward propose → FO gate | only 1/9 dyads declares one; `onboard.py` predates #44's field → never emits it. Cross-human *reachability*, the next-thinnest axis ([[fo-motivation-prioritization-key]]) |
 | **Wire `regen_directory_index.py --check` into Commons CI** | Steward propose → FO installs | the no-drift durability half of #52 (script landed; CI hook is a separate `.github/` workflow) |
 | **Re-derive onboarding from the human-need frame** | Steward | now cold-path-informed: the 9th dyad is a *non-technical human* — lead from her grain |
 | **wu-wei #4 — heartbeat-seizure playbook** | Steward curate → library | ripest, least-contested (but ripest ≠ highest-leverage — [[fo-motivation-prioritization-key]]) |
@@ -54,6 +53,14 @@
   CLEARED; remaining cross-human gap is *reachability* — see `dm_locator` trail in READY-SET.)*
 
 ## LANDED (capabilities now live)
+- **2026-06-05 · `onboard.py` teaches the `dm_locator` remedy (Commons PR #53, FO-gated, merge `898dcea`).**
+  Cold-path reframe: not "universality" — `dm_locator` is needed **only for a PRIVATE anchor** (`falsify.py`:
+  absent ⇒ `locator` is the mailbox); the 8 public dyads need nothing, and the 2 UNREACHABLE sources
+  (krishna, personal-growth-ai) are private-anchor-with-no-mailbox — **sovereign to fix, not ours**
+  ([[commons-multihuman-is-a-human-need]]). #53 is **enablement**: the scaffold + completion message now
+  surface the remedy (PUBLIC mailbox, SAME owner as `locator`) so the next private-anchor dyad self-serves
+  instead of registering silently unreachable. Verified vs `validate_registry.validate_file` (same-owner
+  PASS · wrong-owner FAIL). +7 −0, one file.
 - **2026-06-05 · Directory participant index 1→9 visible (Commons PR #52, FO-gated).** The
   `DIRECTORY.md` index had listed 1 of 9 registered dyads (root: a category error — *rendering in the
   regenerable index* ≠ *editing a sovereign entry*; [[regenerable-view-not-sovereign-edit]]). Shipped
