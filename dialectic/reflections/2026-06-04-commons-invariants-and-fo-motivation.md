@@ -1,8 +1,8 @@
 # Reflection — 2026-06-04 · Commons invariants realigned + FO motivation anchored
 
-> **Status: DRAFT** (committed early to survive `/exit`). Four-step form: Steward drafts → Operator
-> **CONTINUE** POV → Steward falsifies POV vs evidence → integrate → Operator ratifies. START/STOP were
-> harvested live as `[FEEDBACK]` this session (asymmetry refinement); Steward details them from that record.
+> **Status: RATIFIED** (2026-06-04, Operator `Y`). Four-step form completed: Steward drafted → Operator
+> **CONTINUE** POV → Steward falsified vs evidence → integrated → Operator ratified. START/STOP were
+> harvested live as `[FEEDBACK]` this session (asymmetry refinement); Steward detailed them from that record.
 
 ## Session shape (one line)
 A `riff` on onboarding hit a foundational misalignment; the FO hard-stopped, we re-grounded the Commons
@@ -19,7 +19,15 @@ Validate debiased it, and the surviving synthesis (the FO-motivation anchor) was
 half walked in with. The canon says *friction is where 1+1=3 happens* — it did. The mis-steps weren't
 failures of the practice; they were the contest **catching** them. Hold both faces honestly.
 
-## CONTINUE — *(Steward draft; Operator POV pending — your one retrospective substrate)*
+## CONTINUE — *(Operator POV RATIFIED 2026-06-04)*
+- **Port the *way*, not the mechanism** *(Operator POV, falsified PARTIAL → integrated)*. The FO ported an
+  interaction style from a sibling dyad and got desired Agent behavior **without ingraining the markers**.
+  Falsified: it's not *marker vs way* — the **way activates pre-ingrained dispositions; the marker is an
+  optional self-describing index** (`rack`=shelve, `rub`=friction-test, `riff`=diverge carry meaning in the
+  word → port for free; arbitrary tokens like `[ALIGN]` need ingraining). Works *because* sibling dyads
+  share the ingrained substrate. **Caveat + test:** port to a *fresh* dyad (a new human's, e.g. Tim's) and
+  the way alone won't carry disposition-dependent behavior — the dispositions, not markers, are what's
+  missing → bridges to the onboarding re-derivation. → new lesson [[self-describing-markers-port-free]].
 - **Verify-from-source coupled into the action.** Every done-claim was read back from origin *this turn* —
   "merged" confirmed via `gh api` (not your word), push via `git ls-remote`. The read-back is becoming
   reflexive, not a separate step. → ref [[verify-with-actual-tool]] (applied, not new).
