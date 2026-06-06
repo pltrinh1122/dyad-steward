@@ -94,6 +94,18 @@ The dyad-growth ↔ tended-growth relation is **per-dyad, not one spectrum**:
 1. **peer-falsification quality ≈ human-falsification?** (the lever that holds steering-load flat as N
    grows). Caveat already logged: bond-F1 dogfood — *steward↔bond share 2 of 3 axes (same model, same
    human)* → partially correlated falsifiers. Decorrelation (cross-model → cross-human) is the real lever.
+   **Lived instance (2026-06-06 retro) — propagation ≠ compounding.** The Operator cited marker-alignment
+   across his dyads (`retro:/rub:/clip:` porting naturally) as compounding evidence. Sharpen: marker-alignment
+   evidences **propagation / leverage** (one wet-ware growth applied across N dyads — *additive*, the
+   dispersion half), **not compounding** (the super-linear feedback loop). The same shared-wet-ware that makes
+   it carry is what makes it **non-independent** — indistinguishable from "one person, stable habits." The
+   markers are the visible *index* of an invisible **disposition** that ported, not a copied string
+   ([[self-describing-markers-port-free]]). **Falsifiable signature of compounding** = cross-dyad
+   *improvement*-transfer (a marker/clarity improves in dyad-A and the improved form surfaces *faster* in
+   dyad-B), **not mere presence**. **Runnable now (wu-wei-clean, no meter to build):** watch whether today's
+   sharpened concepts (N\*, brake/engine, CEO-inversion, never-optimize-the-human-out) surface in the
+   Operator's *other* dyads soon — and come back re-interpreted/improved. Presence = propagation confirmed;
+   improvement-transfer = the first real whiff of compounding.
 2. **Is `1+1>2` locally falsifiable per dyad?** (without a working local fitness function, decorrelated
    re-interpretation has nothing to converge on → fragmentation, not emergence).
 3. **Does the dyad keep the Operator un-plateaued?** — the master curve; if it bends down, the thesis dies.
