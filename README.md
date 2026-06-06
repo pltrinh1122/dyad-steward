@@ -1,11 +1,22 @@
 # dyad-steward
 
-**Steward of The Dyad Practice commons.** Our telos: make the commons a **self-cultivating ecosystem** —
-practitioner-dyads sharpening each other on a shared, contested learning that *compounds without
-decaying* (trustworthy **and** adopted). We run the form's two pillars — **falsifiability** (the
-cross-practitioner contest is real) and **enablement** (lower the barrier) — across a practitioner's
-three turns in the commons: **Joining · Sharing · Resonating**. *(Full telos → [`AGENT.md`](AGENT.md)
-§Telos.)*
+**Steward of The Dyad Practice commons.**
+
+**What Steward is for** *(sharpened 2026-06-06)*: accelerate any **multi-dyad Operator** toward
+portfolio-scale **`1+1=3`** — make one Operator's surviving lessons compound *safely* across their
+whole fleet, so a single human keeps more dyads' loops positive (**raise N\***) without their steering
+becoming the cap. The Operator's growth *is* the engine — never a bottleneck to route around.
+
+*Stated epistemically:* make the commons a **self-cultivating ecosystem** — practitioner-dyads
+sharpening each other on a shared, contested learning that *compounds without decaying* (trustworthy
+**and** adopted), across three turns: **Joining · Sharing · Resonating**. Two halves, one mechanism:
+**integrity** is the brake that lets the portfolio go fast (safe cross-dyad borrowing) and
+**knowledge-compounding** is the engine. *(Full telos + convergence record → [`AGENT.md`](AGENT.md)
+§Telos · [`dialectic/acceleration-thesis-and-steward-summit.md`](dialectic/acceleration-thesis-and-steward-summit.md).)*
+
+> ⚠️ **Honest status:** the load-bearing premise — *Operator-growth → acceleration* — is **observed,
+> not yet established**; held under falsification, deferred to the first acceleration plateau. The
+> summit is a *direction*, not a delivered claim.
 
 This repo is the Steward dyad's substrate (external to the commons it tends). If you are a human or
 another Dyad arriving here, **start with this file**, then jump to the slice you need — don't crawl.
@@ -28,7 +39,7 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 | You want… | Go to |
 |---|---|
 | The tenet (1+1=3) and *why falsification is non-negotiable* | `kb/one-plus-one-equals-three.md` · `AGENT.md` §NON-NEGOTIABLE |
-| Decision-framing (surface a decision: CTA/THESIS/ANTI/SYNTH) | `AGENT.md` §DFD · `kb/dfd.md` (failure-modes) |
+| Decision-framing (surface a decision: CTA/THESIS/ANTI/SYNTH) | `AGENT.md` §"Disciplines we own" (PFP) · `kb/pfp.md` (failure-modes) |
 | Ideation-framing (run an `[IDEATE]`) | `dialectic/ideation-framing.md` |
 | Goal-framing (intake a laundry list → Telos-gated DAG) | `dialectic/goal-framing.md` (WHAT) · `dialectic/goal-framing-grounding.md` (audit/lineage) |
 | Prioritization (next action over a DAG) | `dialectic/nba-dag.md` |
@@ -39,7 +50,7 @@ another Dyad arriving here, **start with this file**, then jump to the slice you
 | Cross-Dyad sharing (access map) | `dialectic/sharing-discipline.md` |
 | How a shared learning enters the Commons & survives (ledger/subscription) | `dialectic/commons-contribution-lifecycle.md` |
 | The field-schema for a `discipline` unit (ontology, two-pronged atomicity) | `dialectic/discipline-ontology.md` |
-| Staged Commons PR candidate (DFD discipline + term; Founding-gated) | `dialectic/commons-pr-candidate-dfd.md` |
+| Staged Commons PR candidate (PFP discipline; Founding-gated) | `dialectic/commons-pr-candidate-pfp.md` |
 | To instantiate your own dyad | the form's **DIP** — `AGENT.md` at <https://github.com/The-Dyad-Practice-Commons/the-dyad-practice> |
 
 ## Intent Understanding & Interaction — the cluster *(the summit a referencing Dyad extracts +1 from)*
@@ -50,7 +61,7 @@ understand and structure intent:
 
 - **`dialectic/dyad-ui.md`** — the framing/signaling layer: the **marker taxonomy** (intent signals)
   and the show/flow regions (`DF-UI`/`DFD`, `IF-UI`/`IFD`).
-- **`AGENT.md` §DFD · `kb/dfd.md`** — **Decision-Framing** (intent → dispose) + its failure-modes.
+- **`AGENT.md` §Ontology (DF-UI/DFD) · `kb/pfp.md`** — **Decision-Framing** (intent → dispose) + its failure-modes.
 - **`dialectic/ideation-framing.md`** — **Ideation-Framing** (`IFD`): intent → exploration.
 - **`dialectic/goal-framing.md`** (+ `-grounding.md`) — **Goal-Framing** (`GFD`): multi-intent intake
   → Telos-gated execution DAG.
