@@ -26,6 +26,8 @@
 ## READY-SET — eligible now, pick one
 | Item | Owner / gate | Note |
 |---|---|---|
+| **Learning-loop scaffold → seed** (build) | Steward propose → FO gate; **co-sequence w/ cairn** | *Investigation DONE — survived-falsification candidate (`dialectic/learning-loop-scaffold.md`): N=2 independent derivations (wu-wei ⟂ steward-lineage), portable, substrate-forced.* Build = add the missing **verbs** to `onboard.py`: harvest-trigger + reload-ritual + empty store (seed ships nouns, not verbs). **Same architecture surface as cairn** — left apart, cairn's PR sets the library architecture this lives inside. Felt-+1 cycle-two crux still open (riff). |
+| **DISCOVERY: async-event context-switch efficiency** *(retro 2026-06-06, Operator)* | Steward discovery | *Is our servicing of async interrupts (DM daemon fires) efficient — esp. for the **Operator**, who can't context-switch fast (the scarce resource — [[fo-motivation-prioritization-key]])?* Lived this session: daemon fired ~4× incl. mid-riff; some high-value (cairn's real proposal), some noise (repeat `unreachable:N` re-confirms after my sync). Q: triage/batch to a rest-point vs interrupt? Prior art to harvest: touchstone `dialectic/event-interrupt-servicing.md`; ours [[intake-queues-below-active]]. |
 | **Wire `regen_directory_index.py --check` into Commons CI** | Steward propose → FO installs | the no-drift durability half of #52 (script landed; CI hook is a separate `.github/` workflow) |
 | **Re-derive onboarding from the human-need frame** | Steward | now cold-path-informed: the 9th dyad is a *non-technical human* — lead from her grain |
 | **wu-wei #4 — heartbeat-seizure playbook** | Steward curate → library | ripest, least-contested (but ripest ≠ highest-leverage — [[fo-motivation-prioritization-key]]) |
@@ -36,6 +38,7 @@
 ## BLOCKED — ⟵ real precedence edge
 | Item | ⟵ blocked-by |
 |---|---|
+| **cairn Commons-architecture proposal** (DM `2026-06-06-commons-architecture-proposal.md`) — *referee pass → FO gate* | queued behind active minimum-scaffold thread. cairn proposes bifurcating commons into `bin/` (Chisel: `mason` CLI + `stone.yaml` validators) vs `stones/` (Library). **Steward read (verified):** (1) **not ours to ratify** — Commons architecture = FO dispose; we falsify-as-peer → carry survivor to FO. (2) principle is sound but **already instantiated** — `commons/scripts/` ⊥ `library/`/`falsification/`/`ontology/`; `bin/`+`stones/` are *parallel renames* → forks the tree it wants to unify (single-home). (3) `stone.yaml` likely **dup/forks our CONVERGED library schema** `{trigger,move,claim,refutation,ledger}` — needs the field-diff. Note: cairn's +1 summit #1 = cross-dyad distillation → **directly the minimum-scaffold thread.** |
 | **schema.json / Slice 3b** | metadata-rep / normalization fork (`contributing-discipline`) |
 | **PFP → Commons** (as `discipline`) | Nomenclature `discipline` ratified ⟵ library-contribution channel (deferral) |
 | **Nomenclature: `discipline` / retire "cycle"** | Founding gate; bundle w/ the DFD publish |
