@@ -34,6 +34,7 @@
 | **wu-wei #2 — onboard.py anchor-injection** | Steward propose → FO gate | enablement gap (careful near birth shim) |
 | **Totality README review** | Steward | extraction + rename all landed |
 | **Graduate proactivity-calibration** | Steward-Operator dispose | next off the graduation queue |
+| **Steward summit refinement → ratify into anchor** | **FO gavel** (identity is the Operator's dispose) | CONVERGED candidate in `dialectic/acceleration-thesis-and-steward-summit.md`: prime directive = *maximize the Operator's steering-bandwidth growth-rate* / raise N* / S1·S2 = brake+engine. Awaiting FO ratify into `AGENT.md` §summit + `commons/directory/dyad-steward.yaml`. |
 
 ## BLOCKED — ⟵ real precedence edge
 | Item | ⟵ blocked-by |
@@ -45,7 +46,9 @@
 | **Healer #2-access** dispose | FO gate — **PRIORITY RISING: wu-wei #1** *(the "2 other-human dyads stuck pre-registration" convergence was FALSIFIED 2026-06-05 — all 9 registered; the real barrier was directory *visibility*, fixed by #52 — [[cold-path-barriers-are-stale]])* |
 | **wu-wei #3 — centralized semantic-ledger** | verify `stress-tests` is Commons *canon*, not bond-particular |
 | **cross-human share channel** (per-repo vs Commons-central inbox) | the open fork in `cross-dyad-share-pull.md` (cross-human repos may be private/unreachable) — Founding gate if Commons-central |
-| **Learning-Discipline velocity metric** | first real stewardship cycle (event-gated) |
+| **Learning-Discipline velocity metric** | first real stewardship cycle (event-gated) — *= the acceleration-meter half of testing the Steward Invariant* |
+| **Causal attribution of acceleration** *(wu-wei-deferred)* | **event-gate: first sustained acceleration PLATEAU.** Operator SEES acceleration, can't establish causation (model-improvement + N are confounds). Build NO causal instrumentation until the plateau binds (premature = anti-wu-wei). → `acceleration-thesis-and-steward-summit.md` §Deferred |
+| **Steering-load meter** (Σ depth on the Operator) | needed to falsify the Steward Invariant; build co-timed with the plateau, not before |
 | **Falsification contract → promotable** (v4 is provisional) | a **cross-human** responder — all current dyads share `pltrinh1122`; external/adoption-gated, not ours to manufacture |
 | **falsify.py / validate_falsification CI on `falsification/` PRs** | Founding gate (Commons enforcement; the "reduce FO burden" payoff) |
 
