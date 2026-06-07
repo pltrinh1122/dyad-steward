@@ -43,12 +43,22 @@ Commons/consumer friction** — a genuine extension; a probe like "cold-path onb
 - **Not porting wholesale:** cairn's `flow_state_manager` engine (git-branch-per-node, Red/Green PR gates,
   `retro_lock` [vapor], derived-status) is *internal-code-shaped* and doesn't fit external stewardship work.
 
-## The open fork (implementation weight)
-- **(A) Full SPAOR engine** — port cairn's `bin/node` lifecycle (plan/checkout/reflect-red/reflect-green/
-  complete) + Red/Green gates. Rigorous; heavy; internal-code-shaped; carries cairn's vapor (retro_lock).
-- **(B) Light graft** *(steward lean)* — add a **PROBE node-type** to our frontier (a node whose contract
-  is confirm-or-falsify → spawn-or-abort) + the SPAOR stages as the trail lifecycle, reusing `frontier.py`/
-  `preflight`/`digest`. No engine port. Fits external probes (which aren't TDD-on-a-branch); minimum-force.
+## The fork — RESOLVED (FO "lean", 2026-06-07): (B) light graft, BUILT
+- **(A) Full SPAOR engine** — port cairn's `bin/node` lifecycle + Red/Green gates. Rigorous; heavy;
+  internal-code-shaped; carries cairn's vapor (retro_lock). **Not chosen.**
+- **(B) Light graft** *(chosen + shipped)* — `frontier.py` now carries a **`type` field** (PROBE | PLAN |
+  EXECUTE, default EXECUTE) + a **`FALSIFIED`** terminal status (PROBE-only: the probe's condition was
+  refuted → trail aborted). PROBE is the only type that grows the DAG; EXECUTE ships. The SPAOR stages
+  *are* the existing status flow (READY→ACTIVE→IN_REVIEW→DONE), no separate engine. Negative-controlled
+  (bad-type, FALSIFIED-only-for-PROBE). The status flow walked live this session: the
+  `friction_intake_probe_spaor` PROBE → confirmed → spawned `frontier_node_types_graft` (EXECUTE) → DONE.
+
+## Recursive: SPAOR governs sensor-development too (FO, 2026-06-07)
+Building a sensor is itself a trail that runs **PROBE → PLAN → EXECUTE → REFLECT** — we do **not** build a
+sensor on hypothesized friction. Every candidate sensor enters as a **PROBE** that confirms-or-falsifies
+the friction it would catch, *first*. (Demonstrated: `probe_onboarding_friction` is queued as a PROBE to
+cold-path the racked Tim signals before any onboarding-UX sensor/fix is built.) The methodology governs
+its own tooling — fractal, all the way down.
 
 Cross-refs: `acceleration-thesis-and-steward-summit.md` (the sensing analog of the encode/irreducible cut) ·
 `adopt-cairn-frontier-rack-csi.md` · `board.md` b2 · memory [[cold-path-barriers-are-stale]] · [[verify-with-actual-tool]] · [[dont-optimize-the-human-out]].

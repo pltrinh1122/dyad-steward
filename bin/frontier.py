@@ -23,8 +23,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "frontier_state.yml")
 VIEW = os.path.join(ROOT, "frontier.md")
 
-STATUSES = ["READY", "ACTIVE", "IN_REVIEW", "BLOCKED", "DONE"]
-ICON = {"READY": "○", "ACTIVE": "▶", "IN_REVIEW": "◔", "BLOCKED": "⊘", "DONE": "✓"}
+STATUSES = ["READY", "ACTIVE", "IN_REVIEW", "BLOCKED", "DONE", "FALSIFIED"]
+ICON = {"READY": "○", "ACTIVE": "▶", "IN_REVIEW": "◔", "BLOCKED": "⊘", "DONE": "✓", "FALSIFIED": "✗"}
+TERMINAL = {"DONE", "FALSIFIED"}
+
+# Node-type (SPAOR, from dyad-cairn, applied EXTERNALLY). Default EXECUTE so existing nodes need no field.
+#   PROBE   — investigate a friction-condition; only output is CONFIRM (spawn PLAN/EXECUTE) or FALSIFY
+#             (-> status FALSIFIED, abort the trail — cold-path-barriers-are-stale, mechanized).
+#             The ONLY type that grows the frontier (intake). Cannot ship functional change.
+#   PLAN    — design the how (optional between PROBE and EXECUTE).
+#   EXECUTE — ship a result; may NOT spawn nodes.
+TYPES = ["PROBE", "PLAN", "EXECUTE"]
+DEFAULT_TYPE = "EXECUTE"
+TYPE_TAG = {"PROBE": " [PROBE]", "PLAN": " [PLAN]", "EXECUTE": ""}
 
 
 def load():
@@ -46,6 +57,11 @@ def validate(state):
         st = n.get("status")
         if st not in STATUSES:
             errs.append(f"{nid}: bad status {st!r} (allowed: {STATUSES}).")
+        ntype = n.get("type", DEFAULT_TYPE)
+        if ntype not in TYPES:
+            errs.append(f"{nid}: bad type {ntype!r} (allowed: {TYPES}).")
+        if st == "FALSIFIED" and ntype != "PROBE":
+            errs.append(f"{nid}: only a PROBE may be FALSIFIED (you falsify a probe's condition, not a {ntype}).")
         if n.get("summit") not in summits:
             errs.append(f"{nid}: summit {n.get('summit')!r} not in summits {list(summits)}.")
         for dep in n.get("dependencies", []) or []:
@@ -101,7 +117,8 @@ def render_md(state):
                     continue
                 dep = n.get("dependencies") or []
                 deptag = f"  ⟵ {', '.join(dep)}" if dep else ""
-                lines.append(f"- {ICON[st]} **[{st}]** `{nid}` — {n['title']}{deptag}")
+                tt = TYPE_TAG[n.get("type", DEFAULT_TYPE)]
+                lines.append(f"- {ICON[st]} **[{st}]**{tt} `{nid}` — {n['title']}{deptag}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
@@ -124,7 +141,8 @@ def render_tree(state):
                     continue
                 dep = n.get("dependencies") or []
                 deptag = f"  ⟵ {','.join(dep)}" if dep else ""
-                out.append(f"  {ICON[st]} {nid}: {n['title']}{deptag}")
+                tt = TYPE_TAG[n.get("type", DEFAULT_TYPE)]
+                out.append(f"  {ICON[st]} {nid}{tt}: {n['title']}{deptag}")
         out.append("")
     return "\n".join(out)
 
@@ -134,7 +152,9 @@ HEADER = """\
 # SOURCE OF TRUTH. `frontier.md` is a REGENERATED projection — never edit the .md.
 # Vocabulary adopted from dyad-cairn (frontier/node/rack) under our own `summit`.
 # WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
-# status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE
+# status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE | FALSIFIED (PROBE-only terminal: condition refuted)
+# type (default EXECUTE): PROBE (confirm-or-falsify a friction; the only type that grows the DAG) ·
+#   PLAN (design) · EXECUTE (ship; may not spawn). SPAOR from dyad-cairn, applied externally.
 # `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
 # `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
 # Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.
@@ -157,7 +177,7 @@ def render_dag_tree(state):
     the dependency that blocks them (a dependent shows beneath its blocker, even across summits)."""
     nodes = state["nodes"]
     summits = state["summits"]
-    live = {nid: n for nid, n in nodes.items() if n["status"] != "DONE"}
+    live = {nid: n for nid, n in nodes.items() if n["status"] not in TERMINAL}
     children = {nid: [] for nid in live}
     nested = set()
     for nid, n in live.items():
@@ -165,13 +185,14 @@ def render_dag_tree(state):
             if dep in live:
                 children[dep].append(nid)
                 nested.add(nid)
-    lines = ["FRONTIER · outstanding work as a DAG   (▶ ACTIVE  ○ READY  ◔ IN_REVIEW  ⊘ BLOCKED)", "│"]
+    lines = ["FRONTIER · outstanding work as a DAG   (▶ ACTIVE  ○ READY  ◔ IN_REVIEW  ⊘ BLOCKED  ·  [PROBE] grows the DAG)", "│"]
 
     def emit(nid, prefix, last, under_summit):
         n = live[nid]
         conn = "└── " if last else "├── "
         tag = "" if n["summit"] == under_summit else f"   [{n['summit']} · blocked-by ↑]"
-        lines.append(f"{prefix}{conn}{ICON[n['status']]} {nid} — {n['title']}{tag}")
+        tt = TYPE_TAG[n.get("type", DEFAULT_TYPE)]
+        lines.append(f"{prefix}{conn}{ICON[n['status']]}{tt} {nid} — {n['title']}{tag}")
         kids = sorted(children[nid])
         ext = "    " if last else "│   "
         for i, k in enumerate(kids):

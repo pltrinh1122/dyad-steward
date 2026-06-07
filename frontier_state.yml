@@ -17,9 +17,28 @@ nodes:
     goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type
       (confirm-or-falsify a friction -> spawn EXECUTE or abort) + Sense/Discern/Intake; SPAOR external.
     summit: b1
+    type: PROBE
+    status: DONE
+    dependencies: []
+    note: "CONFIRMED (FO 'lean') -> spawned frontier_node_types_graft. Weight-fork resolved: LIGHT graft. dialectic/friction-intake-probe-spaor.md."
+  frontier_node_types_graft:
+    title: "Light graft: PROBE/PLAN/EXECUTE node-type + FALSIFIED status in frontier.py"
+    goal: Materialize the PROBE-driven frontier (the light graft, not cairn's full SPAOR engine). type
+      field (default EXECUTE) + FALSIFIED terminal (PROBE-only) + render tags + validate; reuse frontier.py.
+    summit: b1
+    type: EXECUTE
+    status: DONE
+    dependencies: [friction_intake_probe_spaor]
+    note: "Spawned by the confirming PROBE. SPAOR walked: PROBE(confirm) -> EXECUTE(this) -> REFLECT."
+  probe_onboarding_friction:
+    title: "PROBE: is the racked non-techie onboarding friction real + recurring?"
+    goal: Cold-path the onboarding flow as a non-techie; confirm-or-falsify the racked Tim signals
+      (/btw side-channel, restart-after-birth). Confirm -> spawn EXECUTE; falsify -> abort (stale).
+    summit: S1
+    type: PROBE
     status: READY
     dependencies: []
-    note: "dialectic/friction-intake-probe-spaor.md. Itself a PROBE (investigate fit). OPEN FORK: full SPAOR engine vs light graft (steward lean = light)."
+    note: "First friction-PROBE under the new intake. Grounded in lived signals (commons-onboarding-followups.md), not hypothesis. Pairs with onboarding_human_need."
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the

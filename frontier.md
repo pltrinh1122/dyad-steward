@@ -6,6 +6,7 @@
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `onboarding_human_need` — Re-derive onboarding from the human-need frame
+- ○ **[READY]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
@@ -38,6 +39,7 @@
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)
-- ○ **[READY]** `friction_intake_probe_spaor` — PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)
 - ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
+- ✓ **[DONE]** [PROBE] `friction_intake_probe_spaor` — PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)
+- ✓ **[DONE]** `frontier_node_types_graft` — Light graft: PROBE/PLAN/EXECUTE node-type + FALSIFIED status in frontier.py  ⟵ friction_intake_probe_spaor
 - ✓ **[DONE]** `preflight_built` — bin/preflight.py + bin/state.py
