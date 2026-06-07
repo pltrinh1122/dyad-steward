@@ -12,6 +12,14 @@ summits:
   S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
+  friction_intake_probe_spaor:
+    title: "PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)"
+    goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type
+      (confirm-or-falsify a friction -> spawn EXECUTE or abort) + Sense/Discern/Intake; SPAOR external.
+    summit: b1
+    status: READY
+    dependencies: []
+    note: "dialectic/friction-intake-probe-spaor.md. Itself a PROBE (investigate fit). OPEN FORK: full SPAOR engine vs light graft (steward lean = light)."
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the

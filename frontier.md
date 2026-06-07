@@ -38,5 +38,6 @@
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)
+- ○ **[READY]** `friction_intake_probe_spaor` — PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)
 - ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
 - ✓ **[DONE]** `preflight_built` — bin/preflight.py + bin/state.py
