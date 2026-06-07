@@ -44,28 +44,22 @@ def main():
     if prs:
         print(prs)
 
-    # board READY-SET (the eligible-now set; Stand-Up reads it)
-    print("\nboard READY-SET:")
-    in_section = False
-    found = False
+    # frontier: ACTIVE node + READY-SET (the live source is frontier_state.yml, not the retired board.md)
+    print("\nfrontier (ACTIVE + READY-SET — `bin/frontier.py tree` for the full DAG):")
     try:
-        with open(f"{root}/dialectic/board.md", encoding="utf-8") as f:
-            for line in f:
-                if line.startswith("## READY-SET"):
-                    in_section = True
-                    continue
-                if in_section:
-                    if line.startswith("## "):
-                        break
-                    s = line.strip()
-                    if s.startswith("|") and "---" not in s and not s.startswith("| Item"):
-                        cells = [c.strip() for c in s.strip("|").split("|")]
-                        print(f"  • {cells[0]}" + (f"  ({cells[1]})" if len(cells) > 1 else ""))
-                        found = True
-        if not found:
-            print("  (none parsed)")
+        import yaml
+        with open(f"{root}/frontier_state.yml", encoding="utf-8") as f:
+            nodes = (yaml.safe_load(f) or {}).get("nodes", {})
+        active = [nid for nid, n in nodes.items() if n.get("status") == "ACTIVE"]
+        ready = sorted(nid for nid, n in nodes.items() if n.get("status") == "READY")
+        print(f"  ACTIVE [WIP-N=1]: {active[0] if active else '— none (idle)'}")
+        print("  READY-SET (pick one):")
+        for nid in ready:
+            print(f"    ○ {nid} — {nodes[nid].get('title', '')}")
+        if not ready:
+            print("    (none)")
     except FileNotFoundError:
-        print("  (board.md not found)")
+        print("  (frontier_state.yml not found)")
 
 
 if __name__ == "__main__":
