@@ -2,7 +2,7 @@
 
 > Source of truth: `frontier_state.yml`. Regenerate: `bin/frontier.py --md`. Drift gate: `bin/frontier.py --check` (wired into `bin/preflight.py`). WIP-N=1 (`<=1 ACTIVE`) is mechanically enforced at write.
 
-**ACTIVE (WIP-N=1):** adopt_cairn_frontier_rack_csi
+**ACTIVE (WIP-N=1):** — none —
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
@@ -37,5 +37,5 @@
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)
-- ▶ **[ACTIVE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
+- ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
 - ✓ **[DONE]** `preflight_built` — bin/preflight.py + bin/state.py

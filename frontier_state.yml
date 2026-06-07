@@ -17,7 +17,7 @@ nodes:
     goal: Port the shared frontier/rack model + CSI G+V guardrails; shared model -> lower steering-bandwidth
       -> raise N*.
     summit: b1
-    status: ACTIVE
+    status: DONE
     dependencies: []
     note: dialectic/adopt-cairn-frontier-rack-csi.md. P1 (this) = frontier/rack mechanism; P2 = CSI guards.
   learning_loop_seed:

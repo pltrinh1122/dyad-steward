@@ -152,6 +152,45 @@ def write_source(state):
         yaml.safe_dump(state, f, sort_keys=False, allow_unicode=True, width=100)
 
 
+def render_dag_tree(state):
+    """Outstanding work (non-DONE) as a directory-style DAG tree: summits are roots, nodes nest under
+    the dependency that blocks them (a dependent shows beneath its blocker, even across summits)."""
+    nodes = state["nodes"]
+    summits = state["summits"]
+    live = {nid: n for nid, n in nodes.items() if n["status"] != "DONE"}
+    children = {nid: [] for nid in live}
+    nested = set()
+    for nid, n in live.items():
+        for dep in n.get("dependencies") or []:
+            if dep in live:
+                children[dep].append(nid)
+                nested.add(nid)
+    lines = ["FRONTIER · outstanding work as a DAG   (▶ ACTIVE  ○ READY  ◔ IN_REVIEW  ⊘ BLOCKED)", "│"]
+
+    def emit(nid, prefix, last, under_summit):
+        n = live[nid]
+        conn = "└── " if last else "├── "
+        tag = "" if n["summit"] == under_summit else f"   [{n['summit']} · blocked-by ↑]"
+        lines.append(f"{prefix}{conn}{ICON[n['status']]} {nid} — {n['title']}{tag}")
+        kids = sorted(children[nid])
+        ext = "    " if last else "│   "
+        for i, k in enumerate(kids):
+            emit(k, prefix + ext, i == len(kids) - 1, n["summit"])
+
+    skeys = [s for s in sorted(summits)
+             if any(n["summit"] == s and nid not in nested for nid, n in live.items())]
+    for si, skey in enumerate(skeys):
+        roots = sorted(nid for nid, n in live.items() if n["summit"] == skey and nid not in nested)
+        s_last = si == len(skeys) - 1
+        lines.append(f"{'└── ' if s_last else '├── '}{skey} · {summits[skey]}")
+        s_ext = "    " if s_last else "│   "
+        for i, nid in enumerate(roots):
+            emit(nid, s_ext, i == len(roots) - 1, skey)
+        if not s_last:
+            lines.append("│")
+    return "\n".join(lines)
+
+
 def save(state):
     """Mutation path: validate (the write-guard) -> write source + view. Refuses on any violation."""
     errs = validate(state)
@@ -170,6 +209,9 @@ def main():
         print(render_tree(load()))
         return
     cmd = args[0]
+    if cmd == "tree":
+        print(render_dag_tree(load()))
+        return
     if cmd == "--md":
         state = load()
         errs = validate(state)
