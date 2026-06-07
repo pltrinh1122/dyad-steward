@@ -53,6 +53,20 @@ Commons/consumer friction** — a genuine extension; a probe like "cold-path onb
   (bad-type, FALSIFIED-only-for-PROBE). The status flow walked live this session: the
   `friction_intake_probe_spaor` PROBE → confirmed → spawned `frontier_node_types_graft` (EXECUTE) → DONE.
 
+## Node input/output invariants (the rub, 2026-06-07) — what makes the loop rigorous
+Each node-type has a TYPED contract: what it may consume, what it may emit. The contract is what makes
+"only a PROBE grows the DAG" enforceable and prevents waterfall/scope-creep.
+
+| node | INPUT (consumes) | OUTPUT (emits — exactly) | hard invariant |
+|---|---|---|---|
+| **PROBE** | a *falsifiable* friction-condition (states what would confirm/refute) | exactly one: **CONFIRM** → spawn ≥1 PLAN/EXECUTE (grow DAG); **or FALSIFY** → status `FALSIFIED`, abort (no downstream) | verdict must be **source-grounded** (cold-path/tool/source), never asserted; ships **no** functional change; the **only** type that grows the DAG |
+| **PLAN** | a CONFIRMED friction (from a PROBE) — the *what/why* | a **spec**: the EXECUTE's acceptance-criterion + falsification_target ("done"=X; refuted if Y); spawn ≥1 EXECUTE | ships no functional change; optional (a PROBE may spawn EXECUTE directly when the *how* is obvious) |
+| **EXECUTE** | a PLAN's spec (or a confirmed-simple friction) — **one** acceptance-criterion | **exactly one verified deliverable** meeting the spec (test passes / behavior confirmed; Commons work = a PR for FO gate) | output **verified** (verify-with-actual-tool), never asserted-done; **atomic** (one deliverable); **never** spawns nodes |
+| **REFLECT** | a terminal node (DONE/FALSIFIED) | crystallized lesson → durable substrate (ledger/memory/doc) **+** any NEW friction → back to Sense (may spawn a follow-up PROBE) | the **only** place a trail's wisdom enters durable substrate; ships no functional change |
+
+**The spine (4 cross-cutting invariants):** only PROBE grows the DAG · only EXECUTE ships · PROBE-verdict
+grounded · EXECUTE-output verified · every node ends in REFLECT.
+
 ## Recursive: SPAOR governs sensor-development too (FO, 2026-06-07)
 Building a sensor is itself a trail that runs **PROBE → PLAN → EXECUTE → REFLECT** — we do **not** build a
 sensor on hypothesized friction. Every candidate sensor enters as a **PROBE** that confirms-or-falsifies
