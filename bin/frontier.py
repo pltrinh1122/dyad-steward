@@ -22,25 +22,48 @@ import yaml
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "frontier_state.yml")
 VIEW = os.path.join(ROOT, "frontier.md")
+CSI_REG = os.path.join(ROOT, "kb", "csi_guards.yml")
 
 STATUSES = ["READY", "ACTIVE", "IN_REVIEW", "BLOCKED", "DONE", "FALSIFIED"]
 ICON = {"READY": "○", "ACTIVE": "▶", "IN_REVIEW": "◔", "BLOCKED": "⊘", "DONE": "✓", "FALSIFIED": "✗"}
 TERMINAL = {"DONE", "FALSIFIED"}
 
-# Node-type (SPAOR, from dyad-cairn, applied EXTERNALLY). Default EXECUTE so existing nodes need no field.
-#   PROBE   — investigate a friction-condition; only output is CONFIRM (spawn PLAN/EXECUTE) or FALSIFY
-#             (-> status FALSIFIED, abort the trail — cold-path-barriers-are-stale, mechanized).
+# Node-type (SPAOR, from dyad-cairn, applied EXTERNALLY). SPAOR has FIVE phases (commons/AGENT.md:43);
+# the cycle PROBE -> PLAN -> EXECUTE -> OBSERVE -> REFLECT is a FALSIFIABILITY pipeline that carries ONE
+# falsifiable condition from end to end. Default EXECUTE so existing nodes need no field.
+#   PROBE   (Sense)   — output is the trail's ONE single falsifiable INVARIANT (its hypothesis), or a
+#             FALSIFY (-> status FALSIFIED, abort the trail — cold-path-barriers-are-stale, mechanized).
 #             The ONLY type that grows the frontier (intake). Cannot ship functional change.
-#   PLAN    — design the how (optional between PROBE and EXECUTE).
-#   EXECUTE — ship a result; may NOT spawn nodes.
-TYPES = ["PROBE", "PLAN", "EXECUTE"]
+#   PLAN    (Plan)    — decompose the PROBE's single invariant into the EXECUTION invariants (testable
+#             properties), then propose + create the EXECUTE node(s). Designs the how; cannot ship.
+#   EXECUTE (Act)     — generate the required CODE *and* the TEST CODE encoding PLAN's execution invariants.
+#             EXIT INVARIANT = all execution invariants pass (test code green). May NOT spawn nodes.
+#   OBSERVE (Observe) — RUN the test code / measure the exit invariant AGAINST REALITY (verify-with-actual-tool).
+#             The empirical gate; cannot ship.
+#   REFLECT (Reflect) — ASSERT only the SINGLE PROBE invariant holds (the execution invariants are already
+#             discharged by EXECUTE's passing tests), and codify the OUTCOME over the output into durable
+#             substrate (memory/library). May spawn the next PROBE. Closure: DONE only after OBSERVE+REFLECT.
+TYPES = ["PROBE", "PLAN", "EXECUTE", "OBSERVE", "REFLECT"]
 DEFAULT_TYPE = "EXECUTE"
-TYPE_TAG = {"PROBE": " [PROBE]", "PLAN": " [PLAN]", "EXECUTE": ""}
+TYPE_TAG = {"PROBE": " [PROBE]", "PLAN": " [PLAN]", "EXECUTE": "",
+            "OBSERVE": " [OBSERVE]", "REFLECT": " [REFLECT]"}
 
 
 def load():
     with open(SRC) as f:
         return yaml.safe_load(f)
+
+
+def armed_spaor_guards():
+    """Ids of SPAOR-traversal CSI guards that are ARMED in kb/csi_guards.yml (spaor: true, armed: true).
+    A disarmed guard is registered but inert; a missing registry installs no traps. This is the arm/disarm
+    pair: the trap's CHECK lives here in validate(); its ARM-STATE lives (toggleable) in the registry."""
+    try:
+        with open(CSI_REG) as f:
+            guards = (yaml.safe_load(f) or {}).get("guards", {})
+    except FileNotFoundError:
+        return set()
+    return {gid for gid, g in guards.items() if g.get("spaor") and g.get("armed")}
 
 
 def validate(state):
@@ -86,6 +109,33 @@ def validate(state):
     for nid in nodes:
         if color[nid] == WHITE:
             visit(nid, [])
+
+    # SPAOR-traversal CSI traps — fire ONLY when armed in kb/csi_guards.yml (arm/disarm pairs).
+    # Disarmed traps are registered but inert: ship the trap before the substrate is fully compliant.
+    armed = armed_spaor_guards()
+    if "csi_probe_invariant" in armed:
+        # PROBE (Sense) must state the trail's ONE falsifiable invariant — a single non-empty string.
+        for nid, n in nodes.items():
+            if n.get("type") == "PROBE":
+                inv = n.get("invariant")
+                if not isinstance(inv, str) or not inv.strip():
+                    errs.append(f"{nid}: PROBE must declare a single falsifiable `invariant:` "
+                                "(string) [csi_probe_invariant armed].")
+    if "csi_execute_tested" in armed:
+        # EXECUTE (Act) exit invariant: a DONE code-trail EXECUTE references its passing tests.
+        for nid, n in nodes.items():
+            if n.get("type", DEFAULT_TYPE) == "EXECUTE" and n.get("status") == "DONE" and not n.get("tests"):
+                errs.append(f"{nid}: DONE EXECUTE must reference passing `tests:` [csi_execute_tested armed].")
+    if "csi_trail_closure" in armed:
+        # Closure: a node is not DONE while an OBSERVE/REFLECT successor is unclosed (outcome>output).
+        for nid, n in nodes.items():
+            if n.get("status") != "DONE":
+                continue
+            for sid, s in nodes.items():
+                if (nid in (s.get("dependencies") or []) and s.get("type") in ("OBSERVE", "REFLECT")
+                        and s.get("status") not in TERMINAL):
+                    errs.append(f"{nid}: DONE but its {s.get('type')} successor {sid} is unclosed "
+                                "[csi_trail_closure armed].")
     return errs
 
 
@@ -153,8 +203,13 @@ HEADER = """\
 # Vocabulary adopted from dyad-cairn (frontier/node/rack) under our own `summit`.
 # WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
 # status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE | FALSIFIED (PROBE-only terminal: condition refuted)
-# type (default EXECUTE): PROBE (confirm-or-falsify a friction; the only type that grows the DAG) ·
-#   PLAN (design) · EXECUTE (ship; may not spawn). SPAOR from dyad-cairn, applied externally.
+# type (default EXECUTE): SPAOR = FIVE phases, a FALSIFIABILITY pipeline carrying ONE invariant end-to-end:
+#   PROBE (states the trail's ONE falsifiable `invariant:`; only type that grows the DAG) · PLAN (decomposes
+#   it into execution invariants + creates EXECUTE) · EXECUTE (code + test code; EXIT = all execution
+#   invariants pass) · OBSERVE (run tests / test against reality) · REFLECT (CLOSE: assert ONLY the single
+#   PROBE invariant + codify outcome>output; may spawn the next PROBE).
+# SPAOR-traversal CSI traps live in kb/csi_guards.yml as arm/disarm pairs (spaor: true, armed: bool);
+#   an ARMED trap fires in bin/frontier.py validate(); a DISARMED trap is registered but inert.
 # `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
 # `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
 # Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.

@@ -3,8 +3,11 @@
 # Vocabulary adopted from dyad-cairn (frontier/node/rack) under our own `summit`.
 # WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
 # status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE | FALSIFIED (PROBE-only terminal: condition refuted)
-# type (default EXECUTE): PROBE (confirm-or-falsify a friction; the only type that grows the DAG) ·
-#   PLAN (design) · EXECUTE (ship; may not spawn). SPAOR from dyad-cairn, applied externally.
+# type (default EXECUTE): SPAOR = FIVE phases, a FALSIFIABILITY pipeline carrying ONE invariant end-to-end:
+#   PROBE (states the trail's ONE falsifiable invariant; only type that grows the DAG) · PLAN (decomposes
+#   it into execution invariants + creates EXECUTE) · EXECUTE (code + test code; EXIT = all execution
+#   invariants pass) · OBSERVE (run tests / test against reality) · REFLECT (CLOSE: assert ONLY the single
+#   PROBE invariant — execution invariants already discharged by EXECUTE's green tests — + codify outcome>output).
 # `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
 # `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
 # Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.
@@ -15,21 +18,27 @@ summits:
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
   probe_csi_guards_armed:
-    title: "PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?"
+    title: 'PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?'
     goal: Confirm-or-falsify that the registered CSI guards actually BLOCK vs need me to remember preflight.
     summit: b1
     type: PROBE
     status: DONE
     dependencies: []
-    note: "CONFIRMED-NO: registry+checks exist but NO pre-commit hook + NO CI on our repo -> preflight is manual. Proof: shipped broken 623ee01 (nothing blocked it). Real traps only: frontier WIP-N=1 write-guard + Commons CI."
+    invariant: "The registered CSI guards mechanically BLOCK a violating action, not merely run on request."
+    note: 'CONFIRMED-NO: registry+checks exist but NO pre-commit hook + NO CI on our repo -> preflight
+      is manual. Proof: shipped broken 623ee01 (nothing blocked it). Real traps only: frontier WIP-N=1
+      write-guard + Commons CI.'
   csi_precommit_trap:
-    title: "EXECUTE: pre-commit hook runs preflight + BLOCKS on FAIL (arm steward-local CSI traps)"
+    title: 'EXECUTE: pre-commit hook runs preflight + BLOCKS on FAIL (arm steward-local CSI traps)'
     goal: Convert the runnable Symmetric checks into actual mechanical traps; would have caught 623ee01.
     summit: b1
     type: EXECUTE
     status: READY
-    dependencies: [probe_csi_guards_armed]
-    note: "RACKED (FO 'rack: the lean', 2026-06-07) — parked, not worked. Pairs with csi_complete_armstate (list + arm)."
+    dependencies:
+    - probe_csi_guards_armed
+    note: 'RACKED (FO ''rack: the lean'', 2026-06-07) — parked, not worked. Pairs with csi_complete_armstate
+      (list + arm). DELEGATION-CANDIDATE (FO retro 2026-06-07): platform-coding -> dyad-commons-platform;
+      steward stops deep-building this. steward-operates-platform-delegates.'
   probe_csi_armstate:
     title: 'PROBE: is the CSI arm/disarm list complete + queryable?'
     goal: Confirm-or-falsify that we hold a ready arm-state list of ALL guards across surfaces.
@@ -37,6 +46,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
+    invariant: "A single queryable list reports the arm-state of every CSI guard across all surfaces."
     note: 'CONFIRMED (the rub-read): csi.py = 1 of 3 surfaces, no arm-state field, AND 3 session daemons
       disarmed. Spawned 2 EXECUTE.'
   rearm_session_daemons:
@@ -59,7 +69,51 @@ nodes:
     status: READY
     dependencies:
     - probe_csi_armstate
-    note: Spawned by probe_csi_armstate. Atomic EXECUTE; queued (the urgent daemon re-arm went first).
+    note: 'Spawned by probe_csi_armstate. Atomic EXECUTE; queued (the urgent daemon re-arm went first).
+      DELEGATION-CANDIDATE (FO retro 2026-06-07): platform-coding -> dyad-commons-platform. steward-operates-platform-delegates.'
+  probe_csi_spaor_traversal:
+    title: 'PROBE: should SPAOR traversal edges be deterministic CSI traps?'
+    goal: 'Single invariant: frontier traversal of a SPAOR trail is gated by deterministic WELL-FORMEDNESS
+      assertions, while the empirical trail invariant stays human.'
+    summit: b1
+    type: PROBE
+    status: DONE
+    dependencies: []
+    invariant: "Frontier traversal of a SPAOR trail is gated by deterministic well-formedness assertions, each arm/disarm-able."
+    note: 'CONFIRMED via dynamic-chat probe (6-rub thread, 2026-06-07). Deterministic gating belongs on
+      STRUCTURAL/execution edges (PROBE carries one falsifiable invariant; EXECUTE->DONE requires green
+      tests), NOT the empirical trail edge (forcing a computable proxy = Goodhart). Crossing chat->workflow
+      is itself gated by an explicit `lean`. lean-crosses-the-membrane; spaor-five-phases.'
+  execute_csi_spaor_traps:
+    title: 'EXECUTE: implement deterministic CSI traps for PROBE-PLAN-EXECUTE-OBSERVE-REFLECT traversal'
+    goal: 'Extend frontier.py validate() (the existing write-guard) with structural traps: a PROBE node
+      carries exactly one falsifiable invariant; EXECUTE->DONE requires a passing test reference; OBSERVE/REFLECT
+      precede DONE (closure). Code + test code asserting each. Empirical REFLECT edge stays a human assertion.'
+    summit: b1
+    type: EXECUTE
+    status: DONE
+    dependencies:
+    - probe_csi_spaor_traversal
+    tests: "bin/test_frontier.py (armed/disarmed csi_probe_invariant + csi_execute_tested)"
+    note: 'DONE (FO ''lean: execute_csi_spaor_traps (arm/disarm pairs)'', 2026-06-07). Shipped: 3 SPAOR-edge
+      guards in kb/csi_guards.yml (spaor+armed fields); frontier.py validate() fires each ARMED guard;
+      csi.py --arm/--disarm toggle (comment-safe). Armed csi_probe_invariant + backfilled 7 PROBEs; shipped
+      csi_execute_tested + csi_trail_closure DISARMED (arm/disarm pairs = the migration key). Also fixed a
+      latent drift: frontier.py HEADER constant (re-emitted on save) was stale vs the 5-phase header.
+      OBSERVE: tests green, toggle round-trips comment-safe. REFLECT: single PROBE invariant holds.'
+  probe_delegate_platform_dyad:
+    title: 'PROBE: delegate platform-engineering to a dyad-commons-platform so steward focuses on operating?'
+    goal: 'FO direction (retro, 2026-06-07): wind down steward platform-coding; a dedicated dyad may take
+      the actual coding. Confirm-or-falsify when the FO crosses; until then, platform-mechanism nodes are
+      delegation-candidates, not steward deep-coding.'
+    summit: S3
+    type: PROBE
+    status: READY
+    dependencies: []
+    invariant: "Delegating platform-engineering to a dedicated dyad frees steward's bandwidth for operating without losing control of the frontier/CSI substrate."
+    note: 'steward-operates-platform-delegates. Delegation-candidates: csi_precommit_trap, csi_complete_armstate,
+      and arming csi_execute_tested / csi_trail_closure. Provisional ("may"); FO-direction-gated. Dogfoods
+      the armed csi_probe_invariant trap (this node carries its single invariant).'
   friction_intake_probe_spaor:
     title: 'PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)'
     goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type (confirm-or-falsify
@@ -68,6 +122,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
+    invariant: "Observed friction, not top-down hypothesis, is the frontier's intake source — via a PROBE node-type."
     note: 'CONFIRMED (FO ''lean'') -> spawned frontier_node_types_graft. Weight-fork resolved: LIGHT graft.
       dialectic/friction-intake-probe-spaor.md.'
   frontier_node_types_graft:
@@ -88,6 +143,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
+    invariant: "The racked non-techie onboarding friction (/btw gap, restart-to-activate) is real and recurring."
     note: 'CONFIRMED (cold-path + claude-code-guide). Both racked signals REAL: (1) /btw gap (pauses,
       no pointer); (2) restart REFINED -> conditional (future-session auto-inject only; identity=hash
       + in-session Read need none). Spawned 2 EXECUTE. Hypothesis ''restart needed after birth'' was too
@@ -98,11 +154,12 @@ nodes:
       README Getting-started + onboard.py completion); harness-aware (claude /btw; agy equivalent).
     summit: S1
     type: EXECUTE
-    status: READY
+    status: DONE
     dependencies:
     - probe_onboarding_friction
     note: 'PROBE-confirmed: flow has execution-pauses + zero question-channel pointer; Tim leaned on /btw.
-      Steward propose -> FO gate (Commons).'
+      Steward propose -> FO gate (Commons). MERGED: Commons PR #60 (README Getting-started + onboard.py
+      completion) is in commons main (5143370); verified via submodule merge log, not inferred.'
   onboarding_anchor_activation_note:
     title: 'Onboarding completion: emit ''restart/clear to activate your anchor for future sessions'''
     goal: Add an activation instruction to onboard.py's completion message — anchor is usable in-session
@@ -110,11 +167,96 @@ nodes:
       won't know.
     summit: S1
     type: EXECUTE
-    status: READY
+    status: DONE
     dependencies:
     - probe_onboarding_friction
     note: 'PROBE-refined: restart is CONDITIONAL (future-session auto-inject, not in-session). Steward
-      propose -> FO gate (Commons onboard.py).'
+      propose -> FO gate (Commons onboard.py). MERGED: Commons PR #60 (onboard.py birth-handoff + completion)
+      is in commons main (5143370); verified via submodule merge log, not inferred.'
+  probe_directory_activity_reflection:
+    title: 'PROBE: does a period-bounded activity reflection in the directory provide real value to (potential)
+      operators?'
+    goal: Confirm-or-falsify that the static directory is a liveness-blind friction for potential operators.
+      Confirm -> spawn EXECUTE; falsify -> drop.
+    summit: S1
+    type: PROBE
+    status: DONE
+    dependencies: []
+    invariant: "A period-bounded activity reflection in the directory provides real recruitment value to a potential operator."
+    note: 'CONFIRMED (FO rub, 2026-06-07): value = RECRUITMENT signal ("is anyone home?"). Two rubs cut
+      my over-build: (1) don''t "determine activity" — just count commits per week; (2) yes, recruitment.
+      Shipped bin/weekly_commits.py + ran 2026-W23: 11 registered, 7 reachable/active, 778 commits; 4
+      private/unreachable (3 cross-human 404s + personal-growth-ai). Spawned execute_directory_commit_reflection.'
+  execute_directory_commit_reflection:
+    title: 'EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory'
+    goal: 'Carry weekly_commits.py into the Commons as a regenerated DIRECTORY.md block (Steward propose
+      -> FO gate). Generate CODE *and* TEST CODE asserting plan_directory_autogen''s invariants: (1) the
+      registry table''s deterministic --check is unaffected; (2) the activity block carries an embedded
+      as-of timestamp; (3) the scheduled regen commits only DIRECTORY.md (no directory/** retrigger loop);
+      (4) unreachable dyads stay labeled, never counted as 0.'
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies:
+    - probe_directory_activity_reflection
+    - plan_directory_autogen
+    note: 'Local emitter shipped (bin/weekly_commits.py, steward-side, like digest.py). This node = the
+      Commons-canon half: DIRECTORY.md integration + the freshness regen trigger. FO-gated. Builds the
+      plan_directory_autogen design; closed by reflect_directory_recruitment_signal (SPAOR closure).'
+  probe_directory_autogen:
+    title: 'PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before
+      update-ts) without breaking the deterministic --check?'
+    goal: Confirm-or-falsify that the existing regen_directory_index.py + regenerate-directory-index.yml
+      can carry a rolling-7-day activity block. Confirm -> spawn the EXECUTE design; falsify -> different
+      mechanism.
+    summit: S1
+    type: PROBE
+    status: DONE
+    dependencies:
+    - probe_directory_activity_reflection
+    invariant: "DIRECTORY.md can auto-generate a rolling-7-day activity block without breaking the deterministic --check."
+    note: 'CONFIRM (FO ''lean'', 2026-06-07): feasible, but NOT by extension. Cold-pathed the live machinery.
+      FINDING: activity = f(wall-clock, live gh) is NON-deterministic, so it breaks BOTH existing invariants
+      — (1) --check false-alarms every run (regen yields different counts); (2) the push:paths:[directory/**]
+      trigger never fires for time/external-repo changes. Design (the how) -> PLAN node, not folded here.'
+  plan_directory_autogen:
+    title: 'PLAN: separate scheduled activity block + embedded as-of timestamp (the auto-gen design)'
+    goal: 'Design that resolves the PROBE finding: keep the registry table pure + drift-checked AS-IS; add
+      a SEPARATE activity block with an embedded "as of <ts>, trailing 7d" label, regenerated by a SEPARATE
+      scheduled (cron) workflow that commits DIRECTORY.md. --check scope stays on the registry region only
+      (activity owned by the cron job). No loop (DIRECTORY.md-only commit misses the directory/** filter).
+      Window = rolling 7d from update-ts (FO), not ISO-week.'
+    summit: S1
+    type: PLAN
+    status: DONE
+    dependencies:
+    - probe_directory_autogen
+    note: 'Extracted from the PROBE note per SPAOR fb (PROBE->PLAN->EXECUTE->REFLECT): design belongs in a
+      PLAN, not a PROBE output. Runnable evidence: bin/weekly_commits.py default = rolling 7d from update-ts.'
+  observe_directory_recruitment_signal:
+    title: 'OBSERVE: test the live directory signal against reality'
+    goal: 'After the EXECUTE lands: verify-with-actual-tool — does DIRECTORY.md actually render the block,
+      do the counts match a hand-run of weekly_commits.py, and does the scheduled job keep the as-of stamp
+      fresh (not stale/lying)? Empirical gate before any conclusion.'
+    summit: S1
+    type: OBSERVE
+    status: BLOCKED
+    dependencies:
+    - execute_directory_commit_reflection
+    note: 'The Observe phase I keep skipping (verify-with-actual-tool). Measure the shipped result before REFLECT.'
+  reflect_directory_recruitment_signal:
+    title: 'REFLECT: did the directory recruitment-signal move recruitment? (closure)'
+    goal: 'Assert ONLY the single PROBE invariant (probe_directory_activity_reflection): a live activity
+      reflection provides real RECRUITMENT value. The execution invariants (--check intact, as-of stamp,
+      no loop, unreachable!=0) are already discharged by EXECUTE''s green tests, not re-litigated here.
+      Codify the outcome to substrate; spawn the next PROBE if the signal under-delivers (e.g. wrong window).'
+    summit: S1
+    type: REFLECT
+    status: BLOCKED
+    dependencies:
+    - observe_directory_recruitment_signal
+    note: 'Closure: trail isn''t DONE until OBSERVE+REFLECT. Asserts the single trail invariant, not the
+      execution invariants. spaor-five-phases.'
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the

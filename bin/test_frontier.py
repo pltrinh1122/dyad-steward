@@ -68,5 +68,37 @@ check("render_md is deterministic", F.render_md(REAL) == F.render_md(REAL))
 # the on-disk view is in sync with source (the --check invariant)
 check("frontier.md in sync with source", os.path.exists(F.VIEW) and open(F.VIEW).read() == F.render_md(REAL))
 
+# --- SPAOR-traversal CSI traps (arm/disarm pairs) — armed-state monkeypatched, registry untouched ---
+_orig_armed = F.armed_spaor_guards
+
+# csi_probe_invariant ARMED: a PROBE missing its single `invariant:` is trapped
+F.armed_spaor_guards = lambda: {"csi_probe_invariant"}
+s = copy.deepcopy(REAL)
+a_probe = next(nid for nid, n in s["nodes"].items() if n.get("type") == "PROBE")
+s["nodes"][a_probe].pop("invariant", None)
+check("armed csi_probe_invariant traps a PROBE with no invariant",
+      any("csi_probe_invariant armed" in e for e in F.validate(s)))
+
+# DISARMED: the very same missing-invariant PROBE is NOT trapped (registered but inert)
+F.armed_spaor_guards = lambda: set()
+check("disarmed csi_probe_invariant is inert",
+      not any("csi_probe_invariant" in e for e in F.validate(s)))
+
+# every real PROBE carries its single invariant, so the armed trap passes on the live board
+F.armed_spaor_guards = lambda: {"csi_probe_invariant"}
+check("armed csi_probe_invariant passes on the live board",
+      not any("csi_probe_invariant" in e for e in F.validate(copy.deepcopy(REAL))))
+
+# csi_execute_tested ARMED: a DONE EXECUTE with no `tests:` ref is trapped
+F.armed_spaor_guards = lambda: {"csi_execute_tested"}
+s = copy.deepcopy(REAL)
+a_exec = next(nid for nid, n in s["nodes"].items()
+              if n.get("type", "EXECUTE") == "EXECUTE" and n.get("status") == "DONE")
+s["nodes"][a_exec].pop("tests", None)
+check("armed csi_execute_tested traps a DONE EXECUTE with no tests",
+      any("csi_execute_tested armed" in e for e in F.validate(s)))
+
+F.armed_spaor_guards = _orig_armed
+
 print("\nFRONTIER TESTS PASS" if ok else "\nFRONTIER TESTS FAIL")
 sys.exit(0 if ok else 1)
