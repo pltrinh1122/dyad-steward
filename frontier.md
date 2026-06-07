@@ -9,7 +9,6 @@
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
-- ◔ **[IN_REVIEW]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ⊘ **[BLOCKED]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
@@ -20,6 +19,7 @@
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `falsification_channel` — Inter-dyad falsification channel LIVE (provisional)
+- ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 
 ## S2 — knowledge compounding
 - ○ **[READY]** `graduate_proactivity` — Graduate proactivity-calibration
