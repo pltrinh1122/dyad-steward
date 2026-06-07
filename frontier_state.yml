@@ -172,7 +172,7 @@ nodes:
     goal: Needs a CROSS-HUMAN responder; all 9 dyads share pltrinh1122. External/adoption-gated, not ours
       to manufacture.
     summit: S1
-    status: BLOCKED
+    status: IN_REVIEW
     dependencies: []
   falsify_ci:
     title: falsify.py / validate_falsification CI on falsification/ PRs
