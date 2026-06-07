@@ -5,12 +5,12 @@
 **ACTIVE (WIP-N=1):** — none —
 
 ## S1 — commons process-integrity
-- ○ **[READY]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ○ **[READY]** `onboarding_human_need` — Re-derive onboarding from the human-need frame
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
+- ◔ **[IN_REVIEW]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ⊘ **[BLOCKED]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)

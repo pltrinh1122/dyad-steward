@@ -77,7 +77,7 @@ nodes:
     goal: 'Auto-merge a modify iff: own entry, author==owner, birth_hash+name UNCHANGED, validate_file
       PASS.'
     summit: S1
-    status: READY
+    status: IN_REVIEW
     dependencies: []
     note: Steward propose -> FO installs (protected .github/). Survivor of 'directory update should auto-merge'.
   refdecay_dfd_pfp:
