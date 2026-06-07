@@ -34,6 +34,7 @@
 - ⊘ **[BLOCKED]** `causal_attribution` — Causal attribution of acceleration (wu-wei-deferred)
 - ⊘ **[BLOCKED]** `steering_load_meter` — Steering-load meter (Sigma depth on the Operator)
 - ⊘ **[BLOCKED]** `velocity_meter` — Learning-Discipline velocity metric (acceleration-meter)
+- ✓ **[DONE]** `commons_activity_digest` — Commons-activity digest (what self-operation did, batched)
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)

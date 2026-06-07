@@ -12,6 +12,14 @@ summits:
   S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
+  commons_activity_digest:
+    title: Commons-activity digest (what self-operation did, batched)
+    goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the
+      FO keeps SIGHT at altitude, not blind. The async-interrupt answer (batch at a rest-point, not per-event).
+    summit: S3
+    status: DONE
+    dependencies: []
+    note: bin/digest.py (read-only emitter). cut-burden-not-awareness; pairs with async_interrupt_efficiency.
   adopt_cairn_frontier_rack_csi:
     title: Adopt cairn's frontier/rack + CSI guards
     goal: Port the shared frontier/rack model + CSI G+V guardrails; shared model -> lower steering-bandwidth
