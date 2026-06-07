@@ -160,6 +160,17 @@ def check_submodule(offline):
     return True
 
 
+def check_frontier():
+    """Frontier source must be valid + `frontier.md` in sync — run the real tool, not a reimpl."""
+    r = subprocess.run([sys.executable, os.path.join(ROOT, "bin", "frontier.py"), "--check"],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        for line in (r.stdout + r.stderr).strip().splitlines():
+            fail("frontier", line.strip())
+        return False
+    return True
+
+
 def main():
     offline = "--offline" in sys.argv[1:]
     checks = [
@@ -167,6 +178,7 @@ def main():
         ("registry", check_registry),
         ("refs", check_refs),
         ("submodule", lambda: check_submodule(offline)),
+        ("frontier", check_frontier),
     ]
     all_ok = True
     for name, fn in checks:

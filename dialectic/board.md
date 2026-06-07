@@ -1,5 +1,13 @@
 # Board — living backlog of trails (ready-set + blocked-by) — dyad-steward
 
+> ## ⚠️ RETIRED 2026-06-06 → the live backlog is now the **frontier**
+> The READY-SET / BLOCKED / LANDED trails moved to **`frontier_state.yml`** (sovereign DAG) →
+> regenerated **`frontier.md`** (projection). Read: `bin/frontier.py` · stack: `bin/rack.py`.
+> Single-source now — **do not edit the tables below; edit the frontier** (adopted from dyad-cairn,
+> 2026-06-06; `dialectic/adopt-cairn-frontier-rack-csi.md`). The tables below are **FROZEN** as of the
+> migration. Sections the frontier DAG does *not* model (⟳ RE-ARM daemon · WATCH · GRADUATION queue) are
+> retained here as the live home; LANDED prose stays as the archive (compact DONE nodes live in the frontier).
+
 > **Vocabulary** *(ratified 2026-06-02; `AGENT.md` §Vocabulary)*: each item is a **`trail`** — a line of
 > work ascending toward a **`+1 summit`**; a **dependency** is an edge between trails; **`path`** is
 > reserved for the graph sense (a chain of trails). The board is **summit-rooted** — every trail traces

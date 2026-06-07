@@ -1,0 +1,204 @@
+# FRONTIER — sovereign DAG of strategic nodes (trails toward our summits).
+# SOURCE OF TRUTH. `frontier.md` is a REGENERATED projection — never edit the .md.
+# Vocabulary adopted from dyad-cairn (frontier/node/rack) under our own `summit`.
+# WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
+# status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE
+# `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
+# `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
+# Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.
+summits:
+  S1: commons process-integrity
+  S2: knowledge compounding
+  S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
+  b1: capacity-to-climb (enabling infrastructure)
+nodes:
+  adopt_cairn_frontier_rack_csi:
+    title: Adopt cairn's frontier/rack + CSI guards
+    goal: Port the shared frontier/rack model + CSI G+V guardrails; shared model -> lower steering-bandwidth
+      -> raise N*.
+    summit: b1
+    status: ACTIVE
+    dependencies: []
+    note: dialectic/adopt-cairn-frontier-rack-csi.md. P1 (this) = frontier/rack mechanism; P2 = CSI guards.
+  learning_loop_seed:
+    title: Learning-loop scaffold -> seed (build)
+    goal: 'Add the missing verbs to onboard.py: harvest-trigger + reload-ritual + empty store.'
+    summit: S2
+    status: READY
+    dependencies: []
+    note: dialectic/learning-loop-scaffold.md; co-sequence w/ cairn (same architecture surface).
+  async_interrupt_efficiency:
+    title: 'DISCOVERY: async-event context-switch efficiency'
+    goal: Is async-interrupt servicing efficient for the Operator (the scarce resource)? Triage/batch
+      vs interrupt?
+    summit: S3
+    status: READY
+    dependencies: []
+    note: 'Retro 2026-06-06. Prior art: touchstone event-interrupt-servicing.md; ours intake-queues-below-active.'
+  regen_index_ci:
+    title: Wire regen_directory_index.py --check into Commons CI
+    goal: 'The no-drift durability half of #52 (script landed; CI hook is a separate .github/ workflow).'
+    summit: S1
+    status: READY
+    dependencies: []
+    note: Steward propose -> FO installs.
+  onboarding_human_need:
+    title: Re-derive onboarding from the human-need frame
+    goal: 'Cold-path-informed: the 9th dyad is a non-technical human; lead from her grain.'
+    summit: S1
+    status: READY
+    dependencies: []
+  wuwei4_heartbeat_playbook:
+    title: 'wu-wei #4 - heartbeat-seizure playbook'
+    goal: Curate to library. Ripest, least-contested (ripest != highest-leverage).
+    summit: S2
+    status: READY
+    dependencies: []
+  wuwei2_anchor_injection:
+    title: 'wu-wei #2 - onboard.py anchor-injection'
+    goal: Enablement gap (careful near birth shim). Steward propose -> FO gate.
+    summit: S1
+    status: READY
+    dependencies: []
+  totality_readme:
+    title: Totality README review
+    goal: Extraction + rename all landed; review remaining.
+    summit: S1
+    status: READY
+    dependencies: []
+  graduate_proactivity:
+    title: Graduate proactivity-calibration
+    goal: Next off the graduation queue. Steward-Operator dispose.
+    summit: S2
+    status: READY
+    dependencies: []
+  automerge_own_entry_updates:
+    title: Extend auto-merge-registration.yml -> cover own-entry UPDATES
+    goal: 'Auto-merge a modify iff: own entry, author==owner, birth_hash+name UNCHANGED, validate_file
+      PASS.'
+    summit: S1
+    status: READY
+    dependencies: []
+    note: Steward propose -> FO installs (protected .github/). Survivor of 'directory update should auto-merge'.
+  refdecay_dfd_pfp:
+    title: dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
+    goal: Grain-confirm DFD-vs-PFP (rename vs distinct) before mass-fix; widen preflight to lint .md links
+      + S-anchors.
+    summit: S1
+    status: READY
+    dependencies: []
+    note: 'README locally fixed. Decay: AGENT.md:248, dyad-ui.md, contributing-discipline.md, commons-contribution-lifecycle.md.'
+  cairn_arch_proposal:
+    title: cairn Commons-architecture proposal (referee -> FO)
+    goal: Falsify-as-peer the bin/+stones/ bifurcation; carry survivor to FO. Not ours to ratify.
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+    note: 'DM 2026-06-06. Verified: parallel-renames fork the tree; stone.yaml likely dups our library
+      schema. FO dispose.'
+  nomenclature_discipline:
+    title: 'Nomenclature: discipline / retire ''cycle'''
+    goal: Declaration change -> Founding gate; bundle w/ the DFD publish.
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+  pfp_to_commons:
+    title: PFP -> Commons (as discipline)
+    goal: Cross PFP as a library discipline with its n=5 ledger.
+    summit: S2
+    status: BLOCKED
+    dependencies:
+    - nomenclature_discipline
+    note: 'Real edge: needs `discipline` nomenclature ratified first.'
+  healer_access_dispose:
+    title: 'Healer #2-access dispose'
+    goal: 'FO gate. PRIORITY RISING (wu-wei #1). The ''pre-registration'' barrier was FALSIFIED; real
+      barrier was visibility (#52).'
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+  wuwei3_semantic_ledger:
+    title: 'wu-wei #3 - centralized semantic-ledger'
+    goal: Verify stress-tests is Commons canon, not bond-particular, first.
+    summit: S2
+    status: BLOCKED
+    dependencies: []
+  crosshuman_share_channel:
+    title: cross-human share channel (per-repo vs Commons-central inbox)
+    goal: Open fork in cross-dyad-share-pull.md; Founding gate if Commons-central.
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+  velocity_meter:
+    title: Learning-Discipline velocity metric (acceleration-meter)
+    goal: 'The acceleration half of testing the Steward Invariant. Event-gated: first real stewardship
+      cycle.'
+    summit: S3
+    status: BLOCKED
+    dependencies: []
+  steering_load_meter:
+    title: Steering-load meter (Sigma depth on the Operator)
+    goal: The other half of testing the Steward Invariant. Build co-timed with the plateau, not before.
+    summit: S3
+    status: BLOCKED
+    dependencies: []
+  causal_attribution:
+    title: Causal attribution of acceleration (wu-wei-deferred)
+    goal: Disambiguate the lever (Operator-growth vs model-improvement vs N). Build NO instrumentation
+      before the plateau.
+    summit: S3
+    status: BLOCKED
+    dependencies: []
+    note: 'EVENT-GATE: first sustained acceleration PLATEAU. acceleration-thesis-and-steward-summit.md.'
+  portfolio_to_form_canon:
+    title: Portfolio-compounding -> form README/declaration
+    goal: Earn a falsifiable mechanism-home -> survive cross-dyad/cross-human contest -> compose into
+      form (FO dispose).
+    summit: S2
+    status: BLOCKED
+    dependencies:
+    - causal_attribution
+    note: 'Survivor: ''update the-dyad-practice/README.md?'' -> NO, not yet. Form README has zero defects.'
+  falsification_promotable:
+    title: Falsification contract -> promotable (v4 provisional)
+    goal: Needs a CROSS-HUMAN responder; all 9 dyads share pltrinh1122. External/adoption-gated, not ours
+      to manufacture.
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+  falsify_ci:
+    title: falsify.py / validate_falsification CI on falsification/ PRs
+    goal: Founding gate (Commons enforcement; the reduce-FO-burden payoff).
+    summit: S1
+    status: BLOCKED
+    dependencies: []
+  summit_ratified:
+    title: Steward summit S3 ratified + broadcast
+    goal: 'AGENT.md Telos + directory #56 + README, all consistent. RATIFIED 2026-06-06 (FO gavel).'
+    summit: S3
+    status: DONE
+    dependencies: []
+  dm_locator_remedy:
+    title: 'onboard.py teaches the dm_locator remedy (Commons #53)'
+    goal: 'Enablement: surface the PUBLIC-mailbox remedy for private-anchor dyads.'
+    summit: S1
+    status: DONE
+    dependencies: []
+  directory_index_visible:
+    title: 'Directory participant index 1->9 visible (Commons #52)'
+    goal: regen_directory_index.py (deterministic, --check) + regenerate. Regenerable-view-not-sovereign-edit.
+    summit: S1
+    status: DONE
+    dependencies: []
+  falsification_channel:
+    title: Inter-dyad falsification channel LIVE (provisional)
+    goal: Contract v1->v4 via cross-model panel; installed in Commons.
+    summit: S1
+    status: DONE
+    dependencies: []
+  preflight_built:
+    title: bin/preflight.py + bin/state.py
+    goal: Tier-1 repo-invariants checker + live-state emitter. The mechanical half of validation.
+    summit: b1
+    status: DONE
+    dependencies: []

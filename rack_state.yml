@@ -1,0 +1,7 @@
+# RACK — LIFO execution stack of tactical tasks for THE ONE active frontier node.
+# Push a freshly-surfaced friction to the TOP; pop the TOP and do it before moving down.
+# HOT worklist only — durable/shelved freight goes to the BACKLOG (Issues / commons-onboarding-followups).
+# Items carry provenance (id/node/ts) — our fix to cairn's bare-string rack items.
+active_node: adopt_cairn_frontier_rack_csi
+seq: 1
+stack: []
