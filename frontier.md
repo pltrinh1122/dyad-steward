@@ -5,8 +5,9 @@
 **ACTIVE (WIP-N=1):** — none —
 
 ## S1 — commons process-integrity
+- ○ **[READY]** `onboarding_anchor_activation_note` — Onboarding completion: emit 'restart/clear to activate your anchor for future sessions'  ⟵ probe_onboarding_friction
+- ○ **[READY]** `onboarding_btw_pointer` — Surface a non-blocking question-channel pointer in the onboarding flow  ⟵ probe_onboarding_friction
 - ○ **[READY]** `onboarding_human_need` — Re-derive onboarding from the human-need frame
-- ○ **[READY]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
@@ -20,6 +21,7 @@
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `falsification_channel` — Inter-dyad falsification channel LIVE (provisional)
+- ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
 - ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 
 ## S2 — knowledge compounding

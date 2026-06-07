@@ -2,7 +2,9 @@
 # SOURCE OF TRUTH. `frontier.md` is a REGENERATED projection — never edit the .md.
 # Vocabulary adopted from dyad-cairn (frontier/node/rack) under our own `summit`.
 # WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
-# status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE
+# status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE | FALSIFIED (PROBE-only terminal: condition refuted)
+# type (default EXECUTE): PROBE (confirm-or-falsify a friction; the only type that grows the DAG) ·
+#   PLAN (design) · EXECUTE (ship; may not spawn). SPAOR from dyad-cairn, applied externally.
 # `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
 # `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
 # Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.
@@ -13,32 +15,52 @@ summits:
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
   friction_intake_probe_spaor:
-    title: "PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)"
-    goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type
-      (confirm-or-falsify a friction -> spawn EXECUTE or abort) + Sense/Discern/Intake; SPAOR external.
+    title: 'PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)'
+    goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type (confirm-or-falsify
+      a friction -> spawn EXECUTE or abort) + Sense/Discern/Intake; SPAOR external.
     summit: b1
     type: PROBE
     status: DONE
     dependencies: []
-    note: "CONFIRMED (FO 'lean') -> spawned frontier_node_types_graft. Weight-fork resolved: LIGHT graft. dialectic/friction-intake-probe-spaor.md."
+    note: 'CONFIRMED (FO ''lean'') -> spawned frontier_node_types_graft. Weight-fork resolved: LIGHT graft.
+      dialectic/friction-intake-probe-spaor.md.'
   frontier_node_types_graft:
-    title: "Light graft: PROBE/PLAN/EXECUTE node-type + FALSIFIED status in frontier.py"
+    title: 'Light graft: PROBE/PLAN/EXECUTE node-type + FALSIFIED status in frontier.py'
     goal: Materialize the PROBE-driven frontier (the light graft, not cairn's full SPAOR engine). type
       field (default EXECUTE) + FALSIFIED terminal (PROBE-only) + render tags + validate; reuse frontier.py.
     summit: b1
     type: EXECUTE
     status: DONE
-    dependencies: [friction_intake_probe_spaor]
-    note: "Spawned by the confirming PROBE. SPAOR walked: PROBE(confirm) -> EXECUTE(this) -> REFLECT."
+    dependencies:
+    - friction_intake_probe_spaor
+    note: 'Spawned by the confirming PROBE. SPAOR walked: PROBE(confirm) -> EXECUTE(this) -> REFLECT.'
   probe_onboarding_friction:
-    title: "PROBE: is the racked non-techie onboarding friction real + recurring?"
-    goal: Cold-path the onboarding flow as a non-techie; confirm-or-falsify the racked Tim signals
-      (/btw side-channel, restart-after-birth). Confirm -> spawn EXECUTE; falsify -> abort (stale).
+    title: 'PROBE: is the racked non-techie onboarding friction real + recurring?'
+    goal: Cold-path the onboarding flow as a non-techie; confirm-or-falsify the racked Tim signals (/btw
+      side-channel, restart-after-birth). Confirm -> spawn EXECUTE; falsify -> abort (stale).
     summit: S1
     type: PROBE
-    status: READY
+    status: DONE
     dependencies: []
-    note: "First friction-PROBE under the new intake. Grounded in lived signals (commons-onboarding-followups.md), not hypothesis. Pairs with onboarding_human_need."
+    note: "CONFIRMED (cold-path + claude-code-guide). Both racked signals REAL: (1) /btw gap (pauses, no pointer); (2) restart REFINED -> conditional (future-session auto-inject only; identity=hash + in-session Read need none). Spawned 2 EXECUTE. Hypothesis 'restart needed after birth' was too broad."
+  onboarding_btw_pointer:
+    title: Surface a non-blocking question-channel pointer in the onboarding flow
+    goal: Bake a "use /btw to ask questions while your agent works" pointer into the onboarding flow (form
+      README Getting-started + onboard.py completion); harness-aware (claude /btw; agy equivalent).
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: [probe_onboarding_friction]
+    note: "PROBE-confirmed: flow has execution-pauses + zero question-channel pointer; Tim leaned on /btw. Steward propose -> FO gate (Commons)."
+  onboarding_anchor_activation_note:
+    title: "Onboarding completion: emit 'restart/clear to activate your anchor for future sessions'"
+    goal: Add an activation instruction to onboard.py's completion message — anchor is usable in-session
+      (Read) but auto-injects only on restart/clear/compact (claude-code-guide confirmed); a non-techie won't know.
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: [probe_onboarding_friction]
+    note: "PROBE-refined: restart is CONDITIONAL (future-session auto-inject, not in-session). Steward propose -> FO gate (Commons onboard.py)."
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the

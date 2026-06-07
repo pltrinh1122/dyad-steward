@@ -29,6 +29,15 @@
 
 ## Live intake — racked, not yet worked *(post-#14, distinct from the subsumed items above)*
 
+> **PROBED 2026-06-07** (`probe_onboarding_friction`, the first friction-PROBE under the new intake;
+> `dialectic/friction-intake-probe-spaor.md`). Both items below are **CONFIRMED real** (cold-path of the
+> onboarding flow + claude-code-guide), so both spawned EXECUTE trails (`onboarding_btw_pointer`,
+> `onboarding_anchor_activation_note` — Steward propose → FO gate). **Item 2 was REFINED:** a restart is
+> *not* needed for in-session usability (the agent `Read`s the anchor; identity = git-hash needs no load)
+> — it's needed only so the anchor **auto-injects as system instructions in FUTURE sessions** (restart /
+> `/clear` / `/compact`; per Claude Code's prompt-cache docs). The hypothesis "restart needed after birth"
+> was too broad. So neither racked item was stale — but the probe shrank #2 from "required" to "conditional."
+
 1. **`/btw` as the new-operator's non-blocking question side-channel during onboarding execution.**
    *(Racked 2026-06-04, Steward-Operator observation — LIVED, not hypothetical.)* Tim (a new operator
    being onboarded) is leaning **heavily** on `/btw` to ask questions *after the Operator directed him
