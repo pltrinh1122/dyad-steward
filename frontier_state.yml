@@ -295,12 +295,29 @@ nodes:
     status: DONE
     dependencies: []
     note: Steward propose -> FO installs.
-  onboarding_human_need:
-    title: Re-derive onboarding from the human-need frame
-    goal: 'Cold-path-informed: the 9th dyad is a non-technical human; lead from her grain.'
+  probe_onboarding_human_need:
+    title: 'PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?'
+    goal: 'Cold-path the live onboarding (commons/scripts/onboard.py + README) as the non-technical 9th-dyad
+      human; confirm-or-falsify that the human-need frame changes the flow beyond the point-fixes already
+      landed (PR #60 /btw + anchor-activation). Confirm -> spawn EXECUTE(s); falsify -> drop (point-fixes sufficed).'
     summit: S1
-    status: READY
+    type: PROBE
+    status: ACTIVE
     dependencies: []
+    invariant: "Re-deriving onboarding from the human-need frame surfaces a material, recurring barrier for a non-technical human that the landed point-fixes (/btw pointer, anchor-activation) do not address."
+    note: 'COLD-PATH (both surfaces, this turn): commons/README.md + commons/scripts/onboard.py. Technical
+      on-ramp is SOLVED — the Agent drives the whole flow from one prompt ("Read and execute this README");
+      /btw + anchor-activation point-fixes landed (PR #60). RESIDUAL barrier the point-fixes do NOT touch:
+      the two IRREDUCIBLE human judgments — anchor identity + +1 summits — are handed over as "edit this
+      YAML/markdown" with prose guidance; a non-technical human is stuck not on git but on "what IS my
+      summit?". The README already applies Proposal-Framing to the binary intent-reading (Agent proposes,
+      human validates Y/N) but does NOT extend it to these harder conceptual judgments. Fix-shape (if
+      confirmed): Agent carries the human THROUGH the judgments via Proposal-Framing — propose candidate
+      summit/anchor from stated intent, human validates/refines — AMPLIFY the authoring, never auto-fill
+      (dont-optimize-the-human-out). TWO OPEN before any EXECUTE: (1) FO ground-truth — is a real, recurring
+      non-technical-human consumer actually hitting this (cold-path-barriers-are-stale)? (2) grain-check —
+      is summit/anchor articulation steward''s, or shed to the Intent-Understanding dyad (Telos sheds intent
+      mechanics)?'
   wuwei4_heartbeat_playbook:
     title: 'wu-wei #4 - heartbeat-seizure playbook'
     goal: Curate to library. Ripest, least-contested (ripest != highest-leverage).

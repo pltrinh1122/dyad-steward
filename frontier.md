@@ -2,14 +2,14 @@
 
 > Source of truth: `frontier_state.yml`. Regenerate: `bin/frontier.py --md`. Drift gate: `bin/frontier.py --check` (wired into `bin/preflight.py`). WIP-N=1 (`<=1 ACTIVE`) is mechanically enforced at write.
 
-**ACTIVE (WIP-N=1):** — none —
+**ACTIVE (WIP-N=1):** probe_onboarding_human_need
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
-- ○ **[READY]** `onboarding_human_need` — Re-derive onboarding from the human-need frame
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
+- ▶ **[ACTIVE]** [PROBE] `probe_onboarding_human_need` — PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
