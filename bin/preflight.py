@@ -171,6 +171,25 @@ def check_frontier():
     return True
 
 
+TOPOLOGY_CAPS = {"bin": 25, "kb": 25}  # csi_topology_mass — generous tripwires vs future bloat
+
+
+def check_topology():
+    """Code/knowledge dirs stay lean (file-count <= cap) — CSI guard csi_topology_mass."""
+    ok = True
+    for d, cap in TOPOLOGY_CAPS.items():
+        path = os.path.join(ROOT, d)
+        if not os.path.isdir(path):
+            continue
+        n = len([f for f in os.listdir(path)
+                 if os.path.isfile(os.path.join(path, f))
+                 and not f.startswith(".") and not f.endswith(".pyc")])
+        if n > cap:
+            fail("topology", f"{d}/ has {n} files > cap {cap} — COMPRESS, or raise the cap deliberately")
+            ok = False
+    return ok
+
+
 def main():
     offline = "--offline" in sys.argv[1:]
     checks = [
@@ -179,6 +198,7 @@ def main():
         ("refs", check_refs),
         ("submodule", lambda: check_submodule(offline)),
         ("frontier", check_frontier),
+        ("topology", check_topology),
     ]
     all_ok = True
     for name, fn in checks:

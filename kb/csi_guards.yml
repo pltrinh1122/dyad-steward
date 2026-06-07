@@ -1,0 +1,90 @@
+# CSI GUARDS — Cybernetic Steering Invariants (the registry).
+# Adopted from dyad-cairn (we pick the "Invariant" expansion; cairn's corpus also says "Vector").
+# Principle (cairn GEMINI.md "No Pure G"): every Generate must be paired with deterministic Validate —
+# a discipline only holds if it is a MECHANICAL trap, not a thing the Agent must remember. A failing
+# check IS the steering wheel. This file CATALOGS our guards; `bin/csi.py` reads it; `bin/csi.py --check`
+# runs the runnable ones.
+#
+# Two kinds (cairn's cut):
+#   Symmetric  (state-bound)   — the current STATE must satisfy P. Re-checkable any time. (preflight family)
+#   Asymmetric (process-bound) — you cannot do X without also doing Y (a Generate paired with its Validate).
+#
+# honesty: `mechanism: runnable` = a real check fires; `mechanism: discipline` = enforced by habit/CI we
+# have NOT yet mechanized (a candidate to build — flagged, never dressed up as if it ran).
+# NOT adopted: cairn's `retro_lock` / RETRO_ACTIVE.lock — it is vapor in cairn (bin/retro-start absent).
+
+guards:
+  csi_parse:
+    kind: Symmetric
+    binds: "every .md in the repo parses (no broken fences/frontmatter)"
+    mechanism: runnable
+    where: "bin/preflight.py check_parse"
+    closure: "fix the malformed file"
+
+  csi_registry:
+    kind: Symmetric
+    binds: "every directory/*.yaml passes the Commons validate_file (single source of truth)"
+    mechanism: runnable
+    where: "bin/preflight.py check_registry → commons/scripts/validate_registry.validate_file"
+    closure: "fix the entry to the schema"
+
+  csi_refs:
+    kind: Symmetric
+    binds: "every internal repo ref resolves on disk"
+    mechanism: runnable
+    where: "bin/preflight.py check_refs"
+    closure: "fix or remove the dead ref"
+    note: "coverage gap (known): does not yet lint .md-prose links or §-anchors — see frontier node refdecay_dfd_pfp"
+
+  csi_submodule_state:
+    kind: Symmetric
+    binds: "commons checkout HEAD == remote main (the local validator is not a stale rule)"
+    mechanism: runnable
+    where: "bin/preflight.py check_submodule"
+    closure: "git submodule update --remote commons"
+
+  csi_frontier_wip1:
+    kind: Symmetric
+    binds: "<=1 ACTIVE frontier node (no split-brain WIP)"
+    mechanism: runnable
+    where: "bin/frontier.py write-guard (refuses save) + --check (via preflight [frontier])"
+    closure: "demote the other ACTIVE node"
+
+  csi_frontier_sync:
+    kind: Symmetric
+    binds: "frontier.md == regenerate(frontier_state.yml) — the view cannot drift from source"
+    mechanism: runnable
+    where: "bin/frontier.py --check (via preflight [frontier])"
+    closure: "bin/frontier.py --md"
+
+  csi_topology_mass:
+    kind: Symmetric
+    binds: "code/knowledge dirs stay lean (file-count <= cap) — the board's 'if it grows heavy, thin it' bound"
+    mechanism: runnable
+    where: "bin/preflight.py check_topology"
+    closure: "COMPRESS (refactor/merge) — or raise the cap deliberately (it is a defect-earned tripwire, caps generous)"
+    note: "ported from cairn; caps set ABOVE current counts as a future-bloat tripwire, NOT a current-defect fix"
+
+  csi_pr_gate:
+    kind: Asymmetric
+    binds: "no silent change to a SHARED default branch — a contested change is paired with a PR (its review)"
+    mechanism: runnable
+    where: "Claude Code auto-mode classifier (gates direct push to default branch) + bin/grant_push model"
+    closure: "open a PR (Commons-canon) — OR, for our OWN sovereign repo, an additive push is pre-authorized"
+    note: "own-repo additive push != shared-canon merge — see memory git-remote-ops-additive-vs-destructive"
+
+  csi_no_pure_g:
+    kind: Asymmetric
+    binds: "every generated script ships paired with a deterministic Validate before it is trusted (No Pure G)"
+    mechanism: discipline
+    where: "co-located tests: bin/test_preflight.py, bin/test_frontier.py, bin/test_rack.py + the verify triad"
+    closure: "write the test; code is not 'locked' until the test passes"
+    note: "candidate to mechanize: a meta-check that each non-trivial bin/*.py has a co-located test"
+
+  csi_commons_sync:
+    kind: Asymmetric
+    binds: "a commons sync is paired with a cognitive synthesis-anchor (you cannot silently git-pull canon)"
+    mechanism: discipline
+    where: "(no wrapper yet) — candidate: bin/sync_commons.py that pulls AND records a synthesis to a ledger"
+    closure: "record what changed + why it matters before/with the sync"
+    note: "cairn mechanizes this as the commons_drift CI guard; ours is discipline-only until defect-earned"

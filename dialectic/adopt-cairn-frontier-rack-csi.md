@@ -47,7 +47,11 @@ materialized view + `--check` drift gate) · `bin/rack.py` (push/pop/list).
   cycle, determinism) + `preflight.py` `[frontier]` drift gate. `dialectic/board.md` → **retired to a
   pointer**. *Improvements over cairn (compounding signal): node-mutation implemented (cairn's was a stub);
   rack items carry provenance; `--md` is view-only so the source is never clobbered.*
-- **P2 — CSI guards** *(next lean)*: `kb/csi_guards.yml` registry + reader; reframe `preflight` invariants +
-  PR-gate + the new WIP-N=1 guard under the Symmetric/Asymmetric taxonomy; port topology-mass cap +
-  Asymmetric commons-drift; negative-control each. **Skip `retro_lock` (vapor).**
+- **P2 — CSI guards — ✅ LANDED 2026-06-06.** `kb/csi_guards.yml` registry + `bin/csi.py` (list +
+  `--check` umbrella). All our guards reframed under the **Symmetric/Asymmetric** taxonomy — 7 Symmetric
+  *runnable* (parse·registry·refs·submodule·frontier-WIP1·frontier-sync·**topology-mass** [new, ported,
+  negative-controlled]) + 3 Asymmetric (PR-gate *runnable*; No-Pure-G + commons-sync *discipline*,
+  honestly marked **not** mechanized — no vaporware). Added `bin/test_rack.py` to satisfy No-Pure-G for
+  `rack.py`. **Skipped `retro_lock`** (cairn-vapor). Honesty kept: `mechanism: runnable` vs `discipline`
+  is explicit in the registry; we did not dress up un-built guards as if they ran.
 - **P3 — verify + watch**: dogfood, negative-control, log whether our port improved on cairn (compounding signal).

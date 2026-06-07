@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "rack_state.yml")
+SRC = os.environ.get("RACK_FILE") or os.path.join(ROOT, "rack_state.yml")  # RACK_FILE: testable override
 
 
 def load():
