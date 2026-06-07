@@ -24,7 +24,7 @@ nodes:
     note: "CONFIRMED (the rub-read): csi.py = 1 of 3 surfaces, no arm-state field, AND 3 session daemons disarmed. Spawned 2 EXECUTE."
   rearm_session_daemons:
     title: "EXECUTE: re-arm the 3 session daemons (DM inbox · commons-PR · peer-review)"
-    goal: Restore sight while FR #59 is open. 3 persistent Monitors per session-pin-2026-06-03.md.
+    goal: "Restore sight while FR #59 is open. 3 persistent Monitors per session-pin-2026-06-03.md."
     summit: b1
     type: EXECUTE
     status: DONE
@@ -32,8 +32,7 @@ nodes:
     note: "Verified-by-execution: 3 Monitors started; DM fired immediately (shakti/krishna/personal-growth-ai UNREACHABLE -> FR #59 ideal responder unnotifiable)."
   csi_complete_armstate:
     title: "EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)"
-    goal: Extend kb/csi_guards.yml (+surface/armed fields, +Commons-workflow + session-daemon guards) and
-      bin/csi.py (--arm-state, checking each). Acceptance: csi.py --arm-state reports arm-state across surfaces.
+    goal: "Extend kb/csi_guards.yml (+surface/armed fields, +Commons-workflow + session-daemon guards) and bin/csi.py (--arm-state, checking each). Acceptance: csi.py --arm-state reports arm-state across surfaces."
     summit: b1
     type: EXECUTE
     status: READY
