@@ -59,13 +59,32 @@ Each node-type has a TYPED contract: what it may consume, what it may emit. The 
 
 | node | INPUT (consumes) | OUTPUT (emits — exactly) | hard invariant |
 |---|---|---|---|
-| **PROBE** | a *falsifiable* friction-condition (states what would confirm/refute) | exactly one: **CONFIRM** → spawn ≥1 PLAN/EXECUTE (grow DAG); **or FALSIFY** → status `FALSIFIED`, abort (no downstream) | verdict must be **source-grounded** (cold-path/tool/source), never asserted; ships **no** functional change; the **only** type that grows the DAG |
+| **PROBE** | **one** *falsifiable* friction-condition (states what would confirm/refute) | exactly one of: **CONFIRM** (real + atomic → spawn ≥1 PLAN/EXECUTE); **FALSIFY** (stale → status `FALSIFIED`, abort); or **DECOMPOSE** (composite — investigating revealed *N* distinct sub-frictions → spawn one **child PROBE** per sub-friction, self → DONE) | verdict **source-grounded**, never asserted; ships **no** functional change; **stays atomic** (investigates one condition); the **only** type that grows the DAG |
 | **PLAN** | a CONFIRMED friction (from a PROBE) — the *what/why* | a **spec**: the EXECUTE's acceptance-criterion + falsification_target ("done"=X; refuted if Y); spawn ≥1 EXECUTE | ships no functional change; optional (a PROBE may spawn EXECUTE directly when the *how* is obvious) |
 | **EXECUTE** | a PLAN's spec (or a confirmed-simple friction) — **one** acceptance-criterion | **exactly one verified deliverable** meeting the spec (test passes / behavior confirmed; Commons work = a PR for FO gate) | output **verified** (verify-with-actual-tool), never asserted-done; **atomic** (one deliverable); **never** spawns nodes |
 | **REFLECT** | a terminal node (DONE/FALSIFIED) | crystallized lesson → durable substrate (ledger/memory/doc) **+** any NEW friction → back to Sense (may spawn a follow-up PROBE) | the **only** place a trail's wisdom enters durable substrate; ships no functional change |
 
 **The spine (4 cross-cutting invariants):** only PROBE grows the DAG · only EXECUTE ships · PROBE-verdict
 grounded · EXECUTE-output verified · every node ends in REFLECT.
+
+**EXECUTE plurality + serialization (the count, 2026-06-07 rub).** A PROBE/PLAN spawns **as many EXECUTEs
+as there are independent atomic deliverables** — no fewer (bundling several into one mega-EXECUTE violates
+atomicity) and no more (artificially splitting one deliverable is busywork). **Dependent ≠ parallel:** if B
+needs A first, that's a dependency *edge* (A→B), not parallel siblings. The **DAG holds the plurality;
+WIP-N=1 serializes the *doing*** — many EXECUTEs may EXIST (READY/queued), but exactly one is ACTIVE at a
+time. So "more than one EXECUTE" never means "work two at once": decompose widely, climb one at a time.
+
+**PROBE input is ONE; output may be MANY — via DECOMPOSE (2026-06-07 rub).** A PROBE *investigates* a single
+friction-condition (stays atomic), but investigating can **reveal** the condition is *composite* — several
+distinct sub-frictions. Then the PROBE may **not** confirm-the-bundle and jump to EXECUTEs; it must
+**DECOMPOSE**: spawn one **child PROBE per sub-friction** (each its own falsifiable condition) and go DONE.
+Each child then independently CONFIRMs (→ EXECUTE) or FALSIFYs (→ abort). So there are **two distinct
+fan-outs, at different stages:** (1) *friction-space* fan-out = PROBE → N child PROBEs (DECOMPOSE; frictions
+discovered-but-unconfirmed); (2) *deliverable* fan-out = one CONFIRMED-atomic friction → N EXECUTEs (the
+prior rub). **Shortcut:** if the sub-frictions are *already observed/confirmed* in the same probe (no further
+investigation needed), you may collapse straight to EXECUTEs — which is what `probe_csi_armstate` did (both
+"daemons disarmed" and "registry incomplete" were directly observed by the read). The DECOMPOSE rule binds
+when the discovered sub-frictions are **un**confirmed hypotheses that each need their own grounding.
 
 ## Recursive: SPAOR governs sensor-development too (FO, 2026-06-07)
 Building a sensor is itself a trail that runs **PROBE → PLAN → EXECUTE → REFLECT** — we do **not** build a
