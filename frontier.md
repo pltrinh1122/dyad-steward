@@ -10,13 +10,13 @@
 - ○ **[READY]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
-- ◔ **[IN_REVIEW]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ⊘ **[BLOCKED]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ⊘ **[BLOCKED]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
+- ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `falsification_channel` — Inter-dyad falsification channel LIVE (provisional)
