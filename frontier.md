@@ -42,9 +42,11 @@
 
 ## b1 — capacity-to-climb (enabling infrastructure)
 - ○ **[READY]** `csi_complete_armstate` — EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)  ⟵ probe_csi_armstate
+- ○ **[READY]** `csi_precommit_trap` — EXECUTE: pre-commit hook runs preflight + BLOCKS on FAIL (arm steward-local CSI traps)  ⟵ probe_csi_guards_armed
 - ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
 - ✓ **[DONE]** [PROBE] `friction_intake_probe_spaor` — PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)
 - ✓ **[DONE]** `frontier_node_types_graft` — Light graft: PROBE/PLAN/EXECUTE node-type + FALSIFIED status in frontier.py  ⟵ friction_intake_probe_spaor
 - ✓ **[DONE]** `preflight_built` — bin/preflight.py + bin/state.py
 - ✓ **[DONE]** [PROBE] `probe_csi_armstate` — PROBE: is the CSI arm/disarm list complete + queryable?
+- ✓ **[DONE]** [PROBE] `probe_csi_guards_armed` — PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?
 - ✓ **[DONE]** `rearm_session_daemons` — EXECUTE: re-arm the 3 session daemons (DM inbox · commons-PR · peer-review)  ⟵ probe_csi_armstate

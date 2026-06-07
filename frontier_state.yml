@@ -14,30 +14,52 @@ summits:
   S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
+  probe_csi_guards_armed:
+    title: "PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?"
+    goal: Confirm-or-falsify that the registered CSI guards actually BLOCK vs need me to remember preflight.
+    summit: b1
+    type: PROBE
+    status: DONE
+    dependencies: []
+    note: "CONFIRMED-NO: registry+checks exist but NO pre-commit hook + NO CI on our repo -> preflight is manual. Proof: shipped broken 623ee01 (nothing blocked it). Real traps only: frontier WIP-N=1 write-guard + Commons CI."
+  csi_precommit_trap:
+    title: "EXECUTE: pre-commit hook runs preflight + BLOCKS on FAIL (arm steward-local CSI traps)"
+    goal: Convert the runnable Symmetric checks into actual mechanical traps; would have caught 623ee01.
+    summit: b1
+    type: EXECUTE
+    status: READY
+    dependencies: [probe_csi_guards_armed]
+    note: "RACKED (FO 'rack: the lean', 2026-06-07) — parked, not worked. Pairs with csi_complete_armstate (list + arm)."
   probe_csi_armstate:
-    title: "PROBE: is the CSI arm/disarm list complete + queryable?"
+    title: 'PROBE: is the CSI arm/disarm list complete + queryable?'
     goal: Confirm-or-falsify that we hold a ready arm-state list of ALL guards across surfaces.
     summit: b1
     type: PROBE
     status: DONE
     dependencies: []
-    note: "CONFIRMED (the rub-read): csi.py = 1 of 3 surfaces, no arm-state field, AND 3 session daemons disarmed. Spawned 2 EXECUTE."
+    note: 'CONFIRMED (the rub-read): csi.py = 1 of 3 surfaces, no arm-state field, AND 3 session daemons
+      disarmed. Spawned 2 EXECUTE.'
   rearm_session_daemons:
-    title: "EXECUTE: re-arm the 3 session daemons (DM inbox · commons-PR · peer-review)"
-    goal: "Restore sight while FR #59 is open. 3 persistent Monitors per session-pin-2026-06-03.md."
+    title: 'EXECUTE: re-arm the 3 session daemons (DM inbox · commons-PR · peer-review)'
+    goal: 'Restore sight while FR #59 is open. 3 persistent Monitors per session-pin-2026-06-03.md.'
     summit: b1
     type: EXECUTE
     status: DONE
-    dependencies: [probe_csi_armstate]
-    note: "Verified-by-execution: 3 Monitors started; DM fired immediately (shakti/krishna/personal-growth-ai UNREACHABLE -> FR #59 ideal responder unnotifiable)."
+    dependencies:
+    - probe_csi_armstate
+    note: 'Verified-by-execution: 3 Monitors started; DM fired immediately (shakti/krishna/personal-growth-ai
+      UNREACHABLE -> FR #59 ideal responder unnotifiable).'
   csi_complete_armstate:
-    title: "EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)"
-    goal: "Extend kb/csi_guards.yml (+surface/armed fields, +Commons-workflow + session-daemon guards) and bin/csi.py (--arm-state, checking each). Acceptance: csi.py --arm-state reports arm-state across surfaces."
+    title: 'EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)'
+    goal: 'Extend kb/csi_guards.yml (+surface/armed fields, +Commons-workflow + session-daemon guards)
+      and bin/csi.py (--arm-state, checking each). Acceptance: csi.py --arm-state reports arm-state across
+      surfaces.'
     summit: b1
     type: EXECUTE
     status: READY
-    dependencies: [probe_csi_armstate]
-    note: "Spawned by probe_csi_armstate. Atomic EXECUTE; queued (the urgent daemon re-arm went first)."
+    dependencies:
+    - probe_csi_armstate
+    note: Spawned by probe_csi_armstate. Atomic EXECUTE; queued (the urgent daemon re-arm went first).
   friction_intake_probe_spaor:
     title: 'PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)'
     goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type (confirm-or-falsify
@@ -66,7 +88,10 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    note: "CONFIRMED (cold-path + claude-code-guide). Both racked signals REAL: (1) /btw gap (pauses, no pointer); (2) restart REFINED -> conditional (future-session auto-inject only; identity=hash + in-session Read need none). Spawned 2 EXECUTE. Hypothesis 'restart needed after birth' was too broad."
+    note: 'CONFIRMED (cold-path + claude-code-guide). Both racked signals REAL: (1) /btw gap (pauses,
+      no pointer); (2) restart REFINED -> conditional (future-session auto-inject only; identity=hash
+      + in-session Read need none). Spawned 2 EXECUTE. Hypothesis ''restart needed after birth'' was too
+      broad.'
   onboarding_btw_pointer:
     title: Surface a non-blocking question-channel pointer in the onboarding flow
     goal: Bake a "use /btw to ask questions while your agent works" pointer into the onboarding flow (form
@@ -74,17 +99,22 @@ nodes:
     summit: S1
     type: EXECUTE
     status: READY
-    dependencies: [probe_onboarding_friction]
-    note: "PROBE-confirmed: flow has execution-pauses + zero question-channel pointer; Tim leaned on /btw. Steward propose -> FO gate (Commons)."
+    dependencies:
+    - probe_onboarding_friction
+    note: 'PROBE-confirmed: flow has execution-pauses + zero question-channel pointer; Tim leaned on /btw.
+      Steward propose -> FO gate (Commons).'
   onboarding_anchor_activation_note:
-    title: "Onboarding completion: emit 'restart/clear to activate your anchor for future sessions'"
+    title: 'Onboarding completion: emit ''restart/clear to activate your anchor for future sessions'''
     goal: Add an activation instruction to onboard.py's completion message — anchor is usable in-session
-      (Read) but auto-injects only on restart/clear/compact (claude-code-guide confirmed); a non-techie won't know.
+      (Read) but auto-injects only on restart/clear/compact (claude-code-guide confirmed); a non-techie
+      won't know.
     summit: S1
     type: EXECUTE
     status: READY
-    dependencies: [probe_onboarding_friction]
-    note: "PROBE-refined: restart is CONDITIONAL (future-session auto-inject, not in-session). Steward propose -> FO gate (Commons onboard.py)."
+    dependencies:
+    - probe_onboarding_friction
+    note: 'PROBE-refined: restart is CONDITIONAL (future-session auto-inject, not in-session). Steward
+      propose -> FO gate (Commons onboard.py).'
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the
