@@ -39,7 +39,7 @@ nodes:
     title: Wire regen_directory_index.py --check into Commons CI
     goal: 'The no-drift durability half of #52 (script landed; CI hook is a separate .github/ workflow).'
     summit: S1
-    status: READY
+    status: IN_REVIEW
     dependencies: []
     note: Steward propose -> FO installs.
   onboarding_human_need:
