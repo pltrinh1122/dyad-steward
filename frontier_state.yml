@@ -302,7 +302,7 @@ nodes:
       landed (PR #60 /btw + anchor-activation). Confirm -> spawn EXECUTE(s); falsify -> drop (point-fixes sufficed).'
     summit: S1
     type: PROBE
-    status: ACTIVE
+    status: FALSIFIED
     dependencies: []
     invariant: "Re-deriving onboarding from the human-need frame surfaces a material, recurring barrier for a non-technical human that the landed point-fixes (/btw pointer, anchor-activation) do not address."
     note: 'COLD-PATH (both surfaces, this turn): commons/README.md + commons/scripts/onboard.py. Technical
@@ -317,7 +317,13 @@ nodes:
       (dont-optimize-the-human-out). TWO OPEN before any EXECUTE: (1) FO ground-truth — is a real, recurring
       non-technical-human consumer actually hitting this (cold-path-barriers-are-stale)? (2) grain-check —
       is summit/anchor articulation steward''s, or shed to the Intent-Understanding dyad (Telos sheds intent
-      mechanics)?'
+      mechanics)?
+      REFLECT/FALSIFIED (FO ''N'', 2026-06-07): no real, recurring non-technical consumer is hitting the
+      conceptual-judgment barrier — it was a TOP-DOWN re-derivation, not observed friction. The point-fixes
+      (PR #60) sufficed for the only friction actually observed (Tim''s /btw pause). Lesson (re-instance,
+      not new): cold-path-barriers-are-stale + friction-intake-probe-spaor — intake from observed friction,
+      not a hypothesized human. Re-open only if a real non-technical operator hits the summit/anchor wall;
+      and even then, grain-check vs the Intent-Understanding dyad first.'
   wuwei4_heartbeat_playbook:
     title: 'wu-wei #4 - heartbeat-seizure playbook'
     goal: Curate to library. Ripest, least-contested (ripest != highest-leverage).

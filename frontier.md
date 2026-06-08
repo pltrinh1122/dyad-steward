@@ -2,14 +2,13 @@
 
 > Source of truth: `frontier_state.yml`. Regenerate: `bin/frontier.py --md`. Drift gate: `bin/frontier.py --check` (wired into `bin/preflight.py`). WIP-N=1 (`<=1 ACTIVE`) is mechanically enforced at write.
 
-**ACTIVE (WIP-N=1):** probe_onboarding_human_need
+**ACTIVE (WIP-N=1):** — none —
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
-- ▶ **[ACTIVE]** [PROBE] `probe_onboarding_human_need` — PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
@@ -29,6 +28,7 @@
 - ✓ **[DONE]** [PROBE] `probe_directory_autogen` — PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before update-ts) without breaking the deterministic --check?  ⟵ probe_directory_activity_reflection
 - ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
 - ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
+- ✗ **[FALSIFIED]** [PROBE] `probe_onboarding_human_need` — PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?
 
 ## S2 — knowledge compounding
 - ○ **[READY]** `graduate_proactivity` — Graduate proactivity-calibration
