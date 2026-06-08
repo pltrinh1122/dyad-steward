@@ -48,7 +48,8 @@
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)
-- ○ **[READY]** `csi_complete_armstate` — EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)  ⟵ probe_csi_armstate
+- ⊘ **[BLOCKED]** `automode_unblock_apply` — Operator applies the autoMode.allow exception so direct push to main stops being classifier soft-denied
+- ⊘ **[BLOCKED]** `csi_complete_armstate` — EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)  ⟵ probe_csi_armstate, probe_delegate_platform_dyad
 - ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
 - ✓ **[DONE]** `csi_precommit_trap` — EXECUTE: pre-commit hook runs preflight + BLOCKS on FAIL (arm steward-local CSI traps)  ⟵ probe_csi_guards_armed
 - ✓ **[DONE]** `execute_csi_spaor_traps` — EXECUTE: implement deterministic CSI traps for PROBE-PLAN-EXECUTE-OBSERVE-REFLECT traversal  ⟵ probe_csi_spaor_traversal
