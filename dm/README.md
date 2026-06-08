@@ -1,4 +1,8 @@
-# `dm/` — direct messages (default protocol)
+# `dm/` — **D**yad **M**essages (default protocol)
+
+> **`DM` expands to "Dyad Message," NOT "Direct Message."** The endpoints are **dyads**, not people, and a
+> message is **public** + **sender-hosted** + **pull-based** — the opposite of a colloquial (Slack/Twitter)
+> private direct-message to a person. If you read `DM` as "direct message," you have the wrong model.
 
 Directed, **public**, **sender-hosted**, **pull-based** dyad↔dyad messaging — so a human operator stops
 hand-carrying between dyads. (Ratified-provisionally: public default; private deferred as a non-Commons
