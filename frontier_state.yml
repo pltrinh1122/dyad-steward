@@ -514,3 +514,18 @@ nodes:
       (defaults to USER settings) then verify `claude auto-mode config`. I must not run it (Auto-Mode-Bypass)
       nor self-edit settings (Self-Modification) — I authored the script, the Operator disposes. Durable
       stand-up-surfaced home for gap (b) from the 2026-06-07 read. git-remote-ops-additive-vs-destructive.'
+  probe_commons_repo_audit:
+    title: 'PROBE: should we have a mechanical/deterministic commons-repo resting-state audit?'
+    goal: 'Confirm-or-falsify (discovery) whether a deterministic full-repo Commons audit is defect-earned
+      and where it homes. Full riff captured: dialectic/commons-repo-audit-riff.md.'
+    summit: S1
+    type: PROBE
+    status: BLOCKED
+    dependencies: []
+    invariant: 'A deterministic Commons resting-state audit is defect-earned (a lived drift case that per-PR
+      CI + preflight did NOT catch) and homes in the Commons (steward proposes; invokes the Commons validators,
+      never forks them).'
+    note: 'RACKED (Operator rack: 2026-06-07) for discovery TOMORROW — do not act until un-racked. Parked
+      mid-riff; surfaced lean (held loosely): thin, defect-earned, Commons-homed, resting-state audit YES;
+      comprehensive steward-side correctness spec NO. Open Qs + 3 cautions in the riff doc. BLOCKED encodes
+      racked (frontier has no RACKED status — 2nd time wanted; see riff doc adjacent-noticing).'

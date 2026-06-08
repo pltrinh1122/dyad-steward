@@ -16,6 +16,7 @@
 - ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
 - ⊘ **[BLOCKED]** [OBSERVE] `observe_directory_recruitment_signal` — OBSERVE: test the live directory signal against reality  ⟵ execute_directory_commit_reflection
+- ⊘ **[BLOCKED]** [PROBE] `probe_commons_repo_audit` — PROBE: should we have a mechanical/deterministic commons-repo resting-state audit?
 - ⊘ **[BLOCKED]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
