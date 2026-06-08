@@ -82,7 +82,8 @@ nodes:
     note: 'Spawned by probe_csi_armstate. Atomic EXECUTE; queued (the urgent daemon re-arm went first).
       DELEGATION-CANDIDATE (FO retro 2026-06-07): platform-coding -> dyad-commons-platform. steward-operates-platform-delegates.
       BLOCKED (read: 2026-06-07): racked-as-delegation = do-not-act until un-racked; gated on probe_delegate_platform_dyad
-      (the FO''s delegate-or-not call). Was rendering READY, which misrepresented a do-not-act node as actionable.'
+      (the FO''s delegate-or-not call). Was rendering READY, which misrepresented a do-not-act node as
+      actionable.'
   probe_csi_spaor_traversal:
     title: 'PROBE: should SPAOR traversal edges be deterministic CSI traps?'
     goal: 'Single invariant: frontier traversal of a SPAOR trail is gated by deterministic WELL-FORMEDNESS
@@ -500,13 +501,14 @@ nodes:
     status: DONE
     dependencies: []
   automode_unblock_apply:
-    title: 'Operator applies the autoMode.allow exception so direct push to main stops being classifier soft-denied'
-    goal: 'Off-machine durability is autonomous as workflow, but the auto-mode classifier soft-denies
-      default-branch push ABOVE the settings allowlist. Unblock = an autoMode.allow exception, USER settings
-      only (~/.claude/settings.json). Restores autonomous push.'
+    title: Operator applies the autoMode.allow exception so direct push to main stops being classifier
+      soft-denied
+    goal: Off-machine durability is autonomous as workflow, but the auto-mode classifier soft-denies default-branch
+      push ABOVE the settings allowlist. Unblock = an autoMode.allow exception, USER settings only (~/.claude/settings.json).
+      Restores autonomous push.
     summit: b1
     type: EXECUTE
-    status: BLOCKED
+    status: DONE
     dependencies: []
     note: 'Gated on the OPERATOR (Covalent gate, NOT a steward build): run `python3 sandbox/apply_automode_allow.py`
       (defaults to USER settings) then verify `claude auto-mode config`. I must not run it (Auto-Mode-Bypass)
