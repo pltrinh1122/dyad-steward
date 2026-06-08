@@ -4,10 +4,12 @@
 # WIP-N=1: at most one node may be ACTIVE — enforced mechanically by bin/frontier.py at write.
 # status: READY -> ACTIVE -> IN_REVIEW -> BLOCKED -> DONE | FALSIFIED (PROBE-only terminal: condition refuted)
 # type (default EXECUTE): SPAOR = FIVE phases, a FALSIFIABILITY pipeline carrying ONE invariant end-to-end:
-#   PROBE (states the trail's ONE falsifiable invariant; only type that grows the DAG) · PLAN (decomposes
+#   PROBE (states the trail's ONE falsifiable `invariant:`; only type that grows the DAG) · PLAN (decomposes
 #   it into execution invariants + creates EXECUTE) · EXECUTE (code + test code; EXIT = all execution
 #   invariants pass) · OBSERVE (run tests / test against reality) · REFLECT (CLOSE: assert ONLY the single
-#   PROBE invariant — execution invariants already discharged by EXECUTE's green tests — + codify outcome>output).
+#   PROBE invariant + codify outcome>output; may spawn the next PROBE).
+# SPAOR-traversal CSI traps live in kb/csi_guards.yml as arm/disarm pairs (spaor: true, armed: bool);
+#   an ARMED trap fires in bin/frontier.py validate(); a DISARMED trap is registered but inert.
 # `summit`: which +1 summit (or b1=capacity-to-climb) the node roots to.
 # `dependencies`: REAL precedence edges only (relation != edge — board-as-dag).
 # Edit by hand OR via `bin/frontier.py status|active`; then `bin/frontier.py --md` reprojects.
@@ -24,7 +26,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "The registered CSI guards mechanically BLOCK a violating action, not merely run on request."
+    invariant: The registered CSI guards mechanically BLOCK a violating action, not merely run on request.
     note: 'CONFIRMED-NO: registry+checks exist but NO pre-commit hook + NO CI on our repo -> preflight
       is manual. Proof: shipped broken 623ee01 (nothing blocked it). Real traps only: frontier WIP-N=1
       write-guard + Commons CI.'
@@ -33,16 +35,19 @@ nodes:
     goal: Convert the runnable Symmetric checks into actual mechanical traps; would have caught 623ee01.
     summit: b1
     type: EXECUTE
-    status: READY
+    status: DONE
     dependencies:
     - probe_csi_guards_armed
-    note: 'RACKED (FO ''rack: the lean'', 2026-06-07) — parked, not worked. Pairs with csi_complete_armstate
-      (list + arm). DELEGATION-CANDIDATE (FO retro 2026-06-07): platform-coding -> dyad-commons-platform;
-      steward stops deep-building this. steward-operates-platform-delegates.
-      LIVED-EVIDENCE (retro 2026-06-07): the manual preflight gate is skippable under momentum — I gated 3
-      commits correctly this session then pushed a 4th on a FAILING preflight (got lucky: orthogonal submodule
-      drift, not my diff). Same class as 623ee01. The mechanical pre-commit hook is the real fix; evidence
-      accrues here for the FO/delegate, node stays RACKED.'
+    note: 'DONE 2026-06-07 — ARMED. RUB-RECLASSIFIED (Operator, 2026-06-07): "this is on steward''s repo?"
+      — the pre-commit hook governs steward''s OWN commits to dyad-steward (623ee01 was a steward commit
+      here; commons is a submodule = separate repo). That is steward SELF-OPERATION, not Commons platform-coding
+      — so the FO rack-as-DELEGATION-CANDIDATE frame mis-filed the local slice (it binds the cross-surface
+      CSI *system* = csi_complete_armstate, which STAYS the delegation-candidate). ANTI dissolved; not
+      FO/commons- level, Steward-Operator territory. BUILT: .githooks/pre-commit runs preflight.py --offline
+      (local checks: parse/registry/refs/frontier/topology; network submodule-vs-remote stays on the manual/pre-PR
+      gate) and BLOCKS on FAIL; install = git config core.hooksPath .githooks; deliberate override = git
+      commit --no-verify. DUAL-CONTROL TESTED end-to-end through real git commit: positive (clean -> allowed),
+      negative (623ee01-class broken YAML -> commit BLOCKED). Kills the bundled-verify failure class.'
   probe_csi_armstate:
     title: 'PROBE: is the CSI arm/disarm list complete + queryable?'
     goal: Confirm-or-falsify that we hold a ready arm-state list of ALL guards across surfaces.
@@ -50,7 +55,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "A single queryable list reports the arm-state of every CSI guard across all surfaces."
+    invariant: A single queryable list reports the arm-state of every CSI guard across all surfaces.
     note: 'CONFIRMED (the rub-read): csi.py = 1 of 3 surfaces, no arm-state field, AND 3 session daemons
       disarmed. Spawned 2 EXECUTE.'
   rearm_session_daemons:
@@ -83,11 +88,12 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "Frontier traversal of a SPAOR trail is gated by deterministic well-formedness assertions, each arm/disarm-able."
-    note: 'CONFIRMED via dynamic-chat probe (6-rub thread, 2026-06-07). Deterministic gating belongs on
+    invariant: Frontier traversal of a SPAOR trail is gated by deterministic well-formedness assertions,
+      each arm/disarm-able.
+    note: CONFIRMED via dynamic-chat probe (6-rub thread, 2026-06-07). Deterministic gating belongs on
       STRUCTURAL/execution edges (PROBE carries one falsifiable invariant; EXECUTE->DONE requires green
       tests), NOT the empirical trail edge (forcing a computable proxy = Goodhart). Crossing chat->workflow
-      is itself gated by an explicit `lean`. lean-crosses-the-membrane; spaor-five-phases.'
+      is itself gated by an explicit `lean`. lean-crosses-the-membrane; spaor-five-phases.
   execute_csi_spaor_traps:
     title: 'EXECUTE: implement deterministic CSI traps for PROBE-PLAN-EXECUTE-OBSERVE-REFLECT traversal'
     goal: 'Extend frontier.py validate() (the existing write-guard) with structural traps: a PROBE node
@@ -98,23 +104,24 @@ nodes:
     status: DONE
     dependencies:
     - probe_csi_spaor_traversal
-    tests: "bin/test_frontier.py (armed/disarmed csi_probe_invariant + csi_execute_tested)"
+    tests: bin/test_frontier.py (armed/disarmed csi_probe_invariant + csi_execute_tested)
     note: 'DONE (FO ''lean: execute_csi_spaor_traps (arm/disarm pairs)'', 2026-06-07). Shipped: 3 SPAOR-edge
       guards in kb/csi_guards.yml (spaor+armed fields); frontier.py validate() fires each ARMED guard;
       csi.py --arm/--disarm toggle (comment-safe). Armed csi_probe_invariant + backfilled 7 PROBEs; shipped
-      csi_execute_tested + csi_trail_closure DISARMED (arm/disarm pairs = the migration key). Also fixed a
-      latent drift: frontier.py HEADER constant (re-emitted on save) was stale vs the 5-phase header.
+      csi_execute_tested + csi_trail_closure DISARMED (arm/disarm pairs = the migration key). Also fixed
+      a latent drift: frontier.py HEADER constant (re-emitted on save) was stale vs the 5-phase header.
       OBSERVE: tests green, toggle round-trips comment-safe. REFLECT: single PROBE invariant holds.'
   probe_delegate_platform_dyad:
     title: 'PROBE: delegate platform-engineering to a dyad-commons-platform so steward focuses on operating?'
     goal: 'FO direction (retro, 2026-06-07): wind down steward platform-coding; a dedicated dyad may take
-      the actual coding. Confirm-or-falsify when the FO crosses; until then, platform-mechanism nodes are
-      delegation-candidates, not steward deep-coding.'
+      the actual coding. Confirm-or-falsify when the FO crosses; until then, platform-mechanism nodes
+      are delegation-candidates, not steward deep-coding.'
     summit: S3
     type: PROBE
     status: READY
     dependencies: []
-    invariant: "Delegating platform-engineering to a dedicated dyad frees steward's bandwidth for operating without losing control of the frontier/CSI substrate."
+    invariant: Delegating platform-engineering to a dedicated dyad frees steward's bandwidth for operating
+      without losing control of the frontier/CSI substrate.
     note: 'steward-operates-platform-delegates. Delegation-candidates: csi_precommit_trap, csi_complete_armstate,
       and arming csi_execute_tested / csi_trail_closure. Provisional ("may"); FO-direction-gated. Dogfoods
       the armed csi_probe_invariant trap (this node carries its single invariant).'
@@ -126,7 +133,8 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "Observed friction, not top-down hypothesis, is the frontier's intake source — via a PROBE node-type."
+    invariant: Observed friction, not top-down hypothesis, is the frontier's intake source — via a PROBE
+      node-type.
     note: 'CONFIRMED (FO ''lean'') -> spawned frontier_node_types_graft. Weight-fork resolved: LIGHT graft.
       dialectic/friction-intake-probe-spaor.md.'
   frontier_node_types_graft:
@@ -147,7 +155,7 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "The racked non-techie onboarding friction (/btw gap, restart-to-activate) is real and recurring."
+    invariant: The racked non-techie onboarding friction (/btw gap, restart-to-activate) is real and recurring.
     note: 'CONFIRMED (cold-path + claude-code-guide). Both racked signals REAL: (1) /btw gap (pauses,
       no pointer); (2) restart REFINED -> conditional (future-session auto-inject only; identity=hash
       + in-session Read need none). Spawned 2 EXECUTE. Hypothesis ''restart needed after birth'' was too
@@ -186,7 +194,8 @@ nodes:
     type: PROBE
     status: DONE
     dependencies: []
-    invariant: "A period-bounded activity reflection in the directory provides real recruitment value to a potential operator."
+    invariant: A period-bounded activity reflection in the directory provides real recruitment value to
+      a potential operator.
     note: 'CONFIRMED (FO rub, 2026-06-07): value = RECRUITMENT signal ("is anyone home?"). Two rubs cut
       my over-build: (1) don''t "determine activity" — just count commits per week; (2) yes, recruitment.
       Shipped bin/weekly_commits.py + ran 2026-W23: 11 registered, 7 reachable/active, 778 commits; 4
@@ -218,25 +227,27 @@ nodes:
     status: DONE
     dependencies:
     - probe_directory_activity_reflection
-    invariant: "DIRECTORY.md can auto-generate a rolling-7-day activity block without breaking the deterministic --check."
+    invariant: DIRECTORY.md can auto-generate a rolling-7-day activity block without breaking the deterministic
+      --check.
     note: 'CONFIRM (FO ''lean'', 2026-06-07): feasible, but NOT by extension. Cold-pathed the live machinery.
       FINDING: activity = f(wall-clock, live gh) is NON-deterministic, so it breaks BOTH existing invariants
       — (1) --check false-alarms every run (regen yields different counts); (2) the push:paths:[directory/**]
       trigger never fires for time/external-repo changes. Design (the how) -> PLAN node, not folded here.'
   plan_directory_autogen:
     title: 'PLAN: separate scheduled activity block + embedded as-of timestamp (the auto-gen design)'
-    goal: 'Design that resolves the PROBE finding: keep the registry table pure + drift-checked AS-IS; add
-      a SEPARATE activity block with an embedded "as of <ts>, trailing 7d" label, regenerated by a SEPARATE
-      scheduled (cron) workflow that commits DIRECTORY.md. --check scope stays on the registry region only
-      (activity owned by the cron job). No loop (DIRECTORY.md-only commit misses the directory/** filter).
-      Window = rolling 7d from update-ts (FO), not ISO-week.'
+    goal: 'Design that resolves the PROBE finding: keep the registry table pure + drift-checked AS-IS;
+      add a SEPARATE activity block with an embedded "as of <ts>, trailing 7d" label, regenerated by a
+      SEPARATE scheduled (cron) workflow that commits DIRECTORY.md. --check scope stays on the registry
+      region only (activity owned by the cron job). No loop (DIRECTORY.md-only commit misses the directory/**
+      filter). Window = rolling 7d from update-ts (FO), not ISO-week.'
     summit: S1
     type: PLAN
     status: DONE
     dependencies:
     - probe_directory_autogen
-    note: 'Extracted from the PROBE note per SPAOR fb (PROBE->PLAN->EXECUTE->REFLECT): design belongs in a
-      PLAN, not a PROBE output. Runnable evidence: bin/weekly_commits.py default = rolling 7d from update-ts.'
+    note: 'Extracted from the PROBE note per SPAOR fb (PROBE->PLAN->EXECUTE->REFLECT): design belongs
+      in a PLAN, not a PROBE output. Runnable evidence: bin/weekly_commits.py default = rolling 7d from
+      update-ts.'
   observe_directory_recruitment_signal:
     title: 'OBSERVE: test the live directory signal against reality'
     goal: 'After the EXECUTE lands: verify-with-actual-tool — does DIRECTORY.md actually render the block,
@@ -247,7 +258,8 @@ nodes:
     status: BLOCKED
     dependencies:
     - execute_directory_commit_reflection
-    note: 'The Observe phase I keep skipping (verify-with-actual-tool). Measure the shipped result before REFLECT.'
+    note: The Observe phase I keep skipping (verify-with-actual-tool). Measure the shipped result before
+      REFLECT.
   reflect_directory_recruitment_signal:
     title: 'REFLECT: did the directory recruitment-signal move recruitment? (closure)'
     goal: 'Assert ONLY the single PROBE invariant (probe_directory_activity_reflection): a live activity
@@ -300,15 +312,18 @@ nodes:
     dependencies: []
     note: Steward propose -> FO installs.
   probe_onboarding_human_need:
-    title: 'PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?'
+    title: 'PROBE: does re-deriving onboarding from the human-need frame materially change the flow for
+      a non-technical human?'
     goal: 'Cold-path the live onboarding (commons/scripts/onboard.py + README) as the non-technical 9th-dyad
       human; confirm-or-falsify that the human-need frame changes the flow beyond the point-fixes already
-      landed (PR #60 /btw + anchor-activation). Confirm -> spawn EXECUTE(s); falsify -> drop (point-fixes sufficed).'
+      landed (PR #60 /btw + anchor-activation). Confirm -> spawn EXECUTE(s); falsify -> drop (point-fixes
+      sufficed).'
     summit: S1
     type: PROBE
     status: FALSIFIED
     dependencies: []
-    invariant: "Re-deriving onboarding from the human-need frame surfaces a material, recurring barrier for a non-technical human that the landed point-fixes (/btw pointer, anchor-activation) do not address."
+    invariant: Re-deriving onboarding from the human-need frame surfaces a material, recurring barrier
+      for a non-technical human that the landed point-fixes (/btw pointer, anchor-activation) do not address.
     note: 'COLD-PATH (both surfaces, this turn): commons/README.md + commons/scripts/onboard.py. Technical
       on-ramp is SOLVED — the Agent drives the whole flow from one prompt ("Read and execute this README");
       /btw + anchor-activation point-fixes landed (PR #60). RESIDUAL barrier the point-fixes do NOT touch:
@@ -319,15 +334,14 @@ nodes:
       confirmed): Agent carries the human THROUGH the judgments via Proposal-Framing — propose candidate
       summit/anchor from stated intent, human validates/refines — AMPLIFY the authoring, never auto-fill
       (dont-optimize-the-human-out). TWO OPEN before any EXECUTE: (1) FO ground-truth — is a real, recurring
-      non-technical-human consumer actually hitting this (cold-path-barriers-are-stale)? (2) grain-check —
-      is summit/anchor articulation steward''s, or shed to the Intent-Understanding dyad (Telos sheds intent
-      mechanics)?
-      REFLECT/FALSIFIED (FO ''N'', 2026-06-07): no real, recurring non-technical consumer is hitting the
-      conceptual-judgment barrier — it was a TOP-DOWN re-derivation, not observed friction. The point-fixes
-      (PR #60) sufficed for the only friction actually observed (Tim''s /btw pause). Lesson (re-instance,
-      not new): cold-path-barriers-are-stale + friction-intake-probe-spaor — intake from observed friction,
-      not a hypothesized human. Re-open only if a real non-technical operator hits the summit/anchor wall;
-      and even then, grain-check vs the Intent-Understanding dyad first.'
+      non-technical-human consumer actually hitting this (cold-path-barriers-are-stale)? (2) grain-check
+      — is summit/anchor articulation steward''s, or shed to the Intent-Understanding dyad (Telos sheds
+      intent mechanics)? REFLECT/FALSIFIED (FO ''N'', 2026-06-07): no real, recurring non-technical consumer
+      is hitting the conceptual-judgment barrier — it was a TOP-DOWN re-derivation, not observed friction.
+      The point-fixes (PR #60) sufficed for the only friction actually observed (Tim''s /btw pause). Lesson
+      (re-instance, not new): cold-path-barriers-are-stale + friction-intake-probe-spaor — intake from
+      observed friction, not a hypothesized human. Re-open only if a real non-technical operator hits
+      the summit/anchor wall; and even then, grain-check vs the Intent-Understanding dyad first.'
   wuwei4_heartbeat_playbook:
     title: 'wu-wei #4 - heartbeat-seizure playbook'
     goal: Curate to library. Ripest, least-contested (ripest != highest-leverage).

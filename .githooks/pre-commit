@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# CSI pre-commit trap (csi_precommit_trap, armed 2026-06-07) — the MECHANICAL fix for the
+# bundled-verify failure class: a discipline-dependent gate is skippable under momentum
+# (lived: 623ee01 shipped a YAML-parse-broken frontier_state.yml; a 4th commit pushed on a
+# FAILING preflight). This converts the runnable check into a trap that BLOCKS the commit.
+#
+# Scope: --offline (local checks only: parse · registry · refs · frontier · topology). The
+# network submodule-vs-remote check stays on the manual / pre-PR gate — not every commit.
+# Deliberate override (NOT a momentum-skip): `git commit --no-verify`.
+# Install on a fresh clone: `git config core.hooksPath .githooks`
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+echo "[pre-commit] running preflight (--offline) …"
+if ! python3 "$ROOT/bin/preflight.py" --offline; then
+  echo ""
+  echo "[pre-commit] BLOCKED — preflight FAILED. Commit aborted."
+  echo "[pre-commit] Fix the invariant above, or override deliberately: git commit --no-verify"
+  exit 1
+fi
+echo "[pre-commit] preflight PASS — commit allowed."
