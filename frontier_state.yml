@@ -19,6 +19,34 @@ summits:
   S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
+  commons_gitignore:
+    title: 'EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED'
+    goal: Stop shared-tooling cruft showing as untracked in every dyad checkout (counterfeit-green bait under a dirty submodule).
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
+    note: 'SOURCE: DM dyad-touchstone 2026-06-09-commons-gitignore-proposal.md. REFEREED = claims SURVIVE
+      (verified vs source this turn): (1a) no commons/.gitignore exists; (1b) commons submodule shows
+      "?? scripts/__pycache__/" untracked — the SAME "?? commons" dirt I hit at this session start; (1c)
+      falsify.py seen_path() writes .falsify-seen.json to os.getcwd() and the code COMMENT itself says
+      "gitignore it" — but no commons/.gitignore does. Proposed body: .falsify-seen.json / __pycache__/ /
+      *.pyc. Commons artifact -> FO/Commons-PR dispose, NOT steward-unilateral (referee-not-judge);
+      touchstone offered to PR it. Tiny + clearly-correct + self-acknowledged-in-code = ripe.'
+  document_messaging_arch:
+    title: 'EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED'
+    goal: Make the DM sovereignty model + falsify.py verbs + auto-merge-vs-reversible LOADABLE from the form, not reverse-engineered from code comments.
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
+    note: 'SOURCE: DM dyad-touchstone 2026-06-09-document-messaging-architecture.md. REFEREED = SURVIVES:
+      CONTRIBUTING.md has only 2 sections (register / contribute-a-Playbook); grep finds NO coverage of
+      DM sovereignty / inbox / sender-hosted / auto-merge — the architecture lives only in falsify.py
+      comments + our dm/README.md (OUR repo, not the form). Independent corroboration: touchstone
+      mis-modeled DM until Operator-corrected; we hit the SAME (204c6df cross-human tco) -> systemic doc
+      gap, not one lapse. Commons artifact -> FO dispose; touchstone offered to draft a PR from their local
+      commons-map.md. Open sub-decision: CONTRIBUTING.md section vs linked companion.'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
     goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs deeper hash-keyed dedup.
