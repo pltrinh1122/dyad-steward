@@ -16,7 +16,6 @@
 - ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
 - ⊘ **[BLOCKED]** [OBSERVE] `observe_directory_recruitment_signal` — OBSERVE: test the live directory signal against reality  ⟵ execute_directory_commit_reflection
-- ⊘ **[BLOCKED]** [PROBE] `probe_commons_repo_audit` — PROBE: should we have a mechanical/deterministic commons-repo resting-state audit?
 - ⊘ **[BLOCKED]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
@@ -25,6 +24,7 @@
 - ✓ **[DONE]** `onboarding_anchor_activation_note` — Onboarding completion: emit 'restart/clear to activate your anchor for future sessions'  ⟵ probe_onboarding_friction
 - ✓ **[DONE]** `onboarding_btw_pointer` — Surface a non-blocking question-channel pointer in the onboarding flow  ⟵ probe_onboarding_friction
 - ✓ **[DONE]** [PLAN] `plan_directory_autogen` — PLAN: separate scheduled activity block + embedded as-of timestamp (the auto-gen design)  ⟵ probe_directory_autogen
+- ✓ **[DONE]** [PROBE] `probe_commons_repo_audit` — PROBE: should we have a mechanical/deterministic commons-repo resting-state audit?
 - ✓ **[DONE]** [PROBE] `probe_directory_activity_reflection` — PROBE: does a period-bounded activity reflection in the directory provide real value to (potential) operators?
 - ✓ **[DONE]** [PROBE] `probe_directory_autogen` — PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before update-ts) without breaking the deterministic --check?  ⟵ probe_directory_activity_reflection
 - ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?

@@ -1,7 +1,39 @@
-# RIFF (RACKED 2026-06-07 — discovery tomorrow): mechanical/deterministic commons-repo-audit?
+# RIFF → DISCOVERY RESOLVED (2026-06-08): mechanical/deterministic commons-repo-audit?
 
-> Status: **OPEN / divergent** — parked mid-riff by Operator `rack:`. Not a conclusion; the frame hasn't
-> settled. Resume as a discovery (→ `probe_commons_repo_audit` on the frontier). Do **not** build until un-racked.
+> Status: **RESOLVED — do NOT build now; park defect-earned.** PROBE `probe_commons_repo_audit` ran the
+> empirical resting-state sweep (below). The driving-defect gate the riff set was not met → no audit built.
+
+## Discovery result (2026-06-08) — the empirical OBSERVE
+Ran every existing validator against the WHOLE resting Commons repo (not a diff), plus the new-coverage
+classes preflight structurally cannot check:
+
+| dimension | tool | result |
+|---|---|---|
+| submodule freshness (commons@HEAD == remote main) | git rev-parse | **IN SYNC** |
+| registry validation, all 11 directory entries | `validate_registry.py` | **11/11 PASS** |
+| directory index ↔ reality | `regen_directory_index.py --check` | **up to date** |
+| falsification ledgers (fr · responses · disposition) | `validate_falsification.py` | **all valid** |
+| dead file-path refs in commons `.md` (new coverage) | ad-hoc sweep | **0 dead / 20 checked** |
+| cross-file: falsification response → directory dyad (new) | ad-hoc sweep | **0 orphans** |
+
+**Driving-defect verdict:** the strongest case (resting-state drift introduced *outside* a PR) has exactly
+**one lived instance — the `DIRECTORY.md` 1-of-9 bug — and it is already guarded** by `regen_index_ci --check`
+(DONE). No second, currently-uncaught drift exists. The earned class is already closed.
+
+## Decision
+**Do NOT build a comprehensive resting-state audit.** It is speculative coverage — the exact `brake>engine`
+over-gating the defect-earned rule resists ([[sharing-is-not-proving]], wu-wei). The one earned defect-class
+is already mechanized.
+
+**Park defect-earned, with the trigger pre-named:** *if a SECOND resting-state drift slips through outside a
+PR* (a class preflight's slice + per-PR CI both miss), that earns a thin wrapper — and the discovery already
+prototyped it: a ~30-line script that **invokes** (never reimplements — single-home) the existing validators
+across the whole tree, fast enough to run on demand or in scheduled Commons CI. Home = the Commons
+(`scripts/audit.py`, FO-gated), `preflight` calls it. Until that second defect lands, the on-demand sweep in
+this doc IS the audit.
+
+---
+## (archived riff — the divergent thinking that led here)
 
 ## The question
 Should we have a mechanical/deterministic audit of the Commons repo to ensure "everything is how it should be"?

@@ -520,12 +520,12 @@ nodes:
       and where it homes. Full riff captured: dialectic/commons-repo-audit-riff.md.'
     summit: S1
     type: PROBE
-    status: BLOCKED
+    status: DONE
     dependencies: []
-    invariant: 'A deterministic Commons resting-state audit is defect-earned (a lived drift case that per-PR
+    invariant: A deterministic Commons resting-state audit is defect-earned (a lived drift case that per-PR
       CI + preflight did NOT catch) and homes in the Commons (steward proposes; invokes the Commons validators,
-      never forks them).'
+      never forks them).
     note: 'RACKED (Operator rack: 2026-06-07) for discovery TOMORROW — do not act until un-racked. Parked
-      mid-riff; surfaced lean (held loosely): thin, defect-earned, Commons-homed, resting-state audit YES;
-      comprehensive steward-side correctness spec NO. Open Qs + 3 cautions in the riff doc. BLOCKED encodes
-      racked (frontier has no RACKED status — 2nd time wanted; see riff doc adjacent-noticing).'
+      mid-riff; surfaced lean (held loosely): thin, defect-earned, Commons-homed, resting-state audit
+      YES; comprehensive steward-side correctness spec NO. Open Qs + 3 cautions in the riff doc. BLOCKED
+      encodes racked (frontier has no RACKED status — 2nd time wanted; see riff doc adjacent-noticing).'
