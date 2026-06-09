@@ -19,6 +19,29 @@ summits:
   S3: accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
+  probe_onboard_namederiv_fallback:
+    title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
+    goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs deeper hash-keyed dedup.
+    summit: S1
+    type: PROBE
+    status: READY
+    dependencies: []
+    invariant: When dyad_name() returns None (absent/non-conformant anchor H1), onboard.py can mint a
+      DUPLICATE directory entry (same birth_hash, different name) — violating the docstring promise "safe
+      to re-run / no risk of re-birth / can never collide".
+    note: 'SOURCE: DM from dyad-tco (cross-human, peter-famloom) 2026-06-08-onboard-namederiv-fallback.md.
+      FALSIFICATION = SURVIVED (traced to commons/scripts/onboard.py this turn, not relayed): (1) dyad_name()
+      returns None when the anchor H1 is not `# dyad-<name>` (tco lived case: H1 was `# CLAUDE.md — TCO Dyad
+      Anchor`); (2) main() WARN-and-PROCEEDS with name=basename(getcwd()).lower() — only a warning, no halt;
+      (3) register(name,bh) keys its anti-collision guard on os.path.exists(directory/<name>.yaml) ALONE — a
+      basename-derived name != the registered name does NOT collide, so the birth-hash guard is BYPASSED and a
+      NEW <basename>.yaml is written with the SAME birth_hash. Trigger condition: dir-basename != registry-name
+      AND non-conformant H1 (exactly the Project-Template class the dyad_name() fix was meant to close). DEEPER
+      ROOT found while falsifying: register() dedup is NAME-keyed, not BIRTH_HASH-keyed — it cannot detect
+      "same identity, different name", so tco''s proposed fix (HARD-FAIL on absent/non-conformant H1 instead of
+      WARN-proceed) closes the live TRIGGER but is necessary-not-sufficient; the hash-blind hole stays open to
+      any other wrong-name path. tco offered to open the PR (Founding-gated) — but onboard.py is OUR tool, so
+      the fix is ours to author (intake-queues-below-active; NOT built this turn — queued for analysis per todo).'
   probe_csi_guards_armed:
     title: 'PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?'
     goal: Confirm-or-falsify that the registered CSI guards actually BLOCK vs need me to remember preflight.

@@ -6,6 +6,7 @@
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
+- ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
