@@ -7,11 +7,11 @@
 ## S1 — commons process-integrity
 - ○ **[READY]** `commons_gitignore` — EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED
 - ○ **[READY]** `document_messaging_arch` — EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED
-- ○ **[READY]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
+- ◔ **[IN_REVIEW]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)

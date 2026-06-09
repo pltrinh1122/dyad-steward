@@ -20,8 +20,10 @@ summits:
   b1: capacity-to-climb (enabling infrastructure)
 nodes:
   commons_gitignore:
-    title: 'EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED'
-    goal: Stop shared-tooling cruft showing as untracked in every dyad checkout (counterfeit-green bait under a dirty submodule).
+    title: 'EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal,
+      peer-VERIFIED'
+    goal: Stop shared-tooling cruft showing as untracked in every dyad checkout (counterfeit-green bait
+      under a dirty submodule).
     summit: S1
     type: EXECUTE
     status: READY
@@ -30,12 +32,14 @@ nodes:
       (verified vs source this turn): (1a) no commons/.gitignore exists; (1b) commons submodule shows
       "?? scripts/__pycache__/" untracked — the SAME "?? commons" dirt I hit at this session start; (1c)
       falsify.py seen_path() writes .falsify-seen.json to os.getcwd() and the code COMMENT itself says
-      "gitignore it" — but no commons/.gitignore does. Proposed body: .falsify-seen.json / __pycache__/ /
-      *.pyc. Commons artifact -> FO/Commons-PR dispose, NOT steward-unilateral (referee-not-judge);
+      "gitignore it" — but no commons/.gitignore does. Proposed body: .falsify-seen.json / __pycache__/
+      / *.pyc. Commons artifact -> FO/Commons-PR dispose, NOT steward-unilateral (referee-not-judge);
       touchstone offered to PR it. Tiny + clearly-correct + self-acknowledged-in-code = ripe.'
   document_messaging_arch:
-    title: 'EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED'
-    goal: Make the DM sovereignty model + falsify.py verbs + auto-merge-vs-reversible LOADABLE from the form, not reverse-engineered from code comments.
+    title: 'EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone
+      proposal, peer-VERIFIED'
+    goal: Make the DM sovereignty model + falsify.py verbs + auto-merge-vs-reversible LOADABLE from the
+      form, not reverse-engineered from code comments.
     summit: S1
     type: EXECUTE
     status: READY
@@ -43,13 +47,14 @@ nodes:
     note: 'SOURCE: DM dyad-touchstone 2026-06-09-document-messaging-architecture.md. REFEREED = SURVIVES:
       CONTRIBUTING.md has only 2 sections (register / contribute-a-Playbook); grep finds NO coverage of
       DM sovereignty / inbox / sender-hosted / auto-merge — the architecture lives only in falsify.py
-      comments + our dm/README.md (OUR repo, not the form). Independent corroboration: touchstone
-      mis-modeled DM until Operator-corrected; we hit the SAME (204c6df cross-human tco) -> systemic doc
-      gap, not one lapse. Commons artifact -> FO dispose; touchstone offered to draft a PR from their local
-      commons-map.md. Open sub-decision: CONTRIBUTING.md section vs linked companion.'
+      comments + our dm/README.md (OUR repo, not the form). Independent corroboration: touchstone mis-modeled
+      DM until Operator-corrected; we hit the SAME (204c6df cross-human tco) -> systemic doc gap, not
+      one lapse. Commons artifact -> FO dispose; touchstone offered to draft a PR from their local commons-map.md.
+      Open sub-decision: CONTRIBUTING.md section vs linked companion.'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
-    goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs deeper hash-keyed dedup.
+    goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs
+      deeper hash-keyed dedup.
     summit: S1
     type: PROBE
     status: READY
@@ -59,17 +64,18 @@ nodes:
       to re-run / no risk of re-birth / can never collide".
     note: 'SOURCE: DM from dyad-tco (cross-human, peter-famloom) 2026-06-08-onboard-namederiv-fallback.md.
       FALSIFICATION = SURVIVED (traced to commons/scripts/onboard.py this turn, not relayed): (1) dyad_name()
-      returns None when the anchor H1 is not `# dyad-<name>` (tco lived case: H1 was `# CLAUDE.md — TCO Dyad
-      Anchor`); (2) main() WARN-and-PROCEEDS with name=basename(getcwd()).lower() — only a warning, no halt;
-      (3) register(name,bh) keys its anti-collision guard on os.path.exists(directory/<name>.yaml) ALONE — a
-      basename-derived name != the registered name does NOT collide, so the birth-hash guard is BYPASSED and a
-      NEW <basename>.yaml is written with the SAME birth_hash. Trigger condition: dir-basename != registry-name
-      AND non-conformant H1 (exactly the Project-Template class the dyad_name() fix was meant to close). DEEPER
-      ROOT found while falsifying: register() dedup is NAME-keyed, not BIRTH_HASH-keyed — it cannot detect
-      "same identity, different name", so tco''s proposed fix (HARD-FAIL on absent/non-conformant H1 instead of
-      WARN-proceed) closes the live TRIGGER but is necessary-not-sufficient; the hash-blind hole stays open to
-      any other wrong-name path. tco offered to open the PR (Founding-gated) — but onboard.py is OUR tool, so
-      the fix is ours to author (intake-queues-below-active; NOT built this turn — queued for analysis per todo).'
+      returns None when the anchor H1 is not `# dyad-<name>` (tco lived case: H1 was `# CLAUDE.md — TCO
+      Dyad Anchor`); (2) main() WARN-and-PROCEEDS with name=basename(getcwd()).lower() — only a warning,
+      no halt; (3) register(name,bh) keys its anti-collision guard on os.path.exists(directory/<name>.yaml)
+      ALONE — a basename-derived name != the registered name does NOT collide, so the birth-hash guard
+      is BYPASSED and a NEW <basename>.yaml is written with the SAME birth_hash. Trigger condition: dir-basename
+      != registry-name AND non-conformant H1 (exactly the Project-Template class the dyad_name() fix was
+      meant to close). DEEPER ROOT found while falsifying: register() dedup is NAME-keyed, not BIRTH_HASH-keyed
+      — it cannot detect "same identity, different name", so tco''s proposed fix (HARD-FAIL on absent/non-conformant
+      H1 instead of WARN-proceed) closes the live TRIGGER but is necessary-not-sufficient; the hash-blind
+      hole stays open to any other wrong-name path. tco offered to open the PR (Founding-gated) — but
+      onboard.py is OUR tool, so the fix is ours to author (intake-queues-below-active; NOT built this
+      turn — queued for analysis per todo).'
   probe_csi_guards_armed:
     title: 'PROBE: are CSI guards implemented as mechanical TRAPS (not just runnable)?'
     goal: Confirm-or-falsify that the registered CSI guards actually BLOCK vs need me to remember preflight.
@@ -264,13 +270,19 @@ nodes:
       (4) unreachable dyads stay labeled, never counted as 0.'
     summit: S1
     type: EXECUTE
-    status: READY
+    status: IN_REVIEW
     dependencies:
     - probe_directory_activity_reflection
     - plan_directory_autogen
     note: 'Local emitter shipped (bin/weekly_commits.py, steward-side, like digest.py). This node = the
       Commons-canon half: DIRECTORY.md integration + the freshness regen trigger. FO-gated. Builds the
-      plan_directory_autogen design; closed by reflect_directory_recruitment_signal (SPAOR closure).'
+      plan_directory_autogen design; closed by reflect_directory_recruitment_signal (SPAOR closure).
+      BUILT + IN_REVIEW 2026-06-09 -> Commons PR #62 (steward/directory-activity-signal). Shipped:
+      scripts/directory_activity.py + test_directory_activity.py (6/6 invariants green) +
+      .github/workflows/regenerate-activity-signal.yml (weekly cron, DIRECTORY.md-only -> no loop) +
+      populated DIRECTORY.md block (separate ## Commons activity section BEFORE ## Registered Dyads ->
+      registry --check byte-untouched, verified pure-insert 0-deletions). NOT self-merged (ADMIN perm
+      held, but proposer!=disposer -> FO gates #62). DONE only on FO merge -> then unblocks observe_*.'
   probe_directory_autogen:
     title: 'PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before
       update-ts) without breaking the deterministic --check?'
