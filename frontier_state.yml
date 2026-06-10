@@ -184,8 +184,9 @@ nodes:
     invariant: Delegating platform-engineering to a dedicated dyad frees steward's bandwidth for operating
       without losing control of the frontier/CSI substrate.
     note: 'steward-operates-platform-delegates. Delegation-candidates: csi_precommit_trap, csi_complete_armstate,
-      and arming csi_execute_tested / csi_trail_closure. Provisional ("may"); FO-direction-gated. Dogfoods
-      the armed csi_probe_invariant trap (this node carries its single invariant).'
+      and arming csi_execute_tested / csi_trail_closure. Provisional ("may"); RE-HOMED 2026-06-10: SO
+      dispose (Operator), not FO-direction-gated. Dogfoods the armed csi_probe_invariant trap (this node
+      carries its single invariant).'
   friction_intake_probe_spaor:
     title: 'PROBE: adopt PROBE-driven friction intake (SPAOR applied externally)'
     goal: Flip the frontier from top-down-hypothesized to observed-friction-driven. PROBE node-type (confirm-or-falsify
@@ -346,26 +347,27 @@ nodes:
       end-to-end, DIRECTORY.md-only, no loop); and an OUTCOME half — "it MOVES recruitment" — which is
       measurable only over weeks and is NOT asserted here. Honest close: we proved output, not outcome.
       Lesson: an EXECUTE/OBSERVE can discharge a mechanism invariant fully while its real-world EFFECT
-      stays an open empirical claim — don''t let a green pipeline masquerade as a proven outcome
-      ([[gate-durability-as-hard-condition]] sibling: a DONE cache lies about EFFECT too, not just
-      durability). Outcome-claim handed to observe_recruitment_outcome (event-gated). Trail DONE.'
+      stays an open empirical claim — don''t let a green pipeline masquerade as a proven outcome ([[gate-durability-as-hard-condition]]
+      sibling: a DONE cache lies about EFFECT too, not just durability). Outcome-claim handed to observe_recruitment_outcome
+      (event-gated). Trail DONE.'
   observe_recruitment_outcome:
     title: 'OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?'
-    goal: 'Test the OUTCOME half of probe_directory_activity_reflection against reality: do new or
-      returning operators correlate with the live directory activity signal? Spawned at the REFLECT
-      close of the recruitment-signal trail — output was proven, outcome was not.'
+    goal: 'Test the OUTCOME half of probe_directory_activity_reflection against reality: do new or returning
+      operators correlate with the live directory activity signal? Spawned at the REFLECT close of the
+      recruitment-signal trail — output was proven, outcome was not.'
     summit: S1
     type: PROBE
     status: BLOCKED
     dependencies:
     - reflect_directory_recruitment_signal
-    invariant: The live directory activity-signal measurably moves recruitment (new/returning operators correlate with it).
-    note: 'EVENT-GATE: a recruitment event (a new/returning operator joins or re-engages) — not a
-      wall-clock timer and NOT build-now (premature instrumentation = anti-wu-wei; sibling of
-      causal_attribution''s plateau-gate). When an onboarding/return happens, check whether the activity
-      signal plausibly contributed (asked? cited? landed on the directory first?). n is tiny; this is a
-      correlation sniff, not a controlled measure. Confirm -> the recruitment-value claim graduates;
-      under-deliver -> spawn a PROBE on the lever (wrong window? wrong placement? needs a CTA?).'
+    invariant: The live directory activity-signal measurably moves recruitment (new/returning operators
+      correlate with it).
+    note: 'EVENT-GATE: a recruitment event (a new/returning operator joins or re-engages) — not a wall-clock
+      timer and NOT build-now (premature instrumentation = anti-wu-wei; sibling of causal_attribution''s
+      plateau-gate). When an onboarding/return happens, check whether the activity signal plausibly contributed
+      (asked? cited? landed on the directory first?). n is tiny; this is a correlation sniff, not a controlled
+      measure. Confirm -> the recruitment-value claim graduates; under-deliver -> spawn a PROBE on the
+      lever (wrong window? wrong placement? needs a CTA?).'
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the
@@ -457,8 +459,12 @@ nodes:
     title: Graduate proactivity-calibration
     goal: Next off the graduation queue. Steward-Operator dispose.
     summit: S2
-    status: READY
+    status: DONE
     dependencies: []
+    note: GRADUATED 2026-06-10 (SO dispose "Y"). Folded into AGENT.md S-NON-NEGOTIABLE as ONE invariant
+      paired with the ambiguity hard-stop (act-pole + halt-pole, gated on recoverability x alignment).
+      Evidence ledger = the 2026-06-01 seed entries + the 2026-06-10 over-execution counter-case. Board
+      graduation-queue updated.
   automerge_own_entry_updates:
     title: Extend auto-merge-registration.yml -> cover own-entry UPDATES
     goal: 'Auto-merge a modify iff: own entry, author==owner, birth_hash+name UNCHANGED, validate_file
@@ -479,31 +485,51 @@ nodes:
     title: cairn Commons-architecture proposal (referee -> FO)
     goal: Falsify-as-peer the bin/+stones/ bifurcation; carry survivor to FO. Not ours to ratify.
     summit: S1
-    status: BLOCKED
+    status: DONE
     dependencies: []
-    note: 'DM 2026-06-06. Verified: parallel-renames fork the tree; stone.yaml likely dups our library
-      schema. FO dispose.'
+    note: 'CLOSED 2026-06-10. Referee verdict FALSIFIED=TRUE delivered to cairn (dm/dyad-cairn/2026-06-10-re-commons-architecture-proposal.md):
+      (1) parallel-rename forks the tree it would unify; (2) stone.yaml needs the field-diff vs the converged
+      library schema; (3) FO gate-disambiguation carried: scripts/ is a "what the Commons is" artifact
+      (FO-dispose shape), not a peer-shared artifact. Does not survive to carry; cairn may counter with
+      specifics.'
   nomenclature_discipline:
     title: 'Nomenclature: discipline / retire ''cycle'''
     goal: Declaration change -> Founding gate; bundle w/ the DFD publish.
     summit: S1
-    status: BLOCKED
+    status: FALSIFIED
     dependencies: []
+    type: PROBE
+    invariant: The live canon still carries the cycle-overload (recipe-sense of "cycle") and lacks a ratified
+      unit-kind term, so the staged adopt-discipline/retire-cycle declaration change is still needed.
+    note: 'FALSIFIED on grounding 2026-06-10 (disposed "create PR" -> evidence died at the target, PR
+      not created; retyped EXECUTE->PROBE to record the refutation honestly). BOTH halves dissolved by
+      the README/Totality rewrite: (1) recipe-sense of "cycle" is GONE from live canon (no S-The-cycles,
+      no "proven recipe"; every remaining use is the kept dyadic-cycle unit sense); (2) canon ratified
+      the OPPOSITE term: README:19 + CONTRIBUTING:20 read "Playbooks (formerly disciplines)". Shipping
+      the staged PR would push against a landed canon decision. cold-path-barriers-are-stale, third instance.'
   pfp_to_commons:
     title: PFP -> Commons (as discipline)
     goal: Cross PFP as a library discipline with its n=5 ledger.
     summit: S2
-    status: BLOCKED
-    dependencies:
-    - nomenclature_discipline
-    note: 'Real edge: needs `discipline` nomenclature ratified first.'
+    status: DONE
+    dependencies: []
+    note: 'VERIFIED IN CANON 2026-06-10 (read from source, not inferred): Proposal-Framing is live as
+      README S-playbooks entry + library/proposal-framing/PLAYBOOK.md + ledger/ (seed + n1 survived-corrections),
+      cited as CONTRIBUTING''s worked example. Crossed as a Playbook -- the nomenclature dependency died
+      with the discipline->Playbook rename (edge removed; nomenclature_discipline FALSIFIED same turn).'
   healer_access_dispose:
     title: 'Healer #2-access dispose'
     goal: 'FO gate. PRIORITY RISING (wu-wei #1). The ''pre-registration'' barrier was FALSIFIED; real
       barrier was visibility (#52).'
     summit: S1
-    status: BLOCKED
+    status: IN_REVIEW
     dependencies: []
+    note: 'GROUNDED 2026-06-10: the Joining access fork is ALREADY RESOLVED in mechanism (onboard.py teaches
+      the no-access fork-PR path; auto-merge triad lands it) but canon contradicted it (DIRECTORY.md "write
+      access is the coarse gate"). Commons PR #66 (steward/access-model) closes the fork as-resolved:
+      DIRECTORY.md line fixed + CONTRIBUTING S-The-access-model (3 lanes: self-authorizing/contested/sovereign;
+      contest is the gate, write access a convenience). Also discharges wu-wei #1 residue. FO merge =
+      the dispose, recorded.'
   wuwei3_semantic_ledger:
     title: 'wu-wei #3 - centralized semantic-ledger'
     goal: Verify stress-tests is Commons canon, not bond-particular, first.
@@ -557,8 +583,11 @@ nodes:
     title: falsify.py / validate_falsification CI on falsification/ PRs
     goal: Founding gate (Commons enforcement; the reduce-FO-burden payoff).
     summit: S1
-    status: BLOCKED
+    status: IN_REVIEW
     dependencies: []
+    note: 'Commons PR #65 (steward/falsify-ci) open 2026-06-10 per FO dispose. validate-falsification.yml:
+      base validator, head data (no PR code executed); red-checks the human-review residue the auto-merge
+      gate routes past. Oracle: live ledger 9/9 PASS exit 0. FO merge = install (protected .github/).'
   summit_ratified:
     title: Steward summit S3 ratified + broadcast
     goal: 'AGENT.md Telos + directory #56 + README, all consistent. RATIFIED 2026-06-06 (FO gavel).'

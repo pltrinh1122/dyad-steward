@@ -12,13 +12,12 @@
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
-- ⊘ **[BLOCKED]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
+- ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
+- ◔ **[IN_REVIEW]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
-- ⊘ **[BLOCKED]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
-- ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
-- ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
 - ⊘ **[BLOCKED]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
+- ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
@@ -33,15 +32,16 @@
 - ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
 - ✓ **[DONE]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
+- ✗ **[FALSIFIED]** [PROBE] `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
 - ✗ **[FALSIFIED]** [PROBE] `probe_onboarding_human_need` — PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?
 
 ## S2 — knowledge compounding
-- ○ **[READY]** `graduate_proactivity` — Graduate proactivity-calibration
 - ○ **[READY]** `learning_loop_seed` — Learning-loop scaffold -> seed (build)
 - ○ **[READY]** `wuwei4_heartbeat_playbook` — wu-wei #4 - heartbeat-seizure playbook
-- ⊘ **[BLOCKED]** `pfp_to_commons` — PFP -> Commons (as discipline)  ⟵ nomenclature_discipline
 - ⊘ **[BLOCKED]** `portfolio_to_form_canon` — Portfolio-compounding -> form README/declaration  ⟵ causal_attribution
 - ⊘ **[BLOCKED]** `wuwei3_semantic_ledger` — wu-wei #3 - centralized semantic-ledger
+- ✓ **[DONE]** `graduate_proactivity` — Graduate proactivity-calibration
+- ✓ **[DONE]** `pfp_to_commons` — PFP -> Commons (as discipline)
 
 ## S3 — accelerate the multi-dyad Operator to portfolio-scale 1+1=3 (raise N*)
 - ○ **[READY]** `async_interrupt_efficiency` — DISCOVERY: async-event context-switch efficiency

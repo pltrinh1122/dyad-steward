@@ -105,8 +105,9 @@
   push-to-main grant · **`board.md`** + `trail` vocab.
 
 ## GRADUATION queue — aging on lived evidence (graduation is a dispose, not a seam act)
-proactivity-calibration · PR-as-audit-bundle · substrate-access · verify-with-actual-tool ·
+PR-as-audit-bundle · substrate-access · verify-with-actual-tool ·
 minimum-force · dual-generation-decorrelation theory.
+*(Graduated: proactivity-calibration → `AGENT.md` §NON-NEGOTIABLE, 2026-06-10, Steward-Operator gate.)*
 
 ## Cross-references
 `board-as-dag.md` (resolved → here) · `nba-dag.md` · `dialectic/stand-downs/2026-06-02-…` (source) ·
