@@ -9,7 +9,6 @@
 - ○ **[READY]** `document_messaging_arch` — EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
-- ○ **[READY]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
@@ -18,6 +17,7 @@
 - ⊘ **[BLOCKED]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
+- ⊘ **[BLOCKED]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
@@ -31,6 +31,7 @@
 - ✓ **[DONE]** [PROBE] `probe_directory_activity_reflection` — PROBE: does a period-bounded activity reflection in the directory provide real value to (potential) operators?
 - ✓ **[DONE]** [PROBE] `probe_directory_autogen` — PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before update-ts) without breaking the deterministic --check?  ⟵ probe_directory_activity_reflection
 - ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
+- ✓ **[DONE]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 - ✗ **[FALSIFIED]** [PROBE] `probe_onboarding_human_need` — PROBE: does re-deriving onboarding from the human-need frame materially change the flow for a non-technical human?
 
