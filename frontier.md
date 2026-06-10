@@ -7,6 +7,7 @@
 ## S1 — commons process-integrity
 - ○ **[READY]** `commons_gitignore` — EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED
 - ○ **[READY]** `document_messaging_arch` — EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED
+- ○ **[READY]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `totality_readme` — Totality README review
@@ -15,7 +16,6 @@
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ◔ **[IN_REVIEW]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
-- ⊘ **[BLOCKED]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)

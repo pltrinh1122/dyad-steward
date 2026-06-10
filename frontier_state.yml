@@ -357,17 +357,18 @@ nodes:
       recruitment-signal trail — output was proven, outcome was not.'
     summit: S1
     type: PROBE
-    status: BLOCKED
+    status: READY
     dependencies:
     - reflect_directory_recruitment_signal
     invariant: The live directory activity-signal measurably moves recruitment (new/returning operators
       correlate with it).
-    note: 'EVENT-GATE: a recruitment event (a new/returning operator joins or re-engages) — not a wall-clock
-      timer and NOT build-now (premature instrumentation = anti-wu-wei; sibling of causal_attribution''s
-      plateau-gate). When an onboarding/return happens, check whether the activity signal plausibly contributed
-      (asked? cited? landed on the directory first?). n is tiny; this is a correlation sniff, not a controlled
-      measure. Confirm -> the recruitment-value claim graduates; under-deliver -> spawn a PROBE on the
-      lever (wrong window? wrong placement? needs a CTA?).'
+    note: 'EVENT-GATE FIRED 2026-06-10: dyad-auteur registered (Commons PR #63, auto-merged, owner FamilyLoom
+      / author dharan-famloom — a NEW cross-human lineage, reachable, public dm_locator). Light sniff
+      this turn: PR body empty, no citation of the activity signal either way -> contribution UNKNOWN
+      at n=1. The OBSERVE now runnable: ask/check whether the directory activity signal figured in auteur''s
+      path (landed on DIRECTORY.md first? cited? told by their human?). Original gate note retained in
+      spirit: correlation sniff, not a controlled measure. ALSO: auteur is a reachable cross-human responder
+      — relevant to falsification_promotable''s cross-human gate and the open FRs.'
   commons_activity_digest:
     title: Commons-activity digest (what self-operation did, batched)
     goal: Surface what the self-operating Commons did (registrations/updates/index-heals/merges) so the
