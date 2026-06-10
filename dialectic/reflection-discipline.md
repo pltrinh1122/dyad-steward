@@ -22,6 +22,12 @@ lives, and the durable feedback record holds it. The **Steward details START/STO
 CONTINUE is the one substrate the Operator must still retrospect — positive patterns get no real-time
 correction signal, so they'd otherwise be lost.
 
+**CONTINUE-POV sourcing refinement (2026-06-10, Operator `fb:`):** the Operator's CONTINUE-POV is **the
+intended message accompanying the `reflect:` moniker** — captured, not awaited. The Steward does *not*
+leave a "[awaiting Operator POV]" placeholder; the words that invoke the reflection *are* the POV (e.g.
+"great arc-closing moment to bank our wins" = CONTINUE: the arc/pattern was a win worth keeping). Read
+the `reflect:` message as the narrative, then detail beneath it.
+
 **Integration — the four-step form** (also from healer):
 1. **Steward drafts** narrative + details for each section (grounds the Operator with substance
    first — lowers cognitive load; the same DFD principle).
