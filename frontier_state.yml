@@ -658,3 +658,14 @@ nodes:
     type: EXECUTE
     status: READY
     dependencies: []
+  steering_vectors_onboard:
+    title: 'EXECUTE: onboard.py output as guards + steering vectors (Commons, FO-gated)'
+    goal: 'Retrofit onboard.py instruction output per the steering invariant (dialectic/steering-invariant.md):
+      each emitted instruction becomes a guard the consuming Agent can check (the invariant first: e.g.
+      "the anchor auto-loads only in a future session") + the vector (state-change + re-check), replacing
+      bare imperatives ("restart or /clear"). Steward proposes -> FO gates (Commons scripts/). Sibling
+      of steering_vectors_local (steward-side); prior art dyad-cairn d28bd2f.'
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
