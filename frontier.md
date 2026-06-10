@@ -7,9 +7,9 @@
 ## S1 — commons process-integrity
 - ○ **[READY]** `commons_gitignore` — EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED
 - ○ **[READY]** `document_messaging_arch` — EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED
-- ○ **[READY]** [OBSERVE] `observe_directory_recruitment_signal` — OBSERVE: test the live directory signal against reality  ⟵ execute_directory_commit_reflection
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
+- ○ **[READY]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
@@ -18,12 +18,12 @@
 - ⊘ **[BLOCKED]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ⊘ **[BLOCKED]** `healer_access_dispose` — Healer #2-access dispose
 - ⊘ **[BLOCKED]** `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'
-- ⊘ **[BLOCKED]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
 - ✓ **[DONE]** `falsification_channel` — Inter-dyad falsification channel LIVE (provisional)
+- ✓ **[DONE]** [OBSERVE] `observe_directory_recruitment_signal` — OBSERVE: test the live directory signal against reality  ⟵ execute_directory_commit_reflection
 - ✓ **[DONE]** `onboarding_anchor_activation_note` — Onboarding completion: emit 'restart/clear to activate your anchor for future sessions'  ⟵ probe_onboarding_friction
 - ✓ **[DONE]** `onboarding_btw_pointer` — Surface a non-blocking question-channel pointer in the onboarding flow  ⟵ probe_onboarding_friction
 - ✓ **[DONE]** [PLAN] `plan_directory_autogen` — PLAN: separate scheduled activity block + embedded as-of timestamp (the auto-gen design)  ⟵ probe_directory_autogen

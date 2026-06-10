@@ -324,7 +324,7 @@ nodes:
       fresh (not stale/lying)? Empirical gate before any conclusion.'
     summit: S1
     type: OBSERVE
-    status: READY
+    status: DONE
     dependencies:
     - execute_directory_commit_reflection
     note: The Observe phase I keep skipping (verify-with-actual-tool). Measure the shipped result before
@@ -337,7 +337,7 @@ nodes:
       Codify the outcome to substrate; spawn the next PROBE if the signal under-delivers (e.g. wrong window).'
     summit: S1
     type: REFLECT
-    status: BLOCKED
+    status: READY
     dependencies:
     - observe_directory_recruitment_signal
     note: 'Closure: trail isn''t DONE until OBSERVE+REFLECT. Asserts the single trail invariant, not the
