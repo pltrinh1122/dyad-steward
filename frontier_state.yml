@@ -270,19 +270,21 @@ nodes:
       (4) unreachable dyads stay labeled, never counted as 0.'
     summit: S1
     type: EXECUTE
-    status: IN_REVIEW
+    status: DONE
+    tests: commons/scripts/test_directory_activity.py (6/6 — all 4 plan invariants; deterministic, no
+      live gh)
     dependencies:
     - probe_directory_activity_reflection
     - plan_directory_autogen
     note: 'Local emitter shipped (bin/weekly_commits.py, steward-side, like digest.py). This node = the
       Commons-canon half: DIRECTORY.md integration + the freshness regen trigger. FO-gated. Builds the
-      plan_directory_autogen design; closed by reflect_directory_recruitment_signal (SPAOR closure).
-      BUILT + IN_REVIEW 2026-06-09 -> Commons PR #62 (steward/directory-activity-signal). Shipped:
-      scripts/directory_activity.py + test_directory_activity.py (6/6 invariants green) +
-      .github/workflows/regenerate-activity-signal.yml (weekly cron, DIRECTORY.md-only -> no loop) +
-      populated DIRECTORY.md block (separate ## Commons activity section BEFORE ## Registered Dyads ->
-      registry --check byte-untouched, verified pure-insert 0-deletions). NOT self-merged (ADMIN perm
-      held, but proposer!=disposer -> FO gates #62). DONE only on FO merge -> then unblocks observe_*.'
+      plan_directory_autogen design; closed by reflect_directory_recruitment_signal (SPAOR closure). BUILT
+      + IN_REVIEW 2026-06-09 -> Commons PR #62 (steward/directory-activity-signal). Shipped: scripts/directory_activity.py
+      + test_directory_activity.py (6/6 invariants green) + .github/workflows/regenerate-activity-signal.yml
+      (weekly cron, DIRECTORY.md-only -> no loop) + populated DIRECTORY.md block (separate ## Commons
+      activity section BEFORE ## Registered Dyads -> registry --check byte-untouched, verified pure-insert
+      0-deletions). NOT self-merged (ADMIN perm held, but proposer!=disposer -> FO gates #62). DONE only
+      on FO merge -> then unblocks observe_*.'
   probe_directory_autogen:
     title: 'PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before
       update-ts) without breaking the deterministic --check?'
@@ -322,7 +324,7 @@ nodes:
       fresh (not stale/lying)? Empirical gate before any conclusion.'
     summit: S1
     type: OBSERVE
-    status: BLOCKED
+    status: READY
     dependencies:
     - execute_directory_commit_reflection
     note: The Observe phase I keep skipping (verify-with-actual-tool). Measure the shipped result before
