@@ -53,6 +53,7 @@
 - ✓ **[DONE]** `summit_ratified` — Steward summit S3 ratified + broadcast
 
 ## b1 — capacity-to-climb (enabling infrastructure)
+- ○ **[READY]** `steering_vectors_local` — EXECUTE: our blocking guards emit steering vectors, not just failure reasons
 - ⊘ **[BLOCKED]** `csi_complete_armstate` — EXECUTE: make bin/csi.py the complete arm/disarm list (all 3 surfaces)  ⟵ probe_csi_armstate, probe_delegate_platform_dyad
 - ✓ **[DONE]** `adopt_cairn_frontier_rack_csi` — Adopt cairn's frontier/rack + CSI guards
 - ✓ **[DONE]** `automode_unblock_apply` — Operator applies the autoMode.allow exception so direct push to main stops being classifier soft-denied

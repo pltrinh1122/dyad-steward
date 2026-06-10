@@ -648,3 +648,13 @@ nodes:
       mid-riff; surfaced lean (held loosely): thin, defect-earned, Commons-homed, resting-state audit
       YES; comprehensive steward-side correctness spec NO. Open Qs + 3 cautions in the riff doc. BLOCKED
       encodes racked (frontier has no RACKED status — 2nd time wanted; see riff doc adjacent-noticing).'
+  steering_vectors_local:
+    title: 'EXECUTE: our blocking guards emit steering vectors, not just failure reasons'
+    goal: 'Retrofit preflight.py / frontier.py validate / the pre-commit hook per the steering invariant
+      (dialectic/steering-invariant.md): each BLOCK pairs with a vector naming the target state + re-check.
+      Prior art: dyad-cairn d28bd2f (9 files, [STEERING VECTOR] pattern). onboard.py completion output
+      is the Commons-side sibling (FO-gated, separate).'
+    summit: b1
+    type: EXECUTE
+    status: READY
+    dependencies: []
