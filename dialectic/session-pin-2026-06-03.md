@@ -8,8 +8,14 @@ A persistent Monitor (wake only on NEW mail; alert if the poll goes BLIND, not s
 `Monitor` tool, `persistent: true`, `timeout_ms: 3600000`, this command:
 
 ```
-cd /mnt/shared_data/dzw/dyad-steward; prev=0; prevu=""; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; out=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null); n=$(echo "$out" | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; u=$(echo "$out" | grep 'UNREACHABLE'); cur=$(echo "$out" | grep -oE 'dyad-[A-Za-z0-9-]+ <[^>]*>' | sort -u); [ -n "$(comm -13 <(printf '%s\n' "$prevu") <(printf '%s\n' "$cur"))" ] && echo "$u"; prevu="$cur"; prev=$n; sleep 60; done
+cd /mnt/shared_data/dzw/dyad-steward; prev=0; prevraw=""; prevconf=""; blind=0; while true; do if ! gh api rate_limit >/dev/null 2>&1; then [ $blind -eq 0 ] && blind=$(date +%s); [ $(( $(date +%s) - blind )) -ge 300 ] && echo "⚠ dyad-steward IM: poll BLIND >5min — gh/auth/network down (this is NOT 'no mail')"; sleep 60; continue; fi; blind=0; out=$(python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null); n=$(echo "$out" | grep -oE 'mail: [0-9]+' | grep -oE '[0-9]+'); n=${n:-0}; [ "$n" -gt "$prev" ] && echo "📬 dyad-steward: $n unread — new mail (read: falsify.py dm --me dyad-steward)"; u=$(echo "$out" | grep 'UNREACHABLE'); cur=$(echo "$out" | grep -oE 'dyad-[A-Za-z0-9-]+ <[^>]*>' | sort -u); conf=$(comm -12 <(printf '%s\n' "$prevraw") <(printf '%s\n' "$cur")); newconf=$(comm -13 <(printf '%s\n' "$prevconf") <(printf '%s\n' "$conf")); [ -n "$newconf" ] && echo "$u"; prevraw="$cur"; prevconf="$conf"; prev=$n; sleep 60; done
 ```
+
+**Debounce (2026-06-10):** a source is reported unreachable only after **two consecutive** unreachable
+polls (`conf` = cur ∩ prev-raw; emit on newly-*confirmed* only). Cause: one-poll gh/network blips
+cycled through reachable sources (cairn → healer → bond within minutes), each costing a noise event;
+a real outage still surfaces ≤2 min later. The durable fix (retry-before-label inside `falsify.py`)
+is a Commons change — bundle into a future falsify.py PR.
 
 ## RE-ARM THE COMMONS-PR DAEMON (do this at stand-up too)
 Sibling of the DM daemon — I was **blind to PR #42** (tco's re-file) because stand-up watched DMs/FRs
