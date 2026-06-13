@@ -48,5 +48,5 @@ anchor nudge) · F6 (fetch-raw note). **F5 = no-op (resolved).** Strongest two (
 
 > Cross-link: `healer-init-join-feedback.md` (triangulated; F2 convergent; F5 = healer's #2-... no,
 > healer's clone-vs-submodule) · `dual-generation-decorrelation.md` (dyad-bond = the decorrelated
-> validator) · `AGENT.md` `+1 summit` vocab (F1) · `steward-validation-infra.md` (F4 = a regression a
+> validator) · `DYAD.md` `+1 summit` vocab (F1) · `steward-validation-infra.md` (F4 = a regression a
 > Tier-1 invariant could have flagged).

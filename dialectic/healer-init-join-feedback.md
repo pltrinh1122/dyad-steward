@@ -56,5 +56,5 @@
   `commons-contribution-lifecycle.md` §Joining. Highest conceptual weight; lowest mechanical clarity.
 
 > Cross-link: `commons-contribution-lifecycle.md` (§Joining = self-registration; the access fork lands
-> here) · `AGENT.md` `+1 summit` vocab (the #3 criterion) · `commons-onboarding-followups.md` (prior
+> here) · `DYAD.md` `+1 summit` vocab (the #3 criterion) · `commons-onboarding-followups.md` (prior
 > onboarding intake, SUBSUMED by PR #14) · `commons-contributing-md-gap.md` (the sibling Healer intake).

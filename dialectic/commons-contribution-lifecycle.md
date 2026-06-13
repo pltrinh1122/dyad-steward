@@ -297,7 +297,7 @@ real re-composition is driven by *pooled evidence*, not assertion.
     generated contributions; (b) define the mechanical contribution-gate predicate; (c) stage the
     AGENT.md self-registration step for the Founding gate.*
 - **Cross-link:** `sharing-discipline.md` (move-1 access-map; this is move-2) · `kb/dfd.md` (the
-  dogfood + its ledger) · `AGENT.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
+  dogfood + its ledger) · `DYAD.md` §Ontology (nouns/verbs — *sharpened*: Steward owns the **types**,
   community owns the **tokens**; the type lives in the declaration → Founding gates it) · §Deferrals
   (library-contribution channel — **largely closed** by this cycle: the library lives *in* the
   declaration, so §Governance's PR gate already governs it) · `telos-vision.md` Part V

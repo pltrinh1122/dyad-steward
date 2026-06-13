@@ -27,7 +27,7 @@ Enablement failure at the highest-value onward step, surfaced by a real consumer
 
 ## Why it's absent (the root — not a simple missing file)
 
-The file is missing **because the contribution channel is itself an open deferral** (`AGENT.md`
+The file is missing **because the contribution channel is itself an open deferral** (`DYAD.md`
 §Deferrals: form §Governance names *PR = dispose gate*, but the **library-best-practice** channel "the
 form's §Governance does not yet specify"). The README links forward to the consumer-facing surface of a
 process we are still settling in `commons-contribution-lifecycle.md`. So the dead link is the
@@ -50,4 +50,4 @@ Lean: **(A) now, (B) as the channel matures** — honest, unblocks the consumer,
 open dialectic.
 
 > Sibling: `commons-contribution-lifecycle.md` (the channel being settled — this is its README surface) ·
-> `AGENT.md` §Deferrals (library-best-practice channel, open) · `pr-gate-intent.md`.
+> `DYAD.md` §Deferrals (library-best-practice channel, open) · `pr-gate-intent.md`.

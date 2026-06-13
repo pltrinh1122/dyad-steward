@@ -1,7 +1,7 @@
 # PFP — the CTA failure-mode
 
 *Settled knowledge. First harvest of the Learning Discipline. The rule lives in
-`../AGENT.md` §PFP; this file holds the **lesson behind the rule** — why the rule exists and
+`../DYAD.md` §PFP; this file holds the **lesson behind the rule** — why the rule exists and
 how it was earned.*
 
 ## The lesson
@@ -12,7 +12,7 @@ the Operator from *authoring* (costly) to *validating* (cheap). The CTA is where
 either delivered or betrayed. The other slots (THESIS / ANTI-THESIS / SYNTHESIS / ref) supply the
 Operator's validation; the CTA is the ask itself, so a malformed CTA defeats the frame no matter
 how good the rest is. *(The frame has since evolved to `[CTA·Y/N] / [THESIS] / [ANTI-THESIS] /
-[SYNTHESIS] → ref` — see `../AGENT.md` §PFP; the failure-modes below predate the rename but
+[SYNTHESIS] → ref` — see `../DYAD.md` §PFP; the failure-modes below predate the rename but
 transfer directly.)*
 
 ## The two failure-modes (each caught in real use, 2026-05-29)
@@ -86,5 +86,5 @@ it — and it has now jumped from the CTA slot to the show, confirming the drift
 ## Forward
 
 - Candidate for the **library track** (a best-practice on the *feedback* cycle: name → fix →
-  codify). See `../AGENT.md` §Contribution candidates. Bar to clear before proposing: synergy
+  codify). See `../DYAD.md` §Contribution candidates. Bar to clear before proposing: synergy
   demonstrated across more dyads than just us.
