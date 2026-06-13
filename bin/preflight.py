@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """preflight.py — Tier-1 repo-invariants checker (steward-validation-infra, CONVERGED 2026-06-02).
 
-The MECHANICAL half of validation (the behavioral half is the verify triad in AGENT.md): a standing
+The MECHANICAL half of validation (the behavioral half is the verify triad in DYAD.md): a standing
 invariants check the artifacts run on themselves BEFORE a PR — the emergence move, no Steward in the
 per-check loop. Plain Python, no framework (mirrors the Commons' validate_registry.py grain).
 

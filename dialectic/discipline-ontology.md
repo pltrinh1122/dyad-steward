@@ -10,7 +10,7 @@
 > Separating records **is the structure-vs-content discrimination applied one level up** — the same
 > cut two-pronged atomicity (below) exists to enable. **The ontology is not sacred:** it is a
 > knowledge-unit subject to this same model, falsifiable like any other. **Home:** Steward-owned
-> (the Steward owns the *types*; the community owns the *tokens* — `AGENT.md` §Ontology). Promotion to
+> (the Steward owns the *types*; the community owns the *tokens* — `DYAD.md` §Ontology). Promotion to
 > the form is a **declaration change → Founding gate**.
 
 ## The claim (this ontology's own falsifiable +1)
@@ -147,7 +147,7 @@ recomposition of ledger entries.
   separately so the *schema* and the *lifecycle mechanism* falsify independently too).
 - **First instance / ledger seed:** `kb/dfd.md` (DFD — n=5 on its *own* claim; n=1 contribution to
   *this schema's* ledger).
-- **Governance:** `AGENT.md` §Ontology (Steward owns types, community owns tokens; type lives in the
+- **Governance:** `DYAD.md` §Ontology (Steward owns types, community owns tokens; type lives in the
   declaration → Founding gates schema changes).
 - **Generalization principle** *(noted, not yet acted)*: the foundational **knowledge-unit /
   context-unit** cut (in `commons-contribution-lifecycle.md`) is *also* an ontology-unit that could

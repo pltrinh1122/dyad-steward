@@ -8,7 +8,7 @@
 > migration. Sections the frontier DAG does *not* model (⟳ RE-ARM daemon · WATCH · GRADUATION queue) are
 > retained here as the live home; LANDED prose stays as the archive (compact DONE nodes live in the frontier).
 
-> **Vocabulary** *(ratified 2026-06-02; `AGENT.md` §Vocabulary)*: each item is a **`trail`** — a line of
+> **Vocabulary** *(ratified 2026-06-02; `DYAD.md` §Vocabulary)*: each item is a **`trail`** — a line of
 > work ascending toward a **`+1 summit`**; a **dependency** is an edge between trails; **`path`** is
 > reserved for the graph sense (a chain of trails). The board is **summit-rooted** — every trail traces
 > up to a summit (S1 `commons process-integrity` · S2 `knowledge compounding`), except
@@ -42,9 +42,9 @@
 | **wu-wei #2 — onboard.py anchor-injection** | Steward propose → FO gate | enablement gap (careful near birth shim) |
 | **Totality README review** | Steward | extraction + rename all landed |
 | **Graduate proactivity-calibration** | Steward-Operator dispose | next off the graduation queue |
-| **Steward summit — RATIFIED 2026-06-06** ✅ | done (FO gavel) | AGENT.md §Telos sharpened + `commons/directory/dyad-steward.yaml` summit #3 (Commons PR #56 merged) + pushed `066cca0`. Record: `dialectic/acceleration-thesis-and-steward-summit.md`. README front-door updated to match. |
+| **Steward summit — RATIFIED 2026-06-06** ✅ | done (FO gavel) | DYAD.md §Telos sharpened + `commons/directory/dyad-steward.yaml` summit #3 (Commons PR #56 merged) + pushed `066cca0`. Record: `dialectic/acceleration-thesis-and-steward-summit.md`. README front-door updated to match. |
 | **Extend `auto-merge-registration.yml` → cover own-entry UPDATES** *(survivor: "directory update should auto-merge")* | Steward propose → FO installs (protected `.github/`) | **Verified gap (read the workflow):** the Action auto-merges pure ADDs only (`status: added`); modify-existing routes to human review *by design* → my summit-update PR #56 was merged **manually**, not auto. Extend to auto-merge a *modify* iff: (a) touches only the author's OWN `directory/<entry>.yaml`, (b) PR author == entry owner, (c) **birth_hash + name UNCHANGED** (only summits/locator/dm_locator mutable), (d) `validate_file` PASS. Strictly harder than the add-case (must guard frozen fields + ownership). |
-| **`dfd`→`pfp` ref-decay (repo-wide) + preflight refs-coverage gap** *(survivor: README falsification, peer-confirmed)* | Steward curate — **grain-confirm first** | README locally fixed (3 dead refs + dangling `§DFD` anchor ×2). Decay is repo-wide: `AGENT.md:248`, `contributing-discipline.md:144`, `commons-contribution-lifecycle.md:181,299`, `dyad-ui.md:40,57,74,142`. Confirm **DFD-vs-PFP are distinct concepts vs a rename** before any mass-fix ([[ingraining-lives-in-substrate]]: fix the source, but only once the grain's confirmed). Also: `preflight.py [refs]` passed clean despite the dead README links → it doesn't lint `.md`-prose links or `§`-anchors; widen coverage. |
+| **`dfd`→`pfp` ref-decay (repo-wide) + preflight refs-coverage gap** *(survivor: README falsification, peer-confirmed)* | Steward curate — **grain-confirm first** | README locally fixed (3 dead refs + dangling `§DFD` anchor ×2). Decay is repo-wide: `DYAD.md:248`, `contributing-discipline.md:144`, `commons-contribution-lifecycle.md:181,299`, `dyad-ui.md:40,57,74,142`. Confirm **DFD-vs-PFP are distinct concepts vs a rename** before any mass-fix ([[ingraining-lives-in-substrate]]: fix the source, but only once the grain's confirmed). Also: `preflight.py [refs]` passed clean despite the dead README links → it doesn't lint `.md`-prose links or `§`-anchors; widen coverage. |
 
 ## BLOCKED — ⟵ real precedence edge
 | Item | ⟵ blocked-by |
@@ -107,8 +107,8 @@
 ## GRADUATION queue — aging on lived evidence (graduation is a dispose, not a seam act)
 PR-as-audit-bundle · substrate-access · verify-with-actual-tool ·
 minimum-force · dual-generation-decorrelation theory.
-*(Graduated: proactivity-calibration → `AGENT.md` §NON-NEGOTIABLE, 2026-06-10, Steward-Operator gate.)*
+*(Graduated: proactivity-calibration → `DYAD.md` §NON-NEGOTIABLE, 2026-06-10, Steward-Operator gate.)*
 
 ## Cross-references
 `board-as-dag.md` (resolved → here) · `nba-dag.md` · `dialectic/stand-downs/2026-06-02-…` (source) ·
-`wu-wei-feedback-queued.md` · `AGENT.md` §Deferrals / §Contribution candidates.
+`wu-wei-feedback-queued.md` · `DYAD.md` §Deferrals / §Contribution candidates.

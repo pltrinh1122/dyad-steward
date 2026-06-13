@@ -2,7 +2,7 @@
 """state.py — emit canonical live state so a "where-things-stand" recap is THIS TOOL'S OUTPUT,
 not prose from a stale context-cache.
 
-The MECHANICAL half of the verify-reporting discipline (AGENT.md §NON-NEGOTIABLE; [[verify-with-actual-
+The MECHANICAL half of the verify-reporting discipline (DYAD.md §NON-NEGOTIABLE; [[verify-with-actual-
 tool]], n≥3): the context window is a stale-by-default cache of mutable remote state — PR open/merged,
 local↔origin sync — and I have mis-reported it from memory repeatedly across sessions. This queries the
 SOURCE this run and prints it. Run it at the seams the slip fires — the closing recap, Stand-Up,

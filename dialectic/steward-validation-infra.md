@@ -4,7 +4,7 @@
 > this" + `[IDEATE]`). Context: dyad-bond is on the frontier of an **independent validator for
 > generative work**; dyad-wu-wei has mature `test/` infra *because it generates a lot of code*. Question:
 > **the most wu-wei level of validation infra for Steward-generated work.** Complements the (behavioral)
-> verify triad in `AGENT.md`.
+> verify triad in `DYAD.md`.
 >
 > **HOME = Steward's repo (FO `[ALIGN]` 2026-06-02).** This is a **Steward *verb*** — validation of *our
 > own generation* — so per `nouns-vs-verbs` / single-home it lives **here** (`dyad-steward/`), NOT the
@@ -112,7 +112,7 @@ Steward-Operator go.*
    conflation = 1+1=2). T3 is frontier — watch dyad-bond, don't build.
 3. **Invariants are defect-earned** (verify-triad-ledger model): one enters only when a lived defect
    proves it missing. Ledger so far: per-element types · reference integrity · record-shape · cold-path.
-4. **Two halves.** Behavioral (the verify triad in `AGENT.md`, an actor grounds reality) + mechanical
+4. **Two halves.** Behavioral (the verify triad in `DYAD.md`, an actor grounds reality) + mechanical
    (the invariants infra, the artifact self-checks). The mechanical half is the **emergence move** — no
    Steward in the per-check loop.
 
@@ -138,8 +138,8 @@ The pattern — **a repo-invariants checker whose invariants each carry their mo
 library-`discipline` candidate for *every* Dyad (proportioned to each one's generated grain), and it
 dovetails with dyad-bond's independent-validator frontier (Tier 3). Flagged, not banked.
 
-> Cross-link: `AGENT.md` §NON-NEGOTIABLE verify triad (the behavioral half) · `contributing-discipline.md`
+> Cross-link: `DYAD.md` §NON-NEGOTIABLE verify triad (the behavioral half) · `contributing-discipline.md`
 > (CI=form/FO=substance; `validate_*` ; schema.json) · `universal-contribution-mechanism.md` (3b
 > metadata-rep — a *Commons-side*, Founding-gated track, distinct from this Steward-repo infra) ·
-> `healer-init-join-feedback.md` (the lived defect ledger) · `AGENT.md` §Ontology (nouns-vs-verbs —
+> `healer-init-join-feedback.md` (the lived defect ledger) · `DYAD.md` §Ontology (nouns-vs-verbs —
 > *why* this homes here).

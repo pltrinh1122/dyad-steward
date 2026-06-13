@@ -31,7 +31,7 @@ the 2 relevant files instead of perusing 20.
 
 | Attack | Verdict |
 |---|---|
-| **Just a good README/anchor?** dyad-steward already has a mapping `AGENT.md`. | **Survives — iff consumer-shaped.** The anchor is *internal* ("load this for *my* work"); the sharing map is *external* ("an outside Dyad wants slice X → read Y§Z"). Different reader, different optimization. **Guard:** must not degenerate into a 2nd copy of the anchor. |
+| **Just a good README/anchor?** dyad-steward already has a mapping `DYAD.md`. | **Survives — iff consumer-shaped.** The anchor is *internal* ("load this for *my* work"); the sharing map is *external* ("an outside Dyad wants slice X → read Y§Z"). Different reader, different optimization. **Guard:** must not degenerate into a 2nd copy of the anchor. |
 | **Premature optimization / wu-wei** — the Operator concedes the repo "isn't too large yet." | **Reshapes the survivor.** Building token-saving infra for a problem that doesn't bite yet is speculative. *But* a **convention inherited at birth is nearly free; retrofitting a map onto N grown Dyads later is expensive.** → seed the **thin convention now**, defer the **strict protocol**. The reason to act now is the **habit, not the size**. |
 | **Does a map help an *unanticipated* query?** | **Survives.** It exposes *organization* (what's where, what each area is for, stable entry-points) — not pre-answered queries — which is exactly what lets a consumer navigate cheaply. Read 1 map → 2 files, not 20. |
 | **Standardization** — without a known canonical location, each Dyad invents its own map and consumers still hunt for it. | **The submodule earns its keep — later.** `common/` gives every connected Dyad a *guaranteed path* to look. That is the strict-protocol form: a **commons change → Founding-Operator gate / PR**, deferred. |
@@ -64,7 +64,7 @@ real cross-Dyad ingest reads the map + ≤ a few files (not the whole repo); new
 by default.
 
 **Refuted if:**
-- **Anchor-duplication** — the map merely restates `AGENT.md` → drop it, point consumers at the anchor.
+- **Anchor-duplication** — the map merely restates `DYAD.md` → drop it, point consumers at the anchor.
 - **Ignored** — ingesting Dyads crawl anyway (don't read the map first) → it isn't findable/trusted;
   standardize the location (escalate to the protocol) or drop.
 - **Speculative-build** — the strict protocol/submodule gets built before size bites or before the
@@ -80,7 +80,7 @@ dialectic infrastructure + barrier-lowering.
 ## Open questions (attack surface)
 
 - ~~**Location**~~ **RESOLVED (2026-05-30): the root `README.md`.** Not a dedicated `SHARING.md` (a
-  parallel entry-point fights the README grain — anti-wu-wei) and not a `AGENT.md` section (that's the
+  parallel entry-point fights the README grain — anti-wu-wei) and not a `DYAD.md` section (that's the
   *internal* anchor; the map's audience is the *outsider* arriving at the repo, which is README's
   audience). README already *is* the consumer-facing entry-point; the map is what a good one contains.
 - **Granularity** — does the map point at files, or at sections/anchors within files?
@@ -93,6 +93,6 @@ dialectic infrastructure + barrier-lowering.
 - ✓ **Done:** the thin convention is realized as dyad-steward's root `README.md` (the N2 "scaffolding
   kit" it was staged into was retracted as a DIP-fork; the README is the surviving residue).
 - → **Future:** strict DPC-Protocol (form PR, Founding gate) · live-retrieval frontier (F).
-- Cross-link: `goal-framing.md` (N2) · `dyad-work.md` · `AGENT.md` §Ontology (verb home) /
+- Cross-link: `goal-framing.md` (N2) · `dyad-work.md` · `DYAD.md` §Ontology (verb home) /
   §Deferrals (contribution channel — this is a concrete candidate for the open "library-contribution
   channel" deferral).

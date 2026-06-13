@@ -140,5 +140,5 @@ birth commit. Because it serves a dyad that *hasn't yet internalized the Practic
 
 > Cross-link: `commons-contribution-lifecycle.md` (parent channel; Governance § predicate-gate) ·
 > `ontology/discipline/schema.md` (Commons; the "high-quality" field-spec, n=1) ·
-> `scripts/validate_registry.py` (Commons; the CI precedent) · `AGENT.md` §NON-NEGOTIABLE (the
+> `scripts/validate_registry.py` (Commons; the CI precedent) · `DYAD.md` §NON-NEGOTIABLE (the
 > 1+1=2 / sycophancy guard the CI-as-judge failure trips) · `kb/dfd.md` (the n=5 ledger exemplar).

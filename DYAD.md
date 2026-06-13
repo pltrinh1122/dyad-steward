@@ -1,4 +1,4 @@
-# dyad-steward — AGENT.md
+# dyad-steward — DYAD.md
 
 > **Universal instruction layer for the `dyad-steward` dyad.** Load this at session start via the platform-specific shims (`CLAUDE.md` / `GEMINI.md`).
 > 
@@ -181,7 +181,7 @@ The Human **declares the hat** each engagement:
   curated library, onboarding materials. These are *examples* of our processes, not structures
   for us to finalize.
 - Steward-owned (home: here):
-  - `CLAUDE.md` — this anchor.
+  - `DYAD.md` — this anchor.
   - `kb/` — settled knowledge: owned process definitions, distillations, tended examples.
   - `dialectic/` — **live working cycles. This is the dev / live-state bucket — load it for
     in-flight work.**

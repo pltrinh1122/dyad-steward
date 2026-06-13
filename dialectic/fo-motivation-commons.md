@@ -2,7 +2,7 @@
 
 > **Status: ANCHORED 2026-06-04** (Steward-Operator `[FEEDBACK]`, FO-confirmed). Located this session
 > through the Commons-invariants `[ALIGN]` + the FO-motivation rub-chain. Live working anchor in
-> `dialectic/`; **promoting its grounding into `AGENT.md` §Telos is a Steward-Operator gate** — the
+> `dialectic/`; **promoting its grounding into `DYAD.md` §Telos is a Steward-Operator gate** — the
 > identity anchor is proposed-into, never self-edited (identity caveat).
 
 ## The chain that located it
@@ -64,7 +64,7 @@ consumer grain** (*lower THEIR barrier*, the tended-first discipline), not the m
 
 ## Open — proposed §Telos grounding (Steward-Operator gate)
 
-The current `AGENT.md` §Telos is stated in *epistemic* terms (velocity-toward-truth, falsifiability +
+The current `DYAD.md` §Telos is stated in *epistemic* terms (velocity-toward-truth, falsifiability +
 enablement, compounding). This anchor sits **beneath** it as the *human* driver. Proposed grounding line
 for the gate (not self-applied): *"The Commons is multi-human not because the practice needs a foreign
 jury (it doesn't — it is epistemically solo-satisfiable) but because the FO is a human whose needs —
