@@ -613,6 +613,15 @@ nodes:
     summit: S1
     status: DONE
     dependencies: []
+  dm_readstate_hardening:
+    title: 'DM read-state hardening: blob-sha key + consume-announce (Commons #69, #70)'
+    goal: 'Stop trusting silence/shine in the DM channel. #69: key seen-state on blob-sha so an edited-in-place
+      message re-surfaces (content/streak, not name/shine). #70: announce dm''s consume-on-display (truth-in-labeling,
+      not a silent side-effect). touchstone falsified #70 -> SURVIVES-WITH-SCOPING: code sound, 5 claims overstated
+      -> corrected + test_falsify_dm_announce.py added ([[claimed-not-established]]). FO merged both 2026-06-22.'
+    summit: S1
+    status: DONE
+    dependencies: []
   preflight_built:
     title: bin/preflight.py + bin/state.py
     goal: Tier-1 repo-invariants checker + live-state emitter. The mechanical half of validation.

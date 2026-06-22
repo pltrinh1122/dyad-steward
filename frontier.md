@@ -21,6 +21,7 @@
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
+- ✓ **[DONE]** `dm_readstate_hardening` — DM read-state hardening: blob-sha key + consume-announce (Commons #69, #70)
 - ✓ **[DONE]** `execute_directory_commit_reflection` — EXECUTE: bake the weekly commit-count recruitment signal into the Commons directory  ⟵ probe_directory_activity_reflection, plan_directory_autogen
 - ✓ **[DONE]** `falsification_channel` — Inter-dyad falsification channel LIVE (provisional)
 - ✓ **[DONE]** [OBSERVE] `observe_directory_recruitment_signal` — OBSERVE: test the live directory signal against reality  ⟵ execute_directory_commit_reflection
