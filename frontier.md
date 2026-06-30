@@ -10,6 +10,7 @@
 - ○ **[READY]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
+- ○ **[READY]** `referee_bond_g0_formcanon` — REFEREE -> FO: bond's form-canon package (G0 expansion + craft-* DIP refinement + reference-as- covalence-exemplar) with falsifiers F1/F2/F3
 - ○ **[READY]** `steering_vectors_onboard` — EXECUTE: onboard.py output as guards + steering vectors (Commons, FO-gated)
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection

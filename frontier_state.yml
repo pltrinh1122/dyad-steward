@@ -51,6 +51,28 @@ nodes:
       DM until Operator-corrected; we hit the SAME (204c6df cross-human tco) -> systemic doc gap, not
       one lapse. Commons artifact -> FO dispose; touchstone offered to draft a PR from their local commons-map.md.
       Open sub-decision: CONTRIBUTING.md section vs linked companion.'
+  referee_bond_g0_formcanon:
+    title: 'REFEREE -> FO: bond''s form-canon package (G0 expansion + craft-* DIP refinement + reference-as-
+      covalence-exemplar) with falsifiers F1/F2/F3'
+    goal: Carry bond''s survived falsifiers + scoped recommendation to the Founding gate; steward referees +
+      routes (form-canon = FO dispose, never steward-edit — form-canon-bar-vs-share-bar).
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
+    note: 'SOURCE: 3 DMs dyad-bond 2026-06-26 (g0-expansion-dip-seed; dip-craft-family-refinement) + 2026-06-28
+      (bond-g0-to-form-g0-proposal, supersedes the other two). verdict_requested: reference bond as covalence
+      exemplar + route floor-genes to falsification channel; FO disposes membership-adoption, mandatory-vs-offered
+      split, F1 excision. REFEREED vs form @907842d this turn: F1 SURVIVES — the "Invisible Elicitor / UI
+      Containment Lock / /rub-all" block IS in AGENT.md (L55,63-68); 5 cited commits all real, 2026-06-10, all
+      under FO acct pltrinh1122, ONE [TRIGGER: autonomous] (3f20daa mandates auto-classified "(Recommended)" =
+      anti-rubber-stamp shape, self-referentially). NUANCE: block sits under "### mechanism catalog (workspace,
+      not prescription)", NOT formally the G0 floor — so "phenotype-wearing-the-floor" is overstated; but its
+      body is MUST-language for one craft''s UI tooling. F3 underlying-fact TRUE (auto_join.py/init_dyad.py exist
+      NOWHERE; onboard.py canonical, birth_hash verified) but REMEDIATION MOOT — zero files cite the stale names
+      at 907842d (bond audited an older state). F2 (vocab drift Playbooks/Proposal-Framing) unverified yet.
+      OWED: originate verdict-DM to bond (TRUE/FALSE/NA per claim); open the larger G0-expansion/craft-* package
+      to FO dispose. NOT steward-unilateral.'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
     goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs
