@@ -16,7 +16,6 @@
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ◔ **[IN_REVIEW]** `healer_access_dispose` — Healer #2-access dispose
-- ◔ **[IN_REVIEW]** `referee_bond_g0_formcanon` — REFEREE -> FO: bond's form-canon package (G0 expansion + craft-* DIP refinement + reference-as- covalence-exemplar) with falsifiers F1/F2/F3
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
@@ -33,6 +32,7 @@
 - ✓ **[DONE]** [PROBE] `probe_directory_activity_reflection` — PROBE: does a period-bounded activity reflection in the directory provide real value to (potential) operators?
 - ✓ **[DONE]** [PROBE] `probe_directory_autogen` — PROBE: can DIRECTORY.md auto-generate a rolling-7-day commit-activity block (since 7d before update-ts) without breaking the deterministic --check?  ⟵ probe_directory_activity_reflection
 - ✓ **[DONE]** [PROBE] `probe_onboarding_friction` — PROBE: is the racked non-techie onboarding friction real + recurring?
+- ✓ **[DONE]** `referee_bond_g0_formcanon` — REFEREE -> FO: bond's form-canon package (G0 expansion + craft-* DIP refinement + reference-as- covalence-exemplar) with falsifiers F1/F2/F3
 - ✓ **[DONE]** [REFLECT] `reflect_directory_recruitment_signal` — REFLECT: did the directory recruitment-signal move recruitment? (closure)  ⟵ observe_directory_recruitment_signal
 - ✓ **[DONE]** `regen_index_ci` — Wire regen_directory_index.py --check into Commons CI
 - ✗ **[FALSIFIED]** [PROBE] `nomenclature_discipline` — Nomenclature: discipline / retire 'cycle'

@@ -58,10 +58,14 @@ nodes:
       routes (form-canon = FO dispose, never steward-edit — form-canon-bar-vs-share-bar).
     summit: S1
     type: EXECUTE
-    status: IN_REVIEW
+    status: DONE
     dependencies: []
-    note: 'LANDED 2026-07-01 (FO gate) + IMPLEMENTED: DIP three-layer operate-model restructure -> Commons
-      form AGENT.md PR #75 (+66/-40): names operate-model (Contract/Operating-policy/Craft); G0=Contract w/
+    note: 'DONE 2026-07-01: DIP three-layer operate-model restructure MERGED into form AGENT.md (PR #75,
+      ce2bf9a; verified on origin/main: operate-model present, 8 dimensions). commons pin -> ce2bf9a. Whole
+      bond G0-package end-to-end: F1 (#74 merged 0dd51aa) + single-home (#73 merged 565790a) + operate-model
+      (#75 merged ce2bf9a). Remaining threads (separate, NOT this node): R6 (1+1>2 tenet-wording); touchstone
+      post-hoc rub on craft_* lexicon; tco non-inheriting single-home/contract test. Original: DIP restructure ->
+      Commons form AGENT.md PR #75 (+66/-40): names operate-model (Contract/Operating-policy/Craft); G0=Contract w/
       named members; foreground craft_telos; ADD Operating-policy dimension; SPLIT #5 -> craft_value+craft_invariant
       (NOT_YET_WORN valid); slots-named/fills-discovered preserved. Decision + grounding: dialectic/g0-abc-tightening.md
       §THE LANDED DECISION. AWAITING FO merge of #75 (+ touchstone post-hoc rub on craft_* lexicon). Scope: DIP
