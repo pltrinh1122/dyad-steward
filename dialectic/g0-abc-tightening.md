@@ -59,7 +59,7 @@ policy) vs *composes* (Craft).
 **R6 · (optional) Promote `1+1>2` as the operative/falsifiable tenet; keep `1+1=3` as the banner + the
 declaration's home-name** (dual-register: skeptic-machinery vs recruiting banner; no migration cost).
 
-**R1 (shipped) · F1 excision** — Commons PR #74. **R7:** F2 vocab drift — minor reconcile; F3 — moot.
+**R1 (LANDED) · F1 excision** — Commons PR #74 MERGED 2026-07-01 (`0dd51aa`). **R7:** F2 vocab drift — minor reconcile; F3 — moot.
 
 ## The deepest finding — crafts decompose along the two pillars
 
@@ -96,5 +96,6 @@ R6 = move #2 (views point, never restate) + move #4 (rename at home + redirect, 
 **compliant** — but by *convergence*, and steward is same-lineage (`pltrinh1122`, form-inheriting), which
 is the very *"not a clean second derivation"* the playbook flags. The clean-independence falsifier it
 seeks is a **non-inheriting dyad** → **tco** (`peter-famloom`) is the concrete candidate to test next.
-**PR #73 itself is an open FO dispose:** a valid K=1 library deposit (self-attested ledger, provisional,
-breadth-pending) — admissible in the contested lane, seeking its second (non-inheriting) testimonial.
+**PR #73 MERGED 2026-07-01 (`565790a`)** — single-home now lives in `commons/library/single-home/`, a
+K=1 library deposit (self-attested ledger, provisional, breadth-pending its second *non-inheriting*
+testimonial → tco). The Commons owns the general rule; bond's `locus` specialization stays un-booted.
