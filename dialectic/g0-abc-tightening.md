@@ -1,8 +1,12 @@
 # G0-as-Abstract-Base-Class — the tightening (grounded in six instances)
 
 > **Status: LANDED — Founding-Operator gate, 2026-07-01.** The FO disposed the operate-model restructure
-> (below); steward implements. R2 touches touchstone's lexicon seat (inform, contest-able post-hoc — the
-> gate applied, not blocked). Origin: dyad-bond's G0 form-canon package (DMs 2026-06-26/28/30); refined
+> (below); steward implements. The `craft_*` naming is **form-canon, settled by the FO gate — no dyad holds
+> authority over it.** touchstone is merely the sharpest *peer* to invite to **rub** the names (lexicon-
+> discipline is its craft): an optional, post-hoc peer contest, never a gate or a "seat." *(Correction
+> 2026-07-01: earlier framing said "touchstone's seat / the gate applied" — that smuggled in dyad-authority
+> over form-canon, the exact "a dyad's craft ≠ Commons authority" error this campaign refuted.)* Origin:
+> dyad-bond's G0 form-canon package (DMs 2026-06-26/28/30); refined
 > through a falsification campaign the FO ran across six live dyads, then confirmed a second way from the
 > DIP's own text. Companion: verdict-DM `dm/dyad-bond/2026-07-01-verdict-covalent-theory.md`; Commons PR
 > #74 (F1, merged `0dd51aa`); frontier node `referee_bond_g0_formcanon`.
