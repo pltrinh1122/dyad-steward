@@ -58,21 +58,21 @@ nodes:
       routes (form-canon = FO dispose, never steward-edit — form-canon-bar-vs-share-bar).
     summit: S1
     type: EXECUTE
-    status: READY
+    status: IN_REVIEW
     dependencies: []
-    note: 'SOURCE: 3 DMs dyad-bond 2026-06-26 (g0-expansion-dip-seed; dip-craft-family-refinement) + 2026-06-28
-      (bond-g0-to-form-g0-proposal, supersedes the other two). verdict_requested: reference bond as covalence
-      exemplar + route floor-genes to falsification channel; FO disposes membership-adoption, mandatory-vs-offered
-      split, F1 excision. REFEREED vs form @907842d this turn: F1 SURVIVES — the "Invisible Elicitor / UI
-      Containment Lock / /rub-all" block IS in AGENT.md (L55,63-68); 5 cited commits all real, 2026-06-10, all
-      under FO acct pltrinh1122, ONE [TRIGGER: autonomous] (3f20daa mandates auto-classified "(Recommended)" =
-      anti-rubber-stamp shape, self-referentially). NUANCE: block sits under "### mechanism catalog (workspace,
-      not prescription)", NOT formally the G0 floor — so "phenotype-wearing-the-floor" is overstated; but its
-      body is MUST-language for one craft''s UI tooling. F3 underlying-fact TRUE (auto_join.py/init_dyad.py exist
-      NOWHERE; onboard.py canonical, birth_hash verified) but REMEDIATION MOOT — zero files cite the stale names
-      at 907842d (bond audited an older state). F2 (vocab drift Playbooks/Proposal-Framing) unverified yet.
-      OWED: originate verdict-DM to bond (TRUE/FALSE/NA per claim); open the larger G0-expansion/craft-* package
-      to FO dispose. NOT steward-unilateral.'
+    note: 'SOURCE: DMs dyad-bond 2026-06-26/28/30. REFEREE PACKAGE DELIVERED 2026-07-01 (FO-led ABC campaign
+      across 6 instances -> dialectic/g0-abc-tightening.md). (1) F1 SHIPPED: Invisible-Elicitor/rub-all block
+      excised from form AGENT.md -> Commons PR #74 (verified vs source; ABC-diagnosed = concrete-impl in
+      abstract base + Liskov-weakens wu-wei/anti-rubber-stamp). (2) VERDICT-DM sent to bond
+      (dm/dyad-bond/2026-07-01-verdict-covalent-theory.md): covalent-theory Claim4=FALSIFIED-TRUE (P3
+      under-defines + smuggles outcome), Claim1=NA (P3 fell -> necessity not-yet-testable + corpus self-contradicts),
+      Claim2=FALSIFIED-TRUE (kernel overstated; standing-instructed oracle counterexample; §1 symmetric
+      intent-source-lessness). Cross-dyad axis only (same-human, meld-discount). (3) SYNTHESIS: R2 adopt craft-*
+      abstract-slot family (craft_value late-bound + NOT_YET_WORN sentinel; SPLIT not rename Dim#5) · R3 make
+      shared Contract explicit by convergence · R4 covalence/Belief stay OUT of G0 (Bond-G0 + channel) · R5
+      membership-boundary + 3-layer split (Contract/Operating-policy/Craft) · R6 1+1>2 operative, 1+1=3 banner.
+      Deepest: craft_invariant = pillar-projection(+residue only for domain-dyad healer); "NON-NEGOTIABLE" != craft_invariant.
+      AWAITING FO dispose on R2/R3/R5 (form-canon; R2 touches touchstone lexicon) + PR #74 merge. F3 moot; F2 minor.'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
     goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs
