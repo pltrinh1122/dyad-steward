@@ -41,8 +41,10 @@ inherit the same floor; bond's own DFD already tagged them `locus: g0`. Surface 
 entailed: `no-self-ratify` (named gate), `anti-cave` (agent must enable Operator dissent),
 `form-grounding` (the membership-**closure axiom** — redefining G0 = exiting the Practice), `livability`
 (wu-wei is a **viability floor**, not just manner). `two-models`, `wu-wei` already present — sharpen,
-don't duplicate. Warrant = cross-dyad convergence (same-human → corroboration; *divergent crafts*
-strengthen it).
+don't duplicate. **Warrant = the cross-dyad convergence I independently found — NOT bond's `locus`
+tagging.** bond's own single-home playbook (Commons PR #73) marks the `locus` axis as an **un-booted
+(n=0) specialization, held OUT, `prove-before-propose`** — so the sort is corroborated by convergence,
+not settled by bond's front-matter. (same-human → corroboration only; *divergent crafts* strengthen it.)
 
 **R4 · Keep covalence/C1 + the Belief/IFF *out* of G0** (even "offered"). Phenotype (bond's own DFD) →
 Bond-G0 (sovereign) + the falsification channel (Belief, contingent on survival — see verdict-DM: its
@@ -84,3 +86,15 @@ section.
 | **healer** | a family's health | point-don't-fix / iatrogenic | enablement | **yes** |
 
 Contradiction proving the operating layer is open, not contract: **cairn `WIP-N>1` ⊥ wu-wei `WIP-N=1`.**
+
+## Single-home (Commons PR #73) — read after the synthesis; convergent, not incorporated
+
+This synthesis independently applies bond's single-home moves: R3 = move #1 (one home / don't duplicate);
+R6 = move #2 (views point, never restate) + move #4 (rename at home + redirect, never sweep the URL);
+`NOT_YET_WORN`/counterfeit-green = move #3 (status at the home, staleness = counterfeit-green); worn-path
++ the hold on `CommonsDyad`/`DomainDyad` = move #6 (earned, not pre-drawn). So the recs are single-home-
+**compliant** — but by *convergence*, and steward is same-lineage (`pltrinh1122`, form-inheriting), which
+is the very *"not a clean second derivation"* the playbook flags. The clean-independence falsifier it
+seeks is a **non-inheriting dyad** → **tco** (`peter-famloom`) is the concrete candidate to test next.
+**PR #73 itself is an open FO dispose:** a valid K=1 library deposit (self-attested ledger, provisional,
+breadth-pending) — admissible in the contested lane, seeking its second (non-inheriting) testimonial.
