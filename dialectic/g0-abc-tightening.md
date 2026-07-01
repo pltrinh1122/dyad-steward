@@ -1,10 +1,22 @@
 # G0-as-Abstract-Base-Class — the tightening (grounded in six instances)
 
-> **Status: CANDIDATE synthesis (FO-led dialectic 2026-06-30/07-01; steward-authored).** The G0 changes
-> are **form-canon → Founding-Operator dispose**; steward proposes. R2 touches touchstone's lexicon seat.
-> Origin: dyad-bond's G0 form-canon package (DMs 2026-06-26/28/30); refined through a falsification
-> campaign the FO ran across six live dyads. Companion: verdict-DM `dm/dyad-bond/2026-07-01-verdict-covalent-theory.md`;
-> Commons PR #74 (F1 excision); frontier node `referee_bond_g0_formcanon`.
+> **Status: LANDED — Founding-Operator gate, 2026-07-01.** The FO disposed the operate-model restructure
+> (below); steward implements. R2 touches touchstone's lexicon seat (inform, contest-able post-hoc — the
+> gate applied, not blocked). Origin: dyad-bond's G0 form-canon package (DMs 2026-06-26/28/30); refined
+> through a falsification campaign the FO ran across six live dyads, then confirmed a second way from the
+> DIP's own text. Companion: verdict-DM `dm/dyad-bond/2026-07-01-verdict-covalent-theory.md`; Commons PR
+> #74 (F1, merged `0dd51aa`); frontier node `referee_bond_g0_formcanon`.
+>
+> **THE LANDED DECISION — restructure the DIP (form `AGENT.md`) around the three-layer operate-model:**
+> **(1) Contract** — what every dyad *needs to operate* (shared, sealed): the tenet family + SPAOR + named
+> members (`no-self-ratify`, `anti-cave`, `form-grounding`, `livability`) surfaced where not already
+> entailed [R3]. **(2) Operating-policy** — what each dyad *needs to operate* (per-dyad-configured,
+> currently ABSENT): concurrency/WIP · git-workflow · tooling — named as a slot, fills discovered [R5].
+> **(3) Craft** — what the dyad *operates on*: foreground **`craft_telos`** (unbury it from "Identity");
+> **`craft_value`** + **`craft_invariant`** as late-bound slots (typed `NOT_YET_WORN`; assertion-timing) —
+> Dimension #5 implemented as a **split** (contract-member up to G0, craft-law down to the slot), not a
+> rename [R2]. Scope: the DIP operate-model only. NOT in scope (separate items): R6 (`1+1>2` tenet-wording)
+> · reference-bond-as-exemplar · covalence-in-G0 (rejected, R4).
 
 ## The model that converged
 
