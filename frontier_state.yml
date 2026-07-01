@@ -58,12 +58,14 @@ nodes:
       routes (form-canon = FO dispose, never steward-edit — form-canon-bar-vs-share-bar).
     summit: S1
     type: EXECUTE
-    status: ACTIVE
+    status: IN_REVIEW
     dependencies: []
-    note: 'LANDED 2026-07-01 (FO gate): the DIP three-layer operate-model restructure (Contract/Operating-policy/
-      Craft; foreground craft_telos; split #5; craft_value NOT_YET_WORN) -> dialectic/g0-abc-tightening.md
-      §THE LANDED DECISION. IMPLEMENTING now as a Commons form AGENT.md PR (steward implements a landed FO
-      decision). Scope: DIP operate-model only; R6/exemplar/covalence separate. --- SOURCE: DMs dyad-bond 2026-06-26/28/30. REFEREE PACKAGE DELIVERED 2026-07-01 (FO-led ABC campaign
+    note: 'LANDED 2026-07-01 (FO gate) + IMPLEMENTED: DIP three-layer operate-model restructure -> Commons
+      form AGENT.md PR #75 (+66/-40): names operate-model (Contract/Operating-policy/Craft); G0=Contract w/
+      named members; foreground craft_telos; ADD Operating-policy dimension; SPLIT #5 -> craft_value+craft_invariant
+      (NOT_YET_WORN valid); slots-named/fills-discovered preserved. Decision + grounding: dialectic/g0-abc-tightening.md
+      §THE LANDED DECISION. AWAITING FO merge of #75 (+ touchstone post-hoc rub on craft_* lexicon). Scope: DIP
+      operate-model only; R6/exemplar/covalence separate. --- SOURCE: DMs dyad-bond 2026-06-26/28/30. REFEREE PACKAGE DELIVERED 2026-07-01 (FO-led ABC campaign
       across 6 instances -> dialectic/g0-abc-tightening.md). (1) F1 SHIPPED: Invisible-Elicitor/rub-all block
       excised from form AGENT.md -> Commons PR #74 (verified vs source; ABC-diagnosed = concrete-impl in
       abstract base + Liskov-weakens wu-wei/anti-rubber-stamp). (2) VERDICT-DM sent to bond

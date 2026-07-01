@@ -2,7 +2,7 @@
 
 > Source of truth: `frontier_state.yml`. Regenerate: `bin/frontier.py --md`. Drift gate: `bin/frontier.py --check` (wired into `bin/preflight.py`). WIP-N=1 (`<=1 ACTIVE`) is mechanically enforced at write.
 
-**ACTIVE (WIP-N=1):** referee_bond_g0_formcanon
+**ACTIVE (WIP-N=1):** — none —
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `commons_gitignore` — EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED
@@ -13,10 +13,10 @@
 - ○ **[READY]** `steering_vectors_onboard` — EXECUTE: onboard.py output as guards + steering vectors (Commons, FO-gated)
 - ○ **[READY]** `totality_readme` — Totality README review
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
-- ▶ **[ACTIVE]** `referee_bond_g0_formcanon` — REFEREE -> FO: bond's form-canon package (G0 expansion + craft-* DIP refinement + reference-as- covalence-exemplar) with falsifiers F1/F2/F3
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ◔ **[IN_REVIEW]** `healer_access_dispose` — Healer #2-access dispose
+- ◔ **[IN_REVIEW]** `referee_bond_g0_formcanon` — REFEREE -> FO: bond's form-canon package (G0 expansion + craft-* DIP refinement + reference-as- covalence-exemplar) with falsifiers F1/F2/F3
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)

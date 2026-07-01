@@ -7,6 +7,8 @@
 > DIP's own text. Companion: verdict-DM `dm/dyad-bond/2026-07-01-verdict-covalent-theory.md`; Commons PR
 > #74 (F1, merged `0dd51aa`); frontier node `referee_bond_g0_formcanon`.
 >
+> **IMPLEMENTED — Commons PR #75** (`AGENT.md` restructure, `+66/−40`), awaiting FO merge.
+>
 > **THE LANDED DECISION — restructure the DIP (form `AGENT.md`) around the three-layer operate-model:**
 > **(1) Contract** — what every dyad *needs to operate* (shared, sealed): the tenet family + SPAOR + named
 > members (`no-self-ratify`, `anti-cave`, `form-grounding`, `livability`) surfaced where not already
