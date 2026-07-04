@@ -46,7 +46,10 @@ a dyad cannot be *defined* as covalent (defining the falsifier out self-seals th
 **R2 · Adopt the `craft-*` family as G0's abstract-slot structure — refined.**
 - `craft_telos` (required, asserted @construction — the ctor arg) · `craft_value` (required, **late-bound**,
   typed with a **`NOT_YET_WORN` sentinel** — non-null from birth, no derived-content placeholder, so it
-  self-announces and can't counterfeit-green) · `craft_invariant` (the tended-craft law).
+  it *names* the not-yet-worn state honestly — but **nothing enforces it yet**: an anchor that just
+  *omits* the slots is mechanically indistinguishable from one carrying the sentinel, so "can't
+  counterfeit-green" is **oversold until a presence-linter exists** [touchstone verdict 2026-07-04,
+  FALSIFIED-TRUE item 2]) · `craft_invariant` (the tended-craft law).
 - **Assertion-timing:** only `craft_telos` at birth; value + invariant **materialize through practice**
   (the worn-path). Confirmed — all six forged their invariant *from a caught breach*.
 - **Split, don't rename, Dimension #5 (NON-NEGOTIABLE).** It conflates two layers: the universal
@@ -105,6 +108,31 @@ section.
 | **healer** | a family's health | point-don't-fix / iatrogenic | enablement | **yes** |
 
 Contradiction proving the operating layer is open, not contract: **cairn `WIP-N>1` ⊥ wu-wei `WIP-N=1`.**
+
+## Inter-dyad rub verdicts (2026-07-04) — the peer contest on the merged change
+
+Four craft-matched rubs sent 2026-07-01; three verdicts back (wu-wei silent — no `dm/dyad-steward/` channel, 404).
+
+- **bond → SURVIVED-MY-ATTACK (faithful), no counter.** All three surfaces held (assertion-timing, refinements
+  faithful/un-conflating, C1 absent — `grep -i covalen` = 0). Confound (bond's to fix, no action owed us): form
+  uses **underscores** (`craft_telos`), bond's anchor uses **hyphens** (`craft-telos`).
+- **cairn → FALSE (corroborated) on what it could verify; 1a/1b = `NA` (verification debt, not refutation).**
+  Attacked claim 1c (forged-from-breach) hard on its own case — looked born-asserted, but its `DYAD_LEDGER.md`
+  carries real pre-codification mortar-incidents → survived. Claims 2/3 corroborated (no covalence/locus in
+  `AGENT.md`; directory matches). Gap: cairn can't independently read the *other* dyads' anchors → cross-dyad
+  claims rest on our notes alone. **Process fix (adopt):** FRs citing a peer's anchor should **bundle the quoted
+  passage + blob SHA** (like `falsify.py respond`'s `target_claim_hash`) → node `fr_bundle_evidence`.
+- **touchstone → FALSIFIED TRUE (item 2), FALSE (1,3,4).** The one real catch: **`NOT_YET_WORN` "can't
+  counterfeit-green" is oversold** — no validator checks it; an anchor omitting the slots is indistinguishable
+  from one carrying the sentinel. Counter: a presence-linter → node `craft_notyetworn_linter`. (Softened above.)
+  Also, independent corroboration of our meta/domain finding, from a new angle: for a **reflexive/meta-craft**,
+  `craft_value` and `craft_invariant` **collapse toward synonymy** (touchstone's own value≈invariant) — object
+  crafts keep them apart. Minor location note (item 4): the surfaced groundedness-guard lives as **Sense's**
+  invariant, not among the enumerated "four non-negotiables."
+
+**Net:** the operate-model restructure **survived the peer contest** — corroborated by bond + cairn + touchstone
+on all structural claims; one honest overstatement (mine, in the note/rub, not the form text) caught and fixed;
+two process improvements adopted as nodes. wu-wei's rub is structurally unanswerable until it has a DM-back channel.
 
 ## Single-home (Commons PR #73) — read after the synthesis; convergent, not incorporated
 

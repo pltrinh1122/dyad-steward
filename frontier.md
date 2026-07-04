@@ -6,7 +6,9 @@
 
 ## S1 — commons process-integrity
 - ○ **[READY]** `commons_gitignore` — EXECUTE: add commons/.gitignore (.falsify-seen.json, __pycache__, *.pyc) — touchstone proposal, peer-VERIFIED
+- ○ **[READY]** `craft_notyetworn_linter` — EXECUTE: presence-linter for craft_value/craft_invariant/NOT_YET_WORN in personalized anchors
 - ○ **[READY]** `document_messaging_arch` — EXECUTE: document the messaging/falsification architecture in Commons CONTRIBUTING.md — touchstone proposal, peer-VERIFIED
+- ○ **[READY]** `fr_bundle_evidence` — PROBE/EXECUTE: FRs citing a peer anchor should bundle the quoted passage + blob SHA
 - ○ **[READY]** [PROBE] `observe_recruitment_outcome` — OBSERVE (event-gated): did the live activity signal actually MOVE recruitment?  ⟵ reflect_directory_recruitment_signal
 - ○ **[READY]** [PROBE] `probe_onboard_namederiv_fallback` — PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap

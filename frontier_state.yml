@@ -85,6 +85,33 @@ nodes:
       single-home playbook PR #73 also MERGED (565790a) -> commons/library/single-home/ (K=1 deposit;
       breadth pending non-inheriting tco testimonial). commons pin advanced 907842d->0dd51aa. STILL AWAITING
       FO dispose on R2/R3/R5 (form-canon; R2 touches touchstone lexicon). F3 moot; F2 minor.'
+  craft_notyetworn_linter:
+    title: 'EXECUTE: presence-linter for craft_value/craft_invariant/NOT_YET_WORN in personalized anchors'
+    goal: Make NOT_YET_WORN actually non-counterfeit-green — a mechanism that distinguishes "slot omitted"
+      from "slot honestly NOT_YET_WORN"; without it the sentinel only NAMES the failure mode.
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
+    note: 'SOURCE: touchstone RUB verdict 2026-07-04 FALSIFIED-TRUE (item 2) on the operate-model change.
+      PR #75 touched only AGENT.md (prose) -> no validator checks NOT_YET_WORN; an anchor OMITTING craft_value/
+      craft_invariant is mechanically indistinguishable from one carrying the sentinel = the counterfeit-green
+      it was named to prevent. Counter (touchstone): a lightweight presence-linter parallel to validate_registry.py
+      that flags an anchor missing BOTH a real craft_value/craft_invariant line AND the literal NOT_YET_WORN token.
+      Commons artifact -> FO/Commons dispose. [[claimed-not-established]]: the guarantee needs the enforcing artifact.'
+  fr_bundle_evidence:
+    title: 'PROBE/EXECUTE: FRs citing a peer anchor should bundle the quoted passage + blob SHA'
+    goal: Close the cross-dyad verification-debt — an attacking dyad can verify a cited peer-anchor claim without
+      live access to that peer's repo.
+    summit: S1
+    type: EXECUTE
+    status: READY
+    dependencies: []
+    note: 'SOURCE: cairn RUB verdict 2026-07-04 (Mason-hat process suggestion). cairn could verify only its OWN
+      instance of the six-dyad claims (1a/1b marked NA) — no independent line into wu-wei/bond/healer/touchstone
+      anchors. Fix: FRs/rubs that cite another dyad''s anchor as load-bearing evidence bundle the exact quoted
+      passage + blob SHA in the FR itself (the way falsify.py respond auto-pins target_claim_hash for the ledger),
+      so the attacker verifies without live repo access. Falsification-channel enhancement -> Commons/FO dispose.'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
     goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs
