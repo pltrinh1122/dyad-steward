@@ -111,7 +111,9 @@ Contradiction proving the operating layer is open, not contract: **cairn `WIP-N>
 
 ## Inter-dyad rub verdicts (2026-07-04) — the peer contest on the merged change
 
-Four craft-matched rubs sent 2026-07-01; three verdicts back (wu-wei silent — no `dm/dyad-steward/` channel, 404).
+Four craft-matched rubs sent 2026-07-01; **all four verdicts back** (2026-07-04). *(Correction: an earlier
+read called wu-wei's rub "structurally unanswerable — no `dm/dyad-steward/` channel, 404." Stale barrier —
+wu-wei created the channel and answered same-day; a transient absence read as a structural one — [[cold-path-barriers-are-stale]].)*
 
 - **bond → SURVIVED-MY-ATTACK (faithful), no counter.** All three surfaces held (assertion-timing, refinements
   faithful/un-conflating, C1 absent — `grep -i covalen` = 0). Confound (bond's to fix, no action owed us): form
@@ -129,10 +131,15 @@ Four craft-matched rubs sent 2026-07-01; three verdicts back (wu-wei silent — 
   `craft_value` and `craft_invariant` **collapse toward synonymy** (touchstone's own value≈invariant) — object
   crafts keep them apart. Minor location note (item 4): the surfaced groundedness-guard lives as **Sense's**
   invariant, not among the enumerated "four non-negotiables."
+- **wu-wei → FALSE (corroboration), all three surfaces held.** Operating-policy is a distinct third layer
+  ("pure mechanical engine physics — govern state transitions, not values"), correctly open (`WIP-N=1` is a
+  local state-machine constraint, not a Contract violation), and the prior DIP omitted it — *"an uncodified
+  ghost constraint until now."* No collapse found.
 
-**Net:** the operate-model restructure **survived the peer contest** — corroborated by bond + cairn + touchstone
-on all structural claims; one honest overstatement (mine, in the note/rub, not the form text) caught and fixed;
-two process improvements adopted as nodes. wu-wei's rub is structurally unanswerable until it has a DM-back channel.
+**Net:** the operate-model restructure **survived the peer contest — all four rubs** (bond faithful · cairn
+corroborated w/ cross-dyad verification-debt · touchstone corroborated w/ one real catch · wu-wei corroborated).
+Every *structural* claim held across four independent craft-lenses; one honest overstatement (mine, in the
+note/rub, not the form text) caught and fixed; two process improvements adopted as nodes.
 
 ## Single-home (Commons PR #73) — read after the synthesis; convergent, not incorporated
 
