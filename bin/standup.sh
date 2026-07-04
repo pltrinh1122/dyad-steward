@@ -13,11 +13,14 @@
 # NOT auto-judgment (bond's K6-b): it SURFACES state + the re-arm reminder and hands disposition to the
 #   agent. auto-trigger != auto-judgment.
 #
-# COVALENT GATE: wiring this as a hook (.claude/settings.json) is the Operator's act (FO-requested
-#   2026-07-04), never an Agent self-grant. Runnable by hand regardless.
+# TRIGGER (2026-07-04): this is now the mechanical spine of the **`d-start`** marker (the Operator's
+#   portable session-OPEN trigger — dialectic/session-lifecycle-discipline.md), NOT a live Claude hook.
+#   The Claude SessionStart hook was RETIRED for portability (agy exposes no startup-hook analog; the
+#   marker fires on every substrate). `--hook` mode is kept DORMANT — re-wire it if a substrate exposes
+#   a startup-hook analog. NOT auto-judgment (bond's K6-b): it SURFACES; the agent disposes.
 #
-# Usage:  bin/standup.sh          # human-readable resume report (stdout)
-#         bin/standup.sh --hook   # emit SessionStart additionalContext JSON
+# Usage:  bin/standup.sh          # d-start spine — human-readable resume report (stdout)
+#         bin/standup.sh --hook   # DORMANT: emit SessionStart additionalContext JSON (for re-wiring)
 
 set -uo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$ROOT" || exit 0

@@ -229,6 +229,12 @@ Inherited but locally load-bearing: **`Telos`**.
   (Steward Operator); supersedes the form's overloaded best-practice sense of "cycle" — retirement of
   that sense from the form is **staged for the Founding gate** (§Contribution candidates).*
   → `dialectic/commons-contribution-lifecycle.md`
+- **`d-start` / `d-reflect` / `d-land`** — session-lifecycle + durability markers (adopted from bond's
+  `d-*` family, 2026-07-04). `d-start: {goal/scope}` **opens** (runs `bin/standup.sh` + the Start-Session
+  Discipline) · `d-reflect` **closes** (reflection ⊂ stand-down; `bin/standdown.sh`) · `d-land` durably
+  **lands** (commit+push, gated on a green read-back). The **marker** is the portable trigger across
+  `agy`+`claude`; Claude session hooks are a *dormant* accelerator, not the trigger.
+  → `dialectic/session-lifecycle-discipline.md`
 - **`+1 summit`** — a Dyad's self-declared **tough problem worth climbing** (*not* an area of work; the
   name carries the bar — if it isn't hard, it isn't a summit). A Dyad's `DIRECTORY.md` profile field; a
   **matchmaking** signal (same-summit = co-work/contest → Resonating, *not* collision), **not** the

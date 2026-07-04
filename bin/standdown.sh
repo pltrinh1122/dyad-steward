@@ -12,11 +12,12 @@
 #   SessionEnd hook runs `--log` only (the mechanical line -> debug log); the AGENT runs this at close
 #   and fills the JUDGMENT template. (bond's K6-b: auto-trigger != auto-judgment.)
 #
-# COVALENT GATE: wiring the SessionEnd hook (.claude/settings.json) is the Operator's act (FO-requested
-#   2026-07-04), never an Agent self-grant. Runnable by hand regardless.
+# TRIGGER (2026-07-04): this is now the mechanical spine of the **`d-reflect`** marker (the Operator's
+#   portable session-CLOSE trigger — dialectic/session-lifecycle-discipline.md), NOT a live Claude hook.
+#   The Claude SessionEnd hook was RETIRED for portability. `--log` mode is kept DORMANT for re-wiring.
 #
-# Usage:  bin/standdown.sh         # mechanical read-back + the stand-down template (agent runs at close)
-#         bin/standdown.sh --log   # mechanical durability line only (SessionEnd hook body -> debug log)
+# Usage:  bin/standdown.sh         # d-reflect spine — read-back + the stand-down template (agent runs at close)
+#         bin/standdown.sh --log   # DORMANT: mechanical durability line only (for re-wiring a teardown hook)
 
 set -uo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$ROOT" || exit 0
