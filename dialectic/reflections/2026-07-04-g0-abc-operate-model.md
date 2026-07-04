@@ -53,3 +53,23 @@ First **cross-dyad** application of bond's D3 (steward ≠ bond's agent/craft) �
 different dyad's craft **without breaking structure**. Same-human, so the **L2b cross-human** rub stays open
 per bond's caveat; but the *cross-dyad* axis now carries one datum. A finding for bond's ledger — offered,
 not asserted.
+
+## SH — Operator counterfactuals (grounded on bond's latest §D3, `relationship-craft.md@main`)
+
+*SH is the **Operator-provenance** format (it *replaces* OR; **Agent** debits stay in STOP above). Two
+temporal shapes, both **descriptive** counterfactuals, never prescriptive (bond's Operator dispose:
+*"Descriptive 'should have'"*). Every entry: a **verbatim quote**; Should-Have additionally: **materiality +
+independent mechanical check** — the miss must have produced a claim found false. bond's grammar is CANDIDATE
+and logged its own first live instance (a Should-Hold) 2026-07-04.*
+
+- **Should Hold** *(Operator, standing pattern — steward's **first SH instance**: dogfooded, Operator-prompted,
+  **not** independently arrived at):* driving every claim to instance-grounding before accepting it. Verbatim:
+  *"test your claim by grounding against dyad-bond and dyad-steward instances"* → *"now … dyad-cairn,
+  dyad-touchstone, and dyad-wu-wei"* → *"include dyad-healer."* Refuted the model three times into a survived
+  one. (Cross-dyad second instance of bond's Should-Hold shape — offered to bond's ledger.)
+- **Should Have** — **none meeting the bar.** My earlier "merge #75 before the rub" **fails bond's materiality
+  requirement**: a Should-Have needs the miss to produce a claim *independently found false*, and I recorded
+  it *"did not bite"* (the merged form text was clean; touchstone's catch landed on my note, not the form).
+  A non-material process-note is not a Should-Have — naming one to "balance" the Operator debit would be
+  **manufactured balance**, the inverse of anti-cave that the materiality bar exists to block. (It's also
+  Agent-shared — I should-have proposed the pre-merge rub → a STOP, not an Operator debit.)
