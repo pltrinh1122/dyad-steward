@@ -3,7 +3,21 @@
     "allow": [
       "Bash(git push origin:*)",
       "Bash(git push origin main)",
-      "Bash(git push origin HEAD:main)"
+      "Bash(git push origin HEAD:main)",
+      "Bash(bin/standup.sh:*)",
+      "Bash(bash bin/standup.sh:*)",
+      "Bash(bin/standdown.sh:*)",
+      "Bash(bash bin/standdown.sh:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git cat-file:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git fetch:*)",
+      "Read(//mnt/shared_data/dzw/dyad-steward/.git/**)"
     ],
     "deny": [
       "Bash(git push --force*)",
