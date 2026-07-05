@@ -23,6 +23,8 @@
       "$defaults",
       "Git Push to Default Branch: dyad-steward is a solo-operator substrate where direct push to main is the intended durability workflow (PRs are reserved for the Commons, not this repo)"
     ]
-  }
+  },
+  "defaultMode": "auto",
+  "skipAutoPermissionPrompt": true
 }
 
