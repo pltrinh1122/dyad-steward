@@ -51,6 +51,19 @@ else
   add "Durability: OK — clean + in sync on '$branch'."
 fi
 
+# -- Push-guard (dyad-rt: portable choke-point enforcement -- .githooks/pre-push) --
+# Under our STANDING default of gate-off (`claude --dangerously-skip-permissions`), the Claude-only
+# settings.json destructive-deny fails OPEN. The git-layer pre-push hook is the ONLY thing refusing a
+# force/delete of main's history each session -- but only if core.hooksPath points at it (NOT automatic
+# on clone). Surface LOUD if unset (fail loud, never run ungated in silence). -> substrate-access.md §Operating mode.
+hp="$(git config --get core.hooksPath 2>/dev/null || true)"
+if [[ "$hp" == ".githooks" && -x .githooks/pre-push ]]; then
+  add "Push-guard: OK -- pre-push active (core.hooksPath=.githooks) -- force/delete of main refused at the git layer, any substrate; ff-push to main ALLOWED (admin-durability model)."
+else
+  add "Push-guard: WARN -- pre-push NOT active on this substrate -- force/delete of main's history is UNGUARDED here (gate-off is standing default -> settings.json deny fails open)."
+  add "        -> arm it BEFORE operating (one-time per clone): git config core.hooksPath .githooks"
+fi
+
 # -- Frontier ready-set (local frontier.md view; no network) --
 active="$(grep -m1 'ACTIVE (WIP-N=1' frontier.md 2>/dev/null | sed 's/\*\*//g' || true)"
 ready="$(grep -c '\[READY\]' frontier.md 2>/dev/null || echo '?')"

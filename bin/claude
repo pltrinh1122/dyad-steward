@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# bin/claude — dyad-steward standard launcher: start Claude Code in the STANDING gate-off posture.
+#
+# WHY (Operator-ratified, 2026-07-07 — the dyad-rt adopt): gate-off (`--dangerously-skip-permissions`)
+#   is steward's STANDING DEFAULT, not a per-launch election. The native permission gate is OFF and the
+#   Dyad RUNTIME is the authority — cairn's `dyad-rt` invariant: *the Dyad runtime, not the native
+#   substrate, owns permissioning.* This launcher is the legible, tracked home of that posture (vs
+#   burying `defaultMode: bypassPermissions` in config). → dialectic/substrate-access.md §Operating mode.
+#
+# WHERE THE AUTHORITY LIVES (native gate is off — these are load-bearing):
+#   1. GIT LAYER — `.githooks/pre-push` refuses force / non-fast-forward / deletion of `main` on EVERY
+#      substrate (raw `git push` too). It does NOT refuse a plain ff-push to main: steward pushes
+#      admin-durability straight to its own `main` (ratified 2026-06-02); only the DESTRUCTIVE class is
+#      refused. Armed via `core.hooksPath=.githooks` — `bin/standup.sh` (d-start) verifies it, fail-loud.
+#   2. COVALENT DISCIPLINE (behavioral, irreducible — the classifier is NOT a backstop under gate-off):
+#      no Agent self-grant, no Agent self-merge (main lands substantive work via PR → Operator merge),
+#      complex bash routed through a transient script. → substrate-access.md §Operating mode.
+#
+# SAFETY ENVELOPE: main-history protection SURVIVES gate-off — the pre-push hook fires regardless of
+#   permission mode (`--no-verify` = the visible, deliberate escape). EXPOSED: the NON-git destructive
+#   class (`rm -rf <subdir>`, `git reset --hard`, `git clean -fd`) — no hook covers it and the native gate
+#   is off, so safety there rests on an isolated/disposable run host. `rm -rf /`·`~` and MCP consent still
+#   prompt. Use only where that envelope holds.
+#
+# NAMING: the extensionless `claude` is INTENTIONAL and path-invoked (`bin/claude`), NOT a PATH shadow.
+#   The PATH-strip below is DEFENSIVE (keeps this recursion-safe even if bin/ is ever added to PATH).
+#
+# Usage:  bin/claude [args...]              # launch Claude Code in the standing gate-off posture
+#         CLAUDE_SH_DRY_RUN=1 bin/claude    # print the resolved launch command, do NOT exec
+
+set -euo pipefail
+
+# Strip our own bin dir from PATH so a bare `claude` resolves to the REAL binary, never this wrapper.
+MY_BIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PATH="$(echo "$PATH" | sed -e "s|$MY_BIN:||g" -e "s|:$MY_BIN||g" -e "s|^$MY_BIN\$||g")"
+export PATH
+
+command -v claude >/dev/null 2>&1 \
+  || { echo "bin/claude: real 'claude' not found on PATH after de-shadowing bin/." >&2; exit 127; }
+
+if [[ "${CLAUDE_SH_DRY_RUN:-0}" == "1" ]]; then
+  printf 'bin/claude: (dry-run) would exec → %s --dangerously-skip-permissions %s\n' \
+    "$(command -v claude)" "$*" >&2
+  exit 0
+fi
+
+echo "bin/claude: launching in the standing gate-off posture — native gate OFF; authority = .githooks/pre-push + Covalent discipline. → substrate-access.md §Operating mode" >&2
+exec claude --dangerously-skip-permissions "$@"

@@ -65,3 +65,60 @@ Operator-merge, and the anti-wu-wei friction is irreducible — report it as suc
 - Source bundle: `dyad-bond@bin/grant_push.py` + `@dialectic/substrate-access.md` (→ `dyad-healer@bin/git.sh`).
 - `session-ritual.md` (durability ⊥ ratification ⊥ Stand-Down) · `.claude/settings.json` · `bin/grant_push.py`.
 - Memory: [[verify-with-actual-tool]] (Trap 1 = verify capability by execution, which grounded this).
+
+---
+
+# §Operating mode — the `dyad-rt` adopt *(CANDIDATE · Operator-ratified 2026-07-07)*
+
+> **The standing posture.** Steward runs `claude --dangerously-skip-permissions` (gate-off) as its
+> **default**, not a per-launch election — invoked via `bin/claude`, the tracked/legible home of the
+> posture (vs burying `defaultMode: bypassPermissions` in config — the [[automode-user-settings-only]]
+> pollution shape). Mode is natively visible ("bypass permissions on" in the CLI UI); no marker needed.
+
+## The invariant (transferable — extracted from cairn's `dyad-rt`, not rubber-stamped)
+*The Dyad runtime, not the native substrate, owns permissioning.* A permission that lives only in
+`.claude/settings.json` / the Claude classifier is **substrate-captive**: no agy/Gemini analog, and under
+our standing gate-off it fails OPEN and SILENTLY. Load-bearing permissions therefore live in a **portable
+runtime** — committed scripts + git-layer hooks that behave identically on every substrate.
+
+## Where authority lives now (native gate is off — these carry the guarantee)
+1. **Git layer (mechanical).** `.githooks/pre-push` refuses **force / non-fast-forward / deletion** of
+   `main` on every substrate (raw `git push` too). It is the **INVERSE of bond's** hook: steward pushes
+   admin-durability straight to its own `main` (the §above cycle), so the hook ALLOWS a plain ff-push and
+   refuses ONLY the destructive class — exactly steward's old settings.json deny-list, now portable.
+2. **d-start verify (mechanical anchor).** `bin/standup.sh` §Push-guard checks `core.hooksPath=.githooks`
+   + `pre-push` executable every session-open and **fails LOUD if unset** — the guard can't be silently
+   absent. Adopted from `dyad-bond@bin/standup.sh` §Push-guard.
+3. **Covalent discipline (behavioral, IRREDUCIBLE).** The classifier is **not a backstop** under gate-off,
+   so these have no wrapper and are held behaviorally: **no Agent self-grant · no Agent self-merge**
+   (substantive work → branch → PR → Operator merges) **· complex bash → transient script** (cairn's
+   Transient-Script takeaway, intent not literal count) **· honor literal constraints** ([[honor-literal-constraints]]).
+   Named honestly as behavioral, never overclaimed as enforced.
+
+## The EXPOSED class (truth-in-labeling, not hidden)
+The **non-git destructive class** — `rm -rf <subdir>`, `git reset --hard`, `git clean -fd` — has **no hook**
+and the native gate is off → **standing** heightened care; safety there rests on an isolated/disposable run
+host. `rm -rf /`·`~` and MCP consent still prompt. `git push --no-verify` bypasses the hook — the
+deliberate, VISIBLE escape (fail-loud), never silent.
+
+## What steward REJECTS from cairn's `dyad-rt` (the abstraction is separable from cairn's policy)
+- **REJECT · scripted autonomous-merge** (`./bin/gh pr merge` on CI-pass). *Agent never merges* — the merge
+  is the Operator's dispose, server-side. Same cut as the §above cycle's substantive-work route.
+- **REJECT · `--dangerously-skip-permissions` as the SOLE gate.** cairn's enforcer fires only on ops routed
+  through `./bin/*`; a raw `git`/`rm` bypasses it. Steward pushes enforcement to the **git layer**, which
+  fires physically regardless of wrapper use.
+- **REJECT · the ABAC `sandbox_enforcer.py`.** It bites external multi-party quarries (cairn's topology);
+  on steward's single-repo life it is a near-no-op. Take the *pattern*, not the file.
+
+## Consequence — `grant_push.py` goes vestigial
+Under standing gate-off the native classifier never prompts, so `grant_push.py`'s **ALLOW** half is no longer
+needed to avoid a block, and its **DENY** half is superseded by the portable `pre-push` hook. It is kept as
+harmless belt-and-suspenders for a rare gate-on session, **no longer load-bearing and no longer required to
+run** — one fewer covalent chore for the Operator.
+
+## Falsifiable claim
+Once `core.hooksPath=.githooks` is set, a `git push --force`/`--delete`/non-ff to `main` is refused on ANY
+substrate (Claude gate-off, agy, raw git), while a plain ff-push to `main` succeeds. **Refuted if:** the hook
+lets a force/delete of main through (guard is a no-op), OR it blocks a legitimate ff admin-durability push
+(over-broad — re-imports bond's policy we rejected). **Open falsifier (CANDIDATE):** does the git-layer
+guarantee actually hold on a live `agy` push? (re-test on the next off-Claude substrate bite).

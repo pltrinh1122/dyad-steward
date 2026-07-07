@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+# .githooks/pre-push — dyad-steward portable choke-point (SUBSTRATE-AGNOSTIC · dyad-rt landing).
+#
+# WHY (2026-07-07, Operator-ratified — the dyad-rt adopt): cairn's `dyad-rt` invariant is *the Dyad
+#   runtime, not the native substrate, owns permissioning.* A permission that lives only in
+#   `.claude/settings.json` is SUBSTRATE-CAPTIVE — off-Claude (agy/Gemini), and under our STANDING
+#   default of `claude --dangerously-skip-permissions` (gate-off), it fails OPEN and SILENTLY. Steward's
+#   entire destructive-push protection (`bin/grant_push.py`'s force/delete deny-list) was exactly that:
+#   captive to a native gate we now keep OFF by default. This hook moves that guard OUT of per-substrate
+#   config and INTO git itself — it fires on EVERY `git push`, any substrate, raw or wrapped.
+#   → dialectic/substrate-access.md §Operating mode (the dyad-rt frame + what we REJECT from cairn).
+#
+# WHAT IT GUARDS — steward's model is the INVERSE of dyad-bond's. bond refuses ANY direct push to main
+#   (bond never pushes main; it lands via PR). Steward DELIBERATELY pushes admin-durability straight to
+#   its own `main` (dialectic/substrate-access.md, Operator-ratified 2026-06-02: "having a PR for that is
+#   anti-wu-wei"). So this hook does NOT refuse a plain push to main — it ALLOWS a fast-forward push and
+#   refuses ONLY the DESTRUCTIVE class on a protected branch: force / non-fast-forward (history rewrite)
+#   and deletion. That is precisely steward's old settings.json deny-list (force/delete/`+`/`:`), now
+#   portable across substrates instead of captive to the (gate-off-by-default) Claude classifier.
+#
+# CAVEAT (honest, not hidden): `git push --no-verify` bypasses this hook. That is a DELIBERATE, VISIBLE
+#   act (fail-loud) — the opposite of the silent config fail-open it replaces. Acceptable; it is the escape.
+#
+# INSTALL (substrate-agnostic, one-time per clone — NOT automatic on clone):
+#   git config core.hooksPath .githooks
+#   `bin/standup.sh` (the d-start spine) checks this every session-open and SURFACES LOUD if unset — so a
+#   clone where the guard isn't active announces it, rather than running ungated in silence.
+
+set -euo pipefail
+
+PROTECTED_RE='^refs/heads/(main)$'          # keep in sync with grant_push.py PROTECTED intent
+Z40=0000000000000000000000000000000000000000
+
+# pre-push stdin: <local_ref> SP <local_sha> SP <remote_ref> SP <remote_sha>  (one line per ref)
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [[ "$remote_ref" =~ $PROTECTED_RE ]] || continue          # only guard protected branches
+
+  # Deletion of a protected branch (local side is all-zeros) — REFUSED (memory-durability guard).
+  if [[ "$local_sha" == "$Z40" ]]; then
+    printf 'pre-push: REFUSED — deletion of protected branch %s (dyad-steward durability guard).\n' \
+      "$remote_ref" >&2
+    exit 1
+  fi
+
+  # New protected ref (remote side all-zeros) is a creation = fast-forward by definition — ALLOW.
+  if [[ "$remote_sha" == "$Z40" ]]; then
+    continue
+  fi
+
+  # Fast-forward (remote_sha is an ancestor of local_sha) = steward's ALLOWED admin-durability push.
+  # Anything else is a history rewrite (force / non-fast-forward) — the destructive class — REFUSED.
+  if git merge-base --is-ancestor "$remote_sha" "$local_sha" 2>/dev/null; then
+    continue
+  fi
+
+  printf 'pre-push: REFUSED — force / non-fast-forward push to protected branch %s (history rewrite).\n' \
+    "$remote_ref" >&2
+  printf '          steward pushes ff-only to its own main; a rewrite is never legitimate here. (--no-verify bypasses, visibly.)\n' >&2
+  exit 1
+done
+
+exit 0

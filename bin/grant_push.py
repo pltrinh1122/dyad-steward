@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """Grant dyad-steward direct push-to-main in a Claude Code settings file.
 
+VESTIGIAL (2026-07-07, dyad-rt adopt): under steward's STANDING gate-off default
+(`claude --dangerously-skip-permissions`) the native classifier never prompts, so
+this script's ALLOW half is no longer needed to avoid a block, and its DENY half is
+SUPERSEDED by the portable `.githooks/pre-push` hook (force/delete of main refused on
+any substrate). Kept as harmless belt-and-suspenders for a rare gate-on session —
+NO LONGER LOAD-BEARING and no longer required to run. → dialectic/substrate-access.md
+§Operating mode.
+
+
 Borrowed from dyad-bond@bin/grant_push.py (which inherited the form from
 dyad-healer). **steward-particular allow-rule:** we do NOT wrap git in a
 bin/git.sh choke-point (bond/healer do, for foreign-substrate boundary integrity
