@@ -231,7 +231,8 @@ Inherited but locally load-bearing: **`Telos`**.
   → `dialectic/commons-contribution-lifecycle.md`
 - **`d-start` / `d-reflect` / `d-land`** — session-lifecycle + durability markers (adopted from bond's
   `d-*` family, 2026-07-04). `d-start: {goal/scope}` **opens** (runs `bin/standup.sh` + the Start-Session
-  Discipline) · `d-reflect` **closes** (reflection ⊂ stand-down; `bin/standdown.sh`) · `d-land` durably
+  Discipline) · `d-reflect` **closes** (reflection ⊂ stand-down; `bin/standdown.sh`; form = CSS+SH, lands-by-commit —
+  `dialectic/reflection-discipline.md`; **deprecates the `retro:`/`reflect:` monikers**) · `d-land` durably
   **lands** (commit+push, gated on a green read-back). The **marker** is the portable trigger across
   `agy`+`claude`; Claude session hooks are a *dormant* accelerator, not the trigger. `d-start`'s
   Push-guard check verifies the **dyad-rt** git-layer guard is armed (`.githooks/pre-push`, fail-loud) —

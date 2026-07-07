@@ -1,88 +1,89 @@
-# Reflection Discipline — LIVE CYCLE (under falsification)
+# Reflection Discipline — the `d-reflect:` form (CSS + SH)
 
-> **Status: in-flight. Not settled.** A **separate, orthogonal** discipline (ratified separate by
-> Steward Operator, 2026-05-29 — declined folding into the boundary rituals). Triangulated from two
-> sibling dyads; being proven through our own practice before it graduates to `../kb/`. Sibling to
-> `session-ritual.md` (the rituals that *trigger* a Reflection).
+> **Moniker: `d-reflect:`** (session-close reflection marker; part of the adopted `d-*` family — DYAD.md
+> §d-start/d-reflect/d-land). **DEPRECATED aliases: `retro:` · `reflect:`** — both now mean `d-reflect:`;
+> use `d-reflect:` going forward. *(Operator-directed 2026-07-07; the canon lexicon in `dyad-touchstone`
+> still lists `retro` — a cross-dyad lexicon divergence flagged, not suppressed.)*
+>
+> **Status: incorporated from bond, proven-there / re-particularized here.** The FORM is
+> `dyad-bond`'s graduated **D3** (`dyad-bond@kb/reflection-discipline.md` + `@dialectic/relationship-craft.md
+> §D3`, kb-with-caveat). We borrow the understanding; we own our home, our n-count, and our particular.
+> Supersedes steward's prior CSS four-step-ratification form (below, under Provenance) — the ratify-loop
+> is DROPPED. See [[adopted-css-or-reflect-form]].
 
-## The candidate
+## The function (unchanged)
 
-Take a structured reading of our own practice at rest-points, to close the *non-clinical* learning
-loop — the lessons of meta-work (dialectics, groundings, friction-corrections) reach the durable
-record instead of dissolving with the session's context.
+Take a structured reading of our own practice at rest-points, to close the *non-clinical* learning loop —
+the lessons of meta-work (dialectics, groundings, friction-corrections) reach the durable record instead
+of dissolving with the session's context.
 
-**Form — Continue / Start / Stop, two-substrate-paired** (Operator narrative + Steward details per
-section). Adopted from dyad-healer.
+## The form — CSS + SH
 
-**Asymmetry refinement (2026-05-30, Operator `[FEEDBACK]`):** the Operator gives POV on **CONTINUE
-only**. **START/STOP are delivered as real-time `[FEEDBACK]` during the session and harvested live** —
-so their POV is *already shared*, not retrospected. Rationale: the human lacks the capacity to carry
-START/STOP to a rest-point (wet-substrate load); the in-the-moment correction is *where* that POV
-lives, and the durable feedback record holds it. The **Steward details START/STOP from that record**.
-CONTINUE is the one substrate the Operator must still retrospect — positive patterns get no real-time
-correction signal, so they'd otherwise be lost.
+**CSS (Agent-authored) — Continue / Start / Stop:**
+- **CONTINUE** — a pattern worth keeping (Agent-observed).
+- **START** — a commitment going forward (from live feedback).
+- **STOP** — an Agent failure to name and correct (from live feedback). *An Agent debit/omission lives
+  HERE, never in SH* (bond's 2026-07-06 lane-correction).
 
-**CONTINUE-POV sourcing refinement (2026-06-10, Operator `fb:`):** the Operator's CONTINUE-POV is **the
-intended message accompanying the `reflect:` moniker** — captured, not awaited. The Steward does *not*
-leave a "[awaiting Operator POV]" placeholder; the words that invoke the reflection *are* the POV (e.g.
-"great arc-closing moment to bank our wins" = CONTINUE: the arc/pattern was a win worth keeping). Read
-the `reflect:` message as the narrative, then detail beneath it.
+**SH (Operator-provenance) — Should Have / Should Hold.** SH observes the **Operator's** conduct, not the
+Agent's. Two temporal shapes:
+- **Should Have** — a single past instance, debit direction: *"Should have [verified X] — didn't; [Operator
+  claim] independently found false via [mechanical check]."* An **Operator** counterfactual (an Agent one
+  is a STOP). **MATERIALITY BAR:** fires only if the miss produced a claim found false by an independent
+  mechanical check — no manufactured balance. If nothing clears the bar, there is **no SH line** (a blank
+  SH is correct, not a gap).
+- **Should Hold** — a standing, ongoing pattern (credit direction): *"Should hold: [the Operator's
+  recurring conduct that meets a bar]"* — a recurring pattern restated as a standing bar, not one-off praise.
 
-**Integration — the four-step form** (also from healer):
-1. **Steward drafts** narrative + details for each section (grounds the Operator with substance
-   first — lowers cognitive load; the same DFD principle).
-2. **Operator POV** per section — including "no POV" (valid).
-3. **Steward falsifies** the Operator POV against session evidence (survives / partial / falsified).
-4. **Steward integrates** surviving POV → **Operator ratifies** final.
+**Every SH entry carries a verbatim quote** from chat history as evidence (the Agent's paraphrase does not
+qualify). Should-Have additionally carries the materiality + independent-mechanical-verification bar.
 
-**Where:** `dialectic/reflections/<date>-<scope>.md` while the discipline is live; instances commit
-as DRAFT early (survive `/exit`), then progress to INTEGRATED → RATIFIED.
+**No ratification ceremony, no CTA.** The reflection IS the durable artifact — it lands by being written
+and committed, not by an Operator disposition. (This is the substantive change from the prior form.)
 
-## Triggers (which rituals fire a Reflection)
+**Where:** `dialectic/reflections/<date>-<scope>.md`. Admin-durability class → **direct commit + push to
+main** (dialectic/substrate-access.md §the resolved route). Commit as DRAFT early so it survives `/exit`.
+
+## Triggers (which rituals fire a d-reflect)
 
 - **Intermission** (structural seam, non-terminal) — close the segment's loop.
-- **Stand Down** (session end, terminal) — close the session's loop before `/exit`.
-- **NOT Time-Out** — a context-switch carries only a minimal state-save, not a CSS reflection.
+- **Stand Down** (session end, terminal) — close the session's loop before `/exit` (`bin/standdown.sh` is
+  the mechanical spine; the reflection ⊂ stand-down).
+- **NOT Time-Out** — a context-switch carries only a minimal state-save, not a CSS+SH reflection.
 
 ## Falsifiable claim
 
-A Reflection makes validated *positive* patterns (not just corrections) survive between sessions,
-and feeds them back to sharpen our processes (the Learning Discipline's harvest). *Test:* lessons
-surfaced in a Reflection later appear codified in `kb/` or the anchor.
+A d-reflect makes validated *positive* patterns (not just corrections) survive between sessions, and feeds
+them back to sharpen our processes. *Test:* lessons surfaced later appear codified in `kb/`, the anchor, or
+memory. **Refuted if:** form drift (CSS or SH consistently missing) · frequency mismatch (per-cycle spam or
+months-long vanish) · orthogonality breach (restating an already-ratified lesson instead of what's *new*) ·
+overhead drag (costs more than the lesson preserved is worth) · a manufactured SH line that doesn't clear
+the materiality/verbatim bar.
 
-**Refuted if** (borrowed from `dyad-wu-wei`'s — *was `dz-cil`* — *framework-is-falsifiable* idea):
-- **Drift from form** — Operator-narrative consistently missing (loop not closing two-substrate).
-- **Frequency mismatch** — Reflections become frequent (per-cycle) or vanish for months (trigger
-  mis-tuned).
-- **Orthogonality breach** — a Reflection restates an already-ratified lesson instead of surfacing
-  what's *new* (reference, don't restate).
-- **Overhead drag** — the Reflection costs more than the lesson it preserves is worth.
+## Provenance
 
-## Seed evidence (this session, 2026-05-29)
+- **Incorporated form (2026-07-07): `dyad-bond` D3** — CSS + SH, ratify-loop dropped, lands-by-commit.
+  Bond's D3 is graduated kb-with-caveat (survived 4 intra-dyad applications); its SH grammar is CANDIDATE
+  (Operator-provenance, first Should-Hold instances 2026-07-06). We adopt at bond's current maturity and
+  run our own instances. Re-fetch bond's `§D3` on the next adoption bite — it evolves.
+- **Prior steward form (SUPERSEDED, kept for lineage):** CSS two-substrate-paired with a **four-step
+  ratification ceremony** (Steward drafts → Operator POV → Steward falsifies → Steward integrates →
+  Operator ratifies), triangulated from `dyad-healer` (`kb/practice-reflection.md`: CSS, two-substrate,
+  Reflection-before-Stand-Down) + `dyad-wu-wei` (the *framework-is-falsifiable* self-test). The ratify-loop
+  is what the bond incorporation drops; the healer/wu-wei substance (CSS, two-substrate function,
+  falsifiability) survives inside bond's form.
 
-First instance practiced end-to-end through all four steps and **RATIFIED**:
-`reflections/2026-05-29-grounding-and-dfd-session.md`. Operator CONTINUE POV survived falsification
-(resonance earned through *contest*, not agreement); START/STOP "no POV". n=1.
+## History (steward instances)
 
-## Provenance — triangulated from two siblings
-
-- **dyad-healer** (`kb/practice-reflection.md`): CSS form, two-substrate pairing, four-step
-  integration, Reflection-before-Stand-Down sequencing, natural-vs-explicit triggers. **Primary
-  source** — closest fit to our human-dialectic cadence.
-- **dyad-wu-wei** *(was `dz-cil`)* (SHAR / Epistemic Retrospective, `artifacts/`): telemetric, per-execution-path,
-  4-tier anomaly taxonomy + RCA + framework-self-falsification. **Borrowed:** the
-  *framework-is-falsifiable* self-test (the refutation list above). Rest is a poor fit (built for
-  autonomous-loop execution we don't run).
-- Convergence worth noting: healer independently arrived at our own DFD insight — *Agent drafts
-  first to lower Operator load, then falsifies the Operator's POV.* Independent-dyad convergence is
-  strong synergy evidence.
+~20 reflections in `dialectic/reflections/` (2026-05-29 → 2026-07-04) under the prior form; the seed
+(`2026-05-29-grounding-and-dfd-session.md`) ran all four steps and RATIFIED (n=1). From 2026-07-07 forward,
+instances use CSS + SH and land by commit.
 
 ## Open questions (attack surface)
 
-- ~~Does **Intermission** warrant a *lighter* Reflection (just CONTINUE)?~~ **RESOLVED** (2026-05-30):
-  CONTINUE-only-POV isn't a *lighter* form — it's the *correct* form for **every** trigger. START/STOP
-  are structurally real-time (`[FEEDBACK]`), not retrospective. Intermission vs Stand Down differ in
-  *terminality*, not in reflection-weight.
-- Sharing path when this matures: actionable items → prescriptions to constituents; whole
-  reflections → the form via the Dyad-Practice Dyad (healer's two-path model) — adopt or diverge?
-- Form-library candidate for *every* Dyad, or Steward-specific?
+- The **forward-commitment** SH case (a not-yet-evidenced standing pattern the Operator commits to) doesn't
+  cleanly sort into Should-Have or Should-Hold — left CANDIDATE-within-CANDIDATE in bond's §D3; the first
+  real instance decides. Watch for it here too.
+- **Cross-dyad lexicon:** `retro` is canon in `dyad-touchstone`'s AGENT.md; steward now uses `d-reflect:`.
+  Propagate via a lexicon rub to touchstone, or hold as a local divergence? (Operator's dispose.)
+- Form-library candidate for *every* Dyad, or steward-specific? (Bond's L2b cross-human gap is still open.)
