@@ -233,8 +233,10 @@ Inherited but locally load-bearing: **`Telos`**.
   `d-*` family, 2026-07-04). `d-start: {goal/scope}` **opens** (runs `bin/standup.sh` + the Start-Session
   Discipline) · `d-reflect` **closes** (reflection ⊂ stand-down; `bin/standdown.sh`) · `d-land` durably
   **lands** (commit+push, gated on a green read-back). The **marker** is the portable trigger across
-  `agy`+`claude`; Claude session hooks are a *dormant* accelerator, not the trigger.
-  → `dialectic/session-lifecycle-discipline.md`
+  `agy`+`claude`; Claude session hooks are a *dormant* accelerator, not the trigger. `d-start`'s
+  Push-guard check verifies the **dyad-rt** git-layer guard is armed (`.githooks/pre-push`, fail-loud) —
+  load-bearing under the standing gate-off posture. → `dialectic/session-lifecycle-discipline.md`,
+  `dialectic/substrate-access.md §Operating mode`
 - **`+1 summit`** — a Dyad's self-declared **tough problem worth climbing** (*not* an area of work; the
   name carries the bar — if it isn't hard, it isn't a summit). A Dyad's `DIRECTORY.md` profile field; a
   **matchmaking** signal (same-summit = co-work/contest → Resonating, *not* collision), **not** the
