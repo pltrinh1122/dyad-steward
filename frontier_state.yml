@@ -107,12 +107,14 @@ nodes:
     type: EXECUTE
     status: DONE
     dependencies: []
-    note: 'DONE 2026-07-08 — #82 MERGED (8e17db8: directory birth_hash 72ba645f->canonical 4c42be0b + the
-      root-cause .strip() bug in auto_share.compute_birth_hash + test) and #83 MERGED (718b4b7: the
-      CONTRIBUTING invariant + verify_birthhash.py + validate-directory-birthhash.yml, base-code/head-data
-      trust model). RCA: #12 wrote a stripped-content hash no mechanism checked. Verified live on merged main:
-      steward PASSes on 4c42be0b, injected 72ba645f FAILs, private anchors SKIP. Pin -> 718b4b7. Stale identity
-      note corrected (self-registration-remedy.md). validate_ledger_schema is instance #2 of this invariant.'
+    note: 'DONE 2026-07-08 (canonical after a same-day reversal). The invariant + workflow landed via #83; the
+      birth_hash guard is instance #1. CANONICAL = onboard.py''s algorithm (the definitive registration engine):
+      steward birth_hash = 72ba645f (reproduces peers bond 3ab18bb7 / touchstone 49bcbe1d). Reversal: #82/#83
+      first re-derived RAW (4c42be0b) from the caveat wording — wrong, matched no peer; caught at d-reflect by
+      running the guard vs peers. Corrected by #84 (code: re-home auto_share + audit on onboard.py) + #85 (data:
+      directory -> 72ba645f), split to clear the base-validator chicken-and-egg; BOTH MERGED (main @8085ff2).
+      Guard PASSes steward on merged main. Lesson: for a tool-minted value, the ENGINE is canonical, not a spec
+      gloss; check peers ([[verify-with-actual-tool]]). validate_ledger_schema is instance #2 of this invariant.'
   validate_ledger_schema:
     title: 'EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (instance #2 of ci_guard_invariant)'
     goal: Make the ledger filename convention + minimal entry schema mechanically enforced, not merely
