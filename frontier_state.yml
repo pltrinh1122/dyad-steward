@@ -118,9 +118,12 @@ nodes:
       processed-but-uncommitted read-state from silently accumulating across sessions.
     summit: S1
     type: EXECUTE
-    status: IN_REVIEW
+    status: DONE
     dependencies: []
-    note: 'SOURCE: read-state tracking audit 2026-07-08 (Operator-prompted). 8 "unread" DMs at d-start were
+    note: 'DONE — RC1 merged (PR #80, Commons `449ae35`; pin advanced 6457af5->449ae35), RC2+RC3 landed
+      (steward `58abcbb`). Post-hoc craft-rub routed to touchstone 2026-07-08 (dm/dyad-touchstone/
+      2026-07-08-rub-readstate-edit-flag.md) — optional, non-blocking; awaiting its verdict via the DM daemon.
+      SOURCE: read-state tracking audit 2026-07-08 (Operator-prompted). 8 "unread" DMs at d-start were
       6 already-processed (5 by commit f7d5c22; 1 dip-craft re-surfaced via bond editing it in-place) + 1 stale
       + 1 genuinely new (cairn commission-protocol 2026-07-05). RC1 (Commons, PR #80 -> FO gate): falsify.py
       dm/inbox flag ⟳ edited-since-read vs • new + a (new/edited) split (a blob-sha re-surface != new mail).
