@@ -37,9 +37,16 @@ mech="$(printf '%s\n' "dyad-steward stand-down — mechanical read-back (verifie
 if [[ "${1:-}" == "--log" ]]; then printf '%s\n' "$mech"; exit 0; fi
 
 state="$(timeout 25 python3 bin/state.py 2>/dev/null || echo '(run bin/state.py by hand — live PR/sync state)')"
+# DM read-state surface (non-consuming — inbox counts, never marks read): makes read-state divergence
+# VISIBLE at close so processed-but-uncommitted DMs can't silently accumulate (read-state-diverges-from-
+# processing, 2026-07-08). RC1 splits '• new' vs '⟳ edited-since-read'; a ⟳ re-surface is not new mail.
+dm="$(timeout 25 python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null | grep -E 'mail:|no mail|unreachable:' || echo '(run falsify.py inbox — DM read-state surface)')"
 
 cat <<TEMPLATE
 $mech
+
+  DM read-state (non-consuming surface): $(printf '%s' "$dm" | head -1)
+$(printf '%s' "$dm" | tail -n +2 | sed 's/^/  /')
 
 $state
 
@@ -52,6 +59,10 @@ dyad-steward stand-down — JUDGMENT (the agent fills; auto-trigger != auto-judg
    1. Durability (above): if DIRTY/unpushed — commit + push FIRST; "done" is reachable only through the
       clean+pushed read-back (DYAD.md §NON-NEGOTIABLE). Advance the commons pin if a Commons PR merged.
    2. Frontier: set ACTIVE->DONE / statuses; drop what closed; add only in-flight resume-worthy nodes.
+   2b. DM read-state (above): if you PROCESSED any DM this session, consume + commit it (falsify.py dm
+      -> commit .falsify-seen.json) so read-state doesn't lag processing (read-state-diverges-from-
+      processing). A '⟳ edited-since-read' re-surface is NOT new mail — a peer's in-place edit, re-check
+      but don't re-process. Do NOT blind-consume unread you didn't engage; surface it as an OPEN thread.
    3. Resume surface: FO-gate (open PRs awaiting the gavel) · open threads · live follow-up nodes.
    4. Reflection (d-reflect ⊂ stand-down): if the session harvested lessons, run the D3 CSS+SH retro
       -> dialectic/reflections/<date>.md. CSS = Agent (Continue/Start/Stop); SH = Operator-provenance

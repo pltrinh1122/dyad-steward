@@ -18,6 +18,7 @@
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
 - ◔ **[IN_REVIEW]** `healer_access_dispose` — Healer #2-access dispose
+- ◔ **[IN_REVIEW]** `readstate_edit_flag` — REVIEW (PR #80, FO-gate): falsify.py flags ⟳ edited-since-read vs • new; DM read-state audit
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)

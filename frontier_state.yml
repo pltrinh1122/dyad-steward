@@ -112,6 +112,22 @@ nodes:
       anchors. Fix: FRs/rubs that cite another dyad''s anchor as load-bearing evidence bundle the exact quoted
       passage + blob SHA in the FR itself (the way falsify.py respond auto-pins target_claim_hash for the ledger),
       so the attacker verifies without live repo access. Falsification-channel enhancement -> Commons/FO dispose.'
+  readstate_edit_flag:
+    title: 'REVIEW (PR #80, FO-gate): falsify.py flags ⟳ edited-since-read vs • new; DM read-state audit'
+    goal: Stop the DM read-state cache from reading already-processed re-surfaces as fresh mail, and stop
+      processed-but-uncommitted read-state from silently accumulating across sessions.
+    summit: S1
+    type: EXECUTE
+    status: IN_REVIEW
+    dependencies: []
+    note: 'SOURCE: read-state tracking audit 2026-07-08 (Operator-prompted). 8 "unread" DMs at d-start were
+      6 already-processed (5 by commit f7d5c22; 1 dip-craft re-surfaced via bond editing it in-place) + 1 stale
+      + 1 genuinely new (cairn commission-protocol 2026-07-05). RC1 (Commons, PR #80 -> FO gate): falsify.py
+      dm/inbox flag ⟳ edited-since-read vs • new + a (new/edited) split (a blob-sha re-surface != new mail).
+      RC2 (DONE, our substrate): bin/standdown.sh surfaces the non-consuming unread set at close + a
+      consume-when-processed checklist step. RC3 (DONE): purged 11 inert legacy path-only keys from
+      .falsify-seen.json (all had @sha siblings; stems preserved). [[read-state-diverges-from-processing]].
+      Branch-loss was NOT a live factor (all read-state commits were on main).'
   probe_onboard_namederiv_fallback:
     title: 'PROBE: onboard.py basename fallback re-opens the misregistration class (tco finding, falsification-SURVIVED)'
     goal: Scope the fix for the confirmed silent-duplicate-registration defect; decide tco hard-fail vs
