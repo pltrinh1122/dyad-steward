@@ -99,8 +99,22 @@ nodes:
       it was named to prevent. Counter (touchstone): a lightweight presence-linter parallel to validate_registry.py
       that flags an anchor missing BOTH a real craft_value/craft_invariant line AND the literal NOT_YET_WORN token.
       Commons artifact -> FO/Commons dispose. [[claimed-not-established]]: the guarantee needs the enforcing artifact.'
+  ci_guard_invariant:
+    title: 'DONE: invariant "mechanically-verifiable self-reports are CI-guarded" + birth_hash guard (instance #1)'
+    goal: Automate the falsifiability NON-NEGOTIABLE for computable self-reports — recompute-and-fail, never
+      silently trust; flag the unverifiable.
+    summit: S1
+    type: EXECUTE
+    status: DONE
+    dependencies: []
+    note: 'DONE 2026-07-08 — #82 MERGED (8e17db8: directory birth_hash 72ba645f->canonical 4c42be0b + the
+      root-cause .strip() bug in auto_share.compute_birth_hash + test) and #83 MERGED (718b4b7: the
+      CONTRIBUTING invariant + verify_birthhash.py + validate-directory-birthhash.yml, base-code/head-data
+      trust model). RCA: #12 wrote a stripped-content hash no mechanism checked. Verified live on merged main:
+      steward PASSes on 4c42be0b, injected 72ba645f FAILs, private anchors SKIP. Pin -> 718b4b7. Stale identity
+      note corrected (self-registration-remedy.md). validate_ledger_schema is instance #2 of this invariant.'
   validate_ledger_schema:
-    title: 'EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (after CONTRIBUTING PR #81)'
+    title: 'EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (instance #2 of ci_guard_invariant)'
     goal: Make the ledger filename convention + minimal entry schema mechanically enforced, not merely
       documented — else the rule is claimed-not-established (the NOT_YET_WORN failure class).
     summit: S1

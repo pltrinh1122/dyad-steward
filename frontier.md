@@ -14,7 +14,7 @@
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `steering_vectors_onboard` — EXECUTE: onboard.py output as guards + steering vectors (Commons, FO-gated)
 - ○ **[READY]** `totality_readme` — Totality README review
-- ○ **[READY]** `validate_ledger_schema` — EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (after CONTRIBUTING PR #81)
+- ○ **[READY]** `validate_ledger_schema` — EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (instance #2 of ci_guard_invariant)
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
@@ -22,6 +22,7 @@
 - ⊘ **[BLOCKED]** `crosshuman_share_channel` — cross-human share channel (per-repo vs Commons-central inbox)
 - ✓ **[DONE]** `automerge_own_entry_updates` — Extend auto-merge-registration.yml -> cover own-entry UPDATES
 - ✓ **[DONE]** `cairn_arch_proposal` — cairn Commons-architecture proposal (referee -> FO)
+- ✓ **[DONE]** `ci_guard_invariant` — DONE: invariant "mechanically-verifiable self-reports are CI-guarded" + birth_hash guard (instance #1)
 - ✓ **[DONE]** `directory_index_visible` — Directory participant index 1->9 visible (Commons #52)
 - ✓ **[DONE]** `dm_locator_remedy` — onboard.py teaches the dm_locator remedy (Commons #53)
 - ✓ **[DONE]** `dm_readstate_hardening` — DM read-state hardening: blob-sha key + consume-announce (Commons #69, #70)
