@@ -20,6 +20,14 @@ per-substrate *accelerator* of the same discipline.
   `{goal/scope}` payload seeds the session's goal-frame — a channel a hook-fired stand-up can't carry.
 - **`d-reflect`** — session **CLOSE**. Fires the reflection (CSS+SH, [[adopted-css-or-reflect-form]]) *and*
   the stand-down (`d-reflect ⊂ stand-down`: the verified durability read-back + the resume surface).
+  **Idempotent:** re-running `d-reflect` for the same session **converges to the same state, never
+  duplicates** — it UPDATES the session's single reflection + single stand-down **in place** (or appends a
+  dated addendum), and re-commits (a no-op on a clean tree). The spine (`bin/standdown.sh`) is read-only, so
+  it is idempotent by construction; the guarantee it *enforces* is a surfaced guard — it lists today's
+  existing reflection/stand-down so a re-run edits them instead of minting a parallel. A genuinely **new**
+  same-day session is a different session, not a re-run → it uses a `<date>b` suffix. (Why this matters: a
+  `d-reflect` re-run after a mid-close correction — e.g. the 2026-07-08 birth_hash reversal — must sharpen
+  the existing retro, not spawn a second.)
 - **`d-land`** — the **durability act**, composed throughout: **commit always**; then check
   `git log origin/main..HEAD` + open-PR state — an existing open PR for this arc → commit+push, done (the
   common case); no open PR and the arc reads complete → run the landing checklist and open one. (For this

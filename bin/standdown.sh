@@ -41,12 +41,24 @@ state="$(timeout 25 python3 bin/state.py 2>/dev/null || echo '(run bin/state.py 
 # VISIBLE at close so processed-but-uncommitted DMs can't silently accumulate (read-state-diverges-from-
 # processing, 2026-07-08). RC1 splits '• new' vs '⟳ edited-since-read'; a ⟳ re-surface is not new mail.
 dm="$(timeout 25 python3 commons/scripts/falsify.py inbox --me dyad-steward 2>/dev/null | grep -E 'mail:|no mail|unreachable:' || echo '(run falsify.py inbox — DM read-state surface)')"
+# Idempotency guard: d-reflect is idempotent — a re-run UPDATES the session's existing reflection + stand-down
+# IN PLACE, never a parallel file. (The spine above is read-only, hence already idempotent.) Surface today's
+# artifacts so a re-run edits them; a genuinely NEW same-day session uses a <date>b suffix.
+today="$(date +%F)"
+existing="$(ls -1 dialectic/reflections/${today}*.md dialectic/stand-downs/${today}*.md 2>/dev/null | tr '\n' ' ')"
+if [ -n "$existing" ]; then
+  idem="⟳ EXISTS for ${today} — UPDATE in place (d-reflect is idempotent), do NOT add a parallel file: ${existing}"
+else
+  idem="none for ${today} — create the reflection + stand-down (a new same-day session uses a <date>b suffix)"
+fi
 
 cat <<TEMPLATE
 $mech
 
   DM read-state (non-consuming surface): $(printf '%s' "$dm" | head -1)
 $(printf '%s' "$dm" | tail -n +2 | sed 's/^/  /')
+
+  d-reflect artifacts (idempotent — update, don't duplicate): $idem
 
 $state
 
@@ -67,7 +79,10 @@ dyad-steward stand-down — JUDGMENT (the agent fills; auto-trigger != auto-judg
    4. Reflection (d-reflect ⊂ stand-down): if the session harvested lessons, run the D3 CSS+SH retro
       -> dialectic/reflections/<date>.md. CSS = Agent (Continue/Start/Stop); SH = Operator-provenance
       (Should-Have/Should-Hold, descriptive, verbatim-quoted; Should-Have needs the materiality bar).
+      IDEMPOTENT: if today's reflection already exists (see 'd-reflect artifacts' above), UPDATE it in
+      place (or append a dated addendum) — never a parallel file for the same session.
    5. Daemons: session-only (die on restart) — note in the session-pin for next stand-up re-arm.
    6. Stand-down note: dialectic/stand-downs/<date>-session-stand-down.md — what closed · the +1 ·
-      FO-gate · OPEN/resume · State (verified, not cached). Commit + push.
+      FO-gate · OPEN/resume · State (verified, not cached). Commit + push. IDEMPOTENT: update today's
+      note in place if it exists; a genuinely NEW same-day session uses a <date>b suffix.
 TEMPLATE
