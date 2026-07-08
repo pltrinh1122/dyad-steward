@@ -1,9 +1,18 @@
 # Remedy dyad-steward's own Commons self-registration — DONE (PR #12 merged)
 
-> **Status: DONE 2026-06-01.** PR #12 merged by FO. `directory/dyad-steward.yaml` `birth_hash` corrected
-> to canonical `sha256:72ba645f…` (recomputed from `CLAUDE.md@2a9dc10 ‖ %cI`, reproducible); DIRECTORY.md
-> dead `.md` entry-links fixed to `.yaml`. Verified on Commons `main` (placeholder gone, links fixed).
-> Identity *corrected*, not re-birthed. Original analysis retained below.
+> **⚠ SUPERSEDED 2026-07-08 — PR #12's value was itself a regression.** Re-derivation (this turn) shows
+> the canonical `birth_hash` is **`sha256:4c42be0b…f000`**, NOT `72ba645f`. The caveat formula hashes the
+> RAW `git show 2a9dc10:CLAUDE.md` bytes ‖ `%cI` → `4c42be0b`; PR #12's `compute_birth_hash` routed the
+> anchor through `run_cmd().strip()`, dropping the trailing newline → the wrong `72ba645f`. Corrected via
+> **PR #82** (directory value + the `compute_birth_hash` strip bug + test); recurrence guarded by **PR #83**
+> (a CI check recomputing every directory `birth_hash`). The `72ba645f` references below are the mistaken
+> value — kept for the record, no longer canonical. See [[verify-with-actual-tool]]: the script was the bug;
+> the canonical FORMULA is authoritative.
+
+> **Status: DONE 2026-06-01 (value later found wrong — see banner above).** PR #12 merged by FO.
+> `directory/dyad-steward.yaml` `birth_hash` set to `sha256:72ba645f…` (recomputed via a `compute_birth_hash`
+> that diverged from the caveat); DIRECTORY.md dead `.md` entry-links fixed to `.yaml`. Original analysis
+> retained below.
 
 ## The defect (grounded 2026-06-01)
 `commons/directory/dyad-steward.yaml` → `birth_hash: "sha256:4c42be0b…f000"` — a **placeholder with a
