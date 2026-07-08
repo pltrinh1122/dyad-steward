@@ -114,8 +114,8 @@ nodes:
       the enforcing artifact (parallel to validate_registry.py / validate_falsification): check filename
       pattern, contributor-sha8 matches the contributor field, one-file-per-contributor (unique prefix),
       each cycle carries a pinned sha. Existing off-scheme files (cairn ×2) are the owner''s to rename
-      (append-only) -> prospective. Commons tooling -> FO dispose. Sequence AFTER #81 merges.
-      [[claimed-not-established]]; sibling of craft_notyetworn_linter.'
+      (append-only) -> prospective. Commons tooling -> FO dispose. Rule LANDED — #81 MERGED (b830218);
+      now actionable. [[claimed-not-established]]; sibling of craft_notyetworn_linter.'
   fr_bundle_evidence:
     title: 'PROBE/EXECUTE: FRs citing a peer anchor should bundle the quoted passage + blob SHA'
     goal: Close the cross-dyad verification-debt — an attacking dyad can verify a cited peer-anchor claim without
