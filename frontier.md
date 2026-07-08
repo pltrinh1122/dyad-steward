@@ -14,6 +14,7 @@
 - ○ **[READY]** `refdecay_dfd_pfp` — dfd->pfp ref-decay (repo-wide) + preflight refs-coverage gap
 - ○ **[READY]** `steering_vectors_onboard` — EXECUTE: onboard.py output as guards + steering vectors (Commons, FO-gated)
 - ○ **[READY]** `totality_readme` — Totality README review
+- ○ **[READY]** `validate_ledger_schema` — EXECUTE: validate_ledger.py — enforce ledger filename + entry schema (after CONTRIBUTING PR #81)
 - ○ **[READY]** `wuwei2_anchor_injection` — wu-wei #2 - onboard.py anchor-injection
 - ◔ **[IN_REVIEW]** `falsification_promotable` — Falsification contract -> promotable (v4 provisional)
 - ◔ **[IN_REVIEW]** `falsify_ci` — falsify.py / validate_falsification CI on falsification/ PRs
