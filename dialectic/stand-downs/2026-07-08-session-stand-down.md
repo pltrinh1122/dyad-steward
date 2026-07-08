@@ -2,6 +2,12 @@
 
 Reflection (CSS+SH): `dialectic/reflections/2026-07-08-birthhash-regression-and-ci-guard-invariant.md`.
 
+> **⚠ CORRECTION (post-d-reflect).** PR #82/#83's derivation was WRONG — steward's canonical `birth_hash`
+> is `72ba645f` (`onboard.py`, the definitive engine; reproduces bond/touchstone exactly), not the raw
+> `4c42be0b` those PRs wrote. **PR #84** reverts the value + re-homes `auto_share` and the audit on
+> `onboard.py`'s algorithm. The **invariant + workflow** from #83 stand; only the derivation was wrong.
+> The "+1" and OPEN list below still hold; the birth_hash *value* line is corrected by #84.
+
 ## What closed (all merged to Commons main)
 - **PR #80** — `falsify.py` `⟳ edited-since-read` vs `• new` (DM read-state truth-in-labeling). Root of the
   thread: a read-state audit found 6 of 8 "unread" DMs were already processed.

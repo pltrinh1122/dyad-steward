@@ -5,6 +5,21 @@
 > pins + spartan CONTRIBUTING (PR #81) · birth_hash regression fix (PR #82) · the CI-guard invariant +
 > birth_hash guard (PR #83). All four merged.
 
+> **⚠ REVERSAL ADDENDUM (same day, post-`d-reflect`).** This reflection was written mid-error. Its premise —
+> that RAW `4c42be0b` is steward's canonical `birth_hash` and PR #82/#83 were correct — is **WRONG**. The
+> `d-reflect` grounding pass (running the guard against *peers* + re-reading [[verify-with-actual-tool]])
+> then the Operator's ruling settled it: **`onboard.py` is the definitive registration engine; its algorithm
+> reproduces every peer exactly (bond `3ab18bb7`, touchstone `49bcbe1d`) and mints steward's `72ba645f`.**
+> `72ba645f` is canonical; `4c42be0b` (raw) matches no peer. **PR #84 reverts #82/#83's derivation** (restores
+> `72ba645f`; re-homes `auto_share` + the audit on `onboard.py`). Two corrections to the findings below:
+> - **CONTINUE #1 ("re-derive from the spec when the tool disagrees") is the trap that bit me** — for a
+>   *tool-minted* value the minting **ENGINE** (`onboard.py`) is canonical, not a spec's prose gloss (the
+>   caveat's `git show` wording). The correct rule: run the engine, and **check independent instances
+>   (peers)** before declaring canon. I ran a hand recompute instead of `onboard.py`, and checked no peer.
+> - **STOP (below) was vindicated in real time** — "asserting is-canonical before fully grounding" recurred
+>   *inside this very reflection*. That finding stands, sharpened: grounding = the engine + the peers, not the
+>   spec text.
+
 ## CONTINUE — Agent-observed, worth keeping
 
 - **Re-derive from the canonical spec when the tool and reality disagree.** The birth_hash regression

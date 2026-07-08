@@ -1,17 +1,19 @@
 # Remedy dyad-steward's own Commons self-registration — DONE (PR #12 merged)
 
-> **⚠ SUPERSEDED 2026-07-08 — PR #12's value was itself a regression.** Re-derivation (this turn) shows
-> the canonical `birth_hash` is **`sha256:4c42be0b…f000`**, NOT `72ba645f`. The caveat formula hashes the
-> RAW `git show 2a9dc10:CLAUDE.md` bytes ‖ `%cI` → `4c42be0b`; PR #12's `compute_birth_hash` routed the
-> anchor through `run_cmd().strip()`, dropping the trailing newline → the wrong `72ba645f`. Corrected via
-> **PR #82** (directory value + the `compute_birth_hash` strip bug + test); recurrence guarded by **PR #83**
-> (a CI check recomputing every directory `birth_hash`). The `72ba645f` references below are the mistaken
-> value — kept for the record, no longer canonical. See [[verify-with-actual-tool]]: the script was the bug;
-> the canonical FORMULA is authoritative.
+> **✅ `72ba645f` IS canonical — confirmed 2026-07-08. (This banner corrects a wrong intermediate call
+> made the same day.)** `onboard.py` is the **definitive registration engine**; its algorithm
+> (`sh().strip()` content ‖ `%cI`) reproduces the peers **exactly** — dyad-bond `3ab18bb7`, dyad-touchstone
+> `49bcbe1d` — so `72ba645f` (what PR #12 wrote, what `onboard.py` mints) is right and convention-conformant.
+> **Mis-step (reverted):** earlier this day PR #82/#83 re-derived RAW from the *literal* IDENTITY-CAVEAT
+> wording → `4c42be0b`, which matches **no** peer, and wrongly "corrected" the directory + built a raw guard.
+> **PR #84 reverts that** — restores `72ba645f`, and re-homes both `auto_share` and the audit on
+> `onboard.py`'s own algorithm. Lesson (updates [[verify-with-actual-tool]]): for a tool-minted value the
+> **minting ENGINE is canonical, not a spec's prose gloss** — and check against **peers** before declaring
+> canon. The `72ba645f` references below are correct.
 
-> **Status: DONE 2026-06-01 (value later found wrong — see banner above).** PR #12 merged by FO.
-> `directory/dyad-steward.yaml` `birth_hash` set to `sha256:72ba645f…` (recomputed via a `compute_birth_hash`
-> that diverged from the caveat); DIRECTORY.md dead `.md` entry-links fixed to `.yaml`. Original analysis
+> **Status: DONE 2026-06-01 — value CONFIRMED canonical 2026-07-08 (see banner).** PR #12 merged by FO.
+> `directory/dyad-steward.yaml` `birth_hash` = `sha256:72ba645f…` (`onboard.py`'s output — the definitive
+> engine, reproduces peers exactly); DIRECTORY.md dead `.md` entry-links fixed to `.yaml`. Original analysis
 > retained below.
 
 ## The defect (grounded 2026-06-01)
